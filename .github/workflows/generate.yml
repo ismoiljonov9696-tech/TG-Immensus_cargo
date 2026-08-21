@@ -1,0 +1,58 @@
+name: Post tayyorlash
+
+# Postni chiqishidan oldin tayyorlaydi va ko'rish uchun adminga yuboradi.
+# Vaqt UTC da. Toshkent = UTC+5, ya'ni 03:45 UTC = 08:45 Toshkent.
+on:
+  schedule:
+    - cron: "45 3 * * *"       # 08:45 Toshkent — 09:00 chiqadigan post uchun
+  workflow_dispatch:           # qo'lda ishga tushirish tugmasi
+    inputs:
+      force:
+        description: "Sifat nazoratidan o'tmasa ham davom etsinmi"
+        type: boolean
+        default: false
+
+concurrency:
+  group: autopost
+  cancel-in-progress: false
+
+permissions:
+  contents: write              # arxiv va navbatni commit qilish uchun
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Kutubxonalar
+        run: pip install -r requirements.txt
+
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Postni tayyorlash
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          python -m src.main generate ${{ inputs.force && '--force' || '' }}
+
+      - name: Holatni saqlash
+        if: always()
+        run: |
+          git config user.name  "autopost-bot"
+          git config user.email "autopost@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "post tayyorlandi $(date -u +%Y-%m-%d)"
+          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          git push

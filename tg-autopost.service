@@ -1,0 +1,27 @@
+# systemd bilan ishga tushirish (Docker'siz VPS uchun).
+#
+#   sudo cp tg-autopost.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now tg-autopost
+#   sudo journalctl -u tg-autopost -f      # jonli log
+#
+# WorkingDirectory va User ni o'zingiznikiga moslang.
+
+[Unit]
+Description=Telegram avtomatik post tizimi
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/tg-autopost
+EnvironmentFile=/home/ubuntu/tg-autopost/.env
+ExecStart=/home/ubuntu/tg-autopost/.venv/bin/python -m src.scheduler
+Restart=always
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

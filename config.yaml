@@ -1,0 +1,135 @@
+# ============================================================
+#  Avtomatik Telegram post tizimi — sozlamalar
+#  API kalitlari BU YERDA EMAS. Ular .env / GitHub Secrets ichida.
+# ============================================================
+
+channel:
+  # Kanal manzili: "@kanal_nomi" yoki raqamli ID (-100...)
+  id: "@immensus_cargoo"
+  language: "uz"          # uz | ru | en
+  timezone: "Asia/Tashkent"
+
+# Rubrikalar. Har safar navbatdagisi olinadi (rotation).
+# Bittasini qoldirsangiz — doim shu ishlatiladi.
+rubrics:
+  - name: "Xitoy savdosi maslahatlari"
+    brief: >
+      Xitoy bilan savdo qilayotgan O'zbekistonlik tadbirkorlar uchun amaliy
+      maslahatlar. Mavzu doirasi: tovar tanlash va yetkazib beruvchi izlash,
+      Futian va 1688 kabi bozorlar, minimal partiya va savdolashuv, sifat
+      nazorati va namuna olish, qadoqlash, kargo turlari va vazn hisobi,
+      bojxona rasmiylashtiruvi va hujjatlar, to'lov usullari va valyuta,
+      tannarx va marja hisobi, tipik xatolar va firibgarlik sxemalari.
+
+      Har post — bitta aniq maslahat: o'quvchi bugun qo'llay oladigan narsa,
+      umumiy "Xitoy bilan ishlash foydali" turidagi gap emas.
+
+      MUHIM CHEKLOV: bojxona stavkalari, limitlar, soliq foizlari va rasmiy
+      talablar tez-tez o'zgaradi. Aniq raqam faqat manbada bo'lsa yoziladi va
+      yoniga manba sanasi qo'shiladi. Manbada yo'q raqamni O'YLAB TOPMANG —
+      uning o'rniga jarayonni va nimaga e'tibor berishni tushuntiring.
+    audience: >
+      Xitoydan tovar keltiradigan yoki keltirmoqchi bo'lgan O'zbekistonlik
+      tadbirkorlar: kichik do'kon egalari, marketpleys sotuvchilari, endi
+      boshlayotganlar va yiliga bir necha partiya olib keladigan o'rta biznes.
+    # 1-agent faqat shu domenlardan izlaydi. Bo'sh qoldirsangiz — cheklovsiz.
+    # Kargo/bojxona mavzusi uchun cheklovsiz qoldirish tavsiya etiladi:
+    # o'zbek tilidagi manbalar oz, tor ro'yxat mavzu topilmasligiga olib keladi.
+    allowed_domains: []
+
+post:
+  min_chars: 600
+  max_chars: 900
+  # Telegram caption limiti 1024 belgi. Undan oshsa matn alohida yuboriladi.
+  emoji_level: "medium"   # none | low | medium | high
+
+  # Xitoycha iyerogliflar. Tovar, sayt va bozor nomlari uchun ruxsat
+  # (义乌, 阿里巴巴, 拼多多 kabi) — nazoratchi ularni rad etmaydi.
+  # Lekin post butunlay xitoychaga aylanib ketmasligi kerak.
+  #   max_chinese_chars — postdagi iyerogliflar soni shundan oshmasin
+  #   max_chinese_ratio — barcha harflarga nisbatan ulushi shundan oshmasin
+  # Ikkalasidan biri buzilsa — post rad etiladi va qayta yoziladi.
+  # Butunlay o'chirish uchun ikkalasini ham null qiling.
+  max_chinese_chars: 40
+  max_chinese_ratio: 0.15
+  cta: "Savolingiz bo'lsa — izohda yozing 👇  ☎️ +998 88 027 66 66"
+  hashtags: ["#xitoy_savdo", "#kargo"]
+
+image:
+  model: "gemini-2.5-flash-image"   # yoki gemini-3.1-flash-image / gemini-3-pro-image
+  aspect_ratio: "1:1"               # 1:1 | 4:5 | 16:9
+  style: >
+    Zamonaviy, toza, minimalist illyustratsiya — xalqaro savdo va logistika
+    dunyosidan: konteynerlar, kartonli qutilar, yuk mashinalari, ulgurji bozor
+    javonlari, xarita va yo'nalish chiziqlari. Yumshoq gradientlar,
+    to'q ko'k va issiq qumrang-jigarrang ranglar, oq fon.
+    Real fotosurat emas, stok-illyustratsiya hissi ham bo'lmasin.
+    Rasmda MATN, HARF, RAQAM, BAYROQ yoki LOGOTIP BO'LMASIN.
+    Bitta aniq metafora — sahna to'ldirilgan bo'lmasin.
+
+audio:
+  enabled: true
+  voice: "uz-UZ-SardorNeural"   # yoki uz-UZ-MadinaNeural
+  rate: "+0%"
+  pitch: "+0%"
+  # Audio matni: post matnining o'zi (havola va hashtaglarsiz tozalanadi)
+
+video:
+  # Rasm + audio -> MP4. Telegram bitta postda ikkalasini birga qo'ya olmaydi,
+  # shuning uchun ularni videoga birlashtiramiz.
+  enabled: true
+  fade_seconds: 0.4
+  tail_seconds: 0.8        # audio tugagach video shuncha davom etadi
+
+llm:
+  # Matn agentlari (1, 2, 5) uchun model.
+  # gemini-2.5-flash eskirgan va 404 qaytaradi — 3.6 yoki 3.7 ishlating.
+  model: "gemini-3.6-flash"
+  qc_model: "gemini-3.6-flash"
+  max_rewrites: 2          # 5-agent rad etsa, 2-agent necha marta qayta yozadi
+
+  # Sifat chegaralari (1–10).
+  # qc_min_score      — oddiy urinishda o'tish uchun kerakli ball
+  # qc_last_chance    — OXIRGI urinishda shu balldan yuqori bo'lsa qabul qilinadi
+  #                     va adminga "past ball" belgisi bilan yuboriladi.
+  #                     null qilsangiz — eski qat'iy rejim, post umuman chiqmaydi.
+  qc_min_score: 7
+  qc_last_chance: 6
+
+schedule:
+  # Post chiqish vaqti (kanal vaqt zonasida). Bir nechta bo'lsa ro'yxat qiling.
+  publish_times: ["09:00"]
+
+  # --- Quyidagilar faqat ichki jadval (src.scheduler) uchun ---
+  # Post chiqishidan necha soat oldin tayyorlansin va tasdiqqa yuborilsin.
+  # 13 = 09:00 chiqadigan post kechqurun 20:00 da tayyorlanadi, tasdiqqa tun qoladi.
+  generate_lead_hours: 13
+  # Yoki aniq soatlarni o'zingiz belgilang (bunda generate_lead_hours hisobga olinmaydi):
+  # generate_times: ["20:00"]
+
+approval:
+  # opt_out — post chiqishidan oldin sizga ko'rsatiladi. HECH NARSA BOSMASANGIZ
+  #           belgilangan vaqtda o'zi chiqadi. Faqat "Qayta ishlash" bosilsa
+  #           to'xtatiladi va qaytadan yoziladi.
+  # opt_in  — post faqat siz "Chiqarish" tugmasini bossangiz chiqadi.
+  # off     — hech qanday ko'rsatish yo'q, to'g'ridan-to'g'ri chiqadi.
+  mode: "opt_out"
+
+  # Post chiqishidan necha daqiqa oldin sizga yuborilsin.
+  # Ko'rib chiqish uchun shuncha vaqtingiz bo'ladi.
+  preview_minutes: 10
+
+  # Postni tayyorlash (rasm + ovoz + video) uchun qo'shimcha zaxira vaqt.
+  # Tizim ko'rsatishdan shuncha oldin ishga tushadi, shunda post aynan
+  # preview_minutes qolganda emas, undan sal oldinroq yetib boradi.
+  generate_buffer_minutes: 5
+
+  # "Qayta ishlash" bosilgandan keyin yangi variant necha daqiqada chiqadi.
+  # Asl chiqish vaqti o'tib ketgan bo'lsa ham post baribir chiqadi.
+  rewrite_review_minutes: 10
+
+  # Bir post uchun qayta ishlash chegarasi. Chegaraga yetganda tizim
+  # oxirgi variantni baribir chiqaradi va sizga xabar beradi.
+  # 2-marta bosilganda tizim mavzuni ham almashtiradi — demak muammo
+  # matnda emas, mavzuning o'zida.
+  max_rewrites: 3

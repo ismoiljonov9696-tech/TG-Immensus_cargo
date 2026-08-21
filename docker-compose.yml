@@ -1,0 +1,12 @@
+services:
+  autopost:
+    build: .
+    container_name: tg-autopost
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      # Arxiv, navbat va sozlamalar konteyner o'chsa ham saqlanib qoladi
+      - ./data:/app/data
+      - ./config.yaml:/app/config.yaml:ro
+      - ./style:/app/style:ro
+      - ./logs:/app/logs

@@ -20,6 +20,7 @@ LOG = logging.getLogger("store")
 ARCHIVE = DATA / "archive.json"
 PENDING = DATA / "pending.json"
 OFFSET = DATA / "tg_offset.json"
+META = DATA / "state.json"
 
 
 def _read(path: Path, default: Any) -> Any:
@@ -88,7 +89,28 @@ def remember(title: str, rubric: str, post_id: str, sources: list[dict] | None =
 #  Navbat (tasdiq kutayotgan postlar)
 # --------------------------------------------------------------------- #
 def pending() -> list[dict]:
-    return _read(PENDING, [])
+    """Navbat. Fayl buzilgan bo'lsa ham hech qachon yiqilmaydi.
+
+    pending.json ro'yxat bo'lishi kerak: [ {...}, {...} ].
+    Agar u yakka obyekt bo'lib qolgan bo'lsa (qo'lda tahrirlanganda shunday
+    bo'ladi), uni ro'yxatga o'raymiz — aks holda kod uni harflar bo'yicha
+    aylanib chiqib, butun tsikl yiqiladi va na tugmalar o'qiladi,
+    na post chiqadi.
+    """
+    raw = _read(PENDING, [])
+    if isinstance(raw, dict):
+        LOG.warning("pending.json yakka obyekt ekan — ro'yxatga o'raldi")
+        raw = [raw]
+        _write(PENDING, raw)
+    if not isinstance(raw, list):
+        LOG.error("pending.json shakli noto'g'ri (%s) — tozalandi", type(raw).__name__)
+        _write(PENDING, [])
+        return []
+    good = [i for i in raw if isinstance(i, dict) and i.get("id")]
+    if len(good) != len(raw):
+        LOG.warning("pending.json da %d ta yaroqsiz yozuv tashlandi", len(raw) - len(good))
+        _write(PENDING, good)
+    return good
 
 
 def save_pending(items: list[dict]) -> None:
@@ -148,3 +170,31 @@ def set_offset(value: int) -> None:
 
 def new_post_id() -> str:
     return datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+
+
+# --------------------------------------------------------------------------- #
+#  Tizim holati — kuzatuv uchun
+# --------------------------------------------------------------------------- #
+def meta() -> dict:
+    """Umumiy holat: oxirgi chiqish, oxirgi xato, pauza, ogohlantirish vaqti."""
+    return _read(META, {})
+
+
+def set_meta(**changes) -> dict:
+    data = meta()
+    data.update(changes)
+    _write(META, data)
+    return data
+
+
+def record_success(post_id: str, title: str) -> None:
+    set_meta(last_publish_at=now_iso(), last_publish_id=post_id,
+             last_publish_title=title, last_error=None, alerted_at=None)
+
+
+def record_error(stage: str, message: str) -> None:
+    set_meta(last_error={"stage": stage, "message": message[:500], "at": now_iso()})
+
+
+def is_paused() -> bool:
+    return bool(meta().get("paused"))

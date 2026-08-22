@@ -23,5 +23,45 @@
     "admin_message_id": 4,
     "published_at": "2026-08-22T04:32:57+00:00",
     "updated_at": "2026-08-22T04:32:57+00:00"
+  },
+  {
+    "id": "20260822-043648",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "30/70 to'lov sharti va Xitoy omborida inspektsiya (QC)",
+    "text": "🛑 Tovarning 100% pulini zavodga birdan o'tkazmang — bu eng katta xato!\n\nTovar O'zbekistonga kelib bo'lgach, brak mahsulotni Xitoyga qaytarish imkonsizga teng. Nazorat yuk Xitoy omboridan chiqmasdan turib bajarilishi shart.\n\nXavfsiz 30/70 to'lov va inspektsiya (QC) sxemasi:\n\n1️⃣ 30% bo'nak — buyurtma berish va ishlab chiqarishni boshlash uchun to'lanadi.\n2️⃣ QC inspektsiyasi — tovar tayyor bo'lgach, Xitoydagi mustaqil inspektor omborga boradi.\n3️⃣ Foto va video hisobot — inspektor sifat va nuqsonlarni tekshirib, sizga to'liq hisobot beradi.\n4️⃣ 70% yakuniy to'lov — faqat hisobotni ko'rib, rozi bo'lganingizdan keyin o'tkaziladi.\n\n✅ Natijada: Brak tovar Xitoyning o'zida aniqlanib, zavodga almashtirtiriladi. Toshkentga faqat 100% sifatli yuk keladi.\n\nSavolingiz bo'lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "text",
+    "file_id": null,
+    "media_path": null,
+    "topic": {
+      "title": "30/70 to'lov sharti va Xitoy omborida inspektsiya (QC)",
+      "angle": "100% oldindan to'lov qilmasdan, 30% bo'nak berish va qolgan 70% ni mustaqil inspektor tovarlarni tekshirib foto/video hisobot bergandan keyin o'tkazish sxemasi.",
+      "why_now": "Tovar O'zbekistonga kelib bo'lgach, brak tovarlarni Xitoyga qaytarish imkonsizga teng.",
+      "research": "Xitoydan tovar import qiluvchi O‘zbekistonlik tadbirkorlar uchun Telegram kanaliga mos, har biri bitta aniq amaliy harakatga yo‘naltirilgan 8 ta dolzarb mavzu nomzodi:\n\n---\n\n### 1. \"Golden Sample\" qoidasi: Zavod partiya sifatini pasaytirib yubormasligi uchun nima qilish kerak?\n* **Qaysi burchakdan yoritiladi:** Ommaviy partiyaga buyurtma berishdan oldin etalon namuna (sample) olish, uni rasmlar/videolar va texnik ko'rsatkichlar bilan shartnomada \"Golden Sample\" sifatida belgilash hamda 1 nusxasini zavodda, 1 nusxasini o'zida saqlash tartibi.\n* **Nega aynan hozir dolzarb:** Ko'plab yangi boshlayotgan sotuvchilar bitta sifatli namunani ko'rib hotirjam bo'lishadi, lekin ommaviy partiya kelganda material yoki detallar arzonrog'iga almashtirilgani ma'lum bo'ladi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 2. Kargo va hajmiy vazn (CBM / Volumetric weight): Keraksiz hajm uchun ortiqcha to'lamaslik usuli\n* **Qaysi burchakdan yoritiladi:** Logistikada tovarning faqat faktik og'irligi emas, balki quti hajmi (CBM) bo'yicha narx hisoblanishi. Sotuvchidan tovar qutisi o'lchamlarini oldindan olib, hajmiy vazn formulasini qo'llash va qadoqni ixchamlashtirish bo me'yori.\n* **Nega aynan hozir dolzarb:** Plastmassa, o'yinchoq, kiyim-kechak kabi engil lekin katta hajmli tovarlar keltirayotgan tadbirkorlar kargo omborida kutilmaganda 2-3 baravar yuqori hisob-kitobga duch kelishmoqda.\n* **Foydalilik bahosi:** 10/10\n\n---\n\n### 3. Uzum va marketpleyslar uchun Xitoy zavodining o'zida shtrix-kod va etiketka urdirish\n* **Qaysi burchakdan yoritiladi:** Mahsulot Toshkentga kelgach omborda qayta qadoqlashga vaqt va pul sarflamaslik uchun Xitoydagi etkazib beruvchiga shtrix-kod (barcode), stiker va o'zbek tilidagi qisqa ma'lumotni ishlab chiqarish bosqichidayoq yopishtirish bo'yicha texnik topshiriq (TS) berish.\n* **Nega aynan hozir dolzarb:** O'zbekistonda marketpleyslar (Uzum va b.) qat'iy markirovka va shtrix-kod talablarini kuchaytirgan; local omborlarda stiker yopishtirish xizmati qimmat va vaqtni oladi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 4. Alipay'da \"Pay for Friend\" (代付 - Daifu) orqali xavfsiz to'lov qilish tartibi\n* **Qaysi burchakdan yoritiladi:** Xitoy bank kartasi bo'lmagan tadbirkorlar uchun 1688 yoki vositachilar orqali \"Do'sti uchun to'lov\" (Daifu) tugmasidan foydalanish, to'lov kvitansiyasini saqlash va firibgar vositachilarga aldanib qolmaslik bo'yicha bosqichma-bosqich yo'riqnoma.\n* **Nega aynan hozir dolzarb:** Ko'pchilik O'zbekistonlik kichik sotuvchilarning shaxsiy Alipay hisoblarida valyuta cheklovlari bo'lgani sababli uchinchi shaxslar orqali to'lov qilishadi va tez-tez to'lov \"muzlab\" qolishi muammosiga uchraydi.\n* **Foydalilik bahosi:** 8/10\n\n---\n\n### 5. Uzoq masofali transport uchun qadoqlash: Mu Xiang (木箱) va burchak himoyasi topshirig'i\n* **Qaysi burchakdan yoritiladi:** Xitoydan O'zbekistonga tranzit (avto yoki J D) paytida tovarlar ezilmasligi uchun zavodga qanday qadoqlash turini (yog'och karkas, qattiq karton burchakliklar, pufakchali plyonka) buyurtma qilish va buni logistika omboriga topshirish.\n* **Nega aynan hozir dolzarb:** Tranzit yo'llarida yuklarni qayta ortish jarayonida nozik va mo'rt tovarlarning shikastlanish ko'rsatgichi yuqori; yaxshi qadoq sug'urta va yo'qotish xarajatlarini keskin kamaytiradi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 6. TIF TN (HS Code) kodini Xitoy va O'zbekiston bojxona bazasida oldindan solishtirish\n* **Qaysi burchakdan yoritiladi:** Xitoylik sotuvchi bergan HS Code har doim ham O'zbekiston bojxona kodiga 100% mos kelmasligini tushuntirish. Deklarant bilan birgalikda tovar tavsifi bo me'yori bo'yicha kodni oldindan aniqlab, bojxona rasmiylashtiruvidagi kutilmagan jarimalardan saqlanish.\n* **Nega aynan hozir dolzarb:** Bojxonada kod noto'g'ri ko'rsatilsa, tovar \"qizil yo'lak\"ka tushadi, yuk omborda ushlanib qoladi va qo'shimcha jarimalar solinadi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 7. 30/70 to'lov sharti va Xitoy omborida uchinchi tomon inspektsiyasi (QC)\n* **Qaysi burchakdan yoritiladi",
+      "sources": [
+        {
+          "title": "expresscargo.uz",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFggKKeF5-XrJsZexNa3gURIBok4PKBStM5BhI8UipAqGxfI7QqBQ5jY0l4TuXyrtlSmB1d0IyA5lsD-VRJdbjc6O7LFn3gjWrJ_y89HmY="
+        },
+        {
+          "title": "meest.cn",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiH9_K5PIN-lP95hdiCGyuXZZc6fhkfvtxXI8UufcMoKAU_roD_7W2W50PaYUlh96IqwgNx0QFuy9Qa2AnzakIGU7ni94ckh9pyYx65k4PT0Ph0yEXTHilRgOWoMzYZLqFr8oxobxDKx1QjqYbocWD6faFoPCd8s5yUZIFMy5LDERn"
+        },
+        {
+          "title": "meest.cn",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfcho72AmdyEcAfyX87Rp9V11N0dh25wHQOc7Mhk1qvAIUAJlZ9ZWb-Shc1-nQlFVbCk78WHqyumdqRyJAFzs7y6CTGZf4WOlCONt216LB7NZBHzmVKhcb5yPNL4U="
+        },
+        {
+          "title": "transitpro.uz",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQnvJfQB8jO5Ov1Pxbz-HMfHBnK4BFwDpBS4WeBmelPc1URz_F5NoCNE_Gufs80ObYTWLftjlxALGsIzslSBt6b1jtd48PLPPZZVhsKVs="
+        }
+      ]
+    },
+    "qc_score": 10,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-08-23T09:00:00+05:00",
+    "created_at": "2026-08-22T04:39:33+00:00",
+    "status": "preview",
+    "admin_message_id": 12
   }
 ]

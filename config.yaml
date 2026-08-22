@@ -98,7 +98,9 @@ image:
     width_percent: 18          # rasm kengligiga nisbatan logo kengligi
     margin_percent: 4          # chetdan masofa
     opacity: 0.95
-    backdrop: true             # logo ostiga yumshoq oq plashka — har qanday fonda o'qiladi
+    # Logo ostidagi oq plashka. Shaffof fonli logo uchun KERAK EMAS —
+    # u ramka bo'lib ko'rinadi. Faqat logo ko'rinmay qolsa true qiling.
+    backdrop: false
 
 audio:
   enabled: true

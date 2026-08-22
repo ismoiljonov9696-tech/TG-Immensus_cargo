@@ -56,7 +56,7 @@ post:
   hashtags: ["#xitoy_savdo", "#kargo"]
 
 image:
-  model: "gemini-2.5-flash-image"   # yoki gemini-3.1-flash-image / gemini-3-pro-image
+  model: "gemini-3.6-flash-image"   # yoki gemini-3.1-flash-image / gemini-3-pro-image
   aspect_ratio: "1:1"               # 1:1 | 4:5 | 16:9
   style: >
     Zamonaviy, toza, minimalist illyustratsiya — xalqaro savdo va logistika

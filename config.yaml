@@ -56,16 +56,49 @@ post:
   hashtags: ["#xitoy_savdo", "#kargo"]
 
 image:
-  model: "gemini-3.1-flash-image"   # yoki gemini-3.1-flash-image / gemini-3-pro-image
+  # DIQQAT: rasm modellari matn modellaridan boshqacha nomlanadi.
+  # "gemini-3.6-flash-image" kabi nom YO'Q — faqat quyidagilar mavjud.
+  model: "gemini-3.1-flash-image"
+  # Asosiy model 404 bersa, shu ro'yxatdan navbat bilan sinaladi.
+  # Bitta noto'g'ri nom butun rasmni yo'qotmasligi uchun.
+  fallback_models:
+    - "gemini-3.1-flash-lite-image"
+    - "gemini-3-pro-image"
+    - "gemini-2.5-flash-image"
   aspect_ratio: "1:1"               # 1:1 | 4:5 | 16:9
+
+  # Sahnada odam bo'lsinmi: never | sometimes | often
+  # "often" — o'zbek/xitoylik tadbirkor, ombor ishchisi, sotuvchi.
+  # Tabiiy, hujjatli kayfiyatda. Rasmni jonli qiladi va e'tibor tortadi.
+  people: "often"
+
+  # Brend ranglari — rasm shu palitrada chiziladi
+  brand_colors: >
+    deep navy blue, warm sand and amber, muted brick red as a single accent,
+    off-white background, soft neutral shadows
+
   style: >
-    Zamonaviy, toza, minimalist illyustratsiya — xalqaro savdo va logistika
-    dunyosidan: konteynerlar, kartonli qutilar, yuk mashinalari, ulgurji bozor
-    javonlari, xarita va yo'nalish chiziqlari. Yumshoq gradientlar,
-    to'q ko'k va issiq qumrang-jigarrang ranglar, oq fon.
-    Real fotosurat emas, stok-illyustratsiya hissi ham bo'lmasin.
-    Rasmda MATN, HARF, RAQAM, BAYROQ yoki LOGOTIP BO'LMASIN.
-    Bitta aniq metafora — sahna to'ldirilgan bo'lmasin.
+    Editorial illustration with real depth and texture — not flat corporate
+    clipart, not generic stock vector. Tactile materials: kraft cardboard,
+    steel, packing tape, worn concrete, fabric. Warm directional light with
+    soft shadows. Rich but restrained palette. Cinematic and specific —
+    it should look like it was made for THIS one story and no other.
+    Uncluttered: one clear subject, generous negative space.
+
+  # Logotip. Rasm chizilgach ustiga QO'YILADI — AI ga chizdirilmaydi,
+  # chunki u har safar buzuq va boshqacha chiqadi.
+  # Faylni repoga qo'ying: assets/logo.png (shaffof fonli PNG eng yaxshisi)
+  logo:
+    enabled: true
+    # Fayl shu yo'lda topilmasa, tizim o'zi qidiradi:
+    # assets/logo.png, logo.png, logo.jpg — reponing ildizidan ham.
+    # Ya'ni faylni qayerga qo'ysangiz ham topiladi.
+    path: "assets/logo.png"
+    position: "bottom-right"   # bottom-right | bottom-left | top-right | top-left
+    width_percent: 18          # rasm kengligiga nisbatan logo kengligi
+    margin_percent: 4          # chetdan masofa
+    opacity: 0.95
+    backdrop: true             # logo ostiga yumshoq oq plashka — har qanday fonda o'qiladi
 
 audio:
   enabled: true
@@ -83,7 +116,8 @@ video:
 
 llm:
   # Matn agentlari (1, 2, 5) uchun model.
-    model: "gemini-3.6-flash"
+  # gemini-2.5-flash eskirgan va 404 qaytaradi — 3.6 yoki 3.7 ishlating.
+  model: "gemini-3.6-flash"
   qc_model: "gemini-3.6-flash"
   max_rewrites: 2          # 5-agent rad etsa, 2-agent necha marta qayta yozadi
 

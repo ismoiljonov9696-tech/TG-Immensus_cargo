@@ -240,6 +240,83 @@ ko'proq vaqtingiz bo'ladi, lekin post ham shuncha oldin tayyorlanadi.
 
 ---
 
+## 3b. Tizim ishlayotganini qanday bilasiz
+
+Uch qatlamli nazorat. Hech narsani ochib ko'rish shart emas — hammasi
+Telegramga keladi.
+
+**1. Har bir chiqishda xabar**
+
+```
+📤 Kanalga chiqdi: MOQ ni tushirishning 4 usuli
+```
+
+Bu xabar kelmasa — post chiqmagan.
+
+**2. Xato bo'lsa darhol xabar**
+
+```
+⚠️ Post tayyorlanmadi
+
+Bosqich : mavzu izlash (1-agent)
+Sabab   : 429 RESOURCE_EXHAUSTED: kunlik limit tugadi
+Vaqt    : 21.08 08:45
+
+Kanal bu safar bo'sh qoladi.
+Qo'lda ishga tushirish: Actions → «Post tayyorlash» → Run workflow
+```
+
+Har bir bosqich alohida nomlanadi, ya'ni qaysi agent yiqilgani darhol ma'lum.
+Agar jarayon butunlay yiqilib, Python xabar yubora olmasa — GitHub workflow
+o'zi zaxira xabar yuboradi, ichida loglar havolasi bilan.
+
+**3. Jimlik nazorati**
+
+Eng muhim qatlam: xato ham, xabar ham kelmay, tizim jimgina o'lib qolsa.
+Har tekshiruvda oxirgi post qachon chiqqani solishtiriladi. Kutilgan
+vaqtdan 3 soat oshsa:
+
+```
+🔕 30 soatdan beri post chiqmadi
+
+Oxirgi post: 20.08 09:00
+Oxirgi xato (mavzu izlash): 429 RESOURCE_EXHAUSTED
+
+Tekshiring: Actions → oxirgi ishga tushishlar qizil emasmi.
+/holat — batafsil
+```
+
+Bu ogohlantirish 12 soatda bir martadan ko'p yuborilmaydi — bezovta qilmaydi.
+
+### Bot buyruqlari
+
+Botga to'g'ridan-to'g'ri yozasiz:
+
+| Buyruq | Nima qiladi |
+|---|---|
+| `/holat` | Oxirgi post qachon chiqqan, navbatda nima bor, keyingi chiqish vaqti, oxirgi xato |
+| `/pauza` | Postlarni vaqtincha to'xtatadi — ta'tilga chiqsangiz yoki muammo bo'lsa |
+| `/davom` | Qaytadan yoqadi |
+| `/yordam` | Buyruqlar ro'yxati |
+
+`/holat` javobi:
+
+```
+📊 Tizim holati
+
+✅ Oxirgi post: 21.08 09:00 (5 soat oldin)
+    «MOQ ni tushirishning 4 usuli»
+📝 Navbatda: «Hajmli vazn qanday hisoblanadi» → 22.08 09:00
+🕘 Keyingi chiqish vaqti: 22.08 09:00
+
+📚 Arxivda 14 ta mavzu  ·  rejim: opt_out
+```
+
+Kuniga bir marta shu buyruqni yuborsangiz — tizim haqida bilishingiz
+kerak bo'lgan hamma narsani ko'rasiz.
+
+---
+
 ## 4. Lokal sinov
 
 ```bash
@@ -248,7 +325,7 @@ cp .env.example .env          # kalitlarni to'ldiring
 
 python -m src.main check      # ulanishlarni tekshiradi
 python -m src.main generate   # post tayyorlaydi
-python -m src.main status     # navbatni ko'rsatadi
+python -m src.main status     # holat va navbatni ko'rsatadi
 python -m src.main tick       # tugmalarni o'qiydi va chiqaradi
 ```
 
@@ -277,7 +354,9 @@ Hammasi `config.yaml` ichida:
 | `post.max_chinese_ratio` | Postdagi iyerogliflarning eng ko'p ulushi (0.15 = 15%) |
 | `post.max_chinese_chars` | Iyerogliflar soni chegarasi (faqat ulush ham yuqori bo'lsa ishlaydi) |
 | `image.model` | `gemini-2.5-flash-image`, `gemini-3.1-flash-image`, `gemini-3-pro-image` |
-| `image.style` | Rasm uslubi — brend ranglaringizni shu yerga yozing |
+| `image.style` | Rasm uslubi |
+| `image.brand_colors` | Brend palitrasi — rasm shu ranglarda chiziladi |
+| `image.logo.*` | Logotip: joyi, o'lchami, shaffofligi |
 | `audio.voice` | `uz-UZ-SardorNeural` (erkak) yoki `uz-UZ-MadinaNeural` (ayol) |
 | `video.enabled` | `false` qilsangiz rasm + alohida audio yuboriladi |
 | `llm.max_rewrites` | Nazoratchi rad etsa necha marta qayta yozilsin |
@@ -294,6 +373,38 @@ Kuniga 2 ta post kerak bo'lsa: `publish_times: ["09:00", "20:00"]` va
 
 ---
 
+## 5b. Logotip
+
+Logotipni AI ga chizdirib bo'lmaydi — u har safar boshqacha va buzuq chiqadi.
+Shuning uchun rasm chizilgandan **keyin** haqiqiy logo fayli ustiga qo'yiladi:
+har safar bir xil, aniq va o'zgarmas.
+
+Logotipni repoga qo'ying: **`assets/logo.png`**
+
+- **PNG**, foni shaffof (transparent) bo'lsa eng yaxshisi
+- Kengligi kamida **400px** — kichigi xira chiqadi
+- Kvadratga yaqin yoki gorizontal shakl yaxshi ishlaydi
+
+Fayl bo'lmasa rasm logosiz chiqaveradi — tizim to'xtamaydi.
+
+Sozlamalari `config.yaml` da:
+
+```yaml
+image:
+  logo:
+    path: "assets/logo.png"
+    position: "bottom-right"   # burchakni o'zgartirish
+    width_percent: 18          # kattaroq kerak bo'lsa 22-25
+    margin_percent: 4
+    opacity: 0.95
+    backdrop: true             # logo ostidagi oq plashka
+```
+
+`backdrop: false` qilsangiz plashka olib tashlanadi — logo to'g'ridan-to'g'ri
+rasm ustida turadi. Bu faqat logo har xil fonda ham o'qiladigan bo'lsa yaxshi.
+
+---
+
 ## 6. Fayllar
 
 ```
@@ -307,6 +418,8 @@ src/azure_tts.py         Azure Speech + matnni ovozga tayyorlash
 src/video.py             rasm + audio → MP4 (ffmpeg)
 src/telegram.py          Bot API
 src/store.py             arxiv, navbat, offset
+src/branding.py          logotipni rasmga qo'yish
+assets/logo.png          sizning logotipingiz
 src/main.py              orkestrator
 src/scheduler.py         ichki jadval — GitHub'siz ishlatish uchun
 

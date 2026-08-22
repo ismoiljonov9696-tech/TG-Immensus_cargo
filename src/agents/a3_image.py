@@ -20,9 +20,9 @@ import hashlib
 import logging
 from pathlib import Path
 
-from ..branding import apply_logo
+from ..branding import apply_logo, find_logo
 from ..config import ROOT
-from ..gemini import generate_image, generate_json
+from ..gemini import edit_image, generate_image, generate_json
 
 LOG = logging.getLogger("agent3")
 
@@ -79,8 +79,9 @@ IDEA_SCHEMA = {
         },
         "chosen": {"type": "STRING"},
         "prompt": {"type": "STRING"},
+        "has_person": {"type": "BOOLEAN"},
     },
-    "required": ["lesson", "ideas", "chosen", "prompt"],
+    "required": ["lesson", "ideas", "chosen", "prompt", "has_person"],
 }
 
 
@@ -90,29 +91,38 @@ def _pick_composition(seed: str) -> str:
 
 
 PEOPLE_RULES = {
-    "never": (
-        "Sahnada odam BO'LMASIN — faqat predmetlar va muhit."
-    ),
+    "never": "Sahnada odam BO'LMASIN — faqat predmetlar va muhit.",
+
+    # Standart. Odam MAVZU talab qilgandagina chiqadi.
     "sometimes": (
-        "Sahnada odam bo'lishi mumkin, lekin asosiy urg'u predmetda qolsin. "
-        "Odam bo'lsa — qo'llari yoki yelka ortidan ko'rinishi yetarli."
+        "ODAM QO'SHISH QOIDASI — o'ylab ko'ring, avtomatik qo'shmang:\n"
+        "  · Dars INSON HARAKATI haqida bo'lsa (o'lchash, tekshirish, "
+        "savdolashish, qadoqlash, hujjat imzolash) — odam bo'lsin, chunki "
+        "harakatni odamsiz ko'rsatib bo'lmaydi.\n"
+        "  · Dars PREDMET, HUJJAT, RAQAM yoki JARAYON haqida bo'lsa "
+        "(hajmli vazn, boj hujjatlari, quti o'lchami, narx) — ODAM KERAK EMAS. "
+        "Predmetning o'zi ko'rsatilsin, u kuchliroq ishlaydi.\n"
+        "  · Shubha bo'lsa — odamsiz qiling.\n"
+        "  · Odam bo'lsa: o'zbek yoki xitoylik ishchi/tadbirkor, ish paytida "
+        "tutilgan tabiiy lahza. Kameraga qaramasin, poza bermasin. Yuz "
+        "ko'rinishi mumkin, lekin umumlashgan — hech kimga o'xshamasin.\n"
+        "  · Odam bo'lsa, ustida SODDA BIR RANGLI ish kiyimi bo'lsin — "
+        "to'q ko'k yoki to'q sariq jilet, polo yoki futbolka. Ko'krak qismi "
+        "TOZA va BO'SH bo'lsin: na yozuv, na nishon, na logotip. "
+        "(Logotip keyin alohida qo'yiladi.)"
     ),
+
     "often": (
-        "Sahnada ODAM BO'LSIN — bu rasmni jonli qiladi va e'tibor tortadi.\n"
-        "  · Kim: o'zbek yoki markaziy osiyolik tadbirkor, xitoylik sotuvchi yoki "
-        "ombor ishchisi, savdo vakili. Ish kiyimida yoki oddiy kundalik kiyimda.\n"
-        "  · Qanday: tabiiy, hujjatli fotosurat kayfiyatida — ish qilayotgan "
-        "paytda tutilgan lahza. Kameraga poza bermasin, tabassum sun'iy bo'lmasin.\n"
-        "  · Yuz ko'rinishi mumkin, lekin umumlashgan bo'lsin — hech qanday "
-        "taniqli yoki real shaxsga o'xshamasin.\n"
-        "  · Yosh va jins turlicha bo'lsin: postlar ketma-ketligida bir xil "
-        "odam takrorlanmasin."
+        "Sahnada ODAM BO'LSIN — o'zbek yoki xitoylik ishchi, tadbirkor, "
+        "sotuvchi. Ish paytida tutilgan tabiiy lahza, kameraga poza bermasin. "
+        "Yuzi umumlashgan bo'lsin. Ustida sodda bir rangli ish kiyimi — "
+        "ko'krak qismi toza va bo'sh, hech qanday yozuv yoki nishonsiz."
     ),
 }
 
 
 def _describe(post_text: str, topic_title: str, cfg: dict,
-              composition: str, api_key: str, model: str) -> tuple[str, str, str]:
+              composition: str, api_key: str, model: str) -> tuple[str, str, str, bool]:
     """Rasm tavsifini tuzadi.
 
     Bir bosqichda emas, uch bosqichda:
@@ -156,6 +166,7 @@ Har biriga:
 BOSQICH 3 — chosen va prompt
 surprise eng yuqori bo'lganini tanlang (agar u darsni ham aniq ko'rsatsa).
 chosen — qaysi g'oya tanlanganini bir jumlada yozing.
+has_person — tanlangan sahnada odam bormi (yuz, gavda yoki qo'l). true/false.
 prompt — o'sha g'oyaning INGLIZ TILIDAGI rasm tavsifi, 60-95 so'z.
 
 prompt uchun talablar:
@@ -180,7 +191,8 @@ prompt uchun talablar:
     desc = (data.get("prompt") or "").strip().strip('"').strip()
     if not desc:
         raise ValueError("Rasm tavsifi bo'sh qaytdi")
-    return desc, data.get("lesson", ""), data.get("chosen", "")
+    return (desc, data.get("lesson", ""), data.get("chosen", ""),
+            bool(data.get("has_person")))
 
 
 def run(cfg: dict, post_text: str, out_path: Path, api_key: str,
@@ -189,11 +201,13 @@ def run(cfg: dict, post_text: str, out_path: Path, api_key: str,
     composition = _pick_composition(out_path.parent.name + topic_title)
     LOG.info("Kompozitsiya: %s", composition[:60])
 
-    desc, lesson, chosen = _describe(post_text, topic_title or post_text[:80], cfg,
-                                     composition, api_key, cfg["llm"]["model"])
+    desc, lesson, chosen, has_person = _describe(
+        post_text, topic_title or post_text[:80], cfg,
+        composition, api_key, cfg["llm"]["model"])
     LOG.info("Post darsi   : %s", lesson[:100])
     LOG.info("Tanlangan    : %s", chosen[:100])
     LOG.info("Rasm tavsifi : %s", desc[:140])
+    LOG.info("Odam bormi   : %s", "ha" if has_person else "yo'q")
 
     full_prompt = (
         f"{desc}\n\n"
@@ -217,5 +231,58 @@ def run(cfg: dict, post_text: str, out_path: Path, api_key: str,
     out_path.write_bytes(data)
     LOG.info("Rasm saqlandi: %s (%.0f KB, model: %s)", out_path.name, len(data) / 1024, used)
 
-    apply_logo(out_path, cfg, ROOT)
+    on_clothing = _logo_on_clothing(cfg, out_path, has_person, api_key)
+    if not on_clothing:
+        apply_logo(out_path, cfg, ROOT)      # burchakka qo'yish — kafolatlangan yo'l
     return out_path, desc
+
+
+def _logo_on_clothing(cfg: dict, image_path: Path, has_person: bool,
+                      api_key: str) -> bool:
+    """Sahnada odam bo'lsa, logotipni uning kiyimiga joylashtiradi.
+
+    Burchakka yopishtirish bilan farqi: bu yerda model logotipni matoning
+    burmalariga, yorug'ligiga va istiqboliga moslab chizadi — go'yo kiyimda
+    haqiqatan bosilgandek. Ikkita rasm kiritiladi: sahna va logotip fayli.
+
+    Ishlamasa False qaytaradi va logotip odatdagidek burchakka qo'yiladi.
+    """
+    logo_cfg = (cfg.get("image") or {}).get("logo") or {}
+    if not logo_cfg.get("enabled", True) or not logo_cfg.get("on_clothing", True):
+        return False
+    if not has_person:
+        return False
+
+    logo_path = find_logo(cfg, ROOT)
+    if logo_path is None:
+        return False
+
+    prompt = (
+        "Take the FIRST image (the photograph) and place the logo from the "
+        "SECOND image onto the clothing of the person — on the chest of the "
+        "vest, polo or t-shirt, or on the sleeve if the chest is not visible.\n"
+        "Make it look genuinely printed or embroidered on the fabric: it must "
+        "follow the folds and curvature of the cloth, match the lighting and "
+        "shadows of the scene, and share the same perspective as the garment.\n"
+        "Keep it modest in size — about the width of a hand's palm on the chest.\n"
+        "Change NOTHING else: the person, pose, background, colors and framing "
+        "must stay exactly as they are. Do not add any other text, letters or "
+        "marks anywhere in the picture."
+    )
+    img_cfg = cfg["image"]
+    try:
+        result = edit_image(
+            prompt,
+            [image_path.read_bytes(), logo_path.read_bytes()],
+            api_key,
+            model=img_cfg["model"],
+            fallbacks=img_cfg.get("fallback_models") or [],
+        )
+    except Exception as exc:                              # noqa: BLE001
+        LOG.warning("Logotipni kiyimga qo'yib bo'lmadi (%s) — burchakka qo'yiladi",
+                    str(exc)[:110])
+        return False
+
+    image_path.write_bytes(result)
+    LOG.info("Logotip kiyimga joylashtirildi")
+    return True

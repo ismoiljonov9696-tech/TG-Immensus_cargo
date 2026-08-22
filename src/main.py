@@ -83,14 +83,19 @@ def next_publish_time(cfg: dict) -> datetime:
 
 
 def notify(secrets, text: str) -> None:
-    """Adminga xizmat xabari. Xato bo'lsa jim yutiladi — asosiy ishni to'xtatmasin."""
-    if not secrets.admin_chat_id or not secrets.telegram_token:
+    """Barcha adminlarga xizmat xabari.
+
+    Xato bo'lsa jim yutiladi — asosiy ishni to'xtatmasin.
+    """
+    if not secrets.admins or not secrets.telegram_token:
         LOG.warning("Adminga xabar yuborilmadi (chat ID yo'q): %s", text[:80])
         return
-    try:
-        Bot(secrets.telegram_token).send_message(secrets.admin_chat_id, text)
-    except Exception as exc:                              # noqa: BLE001
-        LOG.error("Adminga xabar yuborilmadi: %s", exc)
+    bot = Bot(secrets.telegram_token)
+    for chat in secrets.admins:
+        try:
+            bot.send_message(chat, text)
+        except Exception as exc:                          # noqa: BLE001
+            LOG.error("Adminga xabar yuborilmadi (%s): %s", chat, exc)
 
 
 def report_text(cfg: dict) -> str:
@@ -269,13 +274,27 @@ def _short_reason(exc: Exception) -> str:
 
 def send_preview(cfg: dict, secrets, bot: Bot, post: dict,
                  media: Path | None, kind: str, header: str) -> None:
-    """Postni adminga ko'rish uchun yuboradi va file_id ni saqlaydi."""
-    mode = mode_of(cfg)
-    buttons = approval_buttons(post["id"], mode)
-    info = a6_publish.send_draft(bot, secrets.admin_chat_id, post, media, kind, buttons)
-    post.update(file_id=info["file_id"], kind=info["kind"],
-                admin_message_id=info["message_id"])
-    bot.send_message(secrets.admin_chat_id, header)
+    """Postni barcha adminlarga ko'rish uchun yuboradi.
+
+    Media faqat BIRINCHI adminga yuklanadi. Qolganlariga Telegram qaytargan
+    file_id yuboriladi — qayta yuklash bo'lmaydi, tez va arzon.
+
+    Tugmalar hammasida bo'ladi: qaysi admin bossa ham qaror qabul qilinadi.
+    """
+    buttons = approval_buttons(post["id"], mode_of(cfg))
+    source: Path | str | None = media
+
+    for i, chat in enumerate(secrets.admins):
+        try:
+            info = a6_publish.send_draft(bot, chat, post, source, kind, buttons)
+            if i == 0:
+                post.update(file_id=info["file_id"], kind=info["kind"],
+                            admin_message_id=info["message_id"])
+                if info["file_id"]:
+                    source = info["file_id"]        # keyingilariga qayta yuklamaymiz
+            bot.send_message(chat, header)
+        except Exception as exc:                          # noqa: BLE001
+            LOG.error("Ko'rish xabari yuborilmadi (%s): %s", chat, exc)
 
 
 def preview_header(cfg: dict, post: dict, verdict: dict, when: datetime,
@@ -345,8 +364,9 @@ def cmd_check(cfg: dict) -> int:
         report("Telegram bot", False, "TELEGRAM_BOT_TOKEN yo'q")
 
     need_admin = mode_of(cfg) != "off"
-    report("Admin chat ID", bool(secrets.admin_chat_id) or not need_admin,
-           "" if secrets.admin_chat_id else "TELEGRAM_ADMIN_CHAT_ID yo'q — ko'rsatish ishlamaydi")
+    n = len(secrets.admins)
+    report("Admin chat ID", bool(n) or not need_admin,
+           f"{n} ta admin" if n else "TELEGRAM_ADMIN_CHAT_ID yo'q — ko'rsatish ishlamaydi")
 
     if secrets.gemini_key:
         try:
@@ -478,7 +498,7 @@ def cmd_generate(cfg: dict, force: bool = False, now_flag: bool = False) -> int:
         post["status"] = "ready"
         LOG.info("Ko'rsatish o'chirilgan — belgilangan vaqtda chiqadi")
     else:
-        if not secrets.admin_chat_id:
+        if not secrets.admins:
             LOG.error("TELEGRAM_ADMIN_CHAT_ID yo'q — ko'rsatib bo'lmaydi")
             return 3
         post["status"] = "preview"
@@ -495,8 +515,16 @@ def cmd_generate(cfg: dict, force: bool = False, now_flag: bool = False) -> int:
 # --------------------------------------------------------------------------- #
 #  tick — qarorlar, qayta ishlash, chiqarish
 # --------------------------------------------------------------------------- #
-def handle_command(cfg: dict, bot: Bot, chat_id: str, text: str) -> bool:
-    """Botga yozilgan buyruqlar: /holat, /pauza, /davom, /yordam."""
+def handle_command(cfg: dict, bot: Bot, chat_id: str, text: str,
+                   admins: tuple[str, ...] = ()) -> bool:
+    """Botga yozilgan buyruqlar: /holat, /pauza, /davom, /yordam.
+
+    Faqat adminlar ishlata oladi — begona odam botni topib
+    /pauza yozib qo'ymasligi uchun.
+    """
+    if admins and str(chat_id) not in admins:
+        LOG.info("Begona chatdan buyruq keldi, e'tiborsiz qoldirildi: %s", chat_id)
+        return False
     cmd = text.strip().split()[0].lower().lstrip("/").split("@")[0]
 
     if cmd in ("holat", "status"):
@@ -517,7 +545,7 @@ def handle_command(cfg: dict, bot: Bot, chat_id: str, text: str) -> bool:
     return True
 
 
-def collect_decisions(cfg: dict, bot: Bot) -> int:
+def collect_decisions(cfg: dict, bot: Bot, admins: tuple[str, ...] = ()) -> int:
     updates = bot.get_updates(offset=store.offset())
     if not updates:
         return 0
@@ -529,7 +557,7 @@ def collect_decisions(cfg: dict, bot: Bot) -> int:
         msg = upd.get("message")
         if msg and isinstance(msg.get("text"), str) and msg["text"].startswith("/"):
             chat_id = str((msg.get("chat") or {}).get("id", ""))
-            if chat_id and handle_command(cfg, bot, chat_id, msg["text"]):
+            if chat_id and handle_command(cfg, bot, chat_id, msg["text"], admins):
                 handled += 1
             continue
 
@@ -608,10 +636,8 @@ def process_rewrites(cfg: dict, secrets, bot: Bot) -> int:
             LOG.error("Qayta yozib bo'lmadi: %s", item["id"])
             store.update_pending(item["id"], status="error",
                                  error="qayta yozishda sifat nazoratidan o'tmadi")
-            if secrets.admin_chat_id:
-                bot.send_message(secrets.admin_chat_id,
-                                 f"⚠️ <code>{item['id']}</code> qayta yozilmadi — "
-                                 f"sifat nazoratidan o'tmadi. Post chiqmaydi.")
+            notify(secrets, f"⚠️ <code>{item['id']}</code> qayta yozilmadi — "
+                            f"sifat nazoratidan o'tmadi. Post chiqmaydi.")
             continue
 
         text, verdict, media, kind, warnings = built
@@ -627,7 +653,7 @@ def process_rewrites(cfg: dict, secrets, bot: Bot) -> int:
                 "publish_at": when.isoformat(),
                 "status": "preview" if mode_of(cfg) != "off" else "ready"}
 
-        if mode_of(cfg) != "off" and secrets.admin_chat_id:
+        if mode_of(cfg) != "off" and secrets.admins:
             header = preview_header(cfg, post, verdict, when, warnings)
             if rewrites >= limit:
                 header += ("\n\n⚠️ Qayta ishlash chegarasiga yetdi — "
@@ -724,10 +750,9 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
             store.update_pending(item["id"], status="published", published_at=store.now_iso())
             store.record_success(item["id"], item.get("title", ""))
             published += 1
-            if secrets.admin_chat_id:
-                late = " (kechikkan variant)" if int(item.get("rewrites", 0)) else ""
-                bot.send_message(secrets.admin_chat_id,
-                                 f"📤 Kanalga chiqdi{late}: <b>{item.get('title', item['id'])}</b>")
+            late = " (kechikkan variant)" if int(item.get("rewrites", 0)) else ""
+            notify(secrets, f"📤 Kanalga chiqdi{late}: "
+                            f"<b>{item.get('title', item['id'])}</b>")
         except TelegramError as exc:
             LOG.error("Chiqarib bo'lmadi %s: %s", item["id"], exc)
             store.update_pending(item["id"], status="error", error=str(exc)[:300])
@@ -751,7 +776,7 @@ def cmd_tick(cfg: dict) -> int:
     failures: list[str] = []
 
     for name, fn in (
-        ("tugmalarni o'qish", lambda: collect_decisions(cfg, bot)),
+        ("tugmalarni o'qish", lambda: collect_decisions(cfg, bot, secrets.admins)),
         ("qayta ishlash", lambda: process_rewrites(cfg, secrets, bot)),
         ("kanalga chiqarish", lambda: publish_due(cfg, secrets, bot)),
         ("jimlik nazorati", lambda: watchdog(cfg, secrets, bot)),

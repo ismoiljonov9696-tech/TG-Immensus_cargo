@@ -68,22 +68,27 @@ image:
   aspect_ratio: "1:1"               # 1:1 | 4:5 | 16:9
 
   # Sahnada odam bo'lsinmi: never | sometimes | often
-  # "often" — o'zbek/xitoylik tadbirkor, ombor ishchisi, sotuvchi.
-  # Tabiiy, hujjatli kayfiyatda. Rasmni jonli qiladi va e'tibor tortadi.
-  people: "often"
+  #   sometimes — TAVSIYA ETILADI. Odam faqat dars inson harakati haqida
+  #               bo'lsa chiqadi (o'lchash, tekshirish, savdolashish).
+  #               Hujjat, raqam yoki predmet haqidagi postlarda odam chiqmaydi.
+  #   often     — deyarli har rasmda odam. Lenta bir xil bo'lib qoladi.
+  #   never     — faqat predmetlar.
+  people: "sometimes"
 
   # Brend ranglari — rasm shu palitrada chiziladi
   brand_colors: >
     deep navy blue, warm sand and amber, muted brick red as a single accent,
     off-white background, soft neutral shadows
 
+  # REALISTIK FOTOSURAT. Illyustratsiya, klipart yoki 3D render emas.
   style: >
-    Editorial illustration with real depth and texture — not flat corporate
-    clipart, not generic stock vector. Tactile materials: kraft cardboard,
-    steel, packing tape, worn concrete, fabric. Warm directional light with
-    soft shadows. Rich but restrained palette. Cinematic and specific —
-    it should look like it was made for THIS one story and no other.
-    Uncluttered: one clear subject, generous negative space.
+    Realistic documentary photograph, shot on a full-frame camera with a
+    35mm or 50mm lens. Natural available light, believable shadows, real
+    materials and honest textures — kraft cardboard, steel, packing tape,
+    worn concrete, dusty fabric, scuffed floors. Shallow but not extreme
+    depth of field. Slight imperfection is good: it should look like a real
+    moment someone photographed, not a staged studio shot and not a
+    render or illustration. No plastic-smooth surfaces, no glossy CGI look.
 
   # Logotip. Rasm chizilgach ustiga QO'YILADI — AI ga chizdirilmaydi,
   # chunki u har safar buzuq va boshqacha chiqadi.
@@ -98,6 +103,11 @@ image:
     width_percent: 18          # rasm kengligiga nisbatan logo kengligi
     margin_percent: 4          # chetdan masofa
     opacity: 0.95
+
+    # Sahnada odam bo'lsa, logotip uning kiyimiga chizilsin (ko'krak qismiga).
+    # Bu burchakka yopishtirishdan tabiiyroq: matoning burmalari va
+    # yorug'ligiga moslashadi. Ishlamasa — avtomatik burchakka qo'yiladi.
+    on_clothing: true
     # Logo ostidagi oq plashka. Shaffof fonli logo uchun KERAK EMAS —
     # u ramka bo'lib ko'rinadi. Faqat logo ko'rinmay qolsa true qiling.
     backdrop: false

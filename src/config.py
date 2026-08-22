@@ -21,13 +21,37 @@ class ConfigError(RuntimeError):
 class Secrets:
     gemini_key: str
     telegram_token: str
-    admin_chat_id: str
+    admin_chat_id: str          # birinchi admin — media shunga yuklanadi
     azure_key: str
     azure_region: str
+    admin_chat_ids: tuple[str, ...] = ()
 
     @property
     def has_azure(self) -> bool:
         return bool(self.azure_key and self.azure_region)
+
+    @property
+    def admins(self) -> tuple[str, ...]:
+        return self.admin_chat_ids or ((self.admin_chat_id,) if self.admin_chat_id else ())
+
+
+def parse_chat_ids(raw: str) -> tuple[str, ...]:
+    """Bir nechta admin ID sini ajratadi.
+
+    TELEGRAM_ADMIN_CHAT_ID ga bittadan ko'p yozish mumkin — vergul,
+    nuqta-vergul yoki probel bilan ajratib:
+        123456789,987654321
+    """
+    if not raw:
+        return ()
+    parts = raw.replace(";", ",").replace(" ", ",").split(",")
+    seen, out = set(), []
+    for p in parts:
+        p = p.strip()
+        if p and p not in seen:
+            seen.add(p)
+            out.append(p)
+    return tuple(out)
 
 
 def load_config(path: Path | None = None) -> dict:
@@ -46,12 +70,14 @@ def load_config(path: Path | None = None) -> dict:
 def load_secrets(strict: bool = True) -> Secrets:
     """Kalitlarni muhitdan oladi. Lokalda .env fayl ham o'qiladi."""
     _load_dotenv()
+    ids = parse_chat_ids(os.getenv("TELEGRAM_ADMIN_CHAT_ID", ""))
     s = Secrets(
         gemini_key=os.getenv("GEMINI_API_KEY", "").strip(),
         telegram_token=os.getenv("TELEGRAM_BOT_TOKEN", "").strip(),
-        admin_chat_id=os.getenv("TELEGRAM_ADMIN_CHAT_ID", "").strip(),
+        admin_chat_id=ids[0] if ids else "",
         azure_key=os.getenv("AZURE_SPEECH_KEY", "").strip(),
         azure_region=os.getenv("AZURE_SPEECH_REGION", "").strip(),
+        admin_chat_ids=ids,
     )
     if strict:
         missing = [

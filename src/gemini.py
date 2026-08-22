@@ -195,6 +195,47 @@ def _image_once(prompt: str, api_key: str, model: str, aspect_ratio: str) -> byt
     raise GeminiError(f"Rasm qaytmadi. Javob: {json.dumps(data)[:300]}")
 
 
+def edit_image(
+    prompt: str,
+    images: list[bytes],
+    api_key: str,
+    model: str = "gemini-3.1-flash-image",
+    *,
+    fallbacks: list[str] | None = None,
+    mime: str = "image/png",
+) -> bytes:
+    """Mavjud rasmlarni kiritib, yangisini yasaydi.
+
+    Ikkita rasm berish mumkin: sahna va logotip. Model logotipni sahnadagi
+    kiyimga, matoning burmalariga va istiqbolga moslab joylashtiradi —
+    buni oddiy "ustiga qo'yish" qila olmaydi.
+    """
+    parts: list[dict] = [{"text": prompt}]
+    for blob in images:
+        parts.append({"inlineData": {"mimeType": mime,
+                                     "data": base64.b64encode(blob).decode()}})
+
+    payload = {"contents": [{"role": "user", "parts": parts}],
+               "generationConfig": {"responseModalities": ["IMAGE"]}}
+
+    last: Exception | None = None
+    for name in [model] + [m for m in (fallbacks or []) if m and m != model]:
+        try:
+            data = _post(name, payload, api_key, retries=2)
+        except GeminiError as exc:
+            last = exc
+            if "404" in str(exc) or "NOT_FOUND" in str(exc):
+                continue
+            raise
+        for cand in data.get("candidates", []):
+            for part in (cand.get("content") or {}).get("parts", []):
+                blob = part.get("inlineData") or part.get("inline_data")
+                if blob and blob.get("data"):
+                    return base64.b64decode(blob["data"])
+        last = GeminiError("Tahrirlangan rasm qaytmadi")
+    raise GeminiError(f"Rasmni tahrirlab bo'lmadi: {last}")
+
+
 def generate_image(
     prompt: str,
     api_key: str,

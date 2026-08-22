@@ -120,8 +120,10 @@
     "rewrites": 0,
     "publish_at": "2026-08-22T22:35:55.342756+05:00",
     "created_at": "2026-08-22T17:20:55+00:00",
-    "status": "preview",
-    "admin_message_id": 19
+    "status": "published",
+    "admin_message_id": 19,
+    "published_at": "2026-08-22T17:44:53+00:00",
+    "updated_at": "2026-08-22T17:44:53+00:00"
   },
   {
     "id": "20260822-172422",
@@ -143,8 +145,10 @@
     "rewrites": 0,
     "publish_at": "2026-08-22T22:42:09.526731+05:00",
     "created_at": "2026-08-22T17:27:09+00:00",
-    "status": "preview",
-    "admin_message_id": 21
+    "status": "error",
+    "admin_message_id": 21,
+    "error": "sendPhoto → Bad Request: chat not found",
+    "updated_at": "2026-08-22T17:44:53+00:00"
   },
   {
     "id": "20260822-173919",

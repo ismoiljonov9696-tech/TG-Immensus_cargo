@@ -1,7 +1,11 @@
 {
-  "last_publish_at": "2026-08-22T04:32:57+00:00",
-  "last_publish_id": "20260821-141932",
-  "last_publish_title": "1688'da zavod va vositachini aniqlash usuli",
-  "last_error": null,
+  "last_publish_at": "2026-08-22T17:44:53+00:00",
+  "last_publish_id": "20260822-171815",
+  "last_publish_title": "WeChat va 1688'da MOQni kamaytirish muzokara skripti",
+  "last_error": {
+    "stage": "kanalga chiqarish (6-agent)",
+    "message": "sendPhoto → Bad Request: chat not found",
+    "at": "2026-08-22T17:44:53+00:00"
+  },
   "alerted_at": null
 }

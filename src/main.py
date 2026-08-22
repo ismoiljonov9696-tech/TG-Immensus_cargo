@@ -178,8 +178,13 @@ def _parse(when: str | None, tz: ZoneInfo) -> datetime | None:
 # --------------------------------------------------------------------------- #
 def build_post(cfg: dict, secrets, rubric: dict, topic: dict, post_id: str,
                *, feedback: str | None = None, force: bool = False
-               ) -> tuple[str, dict, Path | None, str] | None:
-    """Matn + media tayyorlaydi. (text, verdict, media_path, kind) yoki None."""
+               ) -> tuple[str, dict, Path | None, str, list[str]] | None:
+    """Matn + media tayyorlaydi.
+
+    (text, verdict, media_path, kind, warnings) yoki None qaytaradi.
+    warnings — rasm/ovoz/video yaratilmagan bo'lsa, sababi bilan. Post
+    baribir chiqadi, lekin siz nima yetishmayotganini ko'rasiz.
+    """
     max_tries = int(cfg["llm"].get("max_rewrites", 2)) + 1
     text, verdict = "", {}
 
@@ -206,26 +211,33 @@ def build_post(cfg: dict, secrets, rubric: dict, topic: dict, post_id: str,
             LOG.warning("Nazoratdan o'tmadi, lekin --force berilgan — davom etaman")
 
     if MOCK:
-        return text, verdict, None, "text"
+        return text, verdict, None, "text", []
 
     workdir = WORK / post_id
     workdir.mkdir(parents=True, exist_ok=True)
     image_path = audio_path = media_path = None
     kind = "text"
+    warnings: list[str] = []
 
     try:
-        image_path, _ = a3_image.run(cfg, text, workdir / "image.png", secrets.gemini_key)
+        image_path, _ = a3_image.run(cfg, text, workdir / "image.png",
+                                     secrets.gemini_key, topic.get("title", ""))
         kind, media_path = "photo", image_path
     except Exception as exc:                              # noqa: BLE001
         LOG.error("3-agent (rasm) ishlamadi: %s", exc)
+        warnings.append(f"rasm yaratilmadi — {_short_reason(exc)}")
 
-    if cfg["audio"].get("enabled") and secrets.has_azure:
-        try:
-            audio_path, _ = a4_voice.run(cfg, text, workdir / "audio.mp3",
-                                         secrets.gemini_key, secrets.azure_key,
-                                         secrets.azure_region)
-        except Exception as exc:                          # noqa: BLE001
-            LOG.error("4-agent (ovoz) ishlamadi: %s", exc)
+    if cfg["audio"].get("enabled"):
+        if not secrets.has_azure:
+            warnings.append("ovoz yaratilmadi — Azure kaliti sozlanmagan")
+        else:
+            try:
+                audio_path, _ = a4_voice.run(cfg, text, workdir / "audio.mp3",
+                                             secrets.gemini_key, secrets.azure_key,
+                                             secrets.azure_region)
+            except Exception as exc:                      # noqa: BLE001
+                LOG.error("4-agent (ovoz) ishlamadi: %s", exc)
+                warnings.append(f"ovoz yaratilmadi — {_short_reason(exc)}")
 
     if cfg["video"].get("enabled") and image_path and audio_path:
         try:
@@ -236,8 +248,23 @@ def build_post(cfg: dict, secrets, rubric: dict, topic: dict, post_id: str,
             kind = "video"
         except Exception as exc:                          # noqa: BLE001
             LOG.error("Video yig'ilmadi, rasm bilan davom etaman: %s", exc)
+            warnings.append(f"video yig'ilmadi — {_short_reason(exc)}")
 
-    return text, verdict, media_path, kind
+    return text, verdict, media_path, kind, warnings
+
+
+def _short_reason(exc: Exception) -> str:
+    """Uzun API javobidan qisqa, o'qiladigan sabab ajratadi."""
+    s = " ".join(str(exc).split())
+    if "NOT_FOUND" in s or "is not found" in s:
+        return "model nomi noto'g'ri (404)"
+    if "RESOURCE_EXHAUSTED" in s or "429" in s:
+        return "limit tugadi (429)"
+    if "PERMISSION_DENIED" in s or "403" in s:
+        return "kalitda ruxsat yo'q (403)"
+    if "SAFETY" in s.upper() or "blocked" in s.lower():
+        return "xavfsizlik filtri to'sdi"
+    return s[:110]
 
 
 def send_preview(cfg: dict, secrets, bot: Bot, post: dict,
@@ -251,7 +278,8 @@ def send_preview(cfg: dict, secrets, bot: Bot, post: dict,
     bot.send_message(secrets.admin_chat_id, header)
 
 
-def preview_header(cfg: dict, post: dict, verdict: dict, when: datetime) -> str:
+def preview_header(cfg: dict, post: dict, verdict: dict, when: datetime,
+                   warnings: list[str] | None = None) -> str:
     mode = mode_of(cfg)
     flag = " ⚠️ past ball" if verdict.get("soft_pass") else ""
     rew = post.get("rewrites", 0)
@@ -269,6 +297,8 @@ def preview_header(cfg: dict, post: dict, verdict: dict, when: datetime) -> str:
         note = "\nNazoratchi izohi: " + "; ".join(verdict["problems"][:3])
     if rew:
         note += f"\n🔄 {rew}-qayta ishlash. Yana {max(left, 0)} marta mumkin."
+    if warnings:
+        note += "\n\n⚠️ " + "\n⚠️ ".join(warnings)
 
     return (f"☝️ <b>{post['title']}</b>\n"
             f"Rubrika: {post['rubric']}  ·  Sifat: {verdict.get('score')}/10{flag}\n"
@@ -366,7 +396,20 @@ def cmd_check(cfg: dict) -> int:
 # --------------------------------------------------------------------------- #
 #  generate
 # --------------------------------------------------------------------------- #
-def cmd_generate(cfg: dict, force: bool = False) -> int:
+def _is_manual_run(now_flag: bool) -> bool:
+    """Qo'lda ishga tushirilganmi (Run workflow tugmasi yoki --now)."""
+    return now_flag or os.getenv("GITHUB_EVENT_NAME") == "workflow_dispatch"
+
+
+def manual_publish_time(cfg: dict) -> datetime:
+    """Qo'lda ishga tushirilgan post ertangi kunga qolmasin — tez orada chiqsin."""
+    ap = cfg.get("approval", {})
+    minutes = int(ap.get("manual_run_minutes")
+                  or int(ap.get("preview_minutes", 10)) + 5)
+    return datetime.now(tz_of(cfg)) + timedelta(minutes=minutes)
+
+
+def cmd_generate(cfg: dict, force: bool = False, now_flag: bool = False) -> int:
     """Xatolik bo'lsa adminga xabar yuboradi — kanal jimgina bo'sh qolmasin."""
     secrets = load_secrets(strict=not MOCK)
 
@@ -388,6 +431,7 @@ def cmd_generate(cfg: dict, force: bool = False) -> int:
 
         stage = "matn va media (2–5-agentlar)"
         built = build_post(cfg, secrets, rubric, topic, post_id, force=force)
+        warnings = built[4] if built else []
     except Exception as exc:                              # noqa: BLE001
         LOG.exception("Xato (%s): %s", stage, exc)
         store.record_error(stage, str(exc))
@@ -403,9 +447,9 @@ def cmd_generate(cfg: dict, force: bool = False) -> int:
         if not MOCK:
             notify(secrets, _failure_message(cfg, "sifat nazorati (5-agent)", reason))
         return 2
-    text, verdict, media, kind = built
+    text, verdict, media, kind, warnings = built
 
-    when = next_publish_time(cfg)
+    when = manual_publish_time(cfg) if _is_manual_run(now_flag) else next_publish_time(cfg)
     post = {
         "id": post_id,
         "rubric": rubric["name"],
@@ -439,7 +483,7 @@ def cmd_generate(cfg: dict, force: bool = False) -> int:
             return 3
         post["status"] = "preview"
         send_preview(cfg, secrets, bot, post, media, kind,
-                     preview_header(cfg, post, verdict, when))
+                     preview_header(cfg, post, verdict, when, warnings))
         LOG.info("Ko'rish uchun yuborildi. Chiqish: %s", when.strftime("%H:%M"))
 
     store.add_pending(post)
@@ -570,7 +614,7 @@ def process_rewrites(cfg: dict, secrets, bot: Bot) -> int:
                                  f"sifat nazoratidan o'tmadi. Post chiqmaydi.")
             continue
 
-        text, verdict, media, kind = built
+        text, verdict, media, kind, warnings = built
         when = datetime.now(tz) + timedelta(minutes=int(ap.get("rewrite_review_minutes", 10)))
 
         post = {**item, "text": text, "kind": kind, "file_id": None,
@@ -584,7 +628,7 @@ def process_rewrites(cfg: dict, secrets, bot: Bot) -> int:
                 "status": "preview" if mode_of(cfg) != "off" else "ready"}
 
         if mode_of(cfg) != "off" and secrets.admin_chat_id:
-            header = preview_header(cfg, post, verdict, when)
+            header = preview_header(cfg, post, verdict, when, warnings)
             if rewrites >= limit:
                 header += ("\n\n⚠️ Qayta ishlash chegarasiga yetdi — "
                            "bu variant chiqadi. To'xtatish uchun ❌ bosing.")
@@ -766,6 +810,8 @@ def main(argv: list[str] | None = None) -> int:
                         choices=["check", "generate", "tick", "publish", "status"])
     parser.add_argument("--force", action="store_true",
                         help="sifat nazoratidan o'tmasa ham davom etadi")
+    parser.add_argument("--now", action="store_true",
+                        help="postni ertangi kunga emas, tez orada chiqarish")
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
 
@@ -778,7 +824,7 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "check":
             return cmd_check(cfg)
         if args.command == "generate":
-            return cmd_generate(cfg, force=args.force)
+            return cmd_generate(cfg, force=args.force, now_flag=args.now)
         if args.command in ("tick", "publish"):      # publish — eski nom
             return cmd_tick(cfg)
         if args.command == "status":

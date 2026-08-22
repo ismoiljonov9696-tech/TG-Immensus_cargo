@@ -168,13 +168,7 @@ def generate_grounded(
 # --------------------------------------------------------------------------- #
 #  Rasm (Nano Banana)
 # --------------------------------------------------------------------------- #
-def generate_image(
-    prompt: str,
-    api_key: str,
-    model: str = "gemini-2.5-flash-image",
-    *,
-    aspect_ratio: str = "1:1",
-) -> bytes:
+def _image_once(prompt: str, api_key: str, model: str, aspect_ratio: str) -> bytes:
     payload: dict[str, Any] = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {
@@ -185,9 +179,12 @@ def generate_image(
     try:
         data = _post(model, payload, api_key, retries=2)
     except GeminiError as exc:
+        if "404" in str(exc) or "NOT_FOUND" in str(exc):
+            raise                                   # model yo'q — soddalashtirish yordam bermaydi
         # Ba'zi modellar imageConfig / responseModalities ni qabul qilmaydi
-        LOG.info("Rasm so'rovi rad etildi (%s), soddalashtirilgan shaklda sinayman", str(exc)[:120])
-        data = _post(model, {"contents": [{"role": "user", "parts": [{"text": prompt}]}]}, api_key, retries=2)
+        LOG.info("Rasm so'rovi rad etildi (%s), soddalashtirilgan shaklda sinayman", str(exc)[:110])
+        data = _post(model, {"contents": [{"role": "user", "parts": [{"text": prompt}]}]},
+                     api_key, retries=2)
 
     for cand in data.get("candidates", []):
         for part in (cand.get("content") or {}).get("parts", []):
@@ -195,4 +192,41 @@ def generate_image(
             if blob and blob.get("data"):
                 return base64.b64decode(blob["data"])
 
-    raise GeminiError(f"Rasm qaytmadi. Javob: {json.dumps(data)[:400]}")
+    raise GeminiError(f"Rasm qaytmadi. Javob: {json.dumps(data)[:300]}")
+
+
+def generate_image(
+    prompt: str,
+    api_key: str,
+    model: str = "gemini-3.1-flash-image",
+    *,
+    aspect_ratio: str = "1:1",
+    fallbacks: list[str] | None = None,
+) -> tuple[bytes, str]:
+    """Rasm generatsiya qiladi. (baytlar, ishlagan model nomi) qaytaradi.
+
+    Google model nomlarini tez-tez o'zgartiradi va eskisini o'chiradi.
+    Asosiy model 404 bersa, zaxira ro'yxatidan keyingisi sinaladi —
+    shunda bitta noto'g'ri nom butun rasmni yo'qotmaydi.
+    """
+    chain = [model] + [m for m in (fallbacks or []) if m and m != model]
+    last: Exception | None = None
+
+    for i, name in enumerate(chain):
+        try:
+            data = _image_once(prompt, api_key, name, aspect_ratio)
+            if i:
+                LOG.warning("Rasm zaxira model bilan yaratildi: %s "
+                            "(config.yaml da image.model ni shunga o'zgartiring)", name)
+            return data, name
+        except GeminiError as exc:
+            last = exc
+            if "404" in str(exc) or "NOT_FOUND" in str(exc):
+                LOG.warning("Model topilmadi: %s — keyingisini sinayman", name)
+                continue
+            raise
+
+    raise GeminiError(
+        f"Hech bir rasm modeli ishlamadi. Sinalganlar: {', '.join(chain)}. "
+        f"Oxirgi xato: {last}"
+    )

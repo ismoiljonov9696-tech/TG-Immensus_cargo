@@ -82,6 +82,85 @@ def next_publish_time(cfg: dict) -> datetime:
     return min(future) if future else min(candidates)
 
 
+def notify(secrets, text: str) -> None:
+    """Adminga xizmat xabari. Xato bo'lsa jim yutiladi — asosiy ishni to'xtatmasin."""
+    if not secrets.admin_chat_id or not secrets.telegram_token:
+        LOG.warning("Adminga xabar yuborilmadi (chat ID yo'q): %s", text[:80])
+        return
+    try:
+        Bot(secrets.telegram_token).send_message(secrets.admin_chat_id, text)
+    except Exception as exc:                              # noqa: BLE001
+        LOG.error("Adminga xabar yuborilmadi: %s", exc)
+
+
+def report_text(cfg: dict) -> str:
+    """Tizim holati — /holat buyrug'i uchun."""
+    tz = tz_of(cfg)
+    now = datetime.now(tz)
+    m = store.meta()
+    items = store.pending()
+
+    lines = ["📊 <b>Tizim holati</b>", ""]
+
+    last = _parse(m.get("last_publish_at"), tz)
+    if last:
+        hours = (now - last).total_seconds() / 3600
+        mark = "✅" if hours < 26 else "⚠️"
+        lines.append(f"{mark} Oxirgi post: <b>{last:%d.%m %H:%M}</b> "
+                     f"({hours:.0f} soat oldin)")
+        if m.get("last_publish_title"):
+            lines.append(f"    «{m['last_publish_title'][:52]}»")
+    else:
+        lines.append("⏳ Hali birorta post chiqmagan")
+
+    waiting = [i for i in items if i.get("status") in ("preview", "ready", "approved")]
+    if waiting:
+        for i in waiting[:3]:
+            when = _parse(i.get("publish_at"), tz)
+            title = i.get("title", "")[:40]
+            when_txt = f" → {when:%d.%m %H:%M}" if when else ""
+            lines.append(f"📝 Navbatda: «{title}»{when_txt}")
+    else:
+        lines.append("📭 Navbat bo'sh")
+
+    nxt = next_publish_time(cfg)
+    lines.append(f"🕘 Keyingi chiqish vaqti: <b>{nxt:%d.%m %H:%M}</b>")
+
+    err = m.get("last_error")
+    if err:
+        lines.append("")
+        lines.append(f"⚠️ Oxirgi xato ({err.get('stage','?')}): {err.get('message','')[:140]}")
+
+    lines.append("")
+    lines.append(f"📚 Arxivda {len(store.archive())} ta mavzu  ·  "
+                 f"rejim: {mode_of(cfg)}")
+    if store.is_paused():
+        lines.append("⏸ <b>TIZIM PAUZADA</b> — /davom bilan yoqing")
+
+    return "\n".join(lines)
+
+
+def _failure_message(cfg: dict, stage: str, reason: str) -> str:
+    tz = tz_of(cfg)
+    return (
+        "⚠️ <b>Post tayyorlanmadi</b>\n\n"
+        f"Bosqich : {stage}\n"
+        f"Sabab   : {reason[:300]}\n"
+        f"Vaqt    : {datetime.now(tz):%d.%m %H:%M}\n\n"
+        "Kanal bu safar bo'sh qoladi.\n"
+        "Qo'lda ishga tushirish: Actions → «Post tayyorlash» → Run workflow"
+    )
+
+
+HELP_TEXT = (
+    "🤖 <b>Buyruqlar</b>\n\n"
+    "/holat — tizim holati: oxirgi post, navbat, xatolar\n"
+    "/pauza — postlarni vaqtincha to'xtatish\n"
+    "/davom — qaytadan yoqish\n"
+    "/yordam — shu ro'yxat"
+)
+
+
 def _parse(when: str | None, tz: ZoneInfo) -> datetime | None:
     if not when:
         return None
@@ -89,7 +168,9 @@ def _parse(when: str | None, tz: ZoneInfo) -> datetime | None:
         dt = datetime.fromisoformat(when)
     except ValueError:
         return None
-    return dt if dt.tzinfo else dt.replace(tzinfo=tz)
+    # Arxivdagi vaqtlar UTC da saqlanadi — kanal vaqt zonasiga o'tkazamiz,
+    # aks holda xabarlarda soat 5 soatga farq qilib ko'rinadi.
+    return dt.astimezone(tz) if dt.tzinfo else dt.replace(tzinfo=tz)
 
 
 # --------------------------------------------------------------------------- #
@@ -286,18 +367,41 @@ def cmd_check(cfg: dict) -> int:
 #  generate
 # --------------------------------------------------------------------------- #
 def cmd_generate(cfg: dict, force: bool = False) -> int:
+    """Xatolik bo'lsa adminga xabar yuboradi — kanal jimgina bo'sh qolmasin."""
     secrets = load_secrets(strict=not MOCK)
-    rubric = pick_rubric(cfg)
-    post_id = store.new_post_id()
-    LOG.info("═══ Post %s | rubrika: %s ═══", post_id, rubric["name"])
 
-    topic = a1_topics.run(cfg, rubric, secrets.gemini_key) if not MOCK else {
-        "title": "Mock mavzu", "angle": "", "why_now": "",
-        "research": "(mock)", "sources": [],
-    }
+    if store.is_paused():
+        LOG.warning("Tizim pauzada — post tayyorlanmadi (/davom bilan yoqing)")
+        return 0
 
-    built = build_post(cfg, secrets, rubric, topic, post_id, force=force)
+    stage = "boshlanish"
+    try:
+        rubric = pick_rubric(cfg)
+        post_id = store.new_post_id()
+        LOG.info("═══ Post %s | rubrika: %s ═══", post_id, rubric["name"])
+
+        stage = "mavzu izlash (1-agent)"
+        topic = a1_topics.run(cfg, rubric, secrets.gemini_key) if not MOCK else {
+            "title": "Mock mavzu", "angle": "", "why_now": "",
+            "research": "(mock)", "sources": [],
+        }
+
+        stage = "matn va media (2–5-agentlar)"
+        built = build_post(cfg, secrets, rubric, topic, post_id, force=force)
+    except Exception as exc:                              # noqa: BLE001
+        LOG.exception("Xato (%s): %s", stage, exc)
+        store.record_error(stage, str(exc))
+        if not MOCK:
+            notify(secrets, _failure_message(cfg, stage, str(exc)))
+        return 4
+
     if built is None:
+        reason = ("Sifat nazoratidan o'tmadi — barcha urinishlar rad etildi. "
+                  "style/examples.md ga o'z postlaringizni qo'shing yoki "
+                  "config.yaml da llm.qc_min_score ni pasaytiring.")
+        store.record_error("sifat nazorati (5-agent)", reason)
+        if not MOCK:
+            notify(secrets, _failure_message(cfg, "sifat nazorati (5-agent)", reason))
         return 2
     text, verdict, media, kind = built
 
@@ -347,7 +451,29 @@ def cmd_generate(cfg: dict, force: bool = False) -> int:
 # --------------------------------------------------------------------------- #
 #  tick — qarorlar, qayta ishlash, chiqarish
 # --------------------------------------------------------------------------- #
-def collect_decisions(bot: Bot) -> int:
+def handle_command(cfg: dict, bot: Bot, chat_id: str, text: str) -> bool:
+    """Botga yozilgan buyruqlar: /holat, /pauza, /davom, /yordam."""
+    cmd = text.strip().split()[0].lower().lstrip("/").split("@")[0]
+
+    if cmd in ("holat", "status"):
+        bot.send_message(chat_id, report_text(cfg))
+    elif cmd in ("pauza", "pause", "stop"):
+        store.set_meta(paused=True)
+        bot.send_message(chat_id, "⏸ To'xtatildi. Yangi post tayyorlanmaydi va "
+                                  "navbatdagilar chiqmaydi.\n/davom — qaytadan yoqish")
+    elif cmd in ("davom", "resume", "start"):
+        store.set_meta(paused=False, alerted_at=None)
+        bot.send_message(chat_id, "▶️ Yoqildi. Keyingi post o'z vaqtida chiqadi.\n\n"
+                                  + report_text(cfg))
+    elif cmd in ("yordam", "help"):
+        bot.send_message(chat_id, HELP_TEXT)
+    else:
+        return False
+    LOG.info("Buyruq bajarildi: /%s", cmd)
+    return True
+
+
+def collect_decisions(cfg: dict, bot: Bot) -> int:
     updates = bot.get_updates(offset=store.offset())
     if not updates:
         return 0
@@ -355,6 +481,14 @@ def collect_decisions(bot: Bot) -> int:
     handled, last_id = 0, None
     for upd in updates:
         last_id = upd["update_id"]
+
+        msg = upd.get("message")
+        if msg and isinstance(msg.get("text"), str) and msg["text"].startswith("/"):
+            chat_id = str((msg.get("chat") or {}).get("id", ""))
+            if chat_id and handle_command(cfg, bot, chat_id, msg["text"]):
+                handled += 1
+            continue
+
         cq = upd.get("callback_query")
         if not cq:
             continue
@@ -462,7 +596,50 @@ def process_rewrites(cfg: dict, secrets, bot: Bot) -> int:
     return done
 
 
+def watchdog(cfg: dict, secrets, bot: Bot) -> None:
+    """Jimlik nazorati — post uzoq vaqt chiqmasa ogohlantiradi.
+
+    Kutilgan oraliq: 24 soat / kunlik post soni, ustiga zaxira vaqt.
+    Ogohlantirish 12 soatda bir martadan ko'p yuborilmaydi.
+    """
+    if store.is_paused():
+        return
+
+    tz = tz_of(cfg)
+    now = datetime.now(tz)
+    m = store.meta()
+
+    last = _parse(m.get("last_publish_at"), tz)
+    if last is None:
+        return                                   # hali birorta post chiqmagan
+
+    per_day = max(1, len(cfg["schedule"].get("publish_times") or ["09:00"]))
+    grace = timedelta(hours=24 / per_day) + timedelta(hours=3)
+    if now - last < grace:
+        return
+
+    alerted = _parse(m.get("alerted_at"), tz)
+    if alerted and now - alerted < timedelta(hours=12):
+        return
+
+    silent = (now - last).total_seconds() / 3600
+    err = m.get("last_error")
+    tail = (f"\nOxirgi xato ({err.get('stage','?')}): {err.get('message','')[:180]}"
+            if err else "\nXato yozilmagan — jadval ishlamayotgan bo'lishi mumkin.")
+
+    notify(secrets,
+           f"🔕 <b>{silent:.0f} soatdan beri post chiqmadi</b>\n\n"
+           f"Oxirgi post: {last:%d.%m %H:%M}{tail}\n\n"
+           f"Tekshiring: Actions → oxirgi ishga tushishlar qizil emasmi.\n"
+           f"/holat — batafsil")
+    store.set_meta(alerted_at=store.now_iso())
+    LOG.warning("Jimlik ogohlantirishi yuborildi (%.0f soat)", silent)
+
+
 def publish_due(cfg: dict, secrets, bot: Bot) -> int:
+    if store.is_paused():
+        return 0
+
     tz = tz_of(cfg)
     now = datetime.now(tz)
     mode = mode_of(cfg)
@@ -489,6 +666,7 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
                     store.update_pending(item["id"], status="published",
                                          file_id=res["file_id"],
                                          published_at=store.now_iso())
+                    store.record_success(item["id"], item.get("title", ""))
                     published += 1
                     LOG.info("Kanalga chiqarildi (yuklab): %s", item["id"])
                     continue
@@ -500,6 +678,7 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
         try:
             a6_publish.publish(bot, cfg["channel"]["id"], item)
             store.update_pending(item["id"], status="published", published_at=store.now_iso())
+            store.record_success(item["id"], item.get("title", ""))
             published += 1
             if secrets.admin_chat_id:
                 late = " (kechikkan variant)" if int(item.get("rewrites", 0)) else ""
@@ -508,31 +687,65 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
         except TelegramError as exc:
             LOG.error("Chiqarib bo'lmadi %s: %s", item["id"], exc)
             store.update_pending(item["id"], status="error", error=str(exc)[:300])
+            store.record_error("kanalga chiqarish (6-agent)", str(exc))
+            notify(secrets, _failure_message(cfg, "kanalga chiqarish (6-agent)", str(exc)))
 
     return published
 
 
 def cmd_tick(cfg: dict) -> int:
+    """Har bir bosqich alohida himoyalangan.
+
+    Ilgari bitta bosqichdagi xato butun tsiklni yiqitardi — natijada
+    tugmalar ham o'qilmasdi, post ham chiqmasdi va sizga hech qanday
+    xabar kelmasdi. Endi bir bosqich yiqilsa, qolganlari baribir ishlaydi
+    va xato haqida Telegramga xabar boradi.
+    """
     secrets = load_secrets()
     bot = Bot(secrets.telegram_token)
+    counts: dict[str, int] = {}
+    failures: list[str] = []
 
-    decisions = collect_decisions(bot)
-    rewritten = process_rewrites(cfg, secrets, bot)
-    published = publish_due(cfg, secrets, bot)
+    for name, fn in (
+        ("tugmalarni o'qish", lambda: collect_decisions(cfg, bot)),
+        ("qayta ishlash", lambda: process_rewrites(cfg, secrets, bot)),
+        ("kanalga chiqarish", lambda: publish_due(cfg, secrets, bot)),
+        ("jimlik nazorati", lambda: watchdog(cfg, secrets, bot)),
+    ):
+        try:
+            counts[name] = fn() or 0
+        except Exception as exc:                          # noqa: BLE001
+            LOG.exception("Bosqich yiqildi (%s): %s", name, exc)
+            store.record_error(name, f"{type(exc).__name__}: {exc}")
+            failures.append(f"{name}: {type(exc).__name__}: {exc}")
 
-    if decisions or rewritten or published:
-        LOG.info("Qaror: %d  ·  qayta ishlangan: %d  ·  chiqarilgan: %d",
-                 decisions, rewritten, published)
-    store.prune_pending()
-    return 0
+    if any(counts.values()):
+        LOG.info("Tugma: %d · qayta ishlangan: %d · chiqarilgan: %d",
+                 counts.get("tugmalarni o'qish", 0),
+                 counts.get("qayta ishlash", 0),
+                 counts.get("kanalga chiqarish", 0))
+
+    if failures:
+        notify(secrets, "⚠️ <b>Tizimda xato</b>\n\n" + "\n".join(f"• {f[:200]}" for f in failures)
+               + "\n\nPost chiqmagan bo'lishi mumkin. /holat — tekshirish uchun.")
+
+    try:
+        store.prune_pending()
+    except Exception as exc:                              # noqa: BLE001
+        LOG.error("Navbatni tozalab bo'lmadi: %s", exc)
+
+    return 1 if failures else 0
 
 
 # --------------------------------------------------------------------------- #
 def cmd_status(cfg: dict) -> int:
+    import re
+    print("\n" + re.sub(r"<[^>]+>", "", report_text(cfg)))
     items = store.pending()
     if not items:
-        print("Navbat bo'sh.")
+        print("\nNavbat bo'sh.\n")
         return 0
+    print()
     icons = {"preview": "👀", "ready": "⏳", "approved": "✅", "published": "📤",
              "cancelled": "❌", "rewrite_requested": "🔄", "error": "⚠️"}
     print(f"\n{'ID':<18} {'Holat':<20} {'Chiqish':<14} {'↻':<3} Sarlavha")

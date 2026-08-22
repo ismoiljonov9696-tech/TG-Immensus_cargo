@@ -83,8 +83,7 @@ video:
 
 llm:
   # Matn agentlari (1, 2, 5) uchun model.
-  # gemini-2.5-flash eskirgan va 404 qaytaradi — 3.6 yoki 3.7 ishlating.
-  model: "gemini-3.6-flash"
+    model: "gemini-3.6-flash"
   qc_model: "gemini-3.6-flash"
   max_rewrites: 2          # 5-agent rad etsa, 2-agent necha marta qayta yozadi
 

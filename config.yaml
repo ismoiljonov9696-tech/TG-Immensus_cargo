@@ -5,7 +5,10 @@
 
 channel:
   # Kanal manzili: "@kanal_nomi" yoki raqamli ID (-100...)
-  id: "@immensus_cargoo"
+  # Kanal MAXFIY (private) bo'lgani uchun raqamli ID ishlatilyapti —
+  # maxfiy kanalda username bo'lmaydi va "@..." ishlamaydi.
+  # Kanal yana ochiq qilinsa, bu yerga "@immensus_cargoo" yozsa ham bo'ladi.
+  id: "-1003882739092"
   language: "uz"          # uz | ru | en
   timezone: "Asia/Tashkent"
 

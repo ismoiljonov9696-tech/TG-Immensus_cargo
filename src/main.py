@@ -309,7 +309,8 @@ def preview_header(cfg: dict, post: dict, verdict: dict, when: datetime,
     else:
         mins = max(1, int((when - datetime.now(when.tzinfo)).total_seconds() // 60))
         action = (f"⏳ <b>{when:%H:%M}</b> da o'zi chiqadi (taxminan {mins} daqiqadan keyin).\n"
-                  f"Hech narsa bosmasangiz — chiqaveradi.")
+                  f"Hech narsa bosmasangiz — chiqaveradi.\n"
+                  f"Kutmasdan chiqarish uchun — 🚀 tugmasi.")
 
     note = ""
     if verdict.get("soft_pass") and verdict.get("problems"):
@@ -577,9 +578,15 @@ def collect_decisions(cfg: dict, bot: Bot, admins: tuple[str, ...] = ()) -> int:
             continue
 
         status = {"ok": "approved", "no": "cancelled", "redo": "rewrite_requested"}[action]
-        label = {"ok": "✅ Chiqariladi", "no": "❌ Bekor qilindi",
+        label = {"ok": "🚀 Hoziroq chiqariladi", "no": "❌ Bekor qilindi",
                  "redo": "🔄 Qayta ishlanmoqda…"}[action]
-        store.update_pending(post_id, status=status)
+
+        changes: dict = {"status": status}
+        if action == "ok":
+            # "Hoziroq chiqarish" — kutish vaqtini bekor qilamiz, post
+            # keyingi tekshiruvda darhol kanalga chiqadi.
+            changes["publish_at"] = datetime.now(tz_of(cfg)).isoformat()
+        store.update_pending(post_id, **changes)
         bot.answer_callback(cq["id"], label)
 
         msg = cq.get("message") or {}

@@ -160,10 +160,13 @@ def approval_buttons(post_id: str, mode: str = "opt_out") -> list[list[dict]]:
             {"text": "🔄 Qayta ishlash", "callback_data": f"redo:{post_id}"},
             {"text": "❌ Bekor qilish", "callback_data": f"no:{post_id}"},
         ]]
-    return [[
-        {"text": "🔄 Qayta ishlash", "callback_data": f"redo:{post_id}"},
-        {"text": "❌ Bekor qilish", "callback_data": f"no:{post_id}"},
-    ]]
+    # opt_out: "Hoziroq chiqarish" — kutmasdan darhol chiqarish uchun.
+    # Hech narsa bosilmasa post baribir belgilangan vaqtda o'zi chiqadi.
+    return [
+        [{"text": "🚀 Hoziroq chiqarish", "callback_data": f"ok:{post_id}"}],
+        [{"text": "🔄 Qayta ishlash", "callback_data": f"redo:{post_id}"},
+         {"text": "❌ Bekor qilish", "callback_data": f"no:{post_id}"}],
+    ]
 
 
 def extract_file_id(result: dict) -> str | None:

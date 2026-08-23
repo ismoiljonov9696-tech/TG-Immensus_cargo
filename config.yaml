@@ -116,16 +116,19 @@ image:
     backdrop: false
 
 audio:
-  enabled: true
+  # O'CHIRILGAN. Azure Speech ishlatilmaydi — post rasm va matn bilan chiqadi.
+  # Keyinchalik ovoz kerak bo'lsa: true qiling va AZURE_SPEECH_KEY bilan
+  # AZURE_SPEECH_REGION ni GitHub Secrets'ga qo'shing.
+  enabled: false
   voice: "uz-UZ-SardorNeural"   # yoki uz-UZ-MadinaNeural
   rate: "+0%"
   pitch: "+0%"
   # Audio matni: post matnining o'zi (havola va hashtaglarsiz tozalanadi)
 
 video:
-  # Rasm + audio -> MP4. Telegram bitta postda ikkalasini birga qo'ya olmaydi,
-  # shuning uchun ularni videoga birlashtiramiz.
-  enabled: true
+  # Rasm + audio -> MP4. Ovoz o'chirilgan bo'lsa video ham yig'ilmaydi,
+  # shuning uchun bu ham false. Ovozni yoqsangiz, buni ham true qiling.
+  enabled: false
   fade_seconds: 0.4
   tail_seconds: 0.8        # audio tugagach video shuncha davom etadi
 

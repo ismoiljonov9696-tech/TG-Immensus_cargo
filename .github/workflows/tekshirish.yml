@@ -1,0 +1,36 @@
+name: Tekshirish
+
+# Diagnostika: kalitlar, bot, kanal, modellar va logotipni birma-bir tekshiradi.
+# Hech narsa chiqarmaydi va o'zgartirmaydi — faqat ko'rsatadi.
+#
+# Ishlatish: Actions → «Tekshirish» → Run workflow → tugagach logni oching.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  tekshirish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Kutubxonalar
+        run: pip install -r requirements.txt
+
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Tekshiruv
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: python -m src.main check

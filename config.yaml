@@ -42,7 +42,7 @@ rubrics:
 
 post:
   min_chars: 600
-  max_chars: 900
+  max_chars: 1000
   # Telegram caption limiti 1024 belgi. Undan oshsa matn alohida yuboriladi.
   emoji_level: "medium"   # none | low | medium | high
 
@@ -126,11 +126,13 @@ audio:
   # Audio matni: post matnining o'zi (havola va hashtaglarsiz tozalanadi)
 
 video:
-  # Rasm + audio -> MP4. Ovoz o'chirilgan bo'lsa video ham yig'ilmaydi,
-  # shuning uchun bu ham false. Ovozni yoqsangiz, buni ham true qiling.
-  enabled: false
-  fade_seconds: 0.4
-  tail_seconds: 0.8        # audio tugagach video shuncha davom etadi
+  # Rasm -> qisqa MP4. Ovoz bo'lmasa ham ishlaydi: tasvir sekin
+  # yaqinlashadi (Ken Burns), lentada jonli ko'rinadi va rasmga qaraganda
+  # ko'proq e'tibor tortadi. Premium ham, stiker ham kerak emas.
+  enabled: true
+  silent_seconds: 6        # ovozsiz video necha soniya davom etsin
+  fade_seconds: 0.4        # kirish va chiqishdagi yumshoq o'tish
+  tail_seconds: 0.8        # ovoz yoqilganda: audio tugagach shuncha davom etadi
 
 llm:
   # Matn agentlari (1, 2, 5) uchun model.
@@ -144,12 +146,15 @@ llm:
   # qc_last_chance    — OXIRGI urinishda shu balldan yuqori bo'lsa qabul qilinadi
   #                     va adminga "past ball" belgisi bilan yuboriladi.
   #                     null qilsangiz — eski qat'iy rejim, post umuman chiqmaydi.
-  qc_min_score: 7
-  qc_last_chance: 6
+  # Chegara pasaytirildi: post umuman chiqmagandan ko'ra, kamchiligi
+  # bilan chiqib sizga belgilangan holda kelgani yaxshiroq.
+  qc_min_score: 6
+  qc_last_chance: 4
 
 schedule:
-  # Post chiqish vaqti (kanal vaqt zonasida). Bir nechta bo'lsa ro'yxat qiling.
-  publish_times: ["09:00"]
+  # Post chiqish vaqtlari (Toshkent vaqti). Kuniga 3 ta post.
+  # Har bir vaqtga alohida post tayyorlanadi — ikkitasi bir vaqtda chiqmaydi.
+  publish_times: ["07:00", "12:00", "18:00"]
 
   # --- Quyidagilar faqat ichki jadval (src.scheduler) uchun ---
   # Post chiqishidan necha soat oldin tayyorlansin va tasdiqqa yuborilsin.
@@ -163,8 +168,12 @@ approval:
   #           belgilangan vaqtda o'zi chiqadi. Faqat "Qayta ishlash" bosilsa
   #           to'xtatiladi va qaytadan yoziladi.
   # opt_in  — post faqat siz "Chiqarish" tugmasini bossangiz chiqadi.
-  # off     — hech qanday ko'rsatish yo'q, to'g'ridan-to'g'ri chiqadi.
-  mode: "opt_out"
+  # off     — hech qanday tasdiq yo'q, post belgilangan vaqtda o'zi chiqadi.
+  #           Chiqqach bot sizga "📤 Kanalga chiqdi" deb xabar beradi.
+  #
+  # HOZIRGI REJIM: off — tasdiqlash shart emas, post o'zi chiqadi.
+  # Tasdiqlashni qaytarmoqchi bo'lsangiz: "opt_out" qiling.
+  mode: "off"
 
   # Post chiqishidan necha daqiqa oldin sizga yuborilsin.
   # Ko'rib chiqish uchun shuncha vaqtingiz bo'ladi.

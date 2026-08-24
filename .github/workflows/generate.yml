@@ -1,12 +1,31 @@
 name: Post tayyorlash
 
-# Postni chiqishidan oldin tayyorlaydi va ko'rish uchun adminga yuboradi.
-# Vaqt UTC da. Toshkent = UTC+5, ya'ni 03:45 UTC = 08:45 Toshkent.
+# ============================================================
+#  KUNIGA 3 TA POST: 07:00, 12:00, 18:00 (Toshkent)
+#
+#  Postlar bir kun oldin KECHQURUN tayyorlanadi — ertalab emas.
+#  Sabab: GitHub'ning cron'i aniq vaqtda ishlamaydi, u navbatga qo'yiladi
+#  va odatda 30 daqiqadan 2 soatgacha kechikadi. Kechqurun tayyorlansa,
+#  2 soat kechiksa ham ertalabki 07:00 gacha 9 soatdan ko'p vaqt qoladi.
+#
+#  20:00 da uchala post ham tayyorlanadi va navbatga qo'yiladi:
+#    1-post -> ertaga 07:00
+#    2-post -> ertaga 12:00
+#    3-post -> ertaga 18:00
+#  Ularni "Tugmalar va chiqarish" workflow'i o'z vaqtida kanalga chiqaradi.
+#
+#  Vaqtlar UTC da. Toshkent = UTC+5.
+# ============================================================
 on:
   schedule:
-    - cron: "45 3 * * *"       # 08:45 Toshkent — 09:00 chiqadigan post uchun
-  workflow_dispatch:           # qo'lda ishga tushirish tugmasi
+    - cron: "0 15 * * *"       # 20:00 Toshkent — ASOSIY: ertangi 3 ta post
+    - cron: "0 3 * * *"        # 08:00 Toshkent — ZAXIRA: yetishmaganini to'ldiradi
+  workflow_dispatch:
     inputs:
+      count:
+        description: "Nechta post tayyorlansin"
+        type: string
+        default: "1"
       force:
         description: "Sifat nazoratidan o'tmasa ham davom etsinmi"
         type: boolean
@@ -22,7 +41,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45        # 3 ta post uchun vaqt kerak
     steps:
       - uses: actions/checkout@v4
 
@@ -37,15 +56,45 @@ jobs:
       - name: ffmpeg
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 
-      - name: Postni tayyorlash
+      - name: Postlarni tayyorlash
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
-          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          CRON: ${{ github.event.schedule }}
+          COUNT: ${{ inputs.count }}
+          FORCE: ${{ inputs.force }}
         run: |
-          python -m src.main generate ${{ inputs.force && '--force' || '' }}
+          if [ "$CRON" = "0 15 * * *" ]; then
+            # Kechqurun: ertangi kunning uchala postini tayyorlaymiz.
+            FLAGS="--count 3"
+            echo "Asosiy ishga tushish: 3 ta post tayyorlanadi"
+          elif [ "$CRON" = "0 3 * * *" ]; then
+            # Ertalab: navbatni tekshiramiz. 3 ta bo'lsa hech narsa qilmaydi,
+            # kam bo'lsa (kechqurungi urinish yiqilgan bo'lsa) to'ldiradi.
+            FLAGS="--top-up 3"
+            echo "Zaxira ishga tushish: navbat 3 taga to'ldiriladi"
+          else
+            FLAGS="--count ${COUNT:-1}"
+            echo "Qo'lda ishga tushirildi"
+          fi
+          if [ "$FORCE" = "true" ]; then
+            FLAGS="$FLAGS --force"
+          fi
+          python -m src.main generate $FLAGS
+
+      - name: Xato bo'lsa Telegramga xabar
+        if: failure()
+        env:
+          TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+        run: |
+          # Zaxira xabarnoma: Python o'zi xabar yubora olmay qolgan holat uchun
+          # (masalan kutubxona o'rnatilmadi yoki jarayon butunlay yiqildi).
+          TEXT="⚠️ Post tayyorlash ishga tushmadi (GitHub Actions xatosi).
+          Loglar: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          curl -sS -X POST "https://api.telegram.org/bot${TG}/sendMessage" \
+            -d chat_id="${CHAT}" --data-urlencode text="${TEXT}" > /dev/null || true
 
       - name: Holatni saqlash
         if: always()
@@ -53,6 +102,6 @@ jobs:
           git config user.name  "autopost-bot"
           git config user.email "autopost@users.noreply.github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "post tayyorlandi $(date -u +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "postlar tayyorlandi $(date -u +%Y-%m-%d)"
           git pull --rebase --autostash origin ${{ github.ref_name }} || true
           git push

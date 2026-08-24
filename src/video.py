@@ -33,18 +33,26 @@ def audio_duration(audio: Path) -> float:
 
 def build(
     image: Path,
-    audio: Path,
+    audio: Path | None,
     out: Path,
     *,
     fade: float = 0.4,
     tail: float = 0.8,
     size: int = 1080,
+    silent_seconds: float = 6.0,
+    loop: bool = True,
 ) -> Path:
-    """Rasm va audiodan MP4 yasaydi. Video davomiyligi = audio + tail."""
+    """Rasmdan MP4 yasaydi.
+
+    Ovoz bo'lsa — video davomiyligi audio + tail.
+    Ovoz bo'lmasa — jimjit video, silent_seconds davomida. Lentada rasm
+    o'rniga sekin harakatlanuvchi tasvir chiqadi va e'tiborni ko'proq tortadi.
+    Premium yoki stiker kerak emas.
+    """
     if not ffmpeg_available():
         raise VideoError("ffmpeg topilmadi. O'rnating: apt-get install -y ffmpeg")
 
-    dur = audio_duration(audio) + tail
+    dur = (audio_duration(audio) + tail) if audio else float(silent_seconds)
     fps = 30
     frames = max(int(dur * fps), 1)
 
@@ -57,21 +65,26 @@ def build(
         f"format=yuv420p"
     )
 
-    cmd = [
-        "ffmpeg", "-y", "-loglevel", "error",
-        "-loop", "1", "-i", str(image),
-        "-i", str(audio),
-        "-filter_complex", f"[0:v]{vf}[v]",
-        "-map", "[v]", "-map", "1:a",
+    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", str(image)]
+    if audio:
+        cmd += ["-i", str(audio)]
+    cmd += ["-filter_complex", f"[0:v]{vf}[v]", "-map", "[v]"]
+    if audio:
+        cmd += ["-map", "1:a", "-c:a", "aac", "-b:a", "128k"]
+    else:
+        cmd += ["-an"]                                   # ovozsiz
+    cmd += [
         "-c:v", "libx264", "-preset", "medium", "-crf", "23",
-        "-c:a", "aac", "-b:a", "128k",
+        "-pix_fmt", "yuv420p",
         "-t", f"{dur:.2f}",
         "-movflags", "+faststart",
         str(out),
     ]
+
     proc = subprocess.run(cmd, capture_output=True, text=True)
     if proc.returncode != 0 or not out.exists():
         raise VideoError(f"ffmpeg xatosi:\n{proc.stderr[:800]}")
 
-    LOG.info("Video tayyor: %s (%.1fs, %.1f MB)", out.name, dur, out.stat().st_size / 1e6)
+    LOG.info("Video tayyor: %s (%.1fs, %s, %.1f MB)", out.name, dur,
+             "ovozli" if audio else "ovozsiz", out.stat().st_size / 1e6)
     return out

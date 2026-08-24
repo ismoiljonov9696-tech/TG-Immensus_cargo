@@ -30,7 +30,7 @@ from zoneinfo import ZoneInfo
 from . import store
 from .config import WORK, ConfigError, load_config, load_secrets
 from .agents import a1_topics, a2_writer, a3_image, a4_voice, a5_qc, a6_publish
-from .telegram import Bot, TelegramError, approval_buttons
+from .telegram import Bot, TelegramError, approval_buttons, extract_file_id
 
 LOG = logging.getLogger("main")
 MOCK = os.getenv("MOCK") == "1"
@@ -341,6 +341,36 @@ def send_preview(cfg: dict, secrets, bot: Bot, post: dict,
             LOG.error("Ko'rish xabari yuborilmadi (%s): %s", chat, exc)
 
 
+def stash_media(secrets, bot: Bot, post: dict, media: Path | None, kind: str) -> None:
+    """Rasm/videoni Telegram'ga oldindan yuklab, file_id ni saqlaydi.
+
+    NEGA KERAK: post tayyorlanadigan ish (GitHub Actions) tugagach, uning
+    barcha fayllari o'chib ketadi. Kanalga chiqarish esa BOSHQA ishda, bir
+    necha soatdan keyin bo'ladi — o'shanda rasm fayli endi mavjud emas.
+    Tasdiqlash yoqilgan bo'lsa muammo yo'q edi: rasm sizga ko'rsatilganda
+    Telegram'ga yuklanardi va file_id qolardi. Tasdiqlash o'chirilgach bu
+    yo'l yopildi va postlar rasmsiz chiqa boshladi.
+
+    Yechim: rasm darhol admin chatiga yuboriladi, file_id olinadi, xabar
+    esa shu zahoti o'chiriladi. Sizga hech narsa ko'rinmaydi, lekin rasm
+    Telegram serverida qoladi va chiqarishda ishlatiladi.
+    """
+    if not media or kind == "text":
+        return
+    chat = secrets.admins[0] if secrets.admins else None
+    if not chat:
+        LOG.warning("Admin chat ID yo'q — rasm saqlanmadi, post matn bilan chiqadi")
+        return
+    try:
+        res = (bot.send_video(chat, media) if kind == "video"
+               else bot.send_photo(chat, media))
+        post["file_id"] = extract_file_id(res)
+        bot.delete_message(chat, res["message_id"])
+        LOG.info("Media Telegram'ga saqlandi (%s) — chiqarishda tayyor turadi", kind)
+    except Exception as exc:                              # noqa: BLE001
+        LOG.error("Media saqlanmadi (%s) — post matn bilan chiqishi mumkin", exc)
+
+
 def preview_header(cfg: dict, post: dict, verdict: dict, when: datetime,
                    warnings: list[str] | None = None) -> str:
     mode = mode_of(cfg)
@@ -588,6 +618,7 @@ def generate_one(cfg: dict, force: bool = False, now_flag: bool = False,
 
     if mode == "off":
         post["status"] = "ready"
+        stash_media(secrets, bot, post, media, kind)
         LOG.info("Ko'rsatish o'chirilgan — belgilangan vaqtda chiqadi")
     else:
         if not secrets.admins:
@@ -850,6 +881,10 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
                     LOG.error("Chiqarib bo'lmadi %s: %s", item["id"], exc)
                     store.update_pending(item["id"], status="error", error=str(exc)[:300])
                     continue
+            else:
+                LOG.warning("Rasm fayli topilmadi (%s) — post matn bilan chiqadi. "
+                            "Bu eski post: rasm tayyorlangan ish tugagach o'chib "
+                            "ketgan. Yangi postlarda bunday bo'lmaydi.", p)
 
         try:
             a6_publish.publish(bot, cfg["channel"]["id"], item)

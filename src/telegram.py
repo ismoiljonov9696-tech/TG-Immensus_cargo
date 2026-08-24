@@ -128,6 +128,14 @@ class Bot:
         except TelegramError as exc:
             LOG.debug("answerCallbackQuery: %s", exc)
 
+    def delete_message(self, chat_id: str, message_id: int) -> None:
+        """Xabarni o'chiradi. Media file_id o'chirilgandan keyin ham amal qiladi."""
+        try:
+            self._call("deleteMessage",
+                       data={"chat_id": chat_id, "message_id": message_id})
+        except TelegramError as exc:
+            LOG.debug("deleteMessage: %s", exc)
+
     def edit_reply_markup(self, chat_id: str, message_id: int) -> None:
         """Tugmalarni olib tashlaydi (qaror qabul qilingandan keyin)."""
         try:

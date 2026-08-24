@@ -7,6 +7,6 @@
     "message": "Sifat nazoratidan o'tmadi — barcha urinishlar rad etildi. style/examples.md ga o'z postlaringizni qo'shing yoki config.yaml da llm.qc_min_score ni pasaytiring.",
     "at": "2026-08-23T05:09:39+00:00"
   },
-  "alerted_at": null,
+  "alerted_at": "2026-08-24T08:17:03+00:00",
   "paused": false
 }

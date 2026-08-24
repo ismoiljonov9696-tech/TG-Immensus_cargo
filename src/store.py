@@ -138,13 +138,28 @@ def update_pending(post_id: str, **changes) -> dict | None:
     return None
 
 
-def prune_pending(keep_days: int = 7) -> None:
-    """Chiqarilgan yoki rad etilgan eski yozuvlarni tozalaydi."""
+# Hali chiqmagan — navbatda turgan post holatlari.
+LIVE_STATES = {"preview", "ready", "approved", "rewrite_requested"}
+
+
+def queued() -> list[dict]:
+    """Hali kanalga chiqmagan, navbatda turgan postlar."""
+    return [i for i in pending() if i.get("status") in LIVE_STATES]
+
+
+def prune_pending(keep_days: int = 3) -> None:
+    """Navbatni ixchamlaydi.
+
+    Navbatda turgan postlar hech qachon o'chirilmaydi. Chiqib bo'lgan yoki
+    xatoga uchragan yozuvlar keep_days kundan keyin o'chadi, undan oldin esa
+    og'ir maydonlari (matn, tadqiqot) tashlanadi — aks holda pending.json
+    yuz kilobaytga o'sib, har bir ishga tushishda sekinlashtiradi.
+    """
     from datetime import timedelta
     cutoff = datetime.now(timezone.utc) - timedelta(days=keep_days)
     kept = []
     for item in pending():
-        if item.get("status") in ("waiting", "approved"):
+        if item.get("status") in LIVE_STATES:
             kept.append(item)
             continue
         try:
@@ -152,8 +167,10 @@ def prune_pending(keep_days: int = 7) -> None:
         except ValueError:
             kept.append(item)
             continue
-        if created > cutoff:
-            kept.append(item)
+        if created <= cutoff:
+            continue                       # eski va tugagan — o'chiriladi
+        light = {k: v for k, v in item.items() if k not in ("text", "topic")}
+        kept.append(light)
     save_pending(kept)
 
 
@@ -169,7 +186,17 @@ def set_offset(value: int) -> None:
 
 
 def new_post_id() -> str:
-    return datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+    """Takrorlanmaydigan ID. Bir yurishda bir necha post tayyorlanganda
+    ikkitasi bir xil soniyaga tushib qolmasligi uchun tekshiriladi."""
+    base = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+    used = {i.get("id") for i in pending()} | {i.get("post_id") for i in archive()}
+    if base not in used:
+        return base
+    for n in range(1, 100):
+        candidate = f"{base}-{n}"
+        if candidate not in used:
+            return candidate
+    return base
 
 
 # --------------------------------------------------------------------------- #

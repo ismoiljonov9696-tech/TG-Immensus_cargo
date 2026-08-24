@@ -38,6 +38,15 @@ MOCK = os.getenv("MOCK") == "1"
 RESEARCH_KEEP = 4000        # navbatda saqlanadigan tadqiqot matni uzunligi
 
 
+class QCFailed(RuntimeError):
+    """5-agent postni qabul qilmadi. Kamchiliklar ro'yxati bilan keladi."""
+
+    def __init__(self, problems: list[str], score: int = 0):
+        self.problems = problems or []
+        self.score = score
+        super().__init__("; ".join(self.problems) or "sabab ko'rsatilmagan")
+
+
 def setup_logging(verbose: bool = False) -> None:
     logging.basicConfig(
         level=logging.DEBUG if verbose else logging.INFO,
@@ -64,22 +73,52 @@ def pick_rubric(cfg: dict) -> dict:
     return rubrics[len(store.archive()) % len(rubrics)]
 
 
-def next_publish_time(cfg: dict) -> datetime:
+def publish_slots(cfg: dict, days: int = 4) -> list[datetime]:
+    """Yaqin kunlardagi barcha chiqish vaqtlari, o'sish tartibida."""
     tz = tz_of(cfg)
     now = datetime.now(tz)
     times = cfg["schedule"].get("publish_times") or ["09:00"]
 
-    candidates: list[datetime] = []
-    for day_offset in (0, 1):
+    slots: list[datetime] = []
+    for day_offset in range(days):
         day = now.date() + timedelta(days=day_offset)
         for hhmm in times:
-            hh, _, mm = hhmm.partition(":")
-            candidates.append(datetime(day.year, day.month, day.day,
-                                       int(hh), int(mm or 0), tzinfo=tz))
-    # Ko'rish oynasi sig'ishi uchun juda yaqin vaqtni tanlamaymiz
+            hh, _, mm = str(hhmm).partition(":")
+            slots.append(datetime(day.year, day.month, day.day,
+                                  int(hh), int(mm or 0), tzinfo=tz))
+    return sorted(slots)
+
+
+def taken_slots(cfg: dict) -> set[str]:
+    """Navbatda turgan postlar allaqachon band qilgan vaqtlar."""
+    tz = tz_of(cfg)
+    busy: set[str] = set()
+    for item in store.queued():
+        when = _parse(item.get("publish_at"), tz)
+        if when:
+            busy.add(when.isoformat(timespec="minutes"))
+    return busy
+
+
+def next_publish_time(cfg: dict) -> datetime:
+    """Keyingi BO'SH chiqish vaqti.
+
+    Bir kunda bir nechta post bo'lganda muhim: navbatda 07:00 ga post
+    turgan bo'lsa, keyingisi 12:00 ga tushadi — ikkalasi bir vaqtda
+    chiqib ketmasligi uchun.
+    """
+    now = datetime.now(tz_of(cfg))
     margin = timedelta(minutes=1)
-    future = [c for c in candidates if c > now + margin]
-    return min(future) if future else min(candidates)
+    busy = taken_slots(cfg)
+
+    slots = publish_slots(cfg)
+    for slot in slots:
+        if slot <= now + margin:
+            continue
+        if slot.isoformat(timespec="minutes") in busy:
+            continue
+        return slot
+    return slots[-1] if slots else now + timedelta(hours=1)
 
 
 def notify(secrets, text: str) -> None:
@@ -150,7 +189,7 @@ def _failure_message(cfg: dict, stage: str, reason: str) -> str:
     return (
         "⚠️ <b>Post tayyorlanmadi</b>\n\n"
         f"Bosqich : {stage}\n"
-        f"Sabab   : {reason[:300]}\n"
+        f"Sabab   : {reason[:700]}\n"
         f"Vaqt    : {datetime.now(tz):%d.%m %H:%M}\n\n"
         "Kanal bu safar bo'sh qoladi.\n"
         "Qo'lda ishga tushirish: Actions → «Post tayyorlash» → Run workflow"
@@ -211,7 +250,7 @@ def build_post(cfg: dict, secrets, rubric: dict, topic: dict, post_id: str,
             LOG.error("Sifat nazoratidan o'tmadi: %s", "; ".join(verdict["problems"]))
             LOG.error("Doim shu yerda to'xtasa: config.yaml da llm.qc_min_score ni "
                       "pasaytiring yoki style/examples.md ga o'z postlaringizni qo'shing.")
-            return None
+            raise QCFailed(verdict.get("problems") or [], verdict.get("score", 0))
         if last:
             LOG.warning("Nazoratdan o'tmadi, lekin --force berilgan — davom etaman")
 
@@ -244,12 +283,17 @@ def build_post(cfg: dict, secrets, rubric: dict, topic: dict, post_id: str,
                 LOG.error("4-agent (ovoz) ishlamadi: %s", exc)
                 warnings.append(f"ovoz yaratilmadi — {_short_reason(exc)}")
 
-    if cfg["video"].get("enabled") and image_path and audio_path:
+    # Video: ovoz bo'lsa ovozli, bo'lmasa jimjit harakatlanuvchi tasvir.
+    # Ovozsiz video ham lentada rasmdan ko'ra ko'proq e'tibor tortadi.
+    if cfg["video"].get("enabled") and image_path:
         try:
             from .video import build
-            media_path = build(image_path, audio_path, workdir / "post.mp4",
-                               fade=float(cfg["video"].get("fade_seconds", 0.4)),
-                               tail=float(cfg["video"].get("tail_seconds", 0.8)))
+            media_path = build(
+                image_path, audio_path, workdir / "post.mp4",
+                fade=float(cfg["video"].get("fade_seconds", 0.4)),
+                tail=float(cfg["video"].get("tail_seconds", 0.8)),
+                silent_seconds=float(cfg["video"].get("silent_seconds", 6)),
+            )
             kind = "video"
         except Exception as exc:                          # noqa: BLE001
             LOG.error("Video yig'ilmadi, rasm bilan davom etaman: %s", exc)
@@ -430,13 +474,49 @@ def manual_publish_time(cfg: dict) -> datetime:
     return datetime.now(tz_of(cfg)) + timedelta(minutes=minutes)
 
 
-def cmd_generate(cfg: dict, force: bool = False, now_flag: bool = False) -> int:
-    """Xatolik bo'lsa adminga xabar yuboradi — kanal jimgina bo'sh qolmasin."""
-    secrets = load_secrets(strict=not MOCK)
+def cmd_generate(cfg: dict, force: bool = False, now_flag: bool = False,
+                 if_empty: bool = False, count: int = 1,
+                 top_up: int = 0) -> int:
+    """Bir necha post tayyorlaydi.
 
+    count   — shuncha post tayyorlanadi.
+    top_up  — navbatda shuncha post BO'LGUNCHA tayyorlanadi. Ya'ni 3 desangiz
+              va navbatda 1 ta bo'lsa — yana 2 tasi tayyorlanadi. Zaxira
+              ishga tushish uchun: bo'sh qolgan vaqtlarni to'ldiradi.
+    Bittasi yiqilsa qolganlari baribir tayyorlanadi.
+    """
     if store.is_paused():
         LOG.warning("Tizim pauzada — post tayyorlanmadi (/davom bilan yoqing)")
         return 0
+
+    if if_empty and not top_up:
+        top_up = 1
+
+    if top_up:
+        have = len(store.queued())
+        need = max(top_up - have, 0)
+        if not need:
+            LOG.info("Navbatda %d ta post bor — yangisi kerak emas", have)
+            return 0
+        LOG.warning("Navbatda %d ta post bor, %d tasi yetishmaydi — tayyorlanadi",
+                    have, need)
+        count = need
+
+    worst = 0
+    for n in range(max(count, 1)):
+        if count > 1:
+            LOG.info("──────── %d / %d ────────", n + 1, count)
+        rc = generate_one(cfg, force=force, now_flag=now_flag)
+        worst = worst or rc
+    return worst
+
+
+def generate_one(cfg: dict, force: bool = False, now_flag: bool = False) -> int:
+    """Bitta post: mavzu -> matn -> rasm -> nazorat -> navbatga.
+
+    Xatolik bo'lsa adminga xabar yuboradi — kanal jimgina bo'sh qolmasin.
+    """
+    secrets = load_secrets(strict=not MOCK)
 
     stage = "boshlanish"
     try:
@@ -453,6 +533,16 @@ def cmd_generate(cfg: dict, force: bool = False, now_flag: bool = False) -> int:
         stage = "matn va media (2–5-agentlar)"
         built = build_post(cfg, secrets, rubric, topic, post_id, force=force)
         warnings = built[4] if built else []
+    except QCFailed as exc:
+        bullets = "\n".join(f"  • {p}" for p in exc.problems[:6]) or "  • sabab yozilmagan"
+        reason = (f"Nazoratchi bahosi: {exc.score}/10\n"
+                  f"Kamchiliklar:\n{bullets}\n\n"
+                  f"Chegara: llm.qc_min_score = {cfg['llm'].get('qc_min_score', 7)}")
+        LOG.error("Sifat nazorati: %s", reason)
+        store.record_error("sifat nazorati (5-agent)", reason)
+        if not MOCK:
+            notify(secrets, _failure_message(cfg, "sifat nazorati (5-agent)", reason))
+        return 2
     except Exception as exc:                              # noqa: BLE001
         LOG.exception("Xato (%s): %s", stage, exc)
         store.record_error(stage, str(exc))
@@ -461,12 +551,6 @@ def cmd_generate(cfg: dict, force: bool = False, now_flag: bool = False) -> int:
         return 4
 
     if built is None:
-        reason = ("Sifat nazoratidan o'tmadi — barcha urinishlar rad etildi. "
-                  "style/examples.md ga o'z postlaringizni qo'shing yoki "
-                  "config.yaml da llm.qc_min_score ni pasaytiring.")
-        store.record_error("sifat nazorati (5-agent)", reason)
-        if not MOCK:
-            notify(secrets, _failure_message(cfg, "sifat nazorati (5-agent)", reason))
         return 2
     text, verdict, media, kind, warnings = built
 
@@ -490,6 +574,8 @@ def cmd_generate(cfg: dict, force: bool = False, now_flag: bool = False) -> int:
     if MOCK:
         print("\n" + "═" * 60 + "\n" + text + "\n" + "═" * 60)
         print(f"\nChiqish vaqti: {when:%Y-%m-%d %H:%M %Z}  ·  rejim: {mode_of(cfg)}")
+        post["status"] = "ready"
+        store.add_pending(post)          # sinovda ham vaqt band qilinsin
         return 0
 
     bot = Bot(secrets.telegram_token)
@@ -637,8 +723,12 @@ def process_rewrites(cfg: dict, secrets, bot: Bot) -> int:
         feedback = ("Admin bu variantni qaytarib yubordi. Boshqa qarmoq, boshqa "
                     "tuzilish va boshqa misollar bilan qaytadan yozing — oldingi "
                     "variantni takrorlamang.")
-        built = build_post(cfg, secrets, rubric, topic, f"{item['id']}-r{rewrites}",
-                           feedback=feedback, force=rewrites >= limit)
+        try:
+            built = build_post(cfg, secrets, rubric, topic, f"{item['id']}-r{rewrites}",
+                               feedback=feedback, force=rewrites >= limit)
+        except QCFailed as exc:
+            LOG.error("Qayta yozishda nazoratdan o'tmadi: %s", exc)
+            built = None
         if built is None:
             LOG.error("Qayta yozib bo'lmadi: %s", item["id"])
             store.update_pending(item["id"], status="error",
@@ -746,6 +836,8 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
                     store.record_success(item["id"], item.get("title", ""))
                     published += 1
                     LOG.info("Kanalga chiqarildi (yuklab): %s", item["id"])
+                    notify(secrets, f"📤 Kanalga chiqdi ({now:%H:%M}): "
+                                    f"<b>{item.get('title', item['id'])}</b>")
                     continue
                 except TelegramError as exc:
                     LOG.error("Chiqarib bo'lmadi %s: %s", item["id"], exc)
@@ -758,7 +850,7 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
             store.record_success(item["id"], item.get("title", ""))
             published += 1
             late = " (kechikkan variant)" if int(item.get("rewrites", 0)) else ""
-            notify(secrets, f"📤 Kanalga chiqdi{late}: "
+            notify(secrets, f"📤 Kanalga chiqdi{late} ({now:%H:%M}): "
                             f"<b>{item.get('title', item['id'])}</b>")
         except TelegramError as exc:
             LOG.error("Chiqarib bo'lmadi %s: %s", item["id"], exc)
@@ -844,6 +936,12 @@ def main(argv: list[str] | None = None) -> int:
                         help="sifat nazoratidan o'tmasa ham davom etadi")
     parser.add_argument("--now", action="store_true",
                         help="postni ertangi kunga emas, tez orada chiqarish")
+    parser.add_argument("--if-empty", action="store_true", dest="if_empty",
+                        help="faqat navbat bo'sh bo'lsa tayyorlaydi (zaxira ishga tushish)")
+    parser.add_argument("--count", type=int, default=1,
+                        help="nechta post tayyorlansin (masalan 3)")
+    parser.add_argument("--top-up", type=int, default=0, dest="top_up",
+                        help="navbatda shuncha post bo'lguncha tayyorlaydi")
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
 
@@ -856,7 +954,9 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "check":
             return cmd_check(cfg)
         if args.command == "generate":
-            return cmd_generate(cfg, force=args.force, now_flag=args.now)
+            return cmd_generate(cfg, force=args.force, now_flag=args.now,
+                                if_empty=args.if_empty, count=args.count,
+                                top_up=args.top_up)
         if args.command in ("tick", "publish"):      # publish — eski nom
             return cmd_tick(cfg)
         if args.command == "status":

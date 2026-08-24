@@ -115,5 +115,33 @@
     "post_id": "20260824-125914",
     "sources": [],
     "at": "2026-08-24T13:00:56+00:00"
+  },
+  {
+    "key": "65fe8aa1d1b5",
+    "title": "Muvofiqlik sertifikati uchun namunani avia orqali keltirish",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "post_id": "20260824-133020",
+    "sources": [],
+    "at": "2026-08-24T13:36:48+00:00"
+  },
+  {
+    "key": "87ccd5a75af6",
+    "title": "Xitoy sotuvchisidan HS Code va TIF TN kodi mosligi",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "post_id": "20260824-133648",
+    "sources": [],
+    "at": "2026-08-24T13:39:15+00:00"
+  },
+  {
+    "key": "9733388aa9f3",
+    "title": "Zavod bilan 'Oltin namuna' (Golden Sample) tizimida ishlash",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "post_id": "20260824-133915",
+    "sources": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEpoQtqsrYe6r7kaLSoOH4K3yw3xBbfSk0CHUkwmEloojVjYjtjguwu0bE73-eqtmSr35zy7kF1cOM8L2ISe0-yU5jv6zjBH86i2BtbGsyafuhuJKGIU3RiQyVCj1GBeFph6Eeh7WURI8q5oHKlBdenc8=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcMuxbmejMwGo4WzbNLDqika6YLjVMh50_O3oF30qki5JsyRvyRUJjzQC__O9N6qPHifUd0ZbbvU1X50ttOpmvjj9I9l6uuL7DAgC6tCcHvz4Cr9mHhjoZJ6_wAgvgqNGAuelyiNC9sxbNOeGOkfFb8LkEE9NeeaLt_Pnl6A==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3T5qOcLd7eG-VctI8BoPitTu4SpcyeextxqWfV5bf3bjMJL9UhdbeIaqe0vWjamrH32UPtZ9pREDb27wxOKTS626D3qgfPM2T7v8HS_giiPTMpP0lanmFU73erxp1Lpg-NavI44_XxHcHzBgnlUvtl6uI99u_4GlvIxI1c1ihT8O00mFCwWzJTU8XUuaFFFuXnMzoNTuwj7gfmSP-"
+    ],
+    "at": "2026-08-24T13:43:07+00:00"
   }
 ]

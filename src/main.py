@@ -506,12 +506,16 @@ def cmd_generate(cfg: dict, force: bool = False, now_flag: bool = False,
     for n in range(max(count, 1)):
         if count > 1:
             LOG.info("──────── %d / %d ────────", n + 1, count)
-        rc = generate_one(cfg, force=force, now_flag=now_flag)
+        # Qo'lda ishga tushirilganda faqat BIRINCHI post tez chiqadi
+        # ("sinab ko'raman" holati). Qolganlari jadvaldagi bo'sh vaqtlarga
+        # tushadi — aks holda uchalasi bir vaqtda chiqib ketardi.
+        rc = generate_one(cfg, force=force, now_flag=now_flag, first=(n == 0))
         worst = worst or rc
     return worst
 
 
-def generate_one(cfg: dict, force: bool = False, now_flag: bool = False) -> int:
+def generate_one(cfg: dict, force: bool = False, now_flag: bool = False,
+                 first: bool = True) -> int:
     """Bitta post: mavzu -> matn -> rasm -> nazorat -> navbatga.
 
     Xatolik bo'lsa adminga xabar yuboradi — kanal jimgina bo'sh qolmasin.
@@ -554,7 +558,8 @@ def generate_one(cfg: dict, force: bool = False, now_flag: bool = False) -> int:
         return 2
     text, verdict, media, kind, warnings = built
 
-    when = manual_publish_time(cfg) if _is_manual_run(now_flag) else next_publish_time(cfg)
+    when = (manual_publish_time(cfg) if (first and _is_manual_run(now_flag))
+            else next_publish_time(cfg))
     post = {
         "id": post_id,
         "rubric": rubric["name"],
@@ -810,9 +815,11 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
     tz = tz_of(cfg)
     now = datetime.now(tz)
     mode = mode_of(cfg)
+    # "off" rejimida "preview" ham qabul qilinadi: tasdiqlash o'chirilgunga
+    # qadar navbatga tushgan eski postlar aks holda abadiy osilib qoladi.
     ready_states = {"opt_out": {"preview", "ready", "approved"},
                     "opt_in": {"approved"},
-                    "off": {"ready", "approved"}}[mode]
+                    "off": {"preview", "ready", "approved"}}[mode]
 
     published = 0
     for item in store.pending():

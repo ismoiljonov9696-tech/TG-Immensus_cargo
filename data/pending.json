@@ -1,53 +1,5 @@
 [
   {
-    "id": "20260825-170527",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Shipping Mark: Kargo omborida yuk yo'qolishining oldini olish",
-    "kind": "video",
-    "file_id": "BAACAgIAAxkDAANaao3L18eOpu-O1js5IoAEfQh2ILsAAjSyAAI4AXBIiAF4DgWLpqo9BA",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260825-170527/post.mp4",
-    "qc_score": 10,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-08-26T18:00:00+05:00",
-    "created_at": "2026-08-25T17:07:34+00:00",
-    "status": "published",
-    "published_at": "2026-08-26T14:23:44+00:00",
-    "updated_at": "2026-08-26T14:23:44+00:00"
-  },
-  {
-    "id": "20260825-170736",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "EXW o'rniga FOB: Xitoy ichki logistika xarajatini tejash",
-    "kind": "video",
-    "file_id": "BAACAgIAAxkDAANdao3MTKPSB5Up3ATHYn50aFrRaOsAAjuyAAI4AXBI_hpYoCRb_z49BA",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260825-170736/post.mp4",
-    "qc_score": 10,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-08-27T07:00:00+05:00",
-    "created_at": "2026-08-25T17:09:31+00:00",
-    "status": "published",
-    "published_at": "2026-08-27T08:42:21+00:00",
-    "updated_at": "2026-08-27T08:42:21+00:00"
-  },
-  {
-    "id": "20260825-170933",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Xitoy sotuvchisining rasmiy qizil muhrini tekshirish",
-    "kind": "video",
-    "file_id": "BAACAgIAAxkDAANeao3Mv2cPvpzYFGFnjAcTmm3cErgAAkqyAAI4AXBI-pJ_bP03JHQ9BA",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260825-170933/post.mp4",
-    "qc_score": 10,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-08-27T12:00:00+05:00",
-    "created_at": "2026-08-25T17:11:27+00:00",
-    "status": "published",
-    "published_at": "2026-08-27T08:42:23+00:00",
-    "updated_at": "2026-08-27T08:42:23+00:00"
-  },
-  {
     "id": "20260828-010152",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Data Matrix markirovka kodlarini Xitoyda chop etish",
@@ -67,78 +19,33 @@
     "id": "20260828-010353",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Xitoyda NDA emas, NNN shartnomasini qo'llash",
-    "text": "🔒 G'oyangizni Xitoy zavodi nusxalab, raqobatchingizga sotishini xohlamaysizmi?\n\nO'z brendingiz (OEM/ODM) ostida tovar chiqarishda ko'pchilik oddiy NDA shartnomasiga ishonadi. Lekin G'arbiy namunadagi NDA Xitoyda ishlamaydi. Zavodlar g'oyangizni nusxalab, mahalliy raqobatchilarga arzonroq sotib yuborishi mumkin.\n\nYechim: Dizayn yoki individual qadoqlash g'oyasini berishdan oldin NNN shartnomasini tuzing.\n\nUndagi 3 ta asosiy taqiq:\n\n1️⃣ NON-DISCLOSURE\nMa'lumot va chizmalarni uchinchi shaxslarga tarqatmaslik.\n\n2️⃣ NON-USE\nG'oyangiz va dizayningizdan zavod o'zi uchun foydalanmasligi.\n\n3️⃣ NON-CIRCUMVENTION\nZavod sizni aylanib o'tib, xaridor ortidan to'g'ridan-to'g'ri chiqmasligi.\n\n📌 Oddiy NDA faqat ma'lumotni yashiradi, NNN esa zavodning g'oyangizni o'zlashtirishini va raqobatchingizga sotishini man etadi.\n\nSavolingiz bo'lsa — izohda yozing 👇\n\n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "video",
     "file_id": "BAACAgIAAxkDAANsapDe6kPxax4erSTIomsKcpwBTVgAAlOkAAJ-nYlInlSLRmBFb7Q9BA",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260828-010353/post.mp4",
-    "topic": {
-      "title": "Xitoyda NDA emas, NNN shartnomasini qo'llash",
-      "angle": "G'arbiy namunadagi oddiy NDA Xitoyda ishlamaydi. O'quvchiga o'z dizayni yoki g'oyasini zavodga berishdan oldin NNN shartnomasini tuzish tartibi va 3 ta asosiy taqiq tushuntiriladi.",
-      "why_now": "O'zbekistonlik marketpleys sotuvchilari Xitoyda OEM/ODM ishlab chiqarishni ko'paytirmoqda, lekin zavodlar g'oyani nusxalash holatlari ortgan.",
-      "research": "Mana \"Xitoy savdosi maslahatlari\" rubrikasi uchun yangi va amaliy 8 ta mavzu nomzodi:\n\n1. **Sarlavha:** Xitoyda standart NDA emas, NNN (Non-Disclosure, Non-Use, Non-Circumvention) shartnomasini qo'llash\n   - **Qaysi burchakdan yoritiladi:** G'arbiy namunadagi oddiy NDA Xitoyda ishlamaydi. O'quvchiga o'z dizayni yoki individual qadoqlash g'oyasini zavodga berishdan oldin NNN shartnomasini tuzish tartibi, undagi 3 ta asosiy taqiq (ma'lumotni tarqatmaslik, g'oyadan o'zi uchun foydalanmaslik va xaridor ortidan to'g'ridan-to mehmonga chiqmaslik) tushuntiriladi.\n   - **Nega aynan hozir dolzarb:** O'zbekistonlik marketpleys sotuvchilari va brend egalari Xitoyda OEM/ODM (o'z brendi ostida) ishlab chiqarishni ko'paytirmoqda, lekin zavodlar ularning g'oyasini nusxalab, mahalliy raqobatchilarga arzonroq sotish holatlari ko'paygan.\n   - **Foydalilik bahosi:** 9.5/10\n\n2. **Sarlavha:** AQL 2.5 (Acceptable Quality Level) standarti bo'yicha tovar partiyasidagi brak limitini shartnomaga kiritish\n   - **Qaysi burchakdan yoritiladi:** Tovar partiyasida \"umuman brak bo'lmasin\" deyish unreal. Xalqaro AQL 2.5 jadvali yordamida har bir partiya uchun ruxsat berilgan nuqsonlar sonini (muhim va kichik braklarni) shartnomada aniq ko'rsatish va agar limitdan oshsa, zavod o'z hisobidan qayta ishlab berish majburiyatini yuklash algoritmi.\n   - **Nega aynan hozir dolzarb:** Ko'p importerlar tovar kelgach bir nechta brak chiqsa zavod bilan tortishadi va asossiz rad javobini oladi. AQL 2.5 standarti shartnomaga oldindan kiritilsa, e'tiroz yuborish uchun huquqiy va texnik asos bo'ladi.\n   - **Foydalilik bahosi:** 9.2/10\n\n3. **Sarlavha:** GSXT (Xitoy Davlat Reyestri) orqali yetkazib beruvchining sud va qarzdorlik tarixini tekin tekshirish\n   - **Qaysi burchakdan yoritiladi:** Sotuvchining 18 xonali Yagona ijtimoiy kredit kodini (Unified Social Credit Code) olib, Xitoy hukumati reyestri (gsxt.gov.cn) orqali kompaniya ustidan sud jarayonlari, qora ro'yxatga tushgani yoki faoliyatida muammolar bor-yo'qligini tekshirish bo'yicha bosqichma-bosqich yo'riqnoma.\n   - **Nega aynan hozir dolzarb:** Oldindan 30% avans olib, keyin bankrot bo'lgan yoki sudlashayotgan zavodlar tufayli pulini yo'qotayotgan tadbirkorlar ko'paymoqda.\n   - **Foydalilik bahosi:** 9.4/10\n\n4. **Sarlavha:** Xitoy Milliy bayramlari (Chunjie va Oltin Hafta) sababli ishlab chiqarish to'xtashining oldini olish kalendari\n   - **Qaysi burchakdan yoritiladi:** Xitoydagi eng katta bayramlar (Fevraldagi Bahor bayrami va Oktyabrdagi Oltin hafta) oldidan logistika va zavodlar 2-3 hafta oldin to'xtashini inobatga olib, buyurtma berish, ombor band qilish va to'lovni amalga oshirishning aniq 6 haftalik tayyorgarlik jadvalini tuzish.\n   - **Nega aynan hozir dolzarb:** Yangi boshlayotgan tadbirkorlar bayram arafasida buyurtma berib, tovari 1-1.5 oy ushlanib qolishi va mavsumiy sotuvni boy berishi eng ko'p uchraydigan xatolardan biridir.\n   - **Foydalilik bahosi:** 8.9/10\n\n5. **Sarlavha:** Kanton ko'rgazmasi yoki stendlarda haqiqiy zavodni vositachi (Trading Company)dan ajratish usuli\n   - **Qaysi burchakdan yoritiladi:** Ko'rgazma stendida muloqot qilganda stend litsenziya kodi, WeChat profilidagi manzil (zavod va ofis manzili farqi) va ishlab chiqarish liniyasiga oid 3 ta maxsus savol berish orqali qarshingizda zavod vakilimi yoki vositachi ekanini aniqlash.\n   - **Nega aynan hozir dolzarb:** O'zbekistonlik tadbirkorlar Xitoy ko'rgazmalariga faol borishmoqda, lekin ko mezonlarni bilmaslik oqibatida zavod o'rniga vositachilar bilan shartnoma tuzib, ortiqcha komissiya to'lashadi.\n   - **Foydalilik bahosi:** 9.0/10\n\n6. **Sarlavha:** Proforma Invoice (PI) hujjatchasiga kechikish uchun moliyaviy jarima shartini kiritish\n   - **Qaysi burchakdan yoritiladi:** Oddiy WeChat spirovkasi huquqiy kuchga ega emas. PI hujjatiga aniq tayyor bo'lish sanasi (Shipment Date) va har bir kechikkan kun uchun tovar summasidan aniq foiz ko'rinishida jarima (Late Delivery Penalty) bandini kiritish tartibi.\n   - **Nega aynan hozir dolzarb:*",
-      "sources": []
-    },
     "qc_score": 9,
     "soft_pass": false,
     "rewrites": 0,
     "publish_at": "2026-08-28T12:00:00+05:00",
     "created_at": "2026-08-28T01:05:45+00:00",
-    "status": "ready"
+    "status": "published",
+    "published_at": "2026-08-28T21:57:13+00:00",
+    "updated_at": "2026-08-28T21:57:13+00:00"
   },
   {
     "id": "20260828-010547",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Xitoyda brendni ro'yxatdan o'tkazish va GACC nazorati",
-    "text": "🚨 Xitoyda tayyorlangan o'z brendingiz O'zbekistonga yetib kelmay, bojxonada ushlanib qolishi mumkin.\n\nSababi oddiy: siz Xitoy zavodida o'z brendingiz ostida (OEM) tovar buyurtma qilasiz, lekin brendingiz Xitoyda rasmiylashtirilmagan. Natijada Xitoydagi \"patent skvotteri\" bu nomni o'ziga rasmiylashtirib oladi va Xitoydan chiqish bojxonasida yukingizni hibsga oldiradi.\n\n📌 Yuk ushlanishining oldini olish uchun 2 ta zarur qadam:\n\n1️⃣ BRENDNI CNIPA'DA RO'YXATDAN O'TKAZING\nXitoyning tegishli idorasida (CNIPA) savdo belgingizni (Trademark) oldindan rasmiylashtirib, huquqlaringizni mustahkamlang.\n\n2️⃣ GACC BAZASIGA KIRITING\nBrendni Xitoy bojxonasi (GACC) reestriga muhofaza uchun kiriting. Shunda bojxona o'zga shaxslar tomonidan brendingizdan noqonuniy foydalanilishiga va tovar chiqishiga yo'l qo'ymaydi.\n\n✅ Natijada shaxsiy brendingiz Xitoy ichida huquqiy himoyalanadi va tovaringiz bojxonada to'xtovsiz, muammosiz o'tadi.\n\nSavolingiz bo'lsa — izohda yozing 👇\n\n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "video",
     "file_id": "BAACAgIAAxkDAANtapDfbQZOU1UkfGl5ooTyj_ZQrFEAAlakAAJ-nYlI-8ZCEI2BjJs9BA",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260828-010547/post.mp4",
-    "topic": {
-      "title": "Xitoyda brendni ro'yxatdan o'tkazish va GACC nazorati",
-      "angle": "Postda OEM mahsulotlarini Xitoy bojxonasidan muammosiz olib chiqish uchun brendni CNIPA va GACC bazasida muhofaza qilish mexanizmi tushuntiriladi.",
-      "why_now": "Tobora ko'proq tadbirkorlar shaxsiy brend yaratmoqda, lekin Xitoy ichidagi savdo belgisi huquqlari tufayli tovar chiqara olmaslik holatlari ko'paymoqda.",
-      "research": "Quyida \"Xitoy savdosi maslahatlari\" rubrikasi uchun tanlab olingan 8 ta yangi, amaliy va dolzarb mavzular nomzodlar ro'yxati taqdim etiladi. Ularning barchasi allaqachon yozilgan mavzulardan farq qiladi va o'quvchi bugunoq qo'llashi mumkin bo'lgan aniq harakatlar algoritmiga ega.\n\n---\n\n### 1-nomzod\n* **Sarlavha:** Pinduoduo platformasi orqali minimal partiyasiz (MOQ=1) zavod narxida test tovarlarini sotib olish texnikasi.\n* **Qaysi burchakdan yoritiladi:** Marketpleys va kichik do'kon sotuvchilari yangi tovar burchagini sinab ko'rmoqchi bo'lganda, 1688'dagi yuqori MOQ (minimal buyurtma miqdori) talabiga to'qnash kelishadi. Pinduoduo'da rasmli qidiruv va jamoaviy xarid (拼团) mexanizmidan foydalanib, 1-2 dona tovarni hamulgurji narxda xarid qilish va kargo omboriga yuborish tartibi amaliy qadamlarda ko'rsatiladi.\n* **Nega aynan hozir dolzarb:** O'zbekiston marketpleyslarida (Uzum, Yandex Market) raqobat kuchaygani sababli sotuvchilar katta partiyaga tavakkal qilmasdan, tez-tez yangi mikronishalarni minimal xarajat bilan sinab ko'rishga majbur bo'lmoqda.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 2-nomzod\n* **Sarlavha:** Xitoy bojxonasida (GACC) yuk ushlanishining oldini olish: Xitoyda brendni (Trademark) ro'yxatdan o'tkazish tartibi.\n* **Qaysi burchakdan yoritiladi:** O'zbekistonlik tadbirkor Xitoyda o'z brendi ostida (OEM) tovar ishlab chiqarsa-da, agar brend nomi Xitoyning CNIPA idorasida ro'yxatdan o'tmagan bo'lsa, Xitoy ichidagi \"patent skvotteri\" bu nomni o'ziga rasmiylashtirib, Xitoydan chiqish bojxonasida yukni hibsga oldirishi mumkin. Postda OEM mahsulotlarini Xitoy bojxonasidan muammosiz olib chiqish uchun brendni Xitoyda va GACC bazasida oldindan muhofaza qilish mexanizmi tushuntiriladi.\n* **Nega aynan hozir dolzarb:** Tobora ko'proq O'zbekistonlik tadbirkorlar shaxsiy brend (Private Label) yaratmoqda, lekin Xitoy ichidagi savdo belgisi huquqlari tufayli Xitoy chegarasidan tovar chiqara olmay qolish holatlari ko'paymoqda.\n* **Foydalilik bahosi:** 10/10\n\n---\n\n### 3-nomzod\n* **Sarlavha:** Direct-zavod bilan ishlashda Qichacha (企查查) servisi orqali sotuvchining sud tarixi va moliyaviy barqarorligini tekshirish.\n* **Qaysi burchakdan yoritiladi:** 1688 platformasidan tashqaridagi yoki ko'rgazmalardan topilgan Xitoy zavodlariga katta bo'nak (avans) o'tkazishdan oldin, Xitoyning rasmiy yuridik ma'lumotlar bazasi (Qichacha/Tianyancha) orqali zavodning sudlashish holatlari, muzlatilgan aktivlari va litsenziya holatini tekshirish bo'yicha amaliy ko'rsatma.\n* **Nega aynan hozir dolzarb:** Yirik buyurtmalarda 1688 vositachiligisiz to'g'ridan-to'g'ri zavod hisobiga pul o'tkazilganda firibgarlik yoki bankrotlik yoqasidagi zavodlarga duch kelib pul yo'qotish xavfi juda yuqori.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 4-nomzod\n* **Sarlavha:** Oq importda bojxona yig'imidan 20% chegirma olish: Dastlabki bojxona deklaratsiyalash tartibi.\n* **Qaysi burchakdan yoritiladi:** Vazirlar Mahkamasining 2025-yil 31-yanvardagi 55-sonli qaroriga ko'ra, tovarlar O'zbekiston bojxona hududiga yetib kelguniga qadar dastlabki deklaratsiyani amalga oshirish orqali bojxona yig'imidan 20 foizlik chegirmaga ega bo'lish mexanizmi va hujjatlarni oldindan tayyorlash tartibi ko'rsatiladi *(Manba sanasi: 2025-yil 31-yanvar, VM-55-sonli qarori)*.\n* **Nega aynan hozir dolzarb:** Rasmiy (oq) import ulushi ortib bormoqda va har bir rasmiylashtiruvdagi xarajatlarni qonuniy tejash tadbirkor uchun tovar marjasini bevosita oshiradi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 5-nomzod\n* **Sarlavha:** Konteynyerga yuklash inspektsiyasi (CLC): Yuk muhrlanishidan oldin o'tkaziladigan 5 ta zarur nazorat burchagi.\n* **Qaysi burchakdan yoritiladi:** Zavod omboridagi tovar inspektsiyasidan tashqari, tovar konteynyerga ortilayotgan paytda (Container Loading Check) namlik darajasini o'lchash, qutilar soni va joylashuv tartibini, konteynyer plombasi (Seal number) raqami mosligini tekshirish hamda to'liq foto/video hisobot olish bo'yicha checklist taqdim etiladi.\n* **Nega aynan hozir dolza",
-      "sources": [
-        {
-          "title": "lex.uz",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdCp0lRXaeVd1JhWJhXyMXBsvvh7PFzBUEreisAzAN6E4xspQPGWe2Vt-EiVGMGnDWDdN_V5xFbcApiR4DQ8vazomLpvq4SErIpOEst6BGMKen78Uj"
-        },
-        {
-          "title": "lightningcat.org",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBjOaktUfgHzo643sMV7SRhhfOTZrmZgHLkSxkLTjKtBj9jMnJ7vjrllNb948Cv1XgFBItwEEHudDZmTZmmRp8viTeWfuJjcIxd9EWoxJTBjjVpqhdksh9CIweoCwBqQ0Yeen7bzglxNk9XTH7i5kjg5IPdnK8QjdX2avzTKFzYVGuD0QezLGsepq3dJek8LuOVAJKtXBjNogDiPRZeA=="
-        },
-        {
-          "title": "harris-sliwoski.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnrJayEtNn_dDRyqEFBIFQINVERn4bIcr0H8HrSSDEGBn_Ul64fXtXVl1b067W7TkoDki-t4BEsVKP3LrptgcxrR93yZcZPyr-x-FxN_RUrOOq_b7mO87MJ5q1hXhfVor22KNdas6e9AuP5BQSyUbKVyNSU2P-MrNn-dd_KJKBNQE1VJ7YGC0mtmfsODA0tP7Ztis90P7PVVnU79R7ykM5aV01zIckTNQBjBw9bAoCnQ3M0WE="
-        },
-        {
-          "title": "cnmylogistics.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmi4qHZBnmeEfwGTBxIL59S_xOhM0R_VAYSeKNVcKChdU5eDQZY6tQ0fPuNWNALtBfOs1xNMnFxa5iUdbWy7ICtK27fxNULA1zRf9FD0rjIhaqQYqLlRCMcigLdkv6DjxjfBitIJnlNano"
-        },
-        {
-          "title": "yciplaw.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3sCCh6zIxTwBJJ8PpSsyBPzCrW3OwRY51u8YBxp1khqYZJPIoI1F4v0vOMYOOlXri0XbLVKaCTPGckk8po8b-RcL5mglvuZeu0cAbVdn430ey7l8PM2JmTNV66eJDPvBLEMGyIVrfPc6Xv7hLeMYk6w=="
-        },
-        {
-          "title": "customs.uz",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFFzSearQC7G8YW2ctjW78bt3lNE0QLIiovj7AWUcF0w4sap3LE1Wjqj1yHpznqz89VpJE2jZRhBIfiiSE0QERUNFI1_pAfG2OoPuDCOsNfBwBab3cq8co="
-        },
-        {
-          "title": "youtube.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFq3eZe_6WFz4V_ZflMMFOM_fyEnlj9CaNTDNgYtR-O4-0tRDL-8jqIb6dxaRaGpj4HnIYYSfUFSdsgE-ERkKPf8P1F2jG3FvVnz5jmDnyMHAv_KTMPAjxppDnogLWAe0qc"
-        },
-        {
-          "title": "youtube.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFd2JwhsQ40m2l_sXdTQZhDY1ByGRs3rkQMjlFxFXsVCVcGuD85PO-8FLHtKQ9SNhmzbcONrXpX9xoV6tc5zSeh1oIxJZW4iCZbvpdVTnzPEsUv9OuqYkXzHD9HpBX_Wdyu"
-        }
-      ]
-    },
     "qc_score": 10,
     "soft_pass": false,
     "rewrites": 0,
     "publish_at": "2026-08-28T18:00:00+05:00",
     "created_at": "2026-08-28T01:07:56+00:00",
-    "status": "ready"
+    "status": "published",
+    "published_at": "2026-08-28T21:57:14+00:00",
+    "updated_at": "2026-08-28T21:57:14+00:00"
   },
   {
     "id": "20260828-015100",

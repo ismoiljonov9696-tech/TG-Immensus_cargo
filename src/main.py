@@ -903,6 +903,23 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
     return published
 
 
+def cmd_due(cfg: dict, within_minutes: int = 180) -> int:
+    """Yaqin vaqtda chiqadigan post bormi? Bor bo'lsa 0, yo'q bo'lsa 1 qaytaradi.
+
+    Kuzatuvchi ish shu javobga qarab kutishda davom etadi yoki tugaydi —
+    bekorga soatlab ishlab turmasligi uchun.
+    """
+    tz = tz_of(cfg)
+    limit = datetime.now(tz) + timedelta(minutes=within_minutes)
+    for item in sorted(store.queued(), key=lambda i: str(i.get("publish_at"))):
+        when = _parse(item.get("publish_at"), tz)
+        if when and when <= limit:
+            print(f"{item['id']} → {when:%d.%m %H:%M}")
+            return 0
+    print(f"{within_minutes} daqiqa ichida chiqadigan post yo'q")
+    return 1
+
+
 def cmd_tick(cfg: dict) -> int:
     """Har bir bosqich alohida himoyalangan.
 
@@ -973,7 +990,9 @@ def cmd_status(cfg: dict) -> int:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Telegram avtomatik post tizimi")
     parser.add_argument("command",
-                        choices=["check", "generate", "tick", "publish", "status"])
+                        choices=["check", "generate", "tick", "publish", "status", "due"])
+    parser.add_argument("--within", type=int, default=180,
+                        help="due: shuncha daqiqa ichida chiqadigan post bormi")
     parser.add_argument("--force", action="store_true",
                         help="sifat nazoratidan o'tmasa ham davom etadi")
     parser.add_argument("--now", action="store_true",
@@ -1003,6 +1022,8 @@ def main(argv: list[str] | None = None) -> int:
             return cmd_tick(cfg)
         if args.command == "status":
             return cmd_status(cfg)
+        if args.command == "due":
+            return cmd_due(cfg, args.within)
     except ConfigError as exc:
         LOG.error("%s", exc)
         return 1

@@ -32,7 +32,7 @@ on:
         default: false
 
 concurrency:
-  group: autopost
+  group: tayyorlash          # chiqarish ishidan alohida — bir-birini kutmasin
   cancel-in-progress: false
 
 permissions:

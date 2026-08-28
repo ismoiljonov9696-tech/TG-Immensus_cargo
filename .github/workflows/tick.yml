@@ -1,30 +1,43 @@
-name: Tugmalar va chiqarish
+name: Chiqarish (kuzatuvchi)
 
-# Tugma bosishlarini o'qiydi, qayta ishlashni bajaradi va vaqti kelgan
-# postni kanalga chiqaradi.
+# ============================================================
+#  NEGA BU ISH UZOQ ISHLAYDI
 #
-# DIQQAT: GitHub cron'ining eng kichik oralig'i 5 daqiqa va u ko'pincha
-# yana bir necha daqiqa kechikadi. 10 daqiqalik ko'rish oynasi uchun bu
-# aniqlik yetarli emas — post 5-10 daqiqa kech chiqishi mumkin.
-# Aniq vaqt kerak bo'lsa: server yoki kompyuterda src.scheduler ishlating
-# (har 60 soniyada tekshiradi), yoki config.yaml da preview_minutes ni
-# 30 daqiqaga oshiring.
+#  GitHub'ning jadvali ishonchsiz: 27-avgust kuni u 30 soatdan ortiq
+#  hech qanday jadvalli ishni ishga tushirmadi. Har 5 daqiqada
+#  tekshiradigan eski usul shuning uchun ishlamadi — postlar navbatda
+#  qolib ketdi.
+#
+#  Yangi usul: ish chiqish vaqtidan 1-2 soat OLDIN ishga tushadi va
+#  soatga qarab KUTIB TURADI. Har 60 soniyada tekshiradi va aynan
+#  belgilangan daqiqada postni chiqaradi. GitHub 1 soat kechikib ishga
+#  tushirsa ham, ish baribir 07:00 gacha ulguradi.
+#
+#  Bekorga ishlab turmasligi uchun: agar yaqin 3 soatda chiqadigan post
+#  bo'lmasa, ish darhol tugaydi (bir necha soniya).
+#
+#  Vaqtlar UTC. Toshkent = UTC+5.
+#    07:00 Toshkent = 02:00 UTC  → 00:00 va 01:00 UTC da ishga tushadi
+#    12:00 Toshkent = 07:00 UTC  → 05:00 va 06:00 UTC da
+#    18:00 Toshkent = 13:00 UTC  → 11:00 va 12:00 UTC da
+#  Har bir vaqt uchun ikkita urinish — biri o'tkazib yuborilsa ikkinchisi.
+# ============================================================
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 0,1,5,6,11,12 * * *"
   workflow_dispatch:
 
 concurrency:
-  group: autopost
+  group: chiqarish
   cancel-in-progress: false
 
 permissions:
   contents: write
 
 jobs:
-  publish:
+  watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 170
     steps:
       - uses: actions/checkout@v4
 
@@ -36,12 +49,49 @@ jobs:
       - name: Kutubxonalar
         run: pip install -r requirements.txt
 
-      - name: Tugmalarni o'qish va chiqarish
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Kutish va chiqarish
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python -m src.main tick
+        run: |
+          git config user.name  "autopost-bot"
+          git config user.email "autopost@users.noreply.github.com"
+
+          END=$(( $(date +%s) + 9600 ))          # 2 soat 40 daqiqa
+          while [ "$(date +%s)" -lt "$END" ]; do
+            python -m src.main tick || echo "tick xatosi — davom etamiz"
+
+            # Har chiqishdan keyin holatni darhol saqlaymiz. Ish to'satdan
+            # to'xtasa ham post ikki marta chiqib ketmaydi.
+            if [ -n "$(git status --porcelain data/)" ]; then
+              git add data/
+              git commit -q -m "navbat $(date -u +%Y-%m-%dT%H:%M)" || true
+              git pull --rebase --autostash -q origin "${GITHUB_REF_NAME}" || true
+              git push -q || true
+            fi
+
+            # Yaqin 3 soatda chiqadigan post qolmagan bo'lsa — tugatamiz.
+            if ! python -m src.main due --within 180; then
+              echo "Kutadigan post yo'q — kuzatuv tugadi"
+              break
+            fi
+            sleep 60
+          done
+
+      - name: Xato bo'lsa Telegramga xabar
+        if: failure()
+        env:
+          TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+        run: |
+          TEXT="⚠️ Chiqarish ishi yiqildi (GitHub Actions).
+          Loglar: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          curl -sS -X POST "https://api.telegram.org/bot${TG}/sendMessage" \
+            -d chat_id="${CHAT}" --data-urlencode text="${TEXT}" > /dev/null || true
 
       - name: Holatni saqlash
         if: always()

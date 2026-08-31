@@ -345,5 +345,35 @@
     "post_id": "20260830-151254",
     "sources": [],
     "at": "2026-08-30T15:20:26+00:00"
+  },
+  {
+    "key": "d9999082d021",
+    "title": "Bepul ehtiyot qismlar (Spare Parts Allowance) so'rash usuli",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "post_id": "20260831-150616",
+    "sources": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSA5fpH9VnHbmYiNbfCi6yM_Mo7QcUo28TOaYS1_FPm9HdXPjcaqv9wDBmNVVWulHVbrxxwq7COaCxwLDzD8BVw9BCfoOeMwTlIDZbqaXgtXb0N2afXseM_VxMDydkTwt5ig==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpTlm59xtSrmTv25VLfi4XmlhWI6kd5v_8BrGQpz2Q_ecT7N4I67yl7nVVOHpzLzE8zoLz-1hyEbTHemoaV7O9LwkRujFdDgBYh1LoWJGITGBV0Yxg1VTehEJvP-0dgSpDaKLNZ_-pWO371KUpEwqbPTEhNXM8XCp1dMaRXlNQDljRgRY3ZQ==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7FMjMHI2nywdnYEnQqh8QPQYsTxNkxcO7RQKGCizn7HWLl8cctQAcmH1QGrfxb1Tk7F7GDErI5b58T25nGKJZZcDoo8kxJyA4Y5B_qo4dCGjaM5fSXrP9mxbCY8-BddHdLStUWrjpiQEtwEYLTm_Ev0knMvoZ9zFX",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBgvribyjp4Ub4U-55PLdM8XIS0Bxfrfl0b2tku4ma-a1kWDAXWqJo4ySe5p_P8pwZUiiOh46RDD6lIkt3LGNjYjWKnv2Eu8dLeh-0qVJWRtuu_cww0nIFcb7L9e0eiGSt",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8Km4uxXvy8nmVJ5MTLdcb5FCLuP2Nx21kns0Fnmkt8r5yV_-VETuy4RkgW1yji6DQIyCPPj1TFgljFS95J8egQwVxVNOVSjqwlFMtK2fMyHmGXMEVvxy51fDxklb5AbEphaespbUyxbA="
+    ],
+    "at": "2026-08-31T15:14:55+00:00"
+  },
+  {
+    "key": "64f5c9ee05d3",
+    "title": "Yuan o'tkazmasida NRA va SWIFT kodini tekshirish",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "post_id": "20260831-151455",
+    "sources": [],
+    "at": "2026-08-31T15:26:09+00:00"
+  },
+  {
+    "key": "ae5d78b4de5f",
+    "title": "Kargo shartnomasiga Delay Penalty bandini kiritish",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "post_id": "20260831-152609",
+    "sources": [],
+    "at": "2026-08-31T15:35:18+00:00"
   }
 ]

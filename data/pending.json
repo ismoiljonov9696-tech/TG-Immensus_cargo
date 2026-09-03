@@ -1,21 +1,5 @@
 [
   {
-    "id": "20260831-150616",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Bepul ehtiyot qismlar (Spare Parts Allowance) so'rash usuli",
-    "kind": "video",
-    "file_id": "BAACAgIAAxkDAAOxapWab12Vc8wRWrjW8DsF5WKFRFkAAqCkAAK5mbFIFOdpby1YjOw9BA",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260831-150616/post.mp4",
-    "qc_score": 10,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-09-01T18:00:00+05:00",
-    "created_at": "2026-08-31T15:14:54+00:00",
-    "status": "published",
-    "published_at": "2026-09-01T13:00:58+00:00",
-    "updated_at": "2026-09-01T13:00:58+00:00"
-  },
-  {
     "id": "20260831-151455",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Yuan o'tkazmasida NRA va SWIFT kodini tekshirish",
@@ -153,6 +137,81 @@
     "rewrites": 0,
     "publish_at": "2026-09-04T12:00:00+05:00",
     "created_at": "2026-09-02T15:24:43+00:00",
+    "status": "ready"
+  },
+  {
+    "id": "20260903-151124",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "1688'da Price Protection orqali pulni qaytarish",
+    "text": "💸 Buyurtma bergach 1688’da tovar narxi tushib ketdimi? O'rtadagi farqni qaytarib oling.\n\nKo'pchilik tadbirkorlar buyurtma bergach narx arzonlashsa chidab ketadi yoki sotuvchi bilan urushib yuradi. Holbuki platformaning o'zida buni avtomatik bajaradigan bepul funksiya bor.\n\n\"Price Protection\" (保价) orqali pulni qaytarish:\n\n• Muddat: Buyurtma berilgandan keyin 7–15 kun ichida\n• Qoida: Agar sotuvchi shu kunlarda tovar narxini tushirsa yoki chegirma e'lon qilsa, tizim buni bilsa bo'ldi\n• Harakat: Buyurtma tafsilotlariga kirib, rasmiy 保价 (Price Protection) tugmasini bir marta bosasiz\n• Natija: O'rtadagi narx farqi sotuvchi bilan tortishib o'tirmasdan, bir bosishda avtomatik Alipay hisobingizga qaytadi\n\nSotuvchiga yalinmang — platformaning tayyor tugmasidan foydalanib, pulingizni tejab qoling.\n\nSavolingiz bo'lsa — izohda yozing 👇\n\n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "video",
+    "file_id": "BAACAgIAAxkDAAPqapmOm-s7j8VRos61lpfEePFvfu4AAjWoAAJSwdFINwoZXt2WncU9BA",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260903-151124/post.mp4",
+    "topic": {
+      "title": "1688'da Price Protection orqali pulni qaytarish",
+      "angle": "Buyurtma bergach narx tushsa, 1688'dagi rasmiy tugma orqali o'rtadagi farqni avtomatik Alipay'ga qaytarib olish yo'riqnomasi.",
+      "why_now": "Ko'pchilik tadbirkorlar narx tushib ketsa chidab ketishadi, holbuki platformada bepul avtomatik qaytaruvchi funksiya bor.",
+      "research": "Mana Xitoy bilan savdo qiluvchi O'zbekistonlik tadbirkorlar uchun amaliy, hozir dolzarb va ro'yxatdagi mavzularni takrorlamaydigan **8 ta aniq post mavzusi**:\n\n---\n\n### 1. 1688'da \"Narx kafolati\" (Price Protection — 保价) orqali arzonlashgan summani avtomatik qaytarish\n\n* **Qaysi burchakdan yoritiladi:** Buyurtma berilgandan keyin 7–15 kun ichida sotuvchi tovar narxini tushirsa yoki chegirma e'lon qilsa, 1688 platformasidagi rasmiy \"Price Protection\" (保价) tugmasi orqali o'rtadagi farqni bir bosishda Alipay'ga qaytarib olish bo'yicha bosqichma-bosqich yo'riqnoma.\n* **Nega aynan hozir dolzarb:** Ko'pchilik tadbirkorlar buyurtma bergach narx tushib ketsa chidab ketishadi yoki sotuvchi bilan urshib yurishadi, holbuki platformaning o'zida buni avtomatik qaytaruvchi bepul funksiya bor.\n* **Foydalilik bahosi:** 9.5 / 10\n\n---\n\n### 2. Xitoydan brend qadoq buyurtma qilishda \"Create Outlines\" va CMYK rang formati qoidasi\n\n* **Qaysi burchakdan yoritiladi:** O'zbekistondagi dizayner tayyorlagan qadoq faylini (.AI / .PDF) Xitoy bosmaxonasiga yuborishda shriftlar buzilib ketmasligi uchun matnlarni egrilarga aylantirish (\"Create Outlines\") va matbaa uchun RGB o'rniga CMYK rang formatini berish talabi.\n* **Nega aynan hozir dolzarb:** Marketpleys sotuvchilari o'z brend qutilarini ko'p buyurtma qilmoqda. Texnik xato sababli Xitoydan minglab qutilar noaniq yozuvlar yoki xato ranglar bilan kelib, yaroqsiz bo'lib qolayotgani ko'p kuzatilmoqda.\n* **Foydalilik bahosi:** 9.0 / 10\n\n---\n\n### 3. Oq importda yog'och qadoq va palletlar uchun IPPC (Fumigatsiya) muhri talabi\n\n* **Qaysi burchakdan yoritiladi:** Xitoy sotuvchisiga yog'och yashik yoki palletlardan foydalanganda ularga Xalqaro o'simliklarni muhofaza qilish konvensiyasi (IPPC — \"boshoq\" belgisi) muhrini urdirish talabi va buni yuk yo'lga chiqishidan oldin tekshirish.\n* **Nega aynan hozir dolzarb:** O'zbekiston bojxona va karantin xizmati yog'och qadoqlarga talabni kuchaytirgan. Muhrsiz kelgan yog'och palletlar chegara karantinida ushlab qolinadi yoki majburiy yoqib yuboriladi.\n* **Foydalilik bahosi:** 8.5 / 10\n\n---\n\n### 4. Asosiy partiya buyurtmasida Namuna (Sample) pulini qaytarib olish (Sample Fee Refund) kelishuvi\n\n* **Qaysi burchakdan yoritiladi:** Zavoddan namuna (sample) sotib olayotganda, uning narxi (odatda ulgurji narxdan 2–3 baravar qimmat bo'ladi) kelgusida asosiy partiya buyurtma qilinganda umumiy invoysdan chegirib tashlanishi haqida shartnomaga/skriptga band kiritish usuli.\n* **Nega aynan hozir dolzarb:** Yangi tovarlarni micro-test va R&D qilish xarajatlarini kamaytirish uchun zarur. Xitoy zavodlari bu shartga oson rozi bo'ladi, faqat buni oldindan to'g'ri so'rash kerak.\n* **Foydalilik bahosi:** 9.5 / 10\n\n---\n\n### 5. Uzoq avto-kargo uchun 5 qatlamli K=K gofroquti (Carton Box) spetsifikatsiyasini belgilash\n\n* **Qaysi burchakdan yoritiladi:** Tovarlarni Xitoydan Qozog'iston/Qirg'iziston orqali yuk mashinasida 20-30 kun tashishda qutilar ezilib ketmasligi uchun sotuvchiga standart 3 qatlamli emas, balki 5 qatlamli (K=K yoki K=A 5-ply corrugated box) mustahkamlangan quti ishlatish talabini qo'yish.\n* **Nega aynan hozir dolzarb:** Kargo orqali kelayotgan yuklarning eng ko'p shikastlanish sababi — sifatsiz, yumshoq qutilar. Buni oldini olish yog'och karkas qilishdan ko'ra arzonroq va yengilroq.\n* **Foydalilik bahosi:** 9.0 / 10\n\n---\n\n### 6. Xitoy sotuvchisidan tovar foto va videolarining asl nusxasini (Watermark’siz) bepul olish skripti\n\n* **Qaysi burchakdan yoritiladi:** Marketpleys va onlayn do'konlar uchun Xitoy zavodidan ularning tayyor professional foto va videolari, PSD manba fayllari hamda matnsiz (clean version) kontentini tekinga so'rab olish bo'yicha WeChat/1688 uchun tayyor muloqot matni.\n* **Nega aynan hozir dolzarb:** Uzum, Wildberries va Instagram sotuvchilari O'zbekistonda studiya va fotografga ortiqcha pul sarflamasdan, Xitoy tarafidagi sifatli zavod kontentidan darhol foydalanishi mumkin.\n* **Foydalilik bahosi:** 9.0 / 10\n\n---\n\n### 7. 1688'da \"Dai Fu\" (代付 — Men uchun to'la",
+      "sources": []
+    },
+    "qc_score": 10,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-09-04T18:00:00+05:00",
+    "created_at": "2026-09-03T15:13:30+00:00",
+    "status": "ready"
+  },
+  {
+    "id": "20260903-151332",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "WeChat va Alipay'da hisob bloklanishining oldini olish",
+    "text": "🔒 WeChat yoki Alipay hisobingiz kutilmaganda muzlab qoldimi?\n\nXitoy to'lov tizimlari anti-fraud (风控 — Risk Control) filtrini kuchaytirgani sababli, ko'plab xaridorlarning hisoblari to'lov vaqtida bloklanib qolmoqda.\n\n📌 Risk-kontrolga tushmaslik qoidalari:\n• Yangi hisobdan birdaniga katta summa o'tkazmang — avval kichik amallar bajaring\n• To'lov vaqtida VPN ishlatmang va har xil Wi-Fi tarmoqlaridan kirmang\n• Bir kunda me'yordan ortiq yangi sotuvchilarga ketma-ket pul o'tkazmang\n\n📌 Hisob muzlaganda qayta tiklash algoritmi:\n1️⃣ Alipay yoki WeChat'da \"Security Center\" bo'limiga kiring\n2️⃣ \"Apply to Unfreeze\" (Muzlatishni bekor qilish) tugmasini bosing\n3️⃣ Xalqaro pasport rasmini yuklang va yuz identifikatsiyasidan (Face ID) o'ting\n4️⃣ Oxirgi bitim cheki hamda sotuvchi bilan suhbat skrinshotini ilova qiling\n\nTizim so'rovni ko'rib chiqib, cheklovni bekor qiladi.\n\nSavolingiz bo'lsa — izohda yozing 👇\n\n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "video",
+    "file_id": "BAACAgIAAxkDAAPrapmPMJP37sZXylcBEdA4fwR4B2gAAkaoAAJSwdFI7i-2wZbACrk9BA",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260903-151332/post.mp4",
+    "topic": {
+      "title": "WeChat va Alipay'da hisob bloklanishining oldini olish",
+      "angle": "Xitoy sotuvchilariga to'lov qilishda anti-fraud va Risk Control filtri ostiga tushmaslik va hisob bloklanganda qayta tiklash algoritmi yoritiladi.",
+      "why_now": "Xitoy to'lov tizimlari xalqaro foydalanuvchilarga risk-kontrol choralarini kuchaytirgani sababli ko'plab hisoblar kutilmaganda bloklanmoqda.",
+      "research": "Quyida ko‘rsatilgan barcha cheklovlarga mos keladigan va ilgari yoritilmagan **8 ta yangi va amaliy mavzu nomzodi**:\n\n---\n\n### 1. Xianyu (闲鱼) platformasi orqali zavod stoki va arzon test namunalarni xarid qilish\n* **Qaysi burchakdan yoritiladi:** Alibaba’ning C2C ikkilamchi bozori bo‘lmish Xianyu platformasida 1688’da topib bo‘lmaydigan zavod namunalari, ishlab chiqarish qoliplari yoki sotilmay qolgan arzon partiyalarni qanday xavfsiz izlash, sotuvchi reytingini tekshirish va xarid qilish bo‘yicha amaliy ko‘llanma.\n* **Nega aynan hozir dolzarb:** Marketpleys sotuvchilari va kichik bizneslar yangi tovarlarni sinab ko‘rish uchun kam miqdorda va juda arzon narxda namuna olishga ehtiyoj sezmoqda. Xianyu’da ko‘plab Xitoy zavodlari o‘z ortiqcha namunalari va qoldiqlarini 1688’ga qaraganda ancha arzon joylashtiradi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 2. WeChat Pay va Alipay hisobi bloklanishining (Risk Control) oldini olish va xavfsiz o‘tkazma qilish\n* **Qaysi burchakdan yoritiladi:** Xitoy sotuvchilariga WeChat Pay va Alipay orqali to‘lov qilishda tizimning xavfsizlik va anti-fraud (风控 — Risk Control) filtri ostiga tushmaslik, blokirovkasiz to‘lov o‘tkazish qoidalari hamda hisob vaqtincha muzlaganda uni rasmiy ko‘rsatmalar orqali qayta faollashtirish adgoritmi.\n* **Nega aynan hozir dolzarb:** Xitoy to‘lov tizimlari xalqaro foydalanuvchilar va noqonuniy valyuta operatsiyalariga qarshi risk-kontrol choralarini kuchaytirgani sababli, ko‘plab O‘zbekistonlik tadbirkorlarning WeChat va Alipay hisoblari to‘lov vaqtida kutilmaganda bloklanib qolmoqda.\n* **Foydalilik bahosi:** 10/10\n\n---\n\n### 3. Xitoy ichki logistikasini arzonlashtirish: Express (Kuaidi) o‘rniga Og‘ir kargo (Wuliu)ni tanlash\n* **Qaysi burchakdan yoritiladi:** Zavoddan O‘zbekiston kargo omborigacha bo‘lgan Xitoy ichidagi yetkazib berishni tezkor pochta (SF Express, ZTO Kuaidi) o‘rniga Debang Wuliu, ANE Logistics yoki ZTO Wuliu kabi og‘ir yuk kompaniyalari orqali xarajatni sezilarli kamaytirgan holda yetkazishni sotuvchi bilan kelishish skripti.\n* **Nega aynan hozir dolzarb:** Ko‘pchilik sotuvchilar sukut bo‘yicha qimmat tezkor pochtadan foydalanadi. Bu esa 100 kg dan ortiq yuklarda Xitoy ichki logistika xarajatini keraksiz ravishda oshirib yuboradi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 4. Turli sotuvchilardan namunalarni bitta konsolidatsiya omboriga (Jishi) yig‘ib, avia-kargoni tejash\n* **Qaysi burchakdan yoritiladi:** 5–10 ta har xil zavoddan alohida-alohida pochta orqali O‘zbekistonga namuna buyurtma qilmasdan, Xitoydagi konsolidatsiya ombori (Jishi service) xizmatidan foydalanib, barcha namunalarni bitta qutiga yig‘ish va bitta kargo kodi bilan guruhlab jo‘natish tartibi.\n* **Nega aynan hozir dolzarb:** Yangi tovar qidirayotgan va assortimentni kengaytirmoqchi bo‘lgan tadbirkorlar har bir namuna uchun alohida avia-kargo to‘lab, katta mablag‘ yo‘qotmoqda.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 5. Temir yo‘l va dengiz kargosida namlik va mog‘orga qarshi Desiccant hamda Anti-Mold stikerlarini talab qilish\n* **Qaysi burchakdan yoritiladi:** Kiyim-kechak, poyabzal, mebel va qog‘oz mahsulotlarini uzoq masofali kargoda tashishda harorat va namlik o‘zgarishi oqibatida tovar mog‘orlab qolmasligi uchun zavoddan quti ichiga Silikagel va Anti-Mold (mog‘orga qarshi) paketlarini joylashtirishni talab qilish tartibi.\n* **Nega aynan hozir dolzarb:** Kuz-qish va bahor mavsumlarida uzoq yo‘lda kondensat hosil bo‘lib, tovarlar namlanib, mog‘orlab kelishi va sotuvga yaroqsiz bo‘lib qolishi kargo tashishdagi eng katta yashirin xatarlardan biridir.\n* **Foydalilik bahosi:** 8/10\n\n---\n\n### 6. Boshqa xaridorlar sizning dizayningizni 1688'da sotib yubormasligi uchun IP-Protection va qadoq faylini himoyalash\n* **Qaysi burchakdan yoritiladi:** O‘zingiz brending qilgan yoki eksklyuziv dizayn bergan qadoqlash qutisini Xitoy zavodi boshqa mijozlarga sotib yubormasligi uchun fayllarga suv belgisi (Watermark) qo‘yish, qolipga egalik huquqini ta’minlash va shartnomaga Exclusivity Clause (eksklyuz",
+      "sources": []
+    },
+    "qc_score": 10,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-09-05T07:00:00+05:00",
+    "created_at": "2026-09-03T15:16:00+00:00",
+    "status": "ready"
+  },
+  {
+    "id": "20260903-151601",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Tuishui orqali Xitoy zavodidan 8–13% chegirma undirish",
+    "text": "💰 Xitoy zavodidan shartnomada yana 8–10% chegirma undirish siri.\n\nRasmiy shartnoma (FOB/CIF) va bank to'lovi bilan ishlayotganda, zavod sizga ichki bozor narxini aytishiga yo'l qo'ymang.\n\nSiz bilishingiz kerak bo'lgan mexanizm — Tuishui (退税):\n\n• Tuishui nima: Xitoy hukumati tovarlarni rasmiy eksport qiluvchi zavodlarga 9% dan 13% gacha QQSni (VAT) qaytarib beradi.\n• Zavod hiylasi: Eksport qilganda ham, zavod bu qaytariladigan soliqni o'z cho'ntagida olib qolishga urinadi.\n• To'g'ri taktika: Muzokarada rasmiy shartnoma tuzilayotgani va Tuishui borligini eslatib, dastlabki narxdan 8–10% chegirma talab qiling.\n\n📌 Natija: $10 000 lik partiyada kamida $800–$1000 tejaysiz va marjani darhol oshirasiz.\n\nSavolingiz bo'lsa — izohda yozing 👇\n\n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "video",
+    "file_id": "BAACAgIAAxkDAAPsapmPsutAL9VTLP4YIq9TAZHs17cAAluoAAJSwdFIsXi7T5hy39I9BA",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260903-151601/post.mp4",
+    "topic": {
+      "title": "Tuishui orqali Xitoy zavodidan 8–13% chegirma undirish",
+      "angle": "Xitoy hukumatining eksport soliq qaytarilishi (Tuishui) mexanizmidan foydalanib, rasmiy shartnomalarda zavoddan 8–10% qoʻshimcha chegirma soʻrash taktikasi tushuntiriladi.",
+      "why_now": "Bank orqali rasmiy toʻlovlarga oʻtayotgan Oʻzbekistonlik tadbirkorlar uchun marjani darhol oshirish imkonini beradi.",
+      "research": "Siz bergan talablar va chiqarib tashlangan mavzular roʻyxatini toʻliq inobatga olgan holda, kanal auditoriyasi uchun dolzarb va amaliy boʻlgan 8 ta yangi mavzu nomzodi:\n\n---\n\n### 1. Xitoy eksport soliq qaytarilishi (\"Tuishui\" - 退税) orqali zavoddan 8–13% qoʻshimcha chegirma undirish\n* **Qaysi burchakdan yoritiladi:** Xitoy hukumati tovarlarni rasmiy eksport qiluvchi zavodlarga 9% dan 13% gacha QQSni (VAT) qaytarib beradi (*Tuishui*). Agarda oʻzbek tadbirkori tovarlarni rasmiy shartnoma (FOB/CIF) boʻyicha sotib olayotgan boʻlsa, zavod bu qaytariladigan soliqni oʻz choʻntagida olib qolishiga yoʻl qoʻymaslik va muzokarada shunga tayanib dastlabki narxdan 8–10% chegirma soʻrash taktikasi tushuntiriladi.\n* **Nega aynan hozir dolzarb:** Oq import va bank orqali rasmiy toʻlovlarga oʻtayotgan Oʻzbekistonlik tadbirkorlar uchun zavodlar koʻpincha \"ichki bozor narxi\" bilan eksport narxini bir xil qilib sotishga urinadi. *Tuishui* mexanizmini bilish marjani darhol oshiradi.\n* **Foydalilik bahosi:** 10/10\n\n---\n\n### 2. 1688'da \"Xianhuo\" (现货) va \"Dingzhi\" (定制) filtrlaridan foydalanib, yetkazib berish 30 kunga kechikishining oldini olish\n* **Qaysi burchakdan yoritiladi:** 1688 sotuvchilari koʻpincha tovar omborda tayyor boʻlmasa ham (*Dingzhi* — buyurtmaga koʻra ishlab chiqariladigan), uni sotuvda bordek koʻrsatadi va 20–30 kunlab ishlab chiqarishni kutdiradi. Postda qidiruv filtrida faqat \"Xianhuo\" (omborda tayyor zaxira) tovarlarini ajratish hamda sotuvchining \"48 soat ichida joʻnatish\" (*48小时发货*) kafolatli nishonini tekshirish boʻyicha amaliy qoʻllanma beriladi.\n* **Nega aynan hozir dolzarb:** Marketpleys va chakana sotuvchilar uchun tovarni oʻz vaqtida omborga yetkazib kelmaslik (*out-of-stock*) pozitsiya va mijozlarni yoʻqotishga olib keladi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 3. Xianyu (闲鱼) platformasidan kichik biznes uchun uskuna va qoliplarni (molds) 50–70% arzonroq izlash va sotib olish\n* **Qaysi burchakdan yoritiladi:** Xianyu (Alibaba guruhining ikkilamchi bozori) faqat ishlatilgan buyumlar uchun emas, balki bankrot boʻlgan zavodlar, ortiqcha dastgohlar va ehtiyot qismlarni tezda sotib yuboradigan joy. Kichik tadbirkorlar uchun mini-ishlab chiqarish va qadoqlash uskunalarini Xitoydan juda arzon narxda topish, qidiruv soʻrovlarini toʻgʻri tuzish va sotuvchining *Zhenren Renzheng* (shaxsi tasdiqlangan) profilini tekshirish oʻrgatiladi.\n* **Nega aynan hozir dolzarb:** Oʻzbekistonda kichik ishlab chiqarish va mahsulotni qayta ishlashga talab ortmoqda, yangi uskunaga mablagʻi yetmaydiganlar uchun Xianyu eng samarali muqobil platformadir.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 4. 1688 Factory Live (工厂直播) funksiyasi orqali zavodni Oʻzbekistondan turib bepul onlayn inspektsiya qilish\n* **Qaysi burchakdan yoritiladi:** 1688 ilovasidagi doʻkon profilida *Live* (*直播*) tugmasi orqali zavodning jonli efirga chiqish vaqtini kuzatish va chatda sotuvchidan sexi, ombori hamda ishlab chiqarish liniyasini real vaqt rejimida kameraga koʻrsatishni soʻrash usuli. Bu vasitachilardan xalos boʻlish va ishlab chiqarish quvvatini masofadan turib tekinga koʻrish imkonini beradi.\n* **Nega aynan hozir dolzarb:** Xitoyga shaxsan borish yoki professional inspektsiya agentligiga har bir tekshiruv uchun $150–$200 toʻlashga imkoniyati yoʻq kichik va oʻrta biznes uchun qulay yechim.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 5. TIR (Intermodal TIR) tizimi orqali Xitoydan yuklarni chegarada bojxona koʻrigisiz tezroq oʻtkazish\n* **Qaysi burchakdan yoritiladi:** Xitoy-Oʻzbekiston yoʻnalishida keng joriy etilayotgan intermodal TIR (muhrlangan konteyner/fura) tizimidan foydalanish tartibi. Yuk Xitoy ichida muhrlangandan soʻng oraliq chegaralarda (Erkeshtam, Qoragʻosh va h.k.) qayta ochib koʻrilmasdan toʻgʻridan-toʻgʻri Oʻzbekistonga kirib kelishi uchun kargo va logistlardan *TIR Carnet* hujjatini talab qilish qoidasi tushuntiriladi.\n* **Nega aynan hozir dolzarb:** Chegaralardagi mavsumiy tirbandliklar va koʻrik navbatlarini chetlab oʻtish, yetkazib berish vaqtini 5–7 k",
+      "sources": [
+        {
+          "title": "youtube.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF5cf470aJ_ijnYSIIfkP7xeUCyZBnnw3YyvrJX_i3by-iSOyPULfHKm_1s5xBpoa61SS5lo7tSDcC0O-pLnA19IJtR9BLqhgq2Gl5FF5c0nFgosoMdBri-5ZUMopsHjDiD"
+        },
+        {
+          "title": "iru.org",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpCN8FdjEwde7p9B7MGLoXQ4x89xOrozEqIXYIfYACw0M7_G-ZMns5yaJxvvw38CIYDpXoh0zfm5-yHApv4o-pkjhwX3A2af8Fy3CH6SOnDLVp_oPUIS9wW7_hiwbtkFH3kbQP1gSkbTrzGnA1F50n90IIUUOcnIXugBCpDsBad6ZM26jnFWaYoZlTnB8n"
+        }
+      ]
+    },
+    "qc_score": 10,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-09-05T12:00:00+05:00",
+    "created_at": "2026-09-03T15:18:09+00:00",
     "status": "ready"
   }
 ]

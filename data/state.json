@@ -2,7 +2,11 @@
   "last_publish_at": "2026-09-05T02:00:24+00:00",
   "last_publish_id": "20260903-151332",
   "last_publish_title": "WeChat va Alipay'da hisob bloklanishining oldini olish",
-  "last_error": null,
+  "last_error": {
+    "stage": "mavzu izlash (1-agent)",
+    "message": "Gemini gemini-3.6-flash → HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+    "at": "2026-09-05T03:16:50+00:00"
+  },
   "alerted_at": null,
   "paused": false
 }

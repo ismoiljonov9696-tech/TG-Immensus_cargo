@@ -4,8 +4,8 @@
   "last_publish_title": "Tuishui orqali Xitoy zavodidan 8–13% chegirma undirish",
   "last_error": {
     "stage": "mavzu izlash (1-agent)",
-    "message": "Gemini gemini-3.6-flash → HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
-    "at": "2026-09-10T15:14:07+00:00"
+    "message": "Gemini gemini-3.6-flash → HTTP 401: {\n  \"error\": {\n    \"code\": 401,\n    \"message\": \"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.\",\n    \"status\": \"UNAUTHENTICATED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_TYPE_UNSUPPORTED\",\n        \"metadata\": {\n          \"me",
+    "at": "2026-09-11T03:01:15+00:00"
   },
   "alerted_at": "2026-09-11T00:16:40+00:00",
   "paused": false

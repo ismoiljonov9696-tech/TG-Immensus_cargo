@@ -76,7 +76,7 @@ image:
   #               Hujjat, raqam yoki predmet haqidagi postlarda odam chiqmaydi.
   #   often     — deyarli har rasmda odam. Lenta bir xil bo'lib qoladi.
   #   never     — faqat predmetlar.
-  people: "sometimes"
+  people: "often"
 
   # Brend ranglari — rasm shu palitrada chiziladi
   brand_colors: >

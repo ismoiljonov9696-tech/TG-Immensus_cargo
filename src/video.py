@@ -56,11 +56,15 @@ def build(
     fps = 30
     frames = max(int(dur * fps), 1)
 
-    # Sekin zoom (Ken Burns) + kirish/chiqish fade
+    # Sekin zoom (Ken Burns) + kirish/chiqish fade.
+    # x/y markazga qarab beriladi — bo'lmasa zoompan yuqori chap burchakka
+    # yopishib zumlanadi va pastki o'ng burchakdagi logo kadrdan chiqib ketadi.
     vf = (
         f"scale={size*2}:{size*2}:force_original_aspect_ratio=increase,"
         f"crop={size*2}:{size*2},"
-        f"zoompan=z='min(zoom+0.0006,1.10)':d={frames}:s={size}x{size}:fps={fps},"
+        f"zoompan=z='min(zoom+0.0006,1.10)':"
+        f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+        f"d={frames}:s={size}x{size}:fps={fps},"
         f"fade=t=in:st=0:d={fade},fade=t=out:st={max(dur-fade,0):.2f}:d={fade},"
         f"format=yuv420p"
     )

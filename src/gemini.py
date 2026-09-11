@@ -27,6 +27,45 @@ _SEARCH_TOOL_SHAPES: list[list[dict]] = [
 ]
 _working_search_shape: list[dict] | None = None
 
+# Narxlar — ai.google.dev/gemini-api/docs/pricing (2026-12-31 gacha amal
+# qiladi, keyin oshadi). Rasm uchun aniq token-narxi noaniq bo'lgani
+# uchun 1024px chiqish uchun taxminiy tekis narx ishlatiladi.
+PRICE_TEXT_IN = 0.75 / 1_000_000
+PRICE_TEXT_OUT = 3.75 / 1_000_000
+PRICE_IMAGE_PROMPT_IN = 0.50 / 1_000_000
+PRICE_PER_IMAGE = 0.067
+
+_usage: list[dict] = []
+
+
+def reset_usage() -> None:
+    """Bitta post yasashdan oldin chaqiriladi — hisoblagichni nollaydi."""
+    _usage.clear()
+
+
+def usage_total() -> float:
+    """Reset_usage()dan beri sarflangan taxminiy summa (USD)."""
+    return sum(u["cost"] for u in _usage)
+
+
+def usage_breakdown() -> list[dict]:
+    return list(_usage)
+
+
+def _track_usage(model: str, payload: dict, data: dict) -> None:
+    meta = data.get("usageMetadata") or {}
+    pin = int(meta.get("promptTokenCount", 0) or 0)
+    pout = int(meta.get("candidatesTokenCount", 0) or 0)
+    modalities = (payload.get("generationConfig") or {}).get("responseModalities") or []
+    is_image = "IMAGE" in modalities
+    if is_image:
+        cost = pin * PRICE_IMAGE_PROMPT_IN + PRICE_PER_IMAGE
+    else:
+        cost = pin * PRICE_TEXT_IN + pout * PRICE_TEXT_OUT
+    _usage.append({"model": model, "kind": "image" if is_image else "text",
+                   "prompt_tokens": pin, "output_tokens": pout,
+                   "cost": round(cost, 5)})
+
 
 class GeminiError(RuntimeError):
     pass
@@ -49,7 +88,9 @@ def _post(model: str, payload: dict, api_key: str, retries: int = 3) -> dict:
             continue
 
         if resp.status_code == 200:
-            return resp.json()
+            data = resp.json()
+            _track_usage(model, payload, data)
+            return data
 
         # 429 / 5xx — qayta urinamiz
         if resp.status_code in (429, 500, 502, 503, 504) and attempt < retries - 1:

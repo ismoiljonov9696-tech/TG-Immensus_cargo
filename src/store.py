@@ -214,9 +214,14 @@ def set_meta(**changes) -> dict:
     return data
 
 
-def record_success(post_id: str, title: str) -> None:
+def record_success(post_id: str, title: str, cost: float | None = None) -> None:
+    m = meta()
+    total_cost = float(m.get("total_cost_usd", 0) or 0) + float(cost or 0)
+    total_posts = int(m.get("total_posts", 0) or 0) + 1
     set_meta(last_publish_at=now_iso(), last_publish_id=post_id,
-             last_publish_title=title, last_error=None, alerted_at=None)
+             last_publish_title=title, last_publish_cost=cost,
+             total_cost_usd=round(total_cost, 4), total_posts=total_posts,
+             last_error=None, alerted_at=None)
 
 
 def record_error(stage: str, message: str) -> None:

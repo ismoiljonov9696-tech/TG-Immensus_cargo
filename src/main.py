@@ -27,7 +27,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import store
+from . import gemini, store
 from .config import WORK, ConfigError, load_config, load_secrets
 from .agents import a1_topics, a2_writer, a3_image, a4_voice, a5_qc, a6_publish
 from .telegram import Bot, TelegramError, approval_buttons, extract_file_id
@@ -551,6 +551,7 @@ def generate_one(cfg: dict, force: bool = False, now_flag: bool = False,
     Xatolik bo'lsa adminga xabar yuboradi — kanal jimgina bo'sh qolmasin.
     """
     secrets = load_secrets(strict=not MOCK)
+    gemini.reset_usage()
 
     stage = "boshlanish"
     try:
@@ -604,6 +605,7 @@ def generate_one(cfg: dict, force: bool = False, now_flag: bool = False,
         "rewrites": 0,
         "publish_at": when.isoformat(),
         "created_at": store.now_iso(),
+        "est_cost_usd": round(gemini.usage_total(), 4),
     }
 
     if MOCK:
@@ -839,6 +841,17 @@ def watchdog(cfg: dict, secrets, bot: Bot) -> None:
     LOG.warning("Jimlik ogohlantirishi yuborildi (%.0f soat)", silent)
 
 
+def _cost_line(cost: float | None) -> str:
+    """Publish xabariga qo'shiladigan narx qatori — bitta post va jami sarf."""
+    if cost is None:
+        return ""
+    total = store.meta().get("total_cost_usd")
+    line = f"\n💵 Bu post: ${cost:.3f}"
+    if total is not None:
+        line += f"  ·  Jami sarflangan: ${float(total):.2f}"
+    return line
+
+
 def publish_due(cfg: dict, secrets, bot: Bot) -> int:
     if store.is_paused():
         return 0
@@ -871,11 +884,13 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
                     store.update_pending(item["id"], status="published",
                                          file_id=res["file_id"],
                                          published_at=store.now_iso())
-                    store.record_success(item["id"], item.get("title", ""))
+                    store.record_success(item["id"], item.get("title", ""),
+                                        cost=item.get("est_cost_usd"))
                     published += 1
                     LOG.info("Kanalga chiqarildi (yuklab): %s", item["id"])
                     notify(secrets, f"📤 Kanalga chiqdi ({now:%H:%M}): "
-                                    f"<b>{item.get('title', item['id'])}</b>")
+                                    f"<b>{item.get('title', item['id'])}</b>"
+                                    f"{_cost_line(item.get('est_cost_usd'))}")
                     continue
                 except TelegramError as exc:
                     LOG.error("Chiqarib bo'lmadi %s: %s", item["id"], exc)
@@ -889,11 +904,13 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
         try:
             a6_publish.publish(bot, cfg["channel"]["id"], item)
             store.update_pending(item["id"], status="published", published_at=store.now_iso())
-            store.record_success(item["id"], item.get("title", ""))
+            store.record_success(item["id"], item.get("title", ""),
+                                 cost=item.get("est_cost_usd"))
             published += 1
             late = " (kechikkan variant)" if int(item.get("rewrites", 0)) else ""
             notify(secrets, f"📤 Kanalga chiqdi{late} ({now:%H:%M}): "
-                            f"<b>{item.get('title', item['id'])}</b>")
+                            f"<b>{item.get('title', item['id'])}</b>"
+                            f"{_cost_line(item.get('est_cost_usd'))}")
         except TelegramError as exc:
             LOG.error("Chiqarib bo'lmadi %s: %s", item["id"], exc)
             store.update_pending(item["id"], status="error", error=str(exc)[:300])

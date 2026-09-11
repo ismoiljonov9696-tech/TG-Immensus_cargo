@@ -1,13 +1,12 @@
 {
-  "last_publish_at": "2026-09-05T07:00:38+00:00",
-  "last_publish_id": "20260903-151601",
-  "last_publish_title": "Tuishui orqali Xitoy zavodidan 8–13% chegirma undirish",
-  "last_error": {
-    "stage": "mavzu izlash (1-agent)",
-    "message": "Gemini gemini-3.6-flash → HTTP 401: {\n  \"error\": {\n    \"code\": 401,\n    \"message\": \"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.\",\n    \"status\": \"UNAUTHENTICATED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_TYPE_UNSUPPORTED\",\n        \"metadata\": {\n          \"me",
-    "at": "2026-09-11T03:01:15+00:00"
-  },
-  "alerted_at": "2026-09-11T00:16:40+00:00",
+  "last_publish_at": "2026-09-11T03:22:02+00:00",
+  "last_publish_id": "20260911-030450",
+  "last_publish_title": "Sanoat klasterlari orqali to'g'ridan-to'g'ri zavod topish",
+  "last_error": null,
+  "alerted_at": null,
   "paused": false,
-  "balance_usd": 10.0
+  "balance_usd": 10.0,
+  "last_publish_cost": null,
+  "total_cost_usd": 0.0,
+  "total_posts": 1
 }

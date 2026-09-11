@@ -33,10 +33,13 @@ class Bot:
             try:
                 resp = requests.post(url, data=data, files=files, timeout=TIMEOUT)
             except requests.RequestException as exc:
-                if attempt == retries - 1:
-                    raise TelegramError(f"{method}: tarmoq xatosi {exc}") from exc
-                time.sleep(2 ** attempt)
-                continue
+                # Javob kelmadi — lekin Telegram xabarni qabul qilib ulgurgan
+                # bo'lishi mumkin (ayniqsa katta video yuklashda). Bunday holda
+                # qayta yuborsak, xabar KANALGA IKKI MARTA chiqib ketadi. Shuning
+                # uchun noaniq holatda qayta urinmaymiz — xato sifatida to'xtaymiz.
+                raise TelegramError(f"{method}: tarmoq xatosi (javob kelmadi, "
+                                    f"qayta yuborilmadi — takror chiqishning oldini "
+                                    f"olish uchun): {exc}") from exc
 
             payload = resp.json() if resp.content else {}
             if payload.get("ok"):

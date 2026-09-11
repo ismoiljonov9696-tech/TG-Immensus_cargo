@@ -15,11 +15,14 @@ from pathlib import Path
 LOG = logging.getLogger("video")
 
 ZOOM_MAX = 1.10
+PULSE_MAX = 1.06
 
 # Har biri pastki o'ng burchakka (logotip turgan joy) qarab yakunlanadi —
 # zumlanish avjida oyna doim o'sha burchakni ko'rsatib turishi kerak,
 # aks holda logotip kadrdan chiqib ketadi. Faqat BOSHLANISH nuqtasi va
 # qay darajada siljishi farq qiladi — shu bilan lenta bir xil bo'lmaydi.
+# Formula har doim JORIY ZOOMga bog'liq (vaqtga emas), shuning uchun
+# zoom ortsa ham (push-in), kamaysa ham (push-out) bir xil ishlaydi.
 PANS: list[tuple[float, float, float, float]] = [
     (0.20, 0.70, 0.20, 0.70),   # kuchli diagonal
     (0.20, 0.68, 0.50, 0.65),   # ko'proq gorizontal, sal vertikal
@@ -28,9 +31,25 @@ PANS: list[tuple[float, float, float, float]] = [
 ]
 
 
-def _pick_pan(seed: str) -> tuple[float, float, float, float]:
-    idx = int(hashlib.sha1(seed.encode("utf-8")).hexdigest(), 16) % len(PANS)
-    return PANS[idx]
+def _pick(seed: str, n: int, salt: str = "") -> int:
+    return int(hashlib.sha1((seed + salt).encode("utf-8")).hexdigest(), 16) % n
+
+
+def _xy_exprs(pan: tuple[float, float, float, float]) -> tuple[str, str]:
+    fx0, fx1, fy0, fy1 = pan
+    progress = f"((zoom-1)/{ZOOM_MAX - 1:.4f})"
+    x = f"(iw-iw/zoom)*({fx0}+{fx1 - fx0}*{progress})"
+    y = f"(ih-ih/zoom)*({fy0}+{fy1 - fy0}*{progress})"
+    return x, y
+
+
+def _zoom_expr(style: int, frames: int) -> str:
+    if style == 0:                                  # ichkariga zumlanish
+        return f"min(zoom+0.0006,{ZOOM_MAX})"
+    if style == 1:                                   # tashqariga zumlanish
+        return f"if(eq(on,0),{ZOOM_MAX},max(zoom-0.0006,1.0))"
+    # nafas olish effekti — sekin kirib-chiqadi
+    return f"1.0+{PULSE_MAX - 1:.3f}*abs(sin(PI*on/{frames}))"
 
 
 class VideoError(RuntimeError):
@@ -75,19 +94,20 @@ def build(
     fps = 30
     frames = max(int(dur * fps), 1)
 
-    # Zoom + diagonal pan (Ken Burns) + kirish/chiqish fade.
-    # x/y siljishi zumlanish darajasiga (progress) bog'liq va doim pastki
-    # o'ng burchakka (logotip joyi) qarab yakunlanadi — bo'lmasa zumlanish
-    # avjida logotip kadrdan chiqib ketadi. Yo'nalish post'ga qarab
-    # o'zgaradi (_pick_pan), shuning uchun lenta bir xil bo'lmaydi.
-    fx0, fx1, fy0, fy1 = _pick_pan(image.parent.name or image.stem)
-    progress = f"((zoom-1)/{ZOOM_MAX - 1:.4f})"
-    x_expr = f"(iw-iw/zoom)*({fx0}+{fx1 - fx0}*{progress})"
-    y_expr = f"(ih-ih/zoom)*({fy0}+{fy1 - fy0}*{progress})"
+    # Ken Burns: har post uchun 3 uslubdan (ichkariga zum, tashqariga zum,
+    # nafas olish) va 4 yo'nalishdan biri tanlanadi — lenta bir xil
+    # bo'lib qolmaydi. x/y doim joriy zoomga bog'liq va pastki o'ng
+    # burchakka (logotip joyi) qarab yakunlanadi, shuning uchun uslub yoki
+    # yo'nalishdan qat'i nazar logotip kadrdan chiqib ketmaydi.
+    seed = image.parent.name or image.stem
+    style = _pick(seed, 3, salt="style")
+    pan = PANS[_pick(seed, len(PANS), salt="pan")]
+    x_expr, y_expr = _xy_exprs(pan)
+    z_expr = _zoom_expr(style, frames)
     vf = (
         f"scale={size*2}:{size*2}:force_original_aspect_ratio=increase,"
         f"crop={size*2}:{size*2},"
-        f"zoompan=z='min(zoom+0.0006,{ZOOM_MAX})':"
+        f"zoompan=z='{z_expr}':"
         f"x='{x_expr}':y='{y_expr}':"
         f"d={frames}:s={size}x{size}:fps={fps},"
         f"fade=t=in:st=0:d={fade},fade=t=out:st={max(dur-fade,0):.2f}:d={fade},"

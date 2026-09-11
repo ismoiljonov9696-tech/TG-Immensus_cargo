@@ -1,17 +1,36 @@
 """Rasm + audio -> MP4.
 
 Telegram bitta xabarda rasm va audioni birga qo'ya olmaydi, shuning uchun
-ularni bitta videoga birlashtiramiz. Video sekin zoom bilan jonlanadi
-(statik rasm o'rniga) — lentada ko'proq e'tibor tortadi.
+ularni bitta videoga birlashtiramiz. Video zoom + diagonal siljish (pan)
+bilan jonlanadi (statik rasm o'rniga) — lentada ko'proq e'tibor tortadi.
 """
 from __future__ import annotations
 
+import hashlib
 import logging
 import shutil
 import subprocess
 from pathlib import Path
 
 LOG = logging.getLogger("video")
+
+ZOOM_MAX = 1.10
+
+# Har biri pastki o'ng burchakka (logotip turgan joy) qarab yakunlanadi —
+# zumlanish avjida oyna doim o'sha burchakni ko'rsatib turishi kerak,
+# aks holda logotip kadrdan chiqib ketadi. Faqat BOSHLANISH nuqtasi va
+# qay darajada siljishi farq qiladi — shu bilan lenta bir xil bo'lmaydi.
+PANS: list[tuple[float, float, float, float]] = [
+    (0.20, 0.70, 0.20, 0.70),   # kuchli diagonal
+    (0.20, 0.68, 0.50, 0.65),   # ko'proq gorizontal, sal vertikal
+    (0.50, 0.65, 0.20, 0.68),   # ko'proq vertikal, sal gorizontal
+    (0.40, 0.65, 0.40, 0.65),   # yumshoq diagonal
+]
+
+
+def _pick_pan(seed: str) -> tuple[float, float, float, float]:
+    idx = int(hashlib.sha1(seed.encode("utf-8")).hexdigest(), 16) % len(PANS)
+    return PANS[idx]
 
 
 class VideoError(RuntimeError):
@@ -56,14 +75,20 @@ def build(
     fps = 30
     frames = max(int(dur * fps), 1)
 
-    # Sekin zoom (Ken Burns) + kirish/chiqish fade.
-    # x/y markazga qarab beriladi — bo'lmasa zoompan yuqori chap burchakka
-    # yopishib zumlanadi va pastki o'ng burchakdagi logo kadrdan chiqib ketadi.
+    # Zoom + diagonal pan (Ken Burns) + kirish/chiqish fade.
+    # x/y siljishi zumlanish darajasiga (progress) bog'liq va doim pastki
+    # o'ng burchakka (logotip joyi) qarab yakunlanadi — bo'lmasa zumlanish
+    # avjida logotip kadrdan chiqib ketadi. Yo'nalish post'ga qarab
+    # o'zgaradi (_pick_pan), shuning uchun lenta bir xil bo'lmaydi.
+    fx0, fx1, fy0, fy1 = _pick_pan(image.parent.name or image.stem)
+    progress = f"((zoom-1)/{ZOOM_MAX - 1:.4f})"
+    x_expr = f"(iw-iw/zoom)*({fx0}+{fx1 - fx0}*{progress})"
+    y_expr = f"(ih-ih/zoom)*({fy0}+{fy1 - fy0}*{progress})"
     vf = (
         f"scale={size*2}:{size*2}:force_original_aspect_ratio=increase,"
         f"crop={size*2}:{size*2},"
-        f"zoompan=z='min(zoom+0.0006,1.10)':"
-        f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
+        f"zoompan=z='min(zoom+0.0006,{ZOOM_MAX})':"
+        f"x='{x_expr}':y='{y_expr}':"
         f"d={frames}:s={size}x{size}:fps={fps},"
         f"fade=t=in:st=0:d={fade},fade=t=out:st={max(dur-fade,0):.2f}:d={fade},"
         f"format=yuv420p"

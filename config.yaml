@@ -128,10 +128,9 @@ audio:
   # Audio matni: post matnining o'zi (havola va hashtaglarsiz tozalanadi)
 
 video:
-  # Rasm -> qisqa MP4. Ovoz bo'lmasa ham ishlaydi: tasvir sekin
-  # yaqinlashadi (Ken Burns), lentada jonli ko'rinadi va rasmga qaraganda
-  # ko'proq e'tibor tortadi. Premium ham, stiker ham kerak emas.
-  enabled: true
+  # Rasm -> qisqa MP4 (Ken Burns). O'CHIRILGAN — post rasmning o'zi
+  # bilan chiqadi, video kerak emas.
+  enabled: false
   silent_seconds: 6        # ovozsiz video necha soniya davom etsin
   fade_seconds: 0.4        # kirish va chiqishdagi yumshoq o'tish
   tail_seconds: 0.8        # ovoz yoqilganda: audio tugagach shuncha davom etadi

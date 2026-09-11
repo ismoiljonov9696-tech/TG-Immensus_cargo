@@ -175,6 +175,9 @@ def report_text(cfg: dict) -> str:
         lines.append("")
         lines.append(f"⚠️ Oxirgi xato ({err.get('stage','?')}): {err.get('message','')[:140]}")
 
+    if m.get("balance_usd") is not None:
+        lines.append(f"💳 Qolgan balans: ${float(m['balance_usd']):.2f}")
+
     lines.append("")
     lines.append(f"📚 Arxivda {len(store.archive())} ta mavzu  ·  "
                  f"rejim: {mode_of(cfg)}")
@@ -199,6 +202,8 @@ def _failure_message(cfg: dict, stage: str, reason: str) -> str:
 HELP_TEXT = (
     "🤖 <b>Buyruqlar</b>\n\n"
     "/holat — tizim holati: oxirgi post, navbat, xatolar\n"
+    "/balans 10 — API kalitga to'ldirgan summani kiriting, har post "
+    "chiqqanda shundan avtomatik ayiriladi va qolgani ko'rsatiladi\n"
     "/pauza — postlarni vaqtincha to'xtatish\n"
     "/davom — qaytadan yoqish\n"
     "/yordam — shu ro'yxat"
@@ -650,10 +655,27 @@ def handle_command(cfg: dict, bot: Bot, chat_id: str, text: str,
     if admins and str(chat_id) not in admins:
         LOG.info("Begona chatdan buyruq keldi, e'tiborsiz qoldirildi: %s", chat_id)
         return False
-    cmd = text.strip().split()[0].lower().lstrip("/").split("@")[0]
+    parts = text.strip().split()
+    cmd = parts[0].lower().lstrip("/").split("@")[0]
 
     if cmd in ("holat", "status"):
         bot.send_message(chat_id, report_text(cfg))
+    elif cmd in ("balans", "balance"):
+        if len(parts) < 2:
+            bal = store.meta().get("balance_usd")
+            txt = (f"💳 Joriy balans: ${float(bal):.2f}" if bal is not None
+                   else "Balans hali kiritilmagan.")
+            bot.send_message(chat_id, f"{txt}\n\nO'rnatish: /balans 10 "
+                                      f"(masalan, $10 to'ldirgan bo'lsangiz)")
+        else:
+            try:
+                amount = round(float(parts[1].replace(",", ".")), 2)
+            except ValueError:
+                bot.send_message(chat_id, "Summani raqam bilan yozing, masalan: /balans 10")
+            else:
+                store.set_meta(balance_usd=amount)
+                bot.send_message(chat_id, f"💳 Balans o'rnatildi: ${amount:.2f}\n"
+                                          f"Har post chiqqanda narxi shundan avtomatik ayiriladi.")
     elif cmd in ("pauza", "pause", "stop"):
         store.set_meta(paused=True)
         bot.send_message(chat_id, "⏸ To'xtatildi. Yangi post tayyorlanmaydi va "
@@ -842,13 +864,21 @@ def watchdog(cfg: dict, secrets, bot: Bot) -> None:
 
 
 def _cost_line(cost: float | None) -> str:
-    """Publish xabariga qo'shiladigan narx qatori — bitta post va jami sarf."""
+    """Publish xabariga qo'shiladigan narx qatori — bitta post, jami sarf va qolgan balans."""
     if cost is None:
         return ""
-    total = store.meta().get("total_cost_usd")
+    m = store.meta()
+    total = m.get("total_cost_usd")
+    balance = m.get("balance_usd")
     line = f"\n💵 Bu post: ${cost:.3f}"
     if total is not None:
         line += f"  ·  Jami sarflangan: ${float(total):.2f}"
+    if balance is not None:
+        bal = float(balance)
+        line += f"\n💳 Qolgan balans: ${bal:.2f}"
+        if cost and bal / cost < 7:
+            left = max(bal / cost, 0)
+            line += f" (taxminan {left:.0f} ta postga yetadi — to'ldirish vaqti yaqinlashdi)"
     return line
 
 

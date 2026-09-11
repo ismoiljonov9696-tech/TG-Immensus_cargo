@@ -218,10 +218,18 @@ def record_success(post_id: str, title: str, cost: float | None = None) -> None:
     m = meta()
     total_cost = float(m.get("total_cost_usd", 0) or 0) + float(cost or 0)
     total_posts = int(m.get("total_posts", 0) or 0) + 1
-    set_meta(last_publish_at=now_iso(), last_publish_id=post_id,
-             last_publish_title=title, last_publish_cost=cost,
-             total_cost_usd=round(total_cost, 4), total_posts=total_posts,
-             last_error=None, alerted_at=None)
+    changes: dict = dict(
+        last_publish_at=now_iso(), last_publish_id=post_id,
+        last_publish_title=title, last_publish_cost=cost,
+        total_cost_usd=round(total_cost, 4), total_posts=total_posts,
+        last_error=None, alerted_at=None,
+    )
+    # /balans bilan qo'lda kiritilgan qoldiq bo'lsa, har post narxi shundan
+    # avtomatik ayiriladi — foydalanuvchi AI Studio'ga kirmasdan ham
+    # taxminan qancha qolganini biladi.
+    if m.get("balance_usd") is not None:
+        changes["balance_usd"] = round(float(m["balance_usd"]) - float(cost or 0), 4)
+    set_meta(**changes)
 
 
 def record_error(stage: str, message: str) -> None:

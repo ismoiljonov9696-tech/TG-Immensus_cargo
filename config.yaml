@@ -108,9 +108,11 @@ image:
     opacity: 0.95
 
     # Sahnada odam bo'lsa, logotip uning kiyimiga chizilsin (ko'krak qismiga).
-    # Bu burchakka yopishtirishdan tabiiyroq: matoning burmalari va
-    # yorug'ligiga moslashadi. Ishlamasa — avtomatik burchakka qo'yiladi.
-    on_clothing: true
+    # Bu burchakka yopishtirishdan tabiiyroq ko'rinadi, LEKIN qo'shimcha
+    # AI rasm-tahrirlash chaqiruvi kerak bo'ladi — narxni deyarli 2 baravar
+    # oshiradi. Video zumidagi burchak-logo muammosi tuzatilgani uchun
+    # (endi doim ko'rinadi) bu endi shart emas — tejash uchun o'chirilgan.
+    on_clothing: false
     # Logo ostidagi oq plashka. Shaffof fonli logo uchun KERAK EMAS —
     # u ramka bo'lib ko'rinadi. Faqat logo ko'rinmay qolsa true qiling.
     backdrop: false

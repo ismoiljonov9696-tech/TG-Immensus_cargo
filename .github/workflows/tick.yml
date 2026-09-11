@@ -18,13 +18,11 @@ name: Chiqarish (kuzatuvchi)
 #
 #  Vaqtlar UTC. Toshkent = UTC+5.
 #    07:00 Toshkent = 02:00 UTC  → 00:00 va 01:00 UTC da ishga tushadi
-#    12:00 Toshkent = 07:00 UTC  → 05:00 va 06:00 UTC da
-#    18:00 Toshkent = 13:00 UTC  → 11:00 va 12:00 UTC da
-#  Har bir vaqt uchun ikkita urinish — biri o'tkazib yuborilsa ikkinchisi.
+#  Ikkita urinish — biri o'tkazib yuborilsa ikkinchisi.
 # ============================================================
 on:
   schedule:
-    - cron: "0 0,1,5,6,11,12 * * *"
+    - cron: "0 0,1 * * *"
   workflow_dispatch:
 
 concurrency:

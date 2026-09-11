@@ -152,9 +152,8 @@ llm:
   qc_last_chance: 4
 
 schedule:
-  # Post chiqish vaqtlari (Toshkent vaqti). Kuniga 3 ta post.
-  # Har bir vaqtga alohida post tayyorlanadi — ikkitasi bir vaqtda chiqmaydi.
-  publish_times: ["07:00", "12:00", "18:00"]
+  # Post chiqish vaqtlari (Toshkent vaqti). Kuniga 1 ta post.
+  publish_times: ["07:00"]
 
   # --- Quyidagilar faqat ichki jadval (src.scheduler) uchun ---
   # Post chiqishidan necha soat oldin tayyorlansin va tasdiqqa yuborilsin.

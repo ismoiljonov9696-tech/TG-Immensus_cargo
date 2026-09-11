@@ -1,25 +1,22 @@
 name: Post tayyorlash
 
 # ============================================================
-#  KUNIGA 3 TA POST: 07:00, 12:00, 18:00 (Toshkent)
+#  KUNIGA 1 TA POST: 07:00 (Toshkent)
 #
-#  Postlar bir kun oldin KECHQURUN tayyorlanadi — ertalab emas.
+#  Post bir kun oldin KECHQURUN tayyorlanadi — ertalab emas.
 #  Sabab: GitHub'ning cron'i aniq vaqtda ishlamaydi, u navbatga qo'yiladi
 #  va odatda 30 daqiqadan 2 soatgacha kechikadi. Kechqurun tayyorlansa,
 #  2 soat kechiksa ham ertalabki 07:00 gacha 9 soatdan ko'p vaqt qoladi.
 #
-#  20:00 da uchala post ham tayyorlanadi va navbatga qo'yiladi:
-#    1-post -> ertaga 07:00
-#    2-post -> ertaga 12:00
-#    3-post -> ertaga 18:00
-#  Ularni "Tugmalar va chiqarish" workflow'i o'z vaqtida kanalga chiqaradi.
+#  20:00 da ertangi 07:00 uchun bitta post tayyorlanadi va navbatga qo'yiladi.
+#  Uni "Tugmalar va chiqarish" workflow'i o'z vaqtida kanalga chiqaradi.
 #
 #  Vaqtlar UTC da. Toshkent = UTC+5.
 # ============================================================
 on:
   schedule:
-    - cron: "0 15 * * *"       # 20:00 Toshkent — ASOSIY: ertangi 3 ta post
-    - cron: "0 3 * * *"        # 08:00 Toshkent — ZAXIRA: yetishmaganini to'ldiradi
+    - cron: "0 15 * * *"       # 20:00 Toshkent — ASOSIY: ertangi 1 ta post
+    - cron: "0 3 * * *"        # 08:00 Toshkent — ZAXIRA: yetishmasa to'ldiradi
   workflow_dispatch:
     inputs:
       count:
@@ -41,7 +38,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 45        # 3 ta post uchun vaqt kerak
+    timeout-minutes: 45        # QC qayta yozishlar bo'lsa ham yetadi
     steps:
       - uses: actions/checkout@v4
 
@@ -66,14 +63,14 @@ jobs:
           FORCE: ${{ inputs.force }}
         run: |
           if [ "$CRON" = "0 15 * * *" ]; then
-            # Kechqurun: ertangi kunning uchala postini tayyorlaymiz.
-            FLAGS="--count 3"
-            echo "Asosiy ishga tushish: 3 ta post tayyorlanadi"
+            # Kechqurun: ertangi kunning yagona postini tayyorlaymiz.
+            FLAGS="--count 1"
+            echo "Asosiy ishga tushish: 1 ta post tayyorlanadi"
           elif [ "$CRON" = "0 3 * * *" ]; then
-            # Ertalab: navbatni tekshiramiz. 3 ta bo'lsa hech narsa qilmaydi,
-            # kam bo'lsa (kechqurungi urinish yiqilgan bo'lsa) to'ldiradi.
-            FLAGS="--top-up 3"
-            echo "Zaxira ishga tushish: navbat 3 taga to'ldiriladi"
+            # Ertalab: navbatni tekshiramiz. 1 ta bo'lsa hech narsa qilmaydi,
+            # bo'lmasa (kechqurungi urinish yiqilgan bo'lsa) tayyorlaydi.
+            FLAGS="--top-up 1"
+            echo "Zaxira ishga tushish: navbat 1 taga to'ldiriladi"
           else
             FLAGS="--count ${COUNT:-1}"
             echo "Qo'lda ishga tushirildi"

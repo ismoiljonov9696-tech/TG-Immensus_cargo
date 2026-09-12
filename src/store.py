@@ -9,11 +9,12 @@ from __future__ import annotations
 import json
 import hashlib
 import logging
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from .config import DATA
+from .config import DATA, ROOT
 
 LOG = logging.getLogger("store")
 
@@ -238,3 +239,68 @@ def record_error(stage: str, message: str) -> None:
 
 def is_paused() -> bool:
     return bool(meta().get("paused"))
+
+
+# --------------------------------------------------------------------------- #
+#  Git bilan sinxronlash — GitHub Actions rejimida ikkita ish (masalan
+#  "tayyorlash" va "chiqarish", ular alohida concurrency guruhlarida bo'lgani
+#  uchun bir vaqtda ishlashi mumkin) bir xil postni ikki marta kanalga
+#  yubormasligi uchun.
+# --------------------------------------------------------------------------- #
+def _git(*args: str) -> subprocess.CompletedProcess:
+    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
+
+
+def _ensure_git_identity() -> None:
+    if not _git("config", "user.email").stdout.strip():
+        _git("config", "user.email", "autopost@users.noreply.github.com")
+    if not _git("config", "user.name").stdout.strip():
+        _git("config", "user.name", "autopost-bot")
+
+
+def sync_to_remote(message: str, retries: int = 2) -> bool:
+    """data/ ichidagi o'zgarishlarni commit qilib remote'ga yuboradi.
+
+    Bu funksiya jim yutilmaydi: push oxir-oqibat o'tmasa False qaytaradi.
+    Chaqiruvchi False ko'rsa, holat remote bilan aniq bir xilligiga
+    ISHONMASLIGI kerak — ayniqsa kanalga chiqarishdan OLDIN "band qilish"
+    uchun ishlatilganda, False degani boshqa bir jarayon ham shu payt
+    ishlayotgan bo'lishi mumkin, demak post YUBORILMASLIGI kerak.
+
+    Agar .git papkasi bo'lmasa (masalan lokal /VPS rejimida, src.scheduler
+    orqali ishlatilganda git umuman kerak emas) — True qaytariladi, hech
+    narsa qilinmaydi.
+    """
+    if not (ROOT / ".git").exists():
+        return True
+
+    _ensure_git_identity()
+
+    add = _git("add", "data/")
+    if add.returncode != 0:
+        LOG.error("git add muvaffaqiyatsiz: %s", add.stderr.strip())
+        return False
+
+    if _git("diff", "--cached", "--quiet").returncode == 0:
+        return True     # commit qiladigan o'zgarish yo'q
+
+    commit = _git("commit", "-q", "-m", message)
+    if commit.returncode != 0:
+        LOG.error("git commit muvaffaqiyatsiz: %s", commit.stderr.strip())
+        return False
+
+    for attempt in range(retries + 1):
+        if _git("push", "-q").returncode == 0:
+            return True
+        pull = _git("pull", "--rebase", "--autostash", "-q")
+        if pull.returncode != 0:
+            LOG.error("git pull --rebase muvaffaqiyatsiz (urinish %d/%d): %s",
+                      attempt + 1, retries + 1, pull.stderr.strip())
+            # Rebase o'rtada qotib qolmasin — aks holda shu ishning keyingi
+            # git buyruqlari (hattoki boshqa postlar uchun ham) ishlamay qoladi.
+            _git("rebase", "--abort")
+            return False
+
+    LOG.error("git push %d urinishdan keyin ham o'tmadi — boshqa jarayon "
+              "bilan to'qnashuv bo'lishi mumkin", retries + 1)
+    return False

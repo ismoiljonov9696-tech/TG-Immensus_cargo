@@ -167,6 +167,12 @@ def report_text(cfg: dict) -> str:
     else:
         lines.append("📭 Navbat bo'sh")
 
+    stuck = [i for i in items if i.get("status") == "publishing"]
+    if stuck:
+        for i in stuck[:3]:
+            lines.append(f"⚠️ Chiqarishda qotib qolgan: «{i.get('title','')[:40]}» "
+                        f"(ID: {i['id']}) — /holat orqali tekshiring")
+
     nxt = next_publish_time(cfg)
     lines.append(f"🕘 Keyingi chiqish vaqti: <b>{nxt:%d.%m %H:%M}</b>")
 
@@ -882,6 +888,35 @@ def _cost_line(cost: float | None) -> str:
     return line
 
 
+def _claim_for_publish(item: dict) -> dict | None:
+    """Chiqarishdan OLDIN holatni 'publishing' qilib remote'ga yuboradi.
+
+    GitHub Actions'da "tayyorlash" (generate.yml) va "chiqarish" (tick.yml /
+    commands.yml) ishlari ALOHIDA concurrency guruhlarida bo'lgani uchun bir
+    vaqtda ishlashi mumkin — ikkalasi ham data/pending.json ni o'zgartiradi.
+    Ilgari holat faqat ish TUGAGANDA, bitta umumiy commit bilan saqlanardi —
+    agar shu payt boshqa ish ham push qilsa, to'qnashuv ba'zan jim yutilib
+    ("|| true"), holat remote'ga yetib bormay qolardi. Natijada keyingi
+    tekshiruv postni yana "chiqmagan" deb topib, KANALGA IKKINCHI MARTA
+    yuborardi (bir xil post bir necha daqiqa farq bilan ikki marta chiqishi).
+
+    Endi chiqarishdan oldin holat "publishing" qilib DARHOL push qilinadi.
+    Push boshqa jarayon bilan to'qnashsa — bu safar post yuborilmaydi va
+    keyingi tekshiruvda avtomatik qayta sinaladi. Shu tariqa ikki jarayon
+    bir xil postni hech qachon bir vaqtda yubormaydi.
+    """
+    original_status = item.get("status")
+    store.update_pending(item["id"], status="publishing")
+    if store.sync_to_remote(f"chiqarish: {item['id']} band qilindi"):
+        return store.find_pending(item["id"])
+
+    LOG.warning("Post %s band qilinmadi (git to'qnashuvi) — bu safar "
+               "o'tkazib yuboriladi, keyingi tekshiruvda qayta sinaladi",
+               item["id"])
+    store.update_pending(item["id"], status=original_status)
+    return None
+
+
 def publish_due(cfg: dict, secrets, bot: Bot) -> int:
     if store.is_paused():
         return 0
@@ -896,11 +931,15 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
                     "off": {"preview", "ready", "approved"}}[mode]
 
     published = 0
-    for item in store.pending():
-        if item.get("status") not in ready_states:
+    for candidate in store.pending():
+        if candidate.get("status") not in ready_states:
             continue
-        when = _parse(item.get("publish_at"), tz)
+        when = _parse(candidate.get("publish_at"), tz)
         if when and when > now:
+            continue
+
+        item = _claim_for_publish(candidate)
+        if item is None:
             continue
 
         # file_id bo'lmasa (ko'rsatish o'chirilgan bo'lsa) media faylni yuklaymiz
@@ -914,6 +953,7 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
                     store.update_pending(item["id"], status="published",
                                          file_id=res["file_id"],
                                          published_at=store.now_iso())
+                    store.sync_to_remote(f"chiqarish: {item['id']} tugadi")
                     store.record_success(item["id"], item.get("title", ""),
                                         cost=item.get("est_cost_usd"))
                     published += 1
@@ -925,6 +965,7 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
                 except TelegramError as exc:
                     LOG.error("Chiqarib bo'lmadi %s: %s", item["id"], exc)
                     store.update_pending(item["id"], status="error", error=str(exc)[:300])
+                    store.sync_to_remote(f"chiqarish: {item['id']} xato")
                     continue
             else:
                 LOG.warning("Rasm fayli topilmadi (%s) — post matn bilan chiqadi. "
@@ -934,6 +975,13 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
         try:
             a6_publish.publish(bot, cfg["channel"]["id"], item)
             store.update_pending(item["id"], status="published", published_at=store.now_iso())
+            if not store.sync_to_remote(f"chiqarish: {item['id']} tugadi"):
+                LOG.error("Post %s kanalga chiqdi, LEKIN holatni saqlab bo'lmadi — "
+                         "qo'lda /holat bilan tekshiring", item["id"])
+                notify(secrets, f"⚠️ <code>{item['id']}</code> kanalga chiqdi, lekin "
+                               f"holatni git'ga saqlab bo'lmadi (to'qnashuv). "
+                               f"/holat bilan tekshiring — takror chiqmaydi, "
+                               f"faqat holat yozuvi eskirgan bo'lishi mumkin.")
             store.record_success(item["id"], item.get("title", ""),
                                  cost=item.get("est_cost_usd"))
             published += 1
@@ -944,6 +992,7 @@ def publish_due(cfg: dict, secrets, bot: Bot) -> int:
         except TelegramError as exc:
             LOG.error("Chiqarib bo'lmadi %s: %s", item["id"], exc)
             store.update_pending(item["id"], status="error", error=str(exc)[:300])
+            store.sync_to_remote(f"chiqarish: {item['id']} xato")
             store.record_error("kanalga chiqarish (6-agent)", str(exc))
             notify(secrets, _failure_message(cfg, "kanalga chiqarish (6-agent)", str(exc)))
 
@@ -1021,7 +1070,8 @@ def cmd_status(cfg: dict) -> int:
         return 0
     print()
     icons = {"preview": "👀", "ready": "⏳", "approved": "✅", "published": "📤",
-             "cancelled": "❌", "rewrite_requested": "🔄", "error": "⚠️"}
+             "cancelled": "❌", "rewrite_requested": "🔄", "error": "⚠️",
+             "publishing": "🔒"}
     print(f"\n{'ID':<18} {'Holat':<20} {'Chiqish':<14} {'↻':<3} Sarlavha")
     print("─" * 82)
     for i in items[-25:]:

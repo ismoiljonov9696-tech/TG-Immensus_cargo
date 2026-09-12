@@ -1,12 +1,12 @@
 {
-  "last_publish_at": "2026-09-11T03:22:02+00:00",
-  "last_publish_id": "20260911-030450",
-  "last_publish_title": "Sanoat klasterlari orqali to'g'ridan-to'g'ri zavod topish",
+  "last_publish_at": "2026-09-12T02:00:23+00:00",
+  "last_publish_id": "20260911-151057",
+  "last_publish_title": "1688 rasmiy uchinchi tomon inspektsiyasi (第三方质检)",
   "last_error": null,
   "alerted_at": null,
   "paused": false,
-  "balance_usd": 9.69,
-  "last_publish_cost": null,
-  "total_cost_usd": 0.0,
-  "total_posts": 1
+  "balance_usd": 9.5955,
+  "last_publish_cost": 0.0945,
+  "total_cost_usd": 0.0945,
+  "total_posts": 2
 }

@@ -67,8 +67,9 @@
     "publish_at": "2026-09-15T07:00:00+05:00",
     "created_at": "2026-09-13T15:12:47+00:00",
     "est_cost_usd": 0.0941,
-    "status": "publishing",
-    "updated_at": "2026-09-15T02:00:27+00:00"
+    "status": "published",
+    "updated_at": "2026-09-15T02:00:29+00:00",
+    "published_at": "2026-09-15T02:00:29+00:00"
   },
   {
     "id": "20260914-151355",

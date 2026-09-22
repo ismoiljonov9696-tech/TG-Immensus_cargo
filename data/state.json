@@ -3,9 +3,9 @@
   "last_publish_id": "20260919-151045",
   "last_publish_title": "1688'da \"Xianhuo\" va \"Dingzhi\" filtrlarini to'g'ri sozlash",
   "last_error": {
-    "stage": "kanalga chiqarish (6-agent)",
-    "message": "sendPhoto → Forbidden: bot is not a member of the channel chat",
-    "at": "2026-09-22T03:27:27+00:00"
+    "stage": "kanalga chiqarish",
+    "message": "KeyError: 'text'",
+    "at": "2026-09-22T12:17:24+00:00"
   },
   "alerted_at": "2026-09-22T06:48:35+00:00",
   "paused": false,

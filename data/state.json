@@ -7,7 +7,7 @@
     "message": "sendPhoto → Forbidden: bot is not a member of the channel chat",
     "at": "2026-09-22T03:27:27+00:00"
   },
-  "alerted_at": null,
+  "alerted_at": "2026-09-22T06:48:35+00:00",
   "paused": false,
   "balance_usd": 8.7499,
   "last_publish_cost": 0.095,

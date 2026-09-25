@@ -1,22 +1,5 @@
 [
   {
-    "id": "20260922-183241",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "OEM'da Lazer o'ymakorligi orqali MOQni kamaytirish",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIBnmqyykAm5D6ioIWq4YPnE20bdcwHAALOG2sbeIaYSSpe6ZyKGeo1AQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260922-183241/image.png",
-    "qc_score": 10,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-09-24T07:00:00+05:00",
-    "created_at": "2026-09-22T18:34:39+00:00",
-    "est_cost_usd": 0.0929,
-    "status": "published",
-    "updated_at": "2026-09-24T03:17:31+00:00",
-    "published_at": "2026-09-24T03:17:31+00:00"
-  },
-  {
     "id": "20260923-185247",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "70% to'lovdan oldin Pre-shipment Inspection kiritish",
@@ -54,6 +37,29 @@
     "publish_at": "2026-09-26T07:00:00+05:00",
     "created_at": "2026-09-24T18:52:46+00:00",
     "est_cost_usd": 0.0934,
+    "status": "ready"
+  },
+  {
+    "id": "20260925-190850",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Nesting usuli: CBM hajmini 30–50% ga kamaytirish",
+    "text": "📦 Bo'sh havoni tashish uchun ortiqcha pul to'layapsizmi?\n\nIdishlar, chelaklar, sumkalar yoki mebel qismlari sotib olganingizda, ularning ichidagi bo'sh joy uchun ham kargo to me'yorida to'lov qilasiz. Buni oldini olishning oddiy yo'li bor.\n\nNesting usuli orqali CBM hajmini 30–50% ga kamaytirish mumkin:\n\n• Har xil hajm va o'lchamdagi tovarlarni bir-birining ichiga joylashni so'rang\n• Bo'sh joyi bor tovarlar ichiga kichikroq mahsulotlarni joylashtiring\n• Zavodga tovar yo'lga chiqishidan oldin aniq qadoqlash topshirig'ini (Packing Instructions) bering\n\nNatijada bo'sh havoga pul to'lamaysiz va har bir tovar tannarxini sezilarli darajada tushirasiz.\n\nTovaringiz hajmini optimallashtirish bo'yicha savolingiz bo'lsa — izohda yozing 👇\n\n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIBqWq2xzL1btpCAbJfXDMqFiwV8LHCAAJyHmsbtbS5SUQ39gWh5PNxAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260925-190850/image.png",
+    "topic": {
+      "title": "Nesting usuli: CBM hajmini 30–50% ga kamaytirish",
+      "angle": "Idishlar va mebel qismlari kabi bo'sh joyi bor tovarlar ichiga boshqa mahsulotlarni joylash orqali kargo hajmini kamaytirish va zavodga aniq qadoqlash topshirig'ini berish usuli.",
+      "why_now": "Bo'sh havoni tashish tadbirkorlarning eng ko'p ortiqcha xarajat qiladigan nuqtasi hisoblanadi.",
+      "research": "Mana Xitoy bilan savdo qilayotgan O'zbekistonlik tadbirkorlar uchun Telegram kanaliga mos, ro'yxatda bo'lmagan **8 ta yangi amaliy mavzu nomzodi**:\n\n---\n\n### 1. Kargoda hajm va og'irlik balanslash (CBM va Kg nisbatini optimallashtirish)\n* **Qaysi burchakdan yoritiladi:** Kargo kompaniyalari yuk zichligiga qarab narx belgilaydi. Yengil, lekin hajmdor tovarlar (masalan, kiyim yoki plastik) uchun hajm bo'yicha, og'ir tovarlar uchun kg bo'yicha pul olinadi. Bir partiyada hajmdor va og'ir tovarlarni birga buyurtma qilib, kargoning ideal zichlik diapozoniga tushish va umumiy yetkazib berish tannarxini arzonlashtirish texnikasi tushuntiriladi.\n* **Nega aynan hozir dolzarb:** Logistika xarajatlari o'sayotgan bir paytda marketpleys sotuvchilari uchun har bir birlik tovar tannarxidagi 0.2–0.5$ tejash ham marjani keskin oshiradi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 2. Nesting usuli: Tovar ichiga tovar joylab CBM hajmini 30–50% ga kamaytirish\n* **Qaysi burchakdan yoritiladi:** Idishlar, chelaklar, sumkalar, mebel qismlari, g'altaklar yoki qutilar buyurtma qilinganda, ularning ichidagi bo'sh joy uchun ham kargo to'lanadi. Zavodga turli o'lchamdagi tovarlarni bir-birining ichiga joylash (Nesting) bo'yicha aniq qadoqlash topshirig'ini (Packing Instructions) berish tartibi.\n* **Nega aynan hozir dolzarb:** Bo'sh havoni tashish tadbirkorlarning eng ko me'yoridan ortiqcha xarajat qiladigan nuqtasi hisoblanadi.\n* **Foydalilik bahosi:** 10/10\n\n---\n\n### 3. FCL va LCL chegara hisobi: Qachon kargodan shaxsiy 20 futlik konteynerga o'tish kerak?\n* **Qaysi burchakdan yoritiladi:** O'rtacha 15–18 CBM hajmdagi yuk yig'ilganda, kargo (LCL - yig'ma yuk) orqali kubometriga to'lanadigan umumiy summa alohida 20 futlik konteyner (FCL) ijarasidan qimmatroqqa tushishni boshlaydi. Hisob-kitob qilish va kargodan shaxsiy konteynerga o'tish nuqtasini aniqlash formulasi tushuntiriladi.\n* **Nega aynan hozir dolzarb:** Biznesi o'sayotgan va oyiga bir nechta kichik partiya olib kelayotgan tadbirkorlar konteynerga o'tish orqali xarajatlarni qisqartirishi mumkin.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 4. Batareyali va suyuqlikli tovarlar uchun zavoddan MSDS va UN38.3 pasportlarini oldindan olish\n* **Qaysi burchakdan yoritiladi:** Powerbank, akkumulyatorli gadjetlar yoki kosmetika vositalari Xitoy omboriga borib tushganda, kargo kompaniyasi ularni xavfli yuk deb qabul qilmasligi yoki avia-yetkazishdan to'xtatishi mumkin. Xarid qilishdan oldin zavoddan MSDS (Material Safety Data Sheet) va UN38.3 xavfsizlik sertifikatlarini talab qilish tartibi.\n* **Nega aynan hozir dolzarb:** Akkumulyatorli aqlli maishiy texnika va gadjetlar savdosi keskin oshgan, lekin kargo kompaniyalari batareyali yuklarga talabni kuchaytirgan.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 5. Intellektual mulk tekshiruvi: Xitoy bojxonasida tovar musodara bo'lishining oldini olish\n* **Qaysi burchakdan yoritiladi:** Zavod brendlanmagan yoki mashhur brendga o'xshash tovar sotishi mumkin. Ammo ushbu brend yoki dizayn Xitoyda boshqa shaxs tomonidan ro'yxatdan o'tkazilgan bo'lsa, Xitoy chiqish bojxonasi (China Customs) intellektual mulk buzilishi sabab yukni musodara qiladi. Tovarni yuborishdan oldin Xitoy savdo belgisi bazasida (CNIPA) tekshirish yo'riqnomasi.\n* **Nega aynan hozir dolzarb:** Marketpleyslar va do'konlar uchun OEM/ODM mahsulotlar tayyorlash ko'paygani sababli bojxonada ushlanib qolish holatlari tez-tez uchramoqda.\n* **Foydalilik bahosi:** 10/10\n\n---\n\n### 6. Bojxona Dastlabki qarori (Предварительное решение) orqali kutilmagan boj stavkasidan himoyalanish\n* **Qaysi burchakdan yoritiladi:** Yuk O'zbekistonga yetib kelganida bojxona inspektori TIF TN kodini o'zgartirib, kutilganidan yuqori boj yoki soliq belgilashi mumkin. Buni oldini olish uchun yuk yo'lga chiqishidan oldin O'zbekiston Bojxona qo'mitasiga rasmiy ariza berib, TIF TN kodi va boj stavkasi bo'yicha huquqiy kuchga ega Dastlabki qaror (my.gov.uz orqali) olish tartibi.\n* **Nega aynan hozir dolzarb:** Yangi va murakkab tovarlarni (masalan, ",
+      "sources": []
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-09-27T07:00:00+05:00",
+    "created_at": "2026-09-25T19:10:41+00:00",
+    "est_cost_usd": 0.1013,
     "status": "ready"
   }
 ]

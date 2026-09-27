@@ -1,22 +1,5 @@
 [
   {
-    "id": "20260924-185100",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Kiyim-kechak kargosini kamaytirish: Vakuumli qadoqlash",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIBpmq1cX-3jn6YlmRlkDQTBL4182wjAAIhI2sbYGCxSVZo91srOoBSAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260924-185100/image.png",
-    "qc_score": 9,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-09-26T07:00:00+05:00",
-    "created_at": "2026-09-24T18:52:46+00:00",
-    "est_cost_usd": 0.0934,
-    "status": "published",
-    "updated_at": "2026-09-26T03:40:26+00:00",
-    "published_at": "2026-09-26T03:40:26+00:00"
-  },
-  {
     "id": "20260925-190850",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Nesting usuli: CBM hajmini 30–50% ga kamaytirish",
@@ -63,6 +46,29 @@
     "publish_at": "2026-09-28T07:00:00+05:00",
     "created_at": "2026-09-26T18:24:40+00:00",
     "est_cost_usd": 0.0954,
+    "status": "ready"
+  },
+  {
+    "id": "20260927-185513",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Ezilgan qadoqlar uchun Yassi ehtiyot qutilar so'rash",
+    "text": "📦 Tovar keldi, lekin qutisi ezilgani uchun marketpleysda narxi tushib ketdimi?\n\nKargoda tovarning o'zi zararlanmasa ham, chakana qadoq ezilishi ko'p uchraydi. Natijada do'kon va marketpleysda tovar taqdimoti va narxi keskin tushib ketadi.\n\nYechim — yassi ehtiyot qutilar (Flat-packed Spare Boxes) so'rash.\n\n📌 Buning uchun:\n• Buyurtma berishda sotuvchidan 5–10% miqdorda qo'shimcha buklangan (yassi) qutilar qo'shib yuborishni kelishing\n• Buklangan qutilar yuk orasida hajm olmaydi va ezilmaydi\n• Tovar O'zbekistonga kelganida yo'lda ezilgan qutilarni yangisiga almashtiring\n\nNatijada mahsulot taqdimoti ideal holatda saqlanadi va marjangizni boy bermaysiz.\n\nSavolingiz bo'lsa — izohda yozing 👇\n\n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIBr2q5ZvyRb17P_TyZVLNhXAuYN1NfAALOIWsb0T_ISWWI3x3mAtHeAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260927-185513/image.png",
+    "topic": {
+      "title": "Ezilgan qadoqlar uchun Yassi ehtiyot qutilar so'rash",
+      "angle": "Buyurtma berishda sotuvchidan 5–10% miqdorda buklangan yassi qutilar qo'shib yuborishni kelishish va yo'lda ezilgan qutilarni yangisiga almashtirish amaliyoti.",
+      "why_now": "Kargoda chakana qadoq ezilishi natijasida marketpleys va do'konlarda tovar taqdimoti hamda narxi keskin tushib ketadi.",
+      "research": "Xitoy bilan savdo qiluvchi Oʻzbekistonlik tadbirkorlar uchun amaliy Telegram postlari uchun 8 ta dolzarb va amaliy mavzu nomzodi:\n\n1. **Sarlavha:** 1688’dagi \"Shidi Renzheng\" (实地认证) zavod audit hisobotini bepul yuklab olish\n   * **Qaysi burchakdan yoritiladi:** Vositachilarga pul to'lamasdan, 1688 platformasining o'zida uchinchi tomon (SGS/TÜV) o'tkazgan zavod auditining rasmiy PDF-hisobotini yuklab olish hamda zavodning haqiqiy maydoni, ishchilar soni va ishlab chiqarish uskunalarini aniqlash tartibi.\n   * **Nega aynan hozir dolzarb:** 1688 platformasida ko'plab savdo kompaniyalari (traderlar) o'zini \"ishlab chiqaruvchi zavod\" deb ko'rsatadi. Ushbu hisobot bir necha klikda vositachilarni ajratib olishga yordam beradi.\n   * **Foydalilik bahosi:** 9/10\n\n2. **Sarlavha:** Hajmiy vazn (Volumetric Weight) va kargo xarajatini 30–40% ga kamaytirish\n   * **Qaysi burchakdan yoritiladi:** Yengil, lekin hajmi katta tovarlar (plastmassa idishlar, yumshoq o'yinchoqlar, kiyimlar) uchun kargo kompaniyalari qanday qilib $(L \\times W \\times H / 6000)$ formulasi bo'yicha to'lov hisoblashini tushuntirish va tovar Xitoy omboridan chiqishidan oldin ularni vakuumlash yoki siqib qadoqlash xizmatini talab qilish amaliyoti.\n   * **Nega aynan hozir dolzarb:** Marketpleys va chakana sotuvchilar sof vazn uchun emas, \"havo\" uchun ortiqcha kargo to'lab, mahsulot marjasini boy berishmoqda.\n   * **Foydalilik bahosi:** 10/10\n\n3. **Sarlavha:** Bitta MOQ ichida rang va o'lchamlar matritsasini (SKU Breakdown) bo'lib olish muzokarasi\n   * **Qaysi burchakdan yoritiladi:** Zavod qo'ygan minimum buyurtma miqdorini (masalan, 1000 ta) bitta tovar modelining 4–5 xil rangi va o'lchami bo'yicha bo'lib berishni (200 tadan 5 xil variant) to'g'ri so'rash hamda buni shartnomaga kiritish usuli.\n   * **Nega aynan hozir dolzarb:** Marketpleys sotuvchilari bitta tovar turi bilan kapitalni muzlatib qo'ymasdan, keng assortiment bilan bozorni test qilishlari shart.\n   * **Foydalilik bahosi:** 9/10\n\n4. **Sarlavha:** Kuaidi 100 (快递100) orqali Xitoy ichki logistikasini sotuvchiga bog'lanmasdan kuzatish\n   * **Qaysi burchakdan yoritiladi:** Sotuvchi bergan trek-kod (Shunfeng, ZTO, YTO va h.k.) bo'yicha yuk haqiqatan kargo omboriga yo'lga chiqqanini yoki shunchaki soxta trek yaratilganini Kuaidi100 platformasi orqali mustaqil va tezkor tekshirish.\n   * **Nega aynan hozir dolzarb:** Xitoy sotuvchilari tovar tayyor bo'lmasdan turib trek-kod yaratish va yetkazib berish muddatini cho'zish holatlari tez-tez uchraydi.\n   * **Foydalilik bahosi:** 9/10\n\n5. **Sarlavha:** Qadog'i ezilgan tovar elashining oldi: Yassi ehtiyot qutilar (Flat-packed Spare Boxes) so'rash\n   * **Qaysi burchakdan yoritiladi:** Buyurtma berishda sotuvchidan tovarning brendlangan chakana qutilaridan qo'shimcha 5–10% miqdorda buklangan (yassi) holda yukga qo'shib yuborishni kelishish. Yo'lda qutisi ezilgan tovarlarni O'zbekistonga kelganda yangi qutiga joylab sotuvga chiqarish usuli.\n   * **Nega aynan hozir dolzarb:** Kargoda tovarning o'zi zararlanmasa ham, chakana qadoq (korobka) ezilishi natijasida marketpleys va do'konlarda tovar prezenatatsiyasi va narxi keskin tushib ketadi.\n   * **Foydalilik bahosi:** 10/10\n\n6. **Sarlavha:** Yiwu bozoridagi (Futian) do'konlarni Yiwu Credit (义乌信用网) portali orqali tekshirish\n   * **Qaysi burchakdan yoritiladi:** Futian bozoridagi sotuvchi do'konning litsenziyasi, biznes reytingi va ilgari firibgarlik yoki qarzdorlik holatlari bor-yo'qligini Yiwu shahrining rasmiy kredit portali orqali bepul tekshirish yo'riqnomasi.\n   * **Nega aynan hozir dolzarb:** Futian bozorida joyida naqd yoki kvitansiya bilan ishlaydigan xaridorlar oldindan to'lov qilgach, sotuvchi do'koni yopilib ketishi xavfiga duch kelishi mumkin.\n   * **Foydalilik bahosi:** 9/10\n\n7. **Sarlavha:** Qadoqlash va namuna (Dayang - 打样) to'lovini ommaviy buyurtma summasidan chegirish sharti\n   * **Qaysi burchakdan yoritiladi:** Individual qadoqlash (korobka, paket) yoki mahsulot namunasi tayyorlash xarajatlarini (打样费) ommaviy ishlab",
+      "sources": []
+    },
+    "qc_score": 10,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-09-29T07:00:00+05:00",
+    "created_at": "2026-09-27T18:56:59+00:00",
+    "est_cost_usd": 0.0921,
     "status": "ready"
   }
 ]

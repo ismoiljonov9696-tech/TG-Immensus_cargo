@@ -1,22 +1,5 @@
 [
   {
-    "id": "20260927-185513",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Ezilgan qadoqlar uchun Yassi ehtiyot qutilar so'rash",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIBr2q5ZvyRb17P_TyZVLNhXAuYN1NfAALOIWsb0T_ISWWI3x3mAtHeAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260927-185513/image.png",
-    "qc_score": 10,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-09-29T07:00:00+05:00",
-    "created_at": "2026-09-27T18:56:59+00:00",
-    "est_cost_usd": 0.0921,
-    "status": "published",
-    "updated_at": "2026-09-29T02:41:45+00:00",
-    "published_at": "2026-09-29T02:41:45+00:00"
-  },
-  {
     "id": "20260928-210547",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Obreshetka o'rniga fanera tanlab, fumiqatsiyadan qutilish",
@@ -54,6 +37,29 @@
     "publish_at": "2026-10-01T07:00:00+05:00",
     "created_at": "2026-09-29T19:50:20+00:00",
     "est_cost_usd": 0.0964,
+    "status": "ready"
+  },
+  {
+    "id": "20260930-195225",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Kargoda hajmiy vazn va zichlik orqali narxni hisoblash",
+    "text": "🧮 \"Yengil tovar oldim — nega kargo narxi buncha qimmat tushdi?\"\n\nO'yinchoq, plastmassa va kiyim kabi yengil, lekin hajmdor tovar keltirganda ko'pchilik zararga kiradi. Sababi — kargo to'lovni tarozidagi vaznga emas, zichlikka qarab hisoblaydi.\n\nKargoga berishdan oldin tovar zichligini ($kg/m^3$) aniqlash formulasi:\n\n1️⃣ Hajmni hisoblang: Uzunlik × Eni × Balandlik (metrda).\n• Misol: 60 × 40 × 50 sm quti = 0.6 × 0.4 × 0.5 = 0.12 $m^3$\n\n2️⃣ Zichlikni toping: Vazn (kg) ÷ Hajm ($m^3$).\n• Misol: Tarozida 12 kg bo'lsa → 12 ÷ 0.12 = 100 $kg/m^3$\n\n📌 Muhim qoida: Zichlik ko'rsatkichi qanchalik past bo'lsa, tovar shunchalik hajmdor hisoblanadi va kargo kompaniyasi haqiqiy vazn emas, hajmiy vazn tarifini qo'llaydi.\n\nSotuvchidan qutining aniq o'lchami va vaznini oldindan so'rab, zichlikni hisoblang — shunda kargo xarajatini aniq bilasiz va zararga kirmaysiz.\n\nSavolingiz bo'lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIBuGq9aPGXgNUBIZ7ek3uspEhmxBy2AAI5JmsbeDroSYiAJ4l1xS78AQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20260930-195225/image.png",
+    "topic": {
+      "title": "Kargoda hajmiy vazn va zichlik orqali narxni hisoblash",
+      "angle": "Kargoga tovar berishdan oldin quti o'lchamlari va haqiqiy vazn nisbati orqali zichlikni hisoblash hamda kargo kompaniyasi qaysi tarifni qo'llashini oldindan aniqlash formulasi beriladi.",
+      "why_now": "Yengil va hajmdor tovar buyurtma qilgan boshlovchi tadbirkorlar kutilmagan yuqori narx sababli zararga kirmoqda.",
+      "research": "Mana Xitoy bilan savdo qiluvchi O'zbekistonlik tadbirkorlar uchun 8 ta yangi va amaliy mavzu nomzodlari:\n\n---\n\n### 1. Uzum va Wildberries uchun shtrix-kodlarni Xitoy kargo omboridayoq yopishtirish (Pre-fulfillment)\n* **Qaysi burchakdan yoritiladi:** O'zbekistonga tovar kelgach, uni qayta qadoqlash va marketpleys shtrix-kodlarini yopishtirishga ortiqcha vaqt va ishchi kuchi sarflamaslik uchun Xitoydagi kargo omboriga tayyor barcode fayllarini yuborib, tovarlarni darhol FBO/FBSga tayyor holatda jo'natish usuli tushuntiriladi.\n* **Nega aynan hozir dolzarb:** O'zbekistonda Uzum va Wildberries’da sotuvchilar soni keskin oshgan; mahalliy fulfillment xizmatlari qimmat va sekin ishlamoqda. Xitoy omborida bu xizmat ancha arzon va tez bajariladi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 2. Kargoda hajmiy vazn (Volumetric weight) va zichlik formulasi orqali narxni oldindan hisoblash\n* **Qaysi burchakdan yoritiladi:** Kargoga tovar berishdan oldin quti o'lchamlari ($A \\times B \\times C$) va haqiqiy vazn nisbati orqali zichlikni ($kg/m^3$) hisoblash hamda kargo kompaniyasi qaysi tarifni (haqiqiy vazn yoki hajmiy vazn) qo'llashini oldindan aniqlash formulasi beriladi.\n* **Nega aynan hozir dolzarb:** Ko'plab boshlovchi tadbirkorlar yengil, lekin hajmdor tovar (o'yinchoqlar, plastmassa, kiyim) buyurtma qilib, tovar yetib kelgach kargoning kutilmagan yuqori narxidan zararga kirishmoqda.\n* **Foydalilik bahosi:** 10/10\n\n---\n\n### 3. Akkumulyatorli tovarlarni Xitoy bojxonasidan muammosiz olib chiqish uchun UN38.3 test hisoboti\n* **Qaysi burchakdan yoritiladi:** Quloqchin, smart-soat, powerbank yoki elektr asboblarni avia va quruqlik kargolarida ushlanib qolmasdan olib o'tish uchun sotuvchidan UN38.3 (litiy batareyalar xavfsizligi testi) va MSDS hujjatlarini oldindan talab qilish tartibi tushuntiriladi.\n* **Nega aynan hozir dolzarb:** Xitoy bojxonasi va tranzit mamlakat (Qozog'iston/Qirg'iziston) chegaralarida batareya va quvvat elementlariga ega tovarlar nazorati sezilarli darajada kuchaytirilgan.\n* **Foydalilik bahosi:** 8/10\n\n---\n\n### 4. 1688 platformasidagi \"Yi Jian Dai Fa\" (一件代发) funksiyasidan namuna sinovida foydalanish\n* **Qaysi burchakdan yoritiladi:** Zavod minimal buyurtma hajmiga (MOQ) 50–100 dona qo'yganda hamda \"namuna sotmayman\" deganda, sotuvchining \"Dropshipping\" (代发) bo'limiga o'tib, platformaning o'zida 1 dona tovarni rasmiy va arzon narxda kargo omboriga oldirish siri ko'rsatiladi.\n* **Nega aynan hozir dolzarb:** Ko'p tadbirkorlar zavod bilan savdolashib, 1 dona namuna ololmay vaqt yo'qotadi yoki xitoycha muloqotda rad javobini olib to'xtab qoladi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 5. Bojxona xavf profili (Sariq/Qizil yo'lak) tushganda bojxona qiymatini isbotlash uchun \"Tannarx kalkulatsiyasi papkasi\"\n* **Qaysi burchakdan yoritiladi:** Rasmiy (\"oq\") importda bojxona tovar narxini sun'iy oshirilgan indikativ narxlar bilan baholamasligi uchun tovar kelgunga qadar zavoddan xomashyo narxi, mehnat sarfi va to'lov kvitansiyalarini o'z ichiga olgan kalkulatsiya papkasini yig'ish usuli.\n* **Nega aynan hozir dolzarb:** O'zbekiston Bojxona qo'mitasida xavflarni boshqarish avtomatlashtirilgan tizimi (sariq/qizil yo'lak) faol ishlamoqda va past narxdagi import tovarlarga bojxona qiymati tez-tez qayta hisoblab oshirilmoqda.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 6. Murakkab va yangi uskunalar importida O'zbekiston Bojxonasidan \"TIF TN bo'yicha dastlabki qaror\" olish\n* **Qaysi burchakdan yoritiladi:** Xitoydan yangi uskunalar yoki ko mehmondor/ko'p qismli tovarlar olib kirishdan oldin Bojxona organiga ariza berib, TIF TN kodini va Bojxona to'lovi stavkasini rasmiy va huquqiy jihatdan muhrlatib olish tartibi (Bojxona kodeksi doirasida).\n* **Nega aynan hozir dolzarb:** Tovar chegaraga kelgach, bojxonachi boshqa TIF TN kodi qo'yib, yuqoriroq boj va QQS hisoblab qo'yishi natijasida kutilmagan katta moliyaviy zarar ko'rish holatlari juda ko'p uchraydi.\n* **Foydalilik bahosi:** 8/10\n\n---\n\n### 7. Tranzitda tovar almashtirilishi va o'g'irlanishi",
+      "sources": []
+    },
+    "qc_score": 10,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-10-02T07:00:00+05:00",
+    "created_at": "2026-09-30T19:54:17+00:00",
+    "est_cost_usd": 0.0938,
     "status": "ready"
   }
 ]

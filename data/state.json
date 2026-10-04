@@ -1,16 +1,12 @@
 {
-  "last_publish_at": "2026-10-04T02:36:42+00:00",
-  "last_publish_id": "20261002-194822",
-  "last_publish_title": "1688 zavodida tovarlarga shtrix-kod va stiker yopishtirish",
-  "last_error": {
-    "stage": "sifat nazorati (5-agent)",
-    "message": "Nazoratchi bahosi: 3/10\nKamchiliklar:\n  • Postdagi mavzu va ma'lumotlar (WeChat orqali video qo'ng'iroq - 'Shipin Kan Chang') taqdim etilgan tadqiqot materialida mavjud emas. Postdagi barcha faktlar strictly tadqiqot materialidan olinishi shart.\n\nChegara: llm.qc_min_score = 6",
-    "at": "2026-10-04T18:34:10+00:00"
-  },
+  "last_publish_at": "2026-10-04T19:16:59+00:00",
+  "last_publish_id": "20261004-185925",
+  "last_publish_title": "O'zbek tilidagi stikerlarni Xitoy zavodida yopishtirish",
+  "last_error": null,
   "alerted_at": null,
   "paused": false,
-  "balance_usd": 7.6162,
-  "last_publish_cost": 0.0916,
-  "total_cost_usd": 2.0738,
-  "total_posts": 23
+  "balance_usd": 7.5192,
+  "last_publish_cost": 0.097,
+  "total_cost_usd": 2.1708,
+  "total_posts": 24
 }

@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261003-183400",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Xitoy kargo omborida brak aniqlanganda 1688’da pulni qaytarish",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIBwWrBSwwZeq9bAwpxRfhKDKBPOTLiAALnG2sbTNERSraImULK_eumAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261003-183400/image.png",
-    "qc_score": 10,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-10-05T07:00:00+05:00",
-    "created_at": "2026-10-03T18:35:55+00:00",
-    "est_cost_usd": 0.096,
-    "status": "published",
-    "updated_at": "2026-10-05T04:12:43+00:00",
-    "published_at": "2026-10-05T04:12:43+00:00"
-  },
-  {
     "id": "20261004-185925",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "O'zbek tilidagi stikerlarni Xitoy zavodida yopishtirish",
@@ -71,6 +54,29 @@
     "publish_at": "2026-10-07T07:00:00+05:00",
     "created_at": "2026-10-05T21:52:44+00:00",
     "est_cost_usd": 0.0949,
+    "status": "ready"
+  },
+  {
+    "id": "20261006-195953",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Batareyali tovarlar uchun UN38.3 va MSDS hujjatlari",
+    "text": "🔋 Batareyasi bor yukingiz Xitoy omborida to'xtab qoldimi? Sababi — ikkita hujjat.\n\nPowerbank, gadjet va elektr anjomlar kargoda \"Xavfli yuk\" (DG — Dangerous Goods) toifasiga kiradi. Hozir quruqlik va avia yo'nalishlarida rentgen nazorati kuchaytirilgan — deklaratsiyasiz yuklar omborning o'zida to'xtatib qolinyapti.\n\nYukni Xitoy kargo omboriga topshirishdan oldin zavoddan 3 narsani talab qiling:\n\n1️⃣ UN38.3 test hisoboti — batareya xavfsizlik sinovidan o'tganini tasdiqlaydi\n2️⃣ MSDS pasporti — yukning texnik xavfsizlik hujjatlar toplami\n3️⃣ \"Battery Warning\" stikeri — zavod har bir qutiga ushbu ogohlantiruvchi belgini yopishtirishi shart\n\n📌 Bu hujjatlarni zavoddan olish oson, aksariyatida tayyor bo'ladi. Ularni kargo kompaniyasiga oldindan topshirsangiz, yukingiz tekshiruvda ushlanmaydi va ortiqcha saqlash xarajatlaridan qutulasiz.\n\nSavolingiz bo'lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIB0GrFU5m6uQtf02Q474xUpSvPJJMUAAJcHmsb29IxSmID-pRPockWAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261006-195953/image.png",
+    "topic": {
+      "title": "Batareyali tovarlar uchun UN38.3 va MSDS hujjatlari",
+      "angle": "Batareyasi bor gadjetlar kargoda xavfli yuk toifasiga kiradi. Xitoy kargo omboriga yuk topshirishdan oldin zavoddan UN38.3 test hisoboti va MSDS pasportini olish hamda qutiga stiker yopishtirish tartibi yoritiladi.",
+      "why_now": "Quruqlik va avia kargolarida batareyali yuklarni deklaratsiyasiz yuborishga qarshi nazorat kuchaytirilgan.",
+      "research": "Quyida Oʻzbekistonlik tadbirkorlar uchun amaliy, hozir dolzarb boʻlgan va ilgari yoritilmagan 8 ta post mavzulari nomzodi keltirilgan:\n\n1. **Sarlavha:** 1688 sotuvchilaridan Oʻzbekiston marketpleyslari uchun suv belgisiz (HD video va rasm) media-fayllarni olish\n   * **Qaysi burchakdan yoritiladi:** 1688 doʻkoni sahifasidagi \"Fenxiao\" (分销) boʻlimi orqali zavodning original oq fondagi fotosuratlari va 4K videolarini watermark (suv belgisi)siz yuklab olish hamda WeChat orqali sotuvchidan \"Yuan Tu\" (原图 — asl rasm) soʻrash tartibi. Uzum va Yandex Market sotuvchilari uchun ortiqcha studiya xarajatlarisiz tayyor kontent bazasini shakllantirish amaliyoti.\n   * **Nega aynan hozir dolzarb:** Oʻzbekiston marketpleyslarida tovar kartochkalariga foto/video talablari kuchaymoqda, alohida studiya va fotograf yollash esa mahsulot tannarxini oshirib yuboradi.\n   * **Foydalilik bahosi:** 9/10\n\n2. **Sarlavha:** Kargo omborida fitosanitariya ushlanishining oldini olish: Yogʻoch poddon oʻrniga Plastik yoki Asalari inisimon (Paper Honeycomb) poddon buyurtma qilish\n   * **Qaysi burchakdan yoritiladi:** Oʻzbekiston bojxonasida oddiy yogʻoch poddonlar fitosanitariya (karantin) nazoratiga tushadi va fumiqatsiya hujjati talab qilinishi tufayli yuk vaqti uzayadi. Zavoddan poddonni plastik yoki presslangan qogʻozli poddonga almashtirishni talab qilish orqali chegaradagi karantin tekshiruvlaridan toʻsiqsiz oʻtish usuli.\n   * **Nega aynan hozir dolzarb:** Chegara postlarida fitosanitariya nazorati qatʼiylashgan, poddon tufayli yuk ushlanib qolishi qoʻshimcha saqlash xarajatlarini keltirib chiqarmoqda.\n   * **Foydalilik bahosi:** 9/10\n\n3. **Sarlavha:** Litfiy-ion batareyali tovarlarni kargoda ushlanib qolmasligi uchun UN38.3 va MSDS hujjatlarini tayyorlash\n   * **Qaysi burchakdan yoritiladi:** Batareyasi bor gadjetlar, powerbank va elektr anjomlar kargoda \"Xavfli yuk\" (DG — Dangerous Goods) toifasiga kiradi. Xitoy kargo omboriga yuk topshirishdan oldin zavoddan UN38.3 test hisoboti va MSDS (Material Safety Data Sheet) pasportini olish hamda qutiga \"Battery Warning\" stikerini yopishtirish tartibi.\n   * **Nega aynan hozir dolzarb:** Quruqlik va avia kargolarida batareyali yuklarni deklaratsiyasiz yuborishga qarshi reyn gen nazorati kuchaytirilgan, talabga javob bermaydigan yuklar kargo omborida toʻxtatib qolinmoqda.\n   * **Foydalilik bahosi:** 10/10\n\n4. **Sarlavha:** WeChat’dagi Kuaidi100 minidasturi orqali Xitoy ichki logistika (Kuaidi) narxini aldovsiz tekshirish\n   * **Qaysi burchakdan yoritiladi:** Xitoylik sotuvchilar ba'zan tovar narxini tushirib berib, Xitoy ichidagi kargo omborigacha dostavka narxini (Domestic Freight) sun'iy ravishda oshirib yozishadi. WeChat’dagi Kuaidi100 yoki SF Express minidasturida viloyat, vazn va hajmni kiritib, haqiqiy ichki dostavka narxini 1 daqiqada hisoblash va sotuvchiga skrinshot bilan e'tiroz bildirish amaliyoti.\n   * **Nega aynan hozir dolzarb:** Sotuvchilar tovar narxida savdolashgandan so'ng yo'qotgan marjasini ichki logistika narxiga yashirincha qo'shib olish holatlari ko'paygan.\n   * **Foydalilik bahosi:** 9/10\n\n5. **Sarlavha:** Kargo sug'urtasida \"Qisman zarar va yetishmovchilik\" (Partial Damage & Shortage) bandini kiritish\n   * **Qaysi burchakdan yoritiladi:** Standart kargo sug'urtalari faqat \"To'liq yo'qolgan\" (Total Loss) yuklar uchun tovon to'laydi. Ammo amaliyotda eng ko'p uchraydigan muammo — qutining bir qismi ezilib tovar sinishi yoki ichidan bir nechta mahsulot yetishmay chiqishidir. Kargo kompaniyasi bilan sug'urta shartnomasida aynan yetishmovchilik va singan tovarlar uchun video-akt asosida kompensatsiya to'lash shartini aniq yozdirish.\n   * **Nega aynan hozir dolzarb:** Tranzit yo'nalishlarida qayta yuklash punktlari ko'pligi sababli yuklarga qisman shikast yetishi va tovar yetishmovchiligi eng ko'p uchraydigan e'tirozli holat hisoblanadi.\n   * **Foydalilik bahosi:** 10/10\n\n6. **Sarlavha:** O'zbekistonda muvofiqlik sertifikatini tezlashtirish: Zavoddan ILAC-MRA akkreditatsiyali Laboratoriya Test Hiso",
+      "sources": []
+    },
+    "qc_score": 10,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-10-08T07:00:00+05:00",
+    "created_at": "2026-10-06T20:01:28+00:00",
+    "est_cost_usd": 0.096,
     "status": "ready"
   }
 ]

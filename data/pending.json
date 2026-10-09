@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261006-195953",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Batareyali tovarlar uchun UN38.3 va MSDS hujjatlari",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIB0GrFU5m6uQtf02Q474xUpSvPJJMUAAJcHmsb29IxSmID-pRPockWAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261006-195953/image.png",
-    "qc_score": 10,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-10-08T07:00:00+05:00",
-    "created_at": "2026-10-06T20:01:28+00:00",
-    "est_cost_usd": 0.096,
-    "status": "published",
-    "updated_at": "2026-10-08T02:16:52+00:00",
-    "published_at": "2026-10-08T02:16:52+00:00"
-  },
-  {
     "id": "20261007-203051",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Bojxona TIF TN kodi uchun zavoddan texnik parametr olish",
@@ -54,6 +37,29 @@
     "publish_at": "2026-10-10T07:00:00+05:00",
     "created_at": "2026-10-08T20:32:53+00:00",
     "est_cost_usd": 0.0925,
+    "status": "ready"
+  },
+  {
+    "id": "20261009-200018",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Bojxona qiymati uchun 'Uch hujjat mosligi' qoidasi",
+    "text": "📑 Bojxona risk-profiliga tushib, ortiqcha to'lov qilishni xohlamaysizmi?\n\nHozir O'zbekiston bojxona organlari deklaratsiya qilingan qiymatni qat'iy nazorat qilmoqda. Hujjatlardagi hatto kichik nomuvofiqlik ham bojxona qiymatining sun'iy oshirilishiga va ortiqcha xarajatga olib keladi.\n\nBuning oldini olish uchun \"Uch hujjat mosligi\" qoidasiga qat'iy amal qiling. Quyidagi 3 ta hujjatdagi summa, tovar nomi va rekvizitlar 100% bir xil bo'lishi shart:\n\n1️⃣ Shartnoma (Contract)\n2️⃣ Invoys (Invoice)\n3️⃣ Bank to'lov topshiriqnomasi (SWIFT yoki to'lov kvitansiyasi)\n\n📌 Muhim: Agar ushbu hujjatlardan birida tovar nomi yoki summa boshqacha ko'rsatilsa, bojxona yukingizni xavf profiliga tushiradi. Deklaratsiya topshirishdan oldin uchala hujjatdagi ma'lumotlarni birma-bir solishtirib chiqing.\n\nBojxona va hujjatlar bo'yicha savolingiz bo'lsa — izohda yozing 👇\n\n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIB22rJSDVrdSQ3_RaKQEsoXyyqBNl4AAIrGmsbvaRQSh-QH1_-JF9lAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261009-200018/image.png",
+    "topic": {
+      "title": "Bojxona qiymati uchun 'Uch hujjat mosligi' qoidasi",
+      "angle": "Bojxona risk-profiliga tushib qolmaslik uchun Shartnoma, Invoys va Bank to'lov topshiriqnomasidagi summa, tovar nomi va rekvizitlarni 100% bir xil qilish tartibi.",
+      "why_now": "O'zbekiston bojxona organlari deklaratsiya qilingan qiymatni qat'iy nazorat qilmoqda.",
+      "research": "Mana Telegram kanalingiz uchun O‘zbekistonlik tadbirkorlarga mo‘ljallangan, hali yozilmagan va bugun qo‘llash mumkin bo‘lgan 8 ta amaliy mavzu nomzodi:\n\n---\n\n### 1. Xitoy sotuvchisining \"Duigong\" (yuridik) va \"Duisi\" (jismoniy) hisoblarini ajratish\n* **Qaysi burchakdan yoritiladi:** Xitoy kompaniyasining rasmiy yuridik bank hisobiga (对公账户 — Duigong) to'lov qilish va shaxsiy karta/WeChat'ga (对私账户 — Duisi) pul o'tkazmaslik qoidasi. Biznes hisobga to'lov qilinganda nizoli holatda Xitoy qonunchiligi va banki orqali pulni qaytarib olish huquqiy kafolati mavjud bo'ladi.\n* **Nega aynan hozir dolzarb:** Kichik tadbirkorlar va marketpleys sotuvchilari komissiyani tejash uchun menejerning shaxsiy kartasiga pul o'tkazib, brak tovar kelganda yoki yetkazib berish kechikganda huquqiy himoyasiz qolishmoqda.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 2. OEM buyurtmada \"Golden Sample\" (Sign Sample / 签样) usulini qo'llash\n* **Qaysi burchakdan yoritiladi:** Ommaviy ishlab chiqarishdan oldin tasdiqlangan namuna nusxasiga ikkala tomon muhr va imzo qo'yib, bittasini zavodda, bittasini o'zida saqlash tartibi. Bu ommaviy partiyada zavod xomashyo sifatini pasaytirib yuborishining oldini oladi hamda inspeksiya uchun asosiy standart bo'ladi.\n* **Nega aynan hozir dolzarb:** O'zbekistonda o'z brendi (Private Label) ostida tovar buyurtma qilayotganlar ko'paygan, lekin namuna sifati bilan ommaviy partiya sifati bir xil chiqmaslik muammosi juda ko'p uchraydi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 3. O'zbekistonda bojxona qiymatini tasdiqlash uchun \"Uch hujjat mosligi\" (三单一致) qoidasi\n* **Qaysi burchakdan yoritiladi:** Bojxona risk-profiliga tushib qolmaslik uchun Shartnoma (Contract), Invoys (Invoice) va Bank to'lov topshiriqnomasidagi (SWIFT/to'lov kvitansiyasi) summa, tovar nomi va rekvizitlarni 100% bir xil qilish tartibi.\n* **Nega aynan hozir dolzarb:** O'zbekiston bojxona organlari deklaratsiya qilingan qiymatni qat'iy nazorat qilmoqda. Hujjatlardagi hatto kichik nomuvofiqlik ham bojxona qiymatini xavf profili bo'yicha sun'iy oshirilishiga va ortiqcha xarajatga olib keladi.\n* **Foydalilik bahosi:** 10/10\n\n---\n\n### 4. 1688’da sotuvchining Tuihuo Lv (qaytarish foizi) va 1A–5A savdo darajasini tekshirish\n* **Qaysi burchakdan yoritiladi:** Faqat reyting va yulduzchalarga emas, balki sotuvchi kartochkasidagi qaytarishlar foizi (退货率) va nizolar chastotasini (纠纷率) tahlil qilish orqali mas'uliyatsiz yetkazib beruvchini to'lov qilishdan oldin aniqlash.\n* **Nega aynan hozir dolzarb:** 1688'da soxta ijobiy sharhlar va sun'iy oshirilgan reytinglar ko'paygan. O'quvchi bir necha tugma orqali sotuvchining real sifatini tekshirishni o'rganadi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 5. AliPrice instrumenti orqali 1688’da tovarning tarixiy narx dinamikasini (Price History) kuzatish\n* **Qaysi burchakdan yoritiladi:** Aksiyalar, mavsumiy chegirmalar va ommaviy sotuvlar oldidan sotuvchi narxni sun'iy oshirgan-oshirmaganini brauzer kengaytmasi (extension) orqali tekshirish va sotuvchi bilan eng past tarixiy narx nuqtasi bo'yicha savdolashish.\n* **Nega aynan hozir dolzarb:** Yil oxiridagi ommaviy savdolar va bayramlar oldidan Xitoy sotuvchilari narxlarni sun'iy ko'tarib, so'ng \"chegirma\" berish taktikasi orqali haridorlarni aldashadi.\n* **Foydalilik bahosi:** 9/10\n\n---\n\n### 6. Konteynerli tashuvda namlik va haroratga ta'sirchan tovarlar uchun Dry Pole va Termo-plyonka talab qilish\n* **Qaysi burchakdan yoritiladi:** Kosmetika, sham, plastmassa, elektronika va oziq-ovqat tovarlarini quruqlik/temir yo'l konteynerlarida olib kelishda konteyner ichidagi kondensat (terlash) va harorat o'zgarishidan saqlash uchun maxsus quritgich ustunlar (Dry Pole) va termo-folga qoplamasini buyurtma qilish.\n* **Nega aynan hozir dolzarb:** Kuz-qish va bahor mavsumida harorat keskin o'zgarishi natijasida yopiq konteyner ichida namlik yig'ilib, tovar va qadoqlarni mog'orlatishi yoki yaroqsiz holga keltirishi ko'p kuzatiladi.\n* **Foydalilik bahosi:** 8/10\n\n---\n\n### 7. Og'ir va yirik gabaritli yuklar uch",
+      "sources": []
+    },
+    "qc_score": 10,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-10-11T07:00:00+05:00",
+    "created_at": "2026-10-09T20:01:56+00:00",
+    "est_cost_usd": 0.0938,
     "status": "ready"
   }
 ]

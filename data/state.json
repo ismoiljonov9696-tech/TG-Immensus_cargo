@@ -2,7 +2,11 @@
   "last_publish_at": "2026-10-15T03:20:15+00:00",
   "last_publish_id": "20261013-203119",
   "last_publish_title": "Nozik tovarlarni tashishda poddon va burchaklik talab qilish",
-  "last_error": null,
+  "last_error": {
+    "stage": "mavzu izlash (1-agent)",
+    "message": "Gemini gemini-3.6-flash → HTTP 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+    "at": "2026-10-15T08:09:44+00:00"
+  },
   "alerted_at": null,
   "paused": false,
   "balance_usd": 6.464,

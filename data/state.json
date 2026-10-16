@@ -5,7 +5,7 @@
   "last_error": {
     "stage": "mavzu izlash (1-agent)",
     "message": "Gemini gemini-3.6-flash → HTTP 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. \",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
-    "at": "2026-10-16T08:02:44+00:00"
+    "at": "2026-10-16T18:39:00+00:00"
   },
   "alerted_at": "2026-10-16T07:32:00+00:00",
   "paused": false,

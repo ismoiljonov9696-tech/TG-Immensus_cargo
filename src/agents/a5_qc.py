@@ -13,7 +13,7 @@ import logging
 import re
 
 from ..config import style_examples
-from ..gemini import generate_json
+from ..ai import generate_json
 
 LOG = logging.getLogger("agent5")
 

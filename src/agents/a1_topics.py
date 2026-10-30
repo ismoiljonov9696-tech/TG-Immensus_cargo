@@ -1,6 +1,6 @@
 """1-AGENT — MAVZU IZLOVCHI.
 
-Berilgan rubrikada internetdan yangi mavzular izlaydi (Gemini + Google qidiruvi),
+Berilgan rubrikada internetdan yangi mavzular izlaydi (OpenAI + web search),
 arxiv bilan solishtiradi va takrorlanmagan eng yaxshi mavzuni qaytaradi.
 """
 from __future__ import annotations
@@ -8,7 +8,7 @@ from __future__ import annotations
 import logging
 
 from .. import store
-from ..gemini import generate_grounded, generate_json
+from ..ai import generate_grounded, generate_json
 
 LOG = logging.getLogger("agent1")
 

@@ -9,7 +9,7 @@ import logging
 from pathlib import Path
 
 from ..azure_tts import synthesize
-from ..gemini import generate_text
+from ..ai import generate_text
 
 LOG = logging.getLogger("agent4")
 
@@ -36,13 +36,13 @@ Faqat matnni qaytaring."""
 
 
 def run(cfg: dict, post_text: str, out_path: Path,
-        gemini_key: str, azure_key: str, azure_region: str) -> tuple[Path, str]:
+        ai_key: str, azure_key: str, azure_region: str) -> tuple[Path, str]:
     a = cfg["audio"]
     lang_name = {"uz": "o'zbek", "ru": "rus", "en": "ingliz"}.get(
         cfg["channel"].get("language", "uz"), "o'zbek"
     )
 
-    spoken = _spoken_version(post_text, gemini_key, cfg["llm"]["model"], lang_name)
+    spoken = _spoken_version(post_text, ai_key, cfg["llm"]["model"], lang_name)
     LOG.info("Ovoz matni tayyor: %d belgi", len(spoken))
 
     audio = synthesize(

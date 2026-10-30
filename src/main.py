@@ -27,7 +27,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import gemini, store
+from . import ai, store
 from .config import WORK, ConfigError, load_config, load_secrets
 from .agents import a1_topics, a2_writer, a3_image, a4_voice, a5_qc, a6_publish
 from .telegram import Bot, TelegramError, approval_buttons, extract_file_id
@@ -247,10 +247,10 @@ def build_post(cfg: dict, secrets, rubric: dict, topic: dict, post_id: str,
         last = attempt == max_tries
         LOG.info("── Yozish, urinish %d/%d", attempt, max_tries)
         text = ("Mock post matni.\n\n" + "Bu sinov matni. " * 40) if MOCK else \
-            a2_writer.run(cfg, rubric, topic, secrets.gemini_key, feedback)
+            a2_writer.run(cfg, rubric, topic, secrets.ai_key, feedback)
         verdict = {"approved": True, "score": 9, "soft_pass": False,
                    "problems": [], "fix_instructions": ""} if MOCK else \
-            a5_qc.run(cfg, topic, text, secrets.gemini_key, last_attempt=last)
+            a5_qc.run(cfg, topic, text, secrets.ai_key, last_attempt=last)
 
         if verdict["approved"]:
             if verdict.get("soft_pass"):
@@ -276,7 +276,7 @@ def build_post(cfg: dict, secrets, rubric: dict, topic: dict, post_id: str,
 
     try:
         image_path, _ = a3_image.run(cfg, text, workdir / "image.png",
-                                     secrets.gemini_key, topic.get("title", ""))
+                                     secrets.ai_key, topic.get("title", ""))
         kind, media_path = "photo", image_path
     except Exception as exc:                              # noqa: BLE001
         LOG.error("3-agent (rasm) ishlamadi: %s", exc)
@@ -288,7 +288,7 @@ def build_post(cfg: dict, secrets, rubric: dict, topic: dict, post_id: str,
         else:
             try:
                 audio_path, _ = a4_voice.run(cfg, text, workdir / "audio.mp3",
-                                             secrets.gemini_key, secrets.azure_key,
+                                             secrets.ai_key, secrets.azure_key,
                                              secrets.azure_region)
             except Exception as exc:                      # noqa: BLE001
                 LOG.error("4-agent (ovoz) ishlamadi: %s", exc)
@@ -416,7 +416,7 @@ def preview_header(cfg: dict, post: dict, verdict: dict, when: datetime,
 # --------------------------------------------------------------------------- #
 def cmd_check(cfg: dict) -> int:
     from .azure_tts import list_uz_voices
-    from .gemini import generate_text
+    from .ai import generate_text
     from .video import ffmpeg_available
 
     secrets = load_secrets(strict=False)
@@ -454,21 +454,21 @@ def cmd_check(cfg: dict) -> int:
     report("Admin chat ID", bool(n) or not need_admin,
            f"{n} ta admin" if n else "TELEGRAM_ADMIN_CHAT_ID yo'q — ko'rsatish ishlamaydi")
 
-    if secrets.gemini_key:
+    if secrets.ai_key:
         try:
-            generate_text("Javob: OK", secrets.gemini_key, model=cfg["llm"]["model"], temperature=0)
-            report(f"Gemini matn ({cfg['llm']['model']})", True)
+            generate_text("Javob: OK", secrets.ai_key, model=cfg["llm"]["model"], temperature=0)
+            report(f"{secrets.ai_provider} matn ({cfg['llm']['model']})", True)
         except Exception as exc:                          # noqa: BLE001
-            report(f"Gemini matn ({cfg['llm']['model']})", False, str(exc)[:110])
+            report(f"{secrets.ai_provider} matn ({cfg['llm']['model']})", False, str(exc)[:110])
         try:
-            from .gemini import generate_image
+            from .ai import generate_image
             generate_image("A simple blue circle on white background, no text",
-                           secrets.gemini_key, model=cfg["image"]["model"])
-            report(f"Gemini rasm ({cfg['image']['model']})", True)
+                           secrets.ai_key, model=cfg["image"]["model"])
+            report(f"{secrets.ai_provider} rasm ({cfg['image']['model']})", True)
         except Exception as exc:                          # noqa: BLE001
-            report(f"Gemini rasm ({cfg['image']['model']})", False, str(exc)[:110])
+            report(f"{secrets.ai_provider} rasm ({cfg['image']['model']})", False, str(exc)[:110])
     else:
-        report("Gemini", False, "GEMINI_API_KEY yo'q")
+        report("AI", False, "OPENAI_API_KEY yo'q (Gemini zaxirasi ham yo'q)")
 
     if cfg["audio"].get("enabled"):
         if secrets.has_azure:
@@ -562,7 +562,7 @@ def generate_one(cfg: dict, force: bool = False, now_flag: bool = False,
     Xatolik bo'lsa adminga xabar yuboradi — kanal jimgina bo'sh qolmasin.
     """
     secrets = load_secrets(strict=not MOCK)
-    gemini.reset_usage()
+    ai.reset_usage()
 
     stage = "boshlanish"
     try:
@@ -571,7 +571,7 @@ def generate_one(cfg: dict, force: bool = False, now_flag: bool = False,
         LOG.info("═══ Post %s | rubrika: %s ═══", post_id, rubric["name"])
 
         stage = "mavzu izlash (1-agent)"
-        topic = a1_topics.run(cfg, rubric, secrets.gemini_key) if not MOCK else {
+        topic = a1_topics.run(cfg, rubric, secrets.ai_key) if not MOCK else {
             "title": "Mock mavzu", "angle": "", "why_now": "",
             "research": "(mock)", "sources": [],
         }
@@ -616,7 +616,7 @@ def generate_one(cfg: dict, force: bool = False, now_flag: bool = False,
         "rewrites": 0,
         "publish_at": when.isoformat(),
         "created_at": store.now_iso(),
-        "est_cost_usd": round(gemini.usage_total(), 4),
+        "est_cost_usd": round(ai.usage_total(), 4),
     }
 
     if MOCK:
@@ -780,7 +780,7 @@ def process_rewrites(cfg: dict, secrets, bot: Bot) -> int:
         topic = item.get("topic") or {}
         if rewrites >= 2:
             try:
-                topic = a1_topics.run(cfg, rubric, secrets.gemini_key)
+                topic = a1_topics.run(cfg, rubric, secrets.ai_key)
                 store.remember(topic["title"], rubric["name"], item["id"], topic.get("sources"))
                 LOG.info("Yangi mavzu olindi: %s", topic["title"])
             except Exception as exc:                      # noqa: BLE001

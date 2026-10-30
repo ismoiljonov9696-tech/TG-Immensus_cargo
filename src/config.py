@@ -19,6 +19,7 @@ class ConfigError(RuntimeError):
 
 @dataclass(frozen=True)
 class Secrets:
+    openai_key: str
     gemini_key: str
     telegram_token: str
     admin_chat_id: str          # birinchi admin — media shunga yuklanadi
@@ -29,6 +30,15 @@ class Secrets:
     @property
     def has_azure(self) -> bool:
         return bool(self.azure_key and self.azure_region)
+
+    @property
+    def ai_key(self) -> str:
+        """OpenAI birinchi tanlov; kalit qo'yilguncha Gemini zaxira."""
+        return self.openai_key or self.gemini_key
+
+    @property
+    def ai_provider(self) -> str:
+        return "OpenAI" if self.openai_key else "Gemini (zaxira)"
 
     @property
     def admins(self) -> tuple[str, ...]:
@@ -72,6 +82,7 @@ def load_secrets(strict: bool = True) -> Secrets:
     _load_dotenv()
     ids = parse_chat_ids(os.getenv("TELEGRAM_ADMIN_CHAT_ID", ""))
     s = Secrets(
+        openai_key=os.getenv("OPENAI_API_KEY", "").strip(),
         gemini_key=os.getenv("GEMINI_API_KEY", "").strip(),
         telegram_token=os.getenv("TELEGRAM_BOT_TOKEN", "").strip(),
         admin_chat_id=ids[0] if ids else "",
@@ -80,14 +91,11 @@ def load_secrets(strict: bool = True) -> Secrets:
         admin_chat_ids=ids,
     )
     if strict:
-        missing = [
-            name
-            for name, val in (
-                ("GEMINI_API_KEY", s.gemini_key),
-                ("TELEGRAM_BOT_TOKEN", s.telegram_token),
-            )
-            if not val
-        ]
+        missing = []
+        if not s.ai_key:
+            missing.append("OPENAI_API_KEY (yoki vaqtincha GEMINI_API_KEY)")
+        if not s.telegram_token:
+            missing.append("TELEGRAM_BOT_TOKEN")
         if missing:
             raise ConfigError("Quyidagi kalitlar yo'q: " + ", ".join(missing))
     return s
@@ -117,3 +125,4 @@ def style_examples() -> str:
     if "<!-- NAMUNALAR -->" in text:
         text = text.split("<!-- NAMUNALAR -->", 1)[1].strip()
     return text
+

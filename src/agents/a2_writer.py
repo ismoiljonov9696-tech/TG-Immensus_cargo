@@ -8,7 +8,7 @@ from __future__ import annotations
 import logging
 
 from ..config import style_examples
-from ..gemini import generate_text
+from ..ai import generate_text
 
 LOG = logging.getLogger("agent2")
 

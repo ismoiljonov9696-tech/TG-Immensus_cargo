@@ -1,6 +1,6 @@
 """3-AGENT — RASSOM.
 
-Post matnidan rasm tavsifi tuzadi va Nano Banana orqali rasm chizadi,
+Post matnidan rasm tavsifi tuzadi va OpenAI GPT Image orqali rasm chizadi,
 so'ng ustiga kompaniya logotipini qo'yadi.
 
 Rasm mavzudan kelib chiqadi, mavzu esa rasmdan emas:
@@ -22,7 +22,7 @@ from pathlib import Path
 
 from ..branding import apply_logo, find_logo
 from ..config import ROOT
-from ..gemini import edit_image, generate_image, generate_json
+from ..ai import edit_image, generate_image, generate_json
 
 LOG = logging.getLogger("agent3")
 

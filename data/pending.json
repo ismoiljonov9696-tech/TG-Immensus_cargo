@@ -115,5 +115,109 @@
     "created_at": "2026-10-31T09:29:32+00:00",
     "est_cost_usd": 0.0809,
     "status": "ready"
+  },
+  {
+    "id": "20261031-150031",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Uch hujjatdagi ma’lumotni jo‘natishdan oldin moslang",
+    "text": "📄 Uchta hujjatdagi bitta kichik farq bojxonada katta kechikish qiladi.\n\nInvoice, packing list va deklaratsiyada tovar nomi, birlik va son bir xil bo‘lishi kerak. Jo‘natishdan oldin shu uch joyni alohida tekshiring.\n\nTekshiruvni shunday qiling:\n• tovar nomi har uch hujjatda aynan bir xil yozilganmi\n• birlik bir xilmi: dona, quti, kg va hokazo\n• son bir xilmi: bitta hujjatda ham ortiqcha yoki kam yozilmaganmi\n\nKuryer yoki pochta jo‘natmasi bo‘lsa, yuk haqidagi dastlabki axborot bojxona tizimiga yuborilganini ham tekshirtiring. Hujjatlar bir-biriga mos bo‘lsa, rasmiylashtirishdagi savollar kamayadi.\n\nMasalan, invoice’da 100 dona, packing list’da 10 quti, deklaratsiyada esa boshqa nom yozilsa — tekshiruvda to‘xtab qolishi mumkin. Bitta formatni oldindan tayyorlasangiz, xato kamayadi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAICkWrmArMzNfeQ6gHtFdevayN7ogUQAAKbH2sbGMcxSyZX7PTqM8loAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261031-150031/image.png",
+    "topic": {
+      "title": "Uch hujjatdagi ma’lumotni jo‘natishdan oldin moslang",
+      "angle": "Invoice, packing list va deklaratsiyadagi tovar nomi, birlik va sonni yuborishdan oldin bir xil qilib tekshirish kerak. Hujjatlar orasidagi kichik tafovut ham rasmiylashtirishda muammo keltirishi mumkin.",
+      "why_now": "Bojxona rasmiylashtiruvida hujjatlar to‘plami va tartibi juda muhim.",
+      "research": "1. **“Bojxona hujjatlarini jo‘natishdan oldin 3 ta joyda bir xil yozing”**\n   - **Burchak:** invoice, packing list va deklaratsiyadagi tovar nomi, birlik va sonni jo‘natishdan oldin solishtirish.\n   - **Nega dolzarb:** bojxona rasmiylashtiruvida hujjatlar to‘plami va tartibi muhim; rasmiy manbalarda bojxona rasmiylashtiruvi tanlangan rejimga mos hujjatlar bilan yuritilishi aytiladi. ([gov.uz](https://gov.uz/oz/miit/sections/view/12768?utm_source=openai))\n   - **Foydalilik:** 10/10\n\n2. **“Kuryer va pochta yuklari uchun oldindan axborot yuborilishini tekshiring”**\n   - **Burchak:** Xitoydan kichik partiya yuborishda kuryer/pochta operatori yuk haqidagi dastlabki axborotni bojxona tizimiga yuborishi kerakligini bilish va jo‘natmadan oldin shu jarayonni tekshirtirish.\n   - **Nega dolzarb:** Bojxona qo‘mitasi xalqaro pochta va kuryerlik jo‘natmalarida oldindan axborot yuborish tartibini alohida ko‘rsatadi. ([customs.uz](https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi?utm_source=openai))\n   - **Foydalilik:** 9/10\n\n3. **“Bojxona rasmiylashtiruvi uchun tovarni oldindan qaysi rejimga kiritishingizni aniqlang”**\n   - **Burchak:** import, reimport, eksport kabi rejimlardan qaysi biri sizning holatingizga mosligini shartnoma va hujjatlarni yig‘ishdan oldin belgilash.\n   - **Nega dolzarb:** rasmiy manbalarda tovarlar bojxona rejimlariga muvofiq rasmiylashtirilishi aytiladi; noto‘g‘ri rejim hujjat va kechikish xavfini oshiradi. ([gov.uz](https://gov.uz/oz/advice/NaN/document/2375?utm_source=openai))\n   - **Foydalilik:** 8/10\n\n4. **“Xitoydan kelayotgan oziq-ovqat/uchinchi davlat standartli tovarlarda ro‘yxatdan o‘tish talabini tekshiring”**\n   - **Burchak:** mahsulotingiz qaysi toifaga kirishini oldindan aniqlab, Xitoy tomoni yoki ishlab chiqaruvchi uchun qo‘shimcha ro‘yxatdan o‘tish ehtiyoji bor-yo‘qligini tekshirish.\n   - **Nega dolzarb:** 2026-yil 1-iyundan kuchga kiradigan yangilangan Xitoy qoidalari ayrim mahsulotlar uchun dinamik, xavfga yo‘naltirilgan yondashuvga o‘tgan; bu eksport/import rejalariga bevosita ta’sir qiladi. ([api-portal.gov.uz](https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf?utm_source=openai))\n   - **Foydalilik:** 9/10\n\n5. **“Tarif kvotasi bor mahsulotda miqdorni tekshirmasdan narx hisoblamang”**\n   - **Burchak:** ayrim tovarlar tarif kvotasi doirasida arzonroq boj bilan kirishi mumkin, lekin limitdan oshsa boshqacha stavka qo‘llanishi ehtimoli bor; shuning uchun partiya hajmini oldindan aniqlang.\n   - **Nega dolzarb:** rasmiy manbalarda tarif kvotasi belgilangan miqdordan oshganda amaldagi import bojlari qo‘llanishi aytiladi; bu tannarxga bevosita ta’sir qiladi. ([gov.uz](https://gov.uz/oz/miit/sections/view/12811?utm_source=openai))\n   - **Foydalilik:** 8/10\n\n6. **“Bojxona qiymatini isbotlash uchun birgina invoysga suyanmang”**\n   - **Burchak:** narxni tasdiqlash uchun oldindan invoice, shartnoma va to‘lov izi mosligini tekshirish, yetishmasa qo‘shimcha dalillarni tayyorlash.\n   - **Nega dolzarb:** bojxona qiymati va hujjatlar mosligi masalasi rasmiy bojxona tizimida asosiy nazorat nuqtalaridan biri; hujjatlarni to‘g‘ri tayyorlash kechikishni kamaytiradi. ([gov.uz](https://gov.uz/oz/miit/sections/view/12768?utm_source=openai))\n   - **Foydalilik:** 9/10\n\n7. **“Kichik partiyada kuryer jo‘natmasi emas, jo‘natma turini oldindan tanlang”**\n   - **Burchak:** shoshilinch kichik yukni kuryer, pochta yoki boshqa kanal orqali yuborishda, qaysi kanalning bojxona amaliyoti sizga mos kelishini jo‘natishdan oldin tekshirish.\n   - **Nega dolzarb:** Bojxona qo‘mitasi pochta va kuryerlik jo‘natmalarini alohida tartibga soladi; noto‘g‘ri kanal noto‘g‘ri rasmiylashtirishga olib kelishi mumkin. ([customs.uz](https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi?utm_source=openai))\n   - **Foydalilik:** 8/10\n\n8. **“Bojxona qonunchiligini emas, amaldagi",
+      "sources": [
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2823",
+          "url": "https://gov.uz/oz/advice/603/document/2823"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12768",
+          "url": "https://gov.uz/oz/miit/sections/view/12768"
+        },
+        {
+          "title": "https://invest.gov.uz/uz/guide/legal-framework",
+          "url": "https://invest.gov.uz/uz/guide/legal-framework"
+        },
+        {
+          "title": "https://www.digital.gov.uz/oz/advice/NaN/document/2823",
+          "url": "https://www.digital.gov.uz/oz/advice/NaN/document/2823"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12811",
+          "url": "https://gov.uz/oz/miit/sections/view/12811"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12775",
+          "url": "https://gov.uz/oz/miit/sections/view/12775"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/NaN/document/2375",
+          "url": "https://gov.uz/oz/advice/NaN/document/2375"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/NaN/document/2377",
+          "url": "https://gov.uz/oz/advice/NaN/document/2377"
+        },
+        {
+          "title": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi",
+          "url": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12769",
+          "url": "https://gov.uz/oz/miit/sections/view/12769"
+        },
+        {
+          "title": "https://new.customs.uz/",
+          "url": "https://new.customs.uz/"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/75/document/1894",
+          "url": "https://gov.uz/oz/advice/75/document/1894"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12768?utm_source=openai",
+          "url": "https://gov.uz/oz/miit/sections/view/12768?utm_source=openai"
+        },
+        {
+          "title": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi?utm_source=openai",
+          "url": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi?utm_source=openai"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/NaN/document/2375?utm_source=openai",
+          "url": "https://gov.uz/oz/advice/NaN/document/2375?utm_source=openai"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf?utm_source=openai",
+          "url": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf?utm_source=openai"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12811?utm_source=openai",
+          "url": "https://gov.uz/oz/miit/sections/view/12811?utm_source=openai"
+        },
+        {
+          "title": "https://new.customs.uz/?utm_source=openai",
+          "url": "https://new.customs.uz/?utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-10-31T20:16:06.352457+05:00",
+    "created_at": "2026-10-31T15:01:06+00:00",
+    "est_cost_usd": 0.0828,
+    "status": "ready"
   }
 ]

@@ -15,5 +15,105 @@
     "status": "published",
     "updated_at": "2026-10-31T08:48:04+00:00",
     "published_at": "2026-10-31T08:48:04+00:00"
+  },
+  {
+    "id": "20261031-092901",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Uch hujjatni jo‘natishdan oldin moslang",
+    "text": "📄 Uchta hujjatdagi bitta farq yukingizni ushlab qolishi mumkin.\n\nInvoys, packing list va transport hujjati bir-biriga mos bo‘lmasa, bojxonada savol tug‘iladi. Xitoy amaliyotida bu hujjatlar birga ko‘riladi, shuning uchun nom, miqdor, og‘irlik va qadoq soni aynan bir xil bo‘lishi kerak.\n\n✅ Jo‘natishdan oldin tekshiring:\n• Mahsulot nomi uchala hujjatda bir xil yozilganmi\n• Miqdor bir xilmi\n• Og‘irliklar mosmi\n• Qadoq soni bir xilmi\n\n❗️Eng ko‘p xato: supplier invoysda bir nom, packing listda boshqa nom yozadi. Natijada yuk keladi, lekin hujjatdagi tafovut sabab tekshiruv cho‘ziladi.\n\n📌 To‘g‘ri odat: hujjatlarni jo‘natishdan oldin bitta jadvalda solishtiring va supplierdan yozma tasdiq oling.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAICkGrltP3q0vFGTfJTPtMFs_d1BSOSAAKZHmsbdS0wS7QmS25zI2OvAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261031-092901/image.png",
+    "topic": {
+      "title": "Uch hujjatni jo‘natishdan oldin moslang",
+      "angle": "Invoys, packing list va transport hujjatida nom, miqdor, og‘irlik hamda qadoq sonini bir xil qilib tekshirish. Bu hujjatlar orasidagi tafovut bojxonada savol tug‘dirish va yuk ushlanib qolish xavfini oshiradi.",
+      "why_now": "Xitoy bojxona amaliyotida tijorat hujjatlarining o‘zaro mosligi ayniqsa muhim.",
+      "research": "1. **“Bir partiyani yuborishdan oldin 3 hujjatni bir-biriga moslab tekshiring”**\n   - **Burchak:** invoys, packing list va transport hujjatidagi nom, miqdor, og‘irlik va qadoq sonini jo‘natishdan oldin bir xil qilib chiqish.\n   - **Nega hozir dolzarb:** Xitoy bojxona amaliyotida deklaratsiya bilan birga kontrakt, invoys, transport hujjati va packing list kabi tijorat hujjatlari talab qilinadi; shu moslik yukning ushlanib qolish xavfini kamaytiradi. ([online.customs.gov.cn](https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html?utm_source=openai))\n   - **Foydalilik bahosi:** 10/10\n\n2. **“Supplierdan namuna olganda, namunani partiya bilan bir xil material va rang kodida so‘rang”**\n   - **Burchak:** sample’ni faqat ko‘rinish uchun emas, keyingi katta buyurtma bilan bir xil xomashyo va rang standartida olish.\n   - **Nega hozir dolzarb:** sifat farqi ko‘pincha “namuna yaxshi edi, partiya boshqacha chiqdi” muammosidan keladi; shu qadam aynan shuni kamaytiradi. Bu — amaliy operatsion intizom, rasmiy stavkaga bog‘liq emas.\n   - **Foydalilik bahosi:** 9/10\n\n3. **“Yukni jo‘natishdan oldin ‘weights & measurements’ jadvalini sotuvchidan alohida tasdiqlating”**\n   - **Burchak:** har SKU uchun brutto/netto, quti soni va CBMni oldindan yozma tasdiq bilan olish.\n   - **Nega hozir dolzarb:** kargo va bojxona hisoblarida og‘irlik-hajm tafovuti eng ko‘p xarajat oshiradigan joylardan biri; rasmiy hujjatlar ichida ham og‘irlik va qadoq ma’lumotlari muhim. ([online.customs.gov.cn](https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html?utm_source=openai))\n   - **Foydalilik bahosi:** 10/10\n\n4. **“Alibaba emas, 1688’da ham har bir supplier uchun ‘ishlab chiqaruvchi / trade company’ farqini yozib boring”**\n   - **Burchak:** kim ishlab chiqaruvchi, kim vositachi ekanini profiling daftariga kiritish.\n   - **Nega hozir dolzarb:** bir xil mahsulot turli sotuvchida turli xizmat darajasi va MOQ bilan chiqadi; bu farqni boshidan ajratish keyingi muzokarani osonlashtiradi.\n   - **Foydalilik bahosi:** 8/10\n\n5. **“Savdolashishda faqat narx emas, ‘qadoq varianti’ bo‘yicha ham chegirma so‘rang”**\n   - **Burchak:** standart karton, kuchaytirilgan karton, inner box yoki label kabi qadoqlash elementlarini alohida narx bandi sifatida ajratish.\n   - **Nega hozir dolzarb:** ko‘p hollarda narxni tushirish o‘rniga qadoqni optimallashtirib umumiy tannarxni pasaytirish mumkin; bu ayniqsa kichik partiyalarda foydali.\n   - **Foydalilik bahosi:** 8/10\n\n6. **“Kargoga yuborishdan oldin 1 dona ichki foto, 1 dona tashqi quti foto, 1 dona label foto talab qiling”**\n   - **Burchak:** jo‘natishdan oldingi minimal vizual audit checklisti.\n   - **Nega hozir dolzarb:** masofadan ishlaydigan importyorlar uchun bu eng arzon sifat nazorati; jo‘natma noto‘g‘ri bo‘lsa, muammo yo‘lda aniqlanadi, keyin emas.\n   - **Foydalilik bahosi:** 9/10\n\n7. **“To‘lovni 2 qismga bo‘ling: buyurtma tasdiqlanganda va jo‘natishdan oldin”**\n   - **Burchak:** butun pulni bir yo‘la berib yubormasdan, bosqichli to‘lov modeli ishlatish.\n   - **Nega hozir dolzarb:** tijorat hujjatlari va to‘lov shartlari bo‘yicha tartibli yondashuv import xavfini pasaytiradi; ayniqsa yangi supplier bilan ishlaganda. ([et.china-embassy.gov.cn](https://et.china-embassy.gov.cn/chn/asgk/flfg/202408/P020240801805666773086.pdf?utm_source=openai))\n   - **Foydalilik bahosi:** 9/10\n\n8. **“Bojxona uchun mahsulot tavsifini ‘oddiy nom’ emas, funksiyasi va materiali bilan yozing”**\n   - **Burchak:** masalan, “plastic gadget” emas, “ABS plastic household storage item” kabi aniq tavsif berish.\n   - **Nega hozir dolzarb:** deklaratsiya ma’lumotlari aniq bo‘lsa, tekshiruvda savollar kamroq bo‘ladi; rasmiy talablarda ham deklaratsiyaning to‘g‘riligi va to‘liqligi muhim. ([online.customs.gov.cn](https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html?utm_source=openai))\n   - **Foydalilik bahosi:** 10/10",
+      "sources": [
+        {
+          "title": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html",
+          "url": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629014003/000629014003.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629014003/000629014003.html"
+        },
+        {
+          "title": "https://fta.mofcom.gov.cn/en_doc.shtml",
+          "url": "https://fta.mofcom.gov.cn/en_doc.shtml"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629013000/000629013000.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629013000/000629013000.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/alllistitems/",
+          "url": "https://online.customs.gov.cn/alllistitems/"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629016000/000629016000.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629016000/000629016000.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629014002/000629014002.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629014002/000629014002.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/001029001001/001029001001.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/001029001001/001029001001.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000729003004/000729003004.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000729003004/000729003004.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000729002001/000729002001.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000729002001/000729002001.html"
+        },
+        {
+          "title": "https://fdi.mofcom.gov.cn/resource/pdf/wx2024/2025EN.pdf",
+          "url": "https://fdi.mofcom.gov.cn/resource/pdf/wx2024/2025EN.pdf"
+        },
+        {
+          "title": "https://www.customs.gov.cn/eportal/fileDir/customs/resource/cms/article/5366415/5621865/2024011019270995725.pdf",
+          "url": "https://www.customs.gov.cn/eportal/fileDir/customs/resource/cms/article/5366415/5621865/2024011019270995725.pdf"
+        },
+        {
+          "title": "https://invest.beijing.gov.cn/pqfw/202605/P020260520576129070570.pdf",
+          "url": "https://invest.beijing.gov.cn/pqfw/202605/P020260520576129070570.pdf"
+        },
+        {
+          "title": "https://et.china-embassy.gov.cn/chn/asgk/flfg/202408/P020240801805666773086.pdf",
+          "url": "https://et.china-embassy.gov.cn/chn/asgk/flfg/202408/P020240801805666773086.pdf"
+        },
+        {
+          "title": "https://ipr.mofcom.gov.cn/zhuanti/jkblh/iplaws/trade/hgf.pdf",
+          "url": "https://ipr.mofcom.gov.cn/zhuanti/jkblh/iplaws/trade/hgf.pdf"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html?utm_source=openai",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html?utm_source=openai"
+        },
+        {
+          "title": "https://et.china-embassy.gov.cn/chn/asgk/flfg/202408/P020240801805666773086.pdf?utm_source=openai",
+          "url": "https://et.china-embassy.gov.cn/chn/asgk/flfg/202408/P020240801805666773086.pdf?utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-01T07:00:00+05:00",
+    "created_at": "2026-10-31T09:29:32+00:00",
+    "est_cost_usd": 0.0809,
+    "status": "ready"
   }
 ]

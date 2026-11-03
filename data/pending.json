@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261031-150031",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Uch hujjatdagi ma’lumotni jo‘natishdan oldin moslang",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAICkWrmArMzNfeQ6gHtFdevayN7ogUQAAKbH2sbGMcxSyZX7PTqM8loAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261031-150031/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-10-31T20:16:06.352457+05:00",
-    "created_at": "2026-10-31T15:01:06+00:00",
-    "est_cost_usd": 0.0828,
-    "status": "published",
-    "updated_at": "2026-10-31T17:18:49+00:00",
-    "published_at": "2026-10-31T17:18:49+00:00"
-  },
-  {
     "id": "20261031-190745",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Uch hujjatni jo‘natishdan oldin solishtirish",
@@ -162,6 +145,118 @@
     "publish_at": "2026-11-04T07:00:00+05:00",
     "created_at": "2026-11-02T23:01:34+00:00",
     "est_cost_usd": 0.0878,
+    "status": "ready"
+  },
+  {
+    "id": "20261103-150028",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Bojxona deklaratsiyasini jo‘natishdan oldin oling",
+    "text": "📄 Yuk jo‘natishdan oldin deklaratsiya nusxasini so‘rang — xato keyin emas, hozir ushlanadi.\n\nYetkazib beruvchi yoki ekspeditor yuboradigan bojxona deklaratsiyasini invoys va packing list bilan solishtirmasangiz, keyin hujjatdagi farq kechikish yoki tuzatish xarajatiga aylanadi.\n\n✅ Nima tekshirasiz:\n• deklaratsiyadagi tovar nomi invoys bilan bir xilmi\n• miqdor va qadoq soni packing list bilan mosmi\n• model, rang, o‘lcham, spetsifikatsiya bir xil yozilganmi\n• jo‘natuvchi va qabul qiluvchi nomi to‘liq mosmi\n\n❗️Eng ko‘p xato: “hujjatni keyin ko‘ramiz” deyish. Rasmiy tekshiruvda aynan hujjat aniqligi birinchi qaraladi.\n\n📌 Misol: invoysda 3 xil model yozilib, deklaratsiyada bittasi tushib qolsa, keyingi rasmiylashtirishda qo‘shimcha tekshiruv chiqishi mumkin.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAICo2rp9zctsaWtBAkMJNYmod9k6tGNAAIgJGsbOttRS1biPhiOWITzAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261103-150028/image.png",
+    "topic": {
+      "title": "Bojxona deklaratsiyasini jo‘natishdan oldin oling",
+      "angle": "Yetkazib beruvchi yoki ekspeditor yuboradigan bojxona deklaratsiyasi nusxasini invoys va packing list bilan solishtirish kerak. Bu hujjat keyingi rasmiylashtirishda xatolarni erta ushlashga yordam beradi.",
+      "why_now": "Xitoydagi rasmiy tekshiruvlar hujjat aniqligiga tayanadi, xato keyin kechikish va qo‘shimcha xarajat keltiradi.",
+      "research": "1. **Yuk yuborishdan oldin “bojxona deklaratsiyasi” nusxasini so‘rang**\n   - **Burchak:** Yetkazib beruvchi yoki ekspeditor sizga yuk jo‘natishdan oldin deklaratsiya ma’lumotini yuborishi kerak; siz uni invoys va packing list bilan solishtirasiz.\n   - **Nega hozir dolzarb:** Xitoy tomonda rasmiylashtirish va tekshiruv jarayonlari hujjatlarning to‘g‘riligiga tayanadi; noto‘g‘ri ma’lumot keyin kechikish yoki tuzatish xarajatiga olib kelishi mumkin. ([caea.gov.cn](https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai))\n   - **Foydalilik bahosi:** 10/10\n\n2. **Bankka to‘lov yuborishda savdo hujjatlarini oldindan tayyorlab qo‘ying**\n   - **Burchak:** Katta miqdordagi valuta to‘lovlarida bank sizdan tranzaksiya hujjatlarini so‘rashi mumkin; invoys, kontrakt va bojxona bog‘liqligini oldindan tartibga keltiring.\n   - **Nega hozir dolzarb:** Xitoydagi valyuta nazorati amaliyotida banklar savdo hujjatlarini tekshiradi, ayrim holatlarda bojxona deklaratsiyasi ma’lumotini ham ko‘rishi mumkin. ([safe.gov.cn](https://www.safe.gov.cn/en/2017/0404/1306.html?utm_source=openai))\n   - **Foydalilik bahosi:** 9/10\n\n3. **Xitoy sotuvchisidan “sertifikat” emas, aynan “sinov bayonnomasi”ni so‘rang**\n   - **Burchak:** Sifat yoki moslik bo‘yicha gap ketganda, umumiy “certificate” o‘rniga laboratoriya sinov hisobotini, sanasi va mahsulot modeli yozilgan hujjatni oling.\n   - **Nega hozir dolzarb:** Bojxona va nazorat organlari hujjatlarning konkret mahsulotga tegishliligiga qaraydi; umumiy sertifikat yetmasligi mumkin. ([english.shanghai.gov.cn](https://english.shanghai.gov.cn/cmsres/54/54fd45ebebf7461ba4a9ec941f44d4ad/b95fe0e61ab24596c487412754e42478.pdf?utm_source=openai))\n   - **Foydalilik bahosi:** 8/10\n\n4. **Yuk jo‘natishdan oldin fotosurat emas, “qadoq ro‘yxati bo‘yicha tekshiruv” qiling**\n   - **Burchak:** Har bir carton/meshokdagi son, model va markirovkani packing list bilan birma-bir tekshiring, faqat “hammasi joyida” degan video bilan cheklanib qolmang.\n   - **Nega hozir dolzarb:** Rasmiy amaliyotda paketlar hujjatlar bilan solishtiriladi; kichik nomuvofiqlik ham keyin qayta ko‘rish yoki ushlab qolishga sabab bo‘lishi mumkin. ([english.shanghai.gov.cn](https://english.shanghai.gov.cn/cmsres/54/54fd45ebebf7461ba4a9ec941f44d4ad/b95fe0e61ab24596c487412754e42478.pdf?utm_source=openai))\n   - **Foydalilik bahosi:** 8/10\n\n5. **“Arzon narx” emas, “bir xil partiyada bir xil spetsifikatsiya”ni shart qiling**\n   - **Burchak:** Buyurtmada rang, material, o‘lcham, funksional farq bo‘lsa, albatta alohida yozing; sotuvchi “o‘xshash” mahsulot yuborib qo‘ymasligi kerak.\n   - **Nega hozir dolzarb:** Bojxona qiymati va inspeksiya paytida aynan deklaratsiya qilingan tovarning real xususiyati muhim; spetsifikatsiya farqi muammoga aylanadi. ([english.shanghai.gov.cn](https://english.shanghai.gov.cn/cmsres/54/54fd45ebebf7461ba4a9ec941f44d4ad/b95fe0e61ab24596c487412754e42478.pdf?utm_source=openai))\n   - **Foydalilik bahosi:** 8/10\n\n6. **Eksport hujjatida “qabul qiluvchi” va “jo‘natuvchi” nomi to‘liq mos bo‘lishini tekshiring**\n   - **Burchak:** Kontrakt, invoys, transport hujjati va bank to‘lovidagi kompaniya nomlari, adres va rekvizitlarni bir xil yozing.\n   - **Nega hozir dolzarb:** Hujjatlar o‘zaro mos kelmasa, bojxona yoki bank qo‘shimcha tekshiruv so‘rashi mumkin; rasmiy talablarda ma’lumotning aniqligi asosiy o‘rinda turadi. ([caea.gov.cn](https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai))\n   - **Foydalilik bahosi:** 9/10\n\n7. **Birinchi buyurtmada “namuna emas, ishlab chiqarish varianti” so‘rang**\n   - **Burchak:** Sample bilan production run farqini oldindan so‘rab, namuna qaysi detal bo‘yicha farq qilishini yozma tasdiqlang.\n   - **Nega hozir dolzarb:** Ko‘p yo‘qotish aynan namuna bilan ommaviy partiya farqidan chiqadi; hujjatlashtirilgan talab keyingi bahsni kamaytiradi. ([ccgp.gov.cn](https://www.ccgp.gov.cn/wtogpa/gjcgzn/un_procurement_practitioner_s_handbook-version27feb2020_0.pdf?utm_source=openai)",
+      "sources": [
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629014003/000629014003.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629014003/000629014003.html"
+        },
+        {
+          "title": "https://policy.mofcom.gov.cn/pact/pactContent.shtml?id=2404",
+          "url": "https://policy.mofcom.gov.cn/pact/pactContent.shtml?id=2404"
+        },
+        {
+          "title": "https://online.customs.gov.cn/",
+          "url": "https://online.customs.gov.cn/"
+        },
+        {
+          "title": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html",
+          "url": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html"
+        },
+        {
+          "title": "https://www.customs.gov.cn/eportal/fileDir/customs/resource/cms/article/5366415/5621865/2024011019270995725.pdf",
+          "url": "https://www.customs.gov.cn/eportal/fileDir/customs/resource/cms/article/5366415/5621865/2024011019270995725.pdf"
+        },
+        {
+          "title": "https://english.customs.gov.cn/service",
+          "url": "https://english.customs.gov.cn/service"
+        },
+        {
+          "title": "https://www.safe.gov.cn/en/2017/0404/1306.html",
+          "url": "https://www.safe.gov.cn/en/2017/0404/1306.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629002002/000629002002.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629002002/000629002002.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629009001/000629009001.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629009001/000629009001.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/ociswebserver/pages/jcjybcx/question.html",
+          "url": "https://online.customs.gov.cn/ociswebserver/pages/jcjybcx/question.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000729003004/000729003004.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000729003004/000729003004.html"
+        },
+        {
+          "title": "https://images.policy.mofcom.gov.cn/article/201602/1454393412789.pdf",
+          "url": "https://images.policy.mofcom.gov.cn/article/201602/1454393412789.pdf"
+        },
+        {
+          "title": "https://english.shanghai.gov.cn/cmsres/54/54fd45ebebf7461ba4a9ec941f44d4ad/b95fe0e61ab24596c487412754e42478.pdf",
+          "url": "https://english.shanghai.gov.cn/cmsres/54/54fd45ebebf7461ba4a9ec941f44d4ad/b95fe0e61ab24596c487412754e42478.pdf"
+        },
+        {
+          "title": "https://www.ccgp.gov.cn/wtogpa/gjcgzn/un_procurement_practitioner_s_handbook-version27feb2020_0.pdf",
+          "url": "https://www.ccgp.gov.cn/wtogpa/gjcgzn/un_procurement_practitioner_s_handbook-version27feb2020_0.pdf"
+        },
+        {
+          "title": "https://www.customs.gov.cn/eportal/fileDir/customs/resource/cms/article/5366415/5621976/2024011023452095803.pdf",
+          "url": "https://www.customs.gov.cn/eportal/fileDir/customs/resource/cms/article/5366415/5621976/2024011023452095803.pdf"
+        },
+        {
+          "title": "https://aaa.ccpit.org/Category7/Asset/2009/Aug/17/onlineeditimages/file71250561912669.14.pdf",
+          "url": "https://aaa.ccpit.org/Category7/Asset/2009/Aug/17/onlineeditimages/file71250561912669.14.pdf"
+        },
+        {
+          "title": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai",
+          "url": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai"
+        },
+        {
+          "title": "https://www.safe.gov.cn/en/2017/0404/1306.html?utm_source=openai",
+          "url": "https://www.safe.gov.cn/en/2017/0404/1306.html?utm_source=openai"
+        },
+        {
+          "title": "https://english.shanghai.gov.cn/cmsres/54/54fd45ebebf7461ba4a9ec941f44d4ad/b95fe0e61ab24596c487412754e42478.pdf?utm_source=openai",
+          "url": "https://english.shanghai.gov.cn/cmsres/54/54fd45ebebf7461ba4a9ec941f44d4ad/b95fe0e61ab24596c487412754e42478.pdf?utm_source=openai"
+        },
+        {
+          "title": "https://www.ccgp.gov.cn/wtogpa/gjcgzn/un_procurement_practitioner_s_handbook-version27feb2020_0.pdf?utm_source=openai",
+          "url": "https://www.ccgp.gov.cn/wtogpa/gjcgzn/un_procurement_practitioner_s_handbook-version27feb2020_0.pdf?utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-03T20:16:10.661259+05:00",
+    "created_at": "2026-11-03T15:01:10+00:00",
+    "est_cost_usd": 0.0823,
     "status": "ready"
   }
 ]

@@ -88,98 +88,9 @@
     "id": "20261101-192306",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Bojxona hujjatlarini jo‘natishdan oldin tekshiring",
-    "text": "📄 Hujjatlaringizdagi bitta mos kelmaslik yukni ushlab qo‘yishi mumkin.\n\nBojxona paketida kontrakt, invoys, packing list va transport hujjati bir-biriga mos bo‘lishi shart. Kerak bo‘lsa, litsenziya va sertifikatlar ham shu paketga qo‘shiladi.\n\nJo‘natishdan oldin mana shu 4 ta tekshiruvni qiling:\n• Kontraktdagi tovar nomi invoysdagi nom bilan bir xilmi?\n• Packing listdagi miqdor va qadoqlash transport hujjatiga mosmi?\n• Valyuta, sana va jo‘natma rekvizitlari bir xil yozilganmi?\n• Litsenziya yoki sertifikat kerak bo‘lsa, paketga qo‘shilganmi?\n\nBir hujjatdagi farq ham deklaratsiya vaqtida savol tug‘diradi va yukning kechikishiga olib kelishi mumkin. Shu checklistni har partiyada odat qiling — xatoni jo‘natishdan oldin ushlaysiz.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "photo",
     "file_id": "AgACAgIAAxkDAAICmmrnkb430Ld5OVpZDa2ckyJxOuFpAAIeIGsbGMdBS08YlTRNsvaQAQADAgADeQADPQQ",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261101-192306/image.png",
-    "topic": {
-      "title": "Bojxona hujjatlarini jo‘natishdan oldin tekshiring",
-      "angle": "Kontrakt, invoys, packing list va transport hujjatlari bir-biriga mosligini jo‘natishdan oldin minimal checklist bilan ko‘rib chiqing. Kerak bo‘lsa litsenziya va sertifikatlar ham shu paketga qo‘shiladi.",
-      "why_now": "Xitoy bojxona tartiblarida ilova hujjatlar to‘g‘ri va to‘liq bo‘lmasa, yuk kechikishi mumkin.",
-      "research": "1. **Bojxona uchun hujjatlar paketini jo‘natishdan oldin “minimal checklist” qiling**  \n   - **Burchak:** Shartnoma, invoys, packing list, transport hujjati va kerak bo‘lsa litsenziya/sertifikatlar bir-biriga mosligini jo‘natishdan oldin tekshirish.  \n   - **Nega hozir dolzarb:** Xitoy bojxona tartiblarida deklaratsiya vaqtida bir nechta ilova hujjatlar talab qilinadi; noto‘g‘ri yoki yetishmaydigan hujjat yukning kechikishiga olib keladi. Rasmiy tartiblar yangilanib turadi, shuning uchun savodli checklist amalda darhol foyda beradi. ([big5.www.gov.cn](https://big5.www.gov.cn/gate/big5/www.gov.cn/gongbao/2025/issue_12026/202505/content_7022577.html?utm_source=openai))  \n   - **Foydalilik bahosi:** 10/10\n\n2. **“Kotirovka” emas, aynan “ishlab chiqarish + qadoqlash” tannarxini alohida yozdiring**  \n   - **Burchak:** Yetkazib beruvchidan narxni bitta summa emas, mahsulot narxi, qadoqlash, ichki logistika va qo‘shimcha to‘lovlar kesimida yozma olsangiz, keyin marjani aniq hisoblash osonlashadi.  \n   - **Nega hozir dolzarb:** Xitoy bojxonasida ayrim xarajatlar bojxona qiymatiga kiritilishi mumkin, ayrimlari esa alohida ko‘rsatiladi; noto‘g‘ri hisoblangan tannarx foydani “yeydi”. Rasmiy qiymatlash qoidalarida paketlash va ayrim xizmatlar bo‘yicha yondashuv bor. ([online.customs.gov.cn](https://online.customs.gov.cn/static/pages/guides/000729005002/000729005002.html?utm_source=openai))  \n   - **Foydalilik bahosi:** 9/10\n\n3. **Bitta supplier emas, 2–3 ta alternativni bir xil texnik topshiriq bilan so‘rang**  \n   - **Burchak:** Bir xil specs, bir xil foto, bir xil material talabi va bir xil qadoqlash talabini yuborib, 2–3 ta taklifni taqqoslash.  \n   - **Nega hozir dolzarb:** Xuddi shu mahsulot uchun narx, MOQ va lead time keskin farq qilishi mumkin; hozirgi bozorda narx tebranishlari va ishlab chiqarish yuklamasi tez o‘zgaradi. Bu usul firibgarlikni ham, “arzon ko‘rinib keyin qimmatlashadigan” takliflarni ham kamaytiradi.  \n   - **Foydalilik bahosi:** 9/10\n\n4. **Namuna olganda “production sample”ni alohida, “shipping sample”ni alohida tasdiqlang**  \n   - **Burchak:** Namuna uchun ishlab chiqarilgan nusxa bilan ommaviy partiya bir xil bo‘lishini yozma tasdiqlatish; rang, material, print va o‘lchamni alohida belgilash.  \n   - **Nega hozir dolzarb:** Kichik partiyalarda sifat yaxshi, katta partiyada esa o‘zgarish bo‘lishi mumkin; namuna va ommaviy partiya farqi biznesga eng tez zarar beradigan xatolardan biri.  \n   - **Foydalilik bahosi:** 8/10\n\n5. **Savdolashuvda faqat narx emas, MOQni ham “bo‘lib olish” niyatida gaplashing**  \n   - **Burchak:** Yetkazib beruvchidan “birinchi partiyada kichik MOQ, keyin qayta buyurtmada narx” modelini so‘rash.  \n   - **Nega hozir dolzarb:** Yangi boshlovchilar uchun ombor zaxirasini muzlatib qo‘ymaslik muhim; kichik MOQ bilan bozorga kirish xavfni kamaytiradi. Xitoydagi savdo amaliyotida MOQ ko‘pincha muzokara qilinadigan parametr.  \n   - **Foydalilik bahosi:** 8/10\n\n6. **Kargo turini tovarning “narxidan emas, riskidan” tanlang**  \n   - **Burchak:** Qimmat, nozik, tez sotiladigan tovarlar uchun havo/kombinatsiyalangan jo‘natma; og‘ir va arzon tovarlar uchun dengiz/temiryo‘l variantini solishtirish.  \n   - **Nega hozir dolzarb:** Logistika narxi tez o‘zgaradi, shuning uchun noto‘g‘ri kargo tanlovi foydani butunlay yo‘q qilishi mumkin. Bojxona deklaratsiyasi va yuk hujjatlari transport turiga qarab turlicha bo‘ladi. ([big5.www.gov.cn](https://big5.www.gov.cn/gate/big5/www.gov.cn/gongbao/2025/issue_12026/202505/content_7022577.html?utm_source=openai))  \n   - **Foydalilik bahosi:** 9/10\n\n7. **Bojxona uchun “savdo narxi ishonchli ekanini isbotlaydigan” papka tayyorlab qo‘ying**  \n   - **Burchak:** Kontrakt, invoys, to‘lov izlari, yozishmalar va kerak bo‘lsa qo‘shimcha tushuntirishlarni bitta papkada saqlash.  \n   - **Nega hozir dolzarb:** Rasmiy organlar narx shubhali bo‘lsa qo‘shimcha hujjat so‘rashi mumkin; tayyor papka tekshiruvni tezlashtiradi va kechikishni kamaytiradi. ([online.customs.gov.cn](https://on",
-      "sources": [
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000729003004/000729003004.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000729003004/000729003004.html"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html"
-        },
-        {
-          "title": "https://big5.www.gov.cn/gate/big5/www.gov.cn/gongbao/2025/issue_12026/202505/content_7022577.html",
-          "url": "https://big5.www.gov.cn/gate/big5/www.gov.cn/gongbao/2025/issue_12026/202505/content_7022577.html"
-        },
-        {
-          "title": "https://et.china-embassy.gov.cn/chn/asgk/flfg/202408/P020240801805666773086.pdf",
-          "url": "https://et.china-embassy.gov.cn/chn/asgk/flfg/202408/P020240801805666773086.pdf"
-        },
-        {
-          "title": "https://gss.mof.gov.cn/gzdt/zhengcefabu/202512/t20251231_3981044.htm",
-          "url": "https://gss.mof.gov.cn/gzdt/zhengcefabu/202512/t20251231_3981044.htm"
-        },
-        {
-          "title": "https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2024/art_1bdebdf3758b4dcd8fc1eca4d6b00846.html",
-          "url": "https://www.mofcom.gov.cn/zcfb/zgdwjjmywg/art/2024/art_1bdebdf3758b4dcd8fc1eca4d6b00846.html"
-        },
-        {
-          "title": "https://www.mct.gov.cn/preview/whhlyqyzcxxfw/ss/202411/t20241106_956082.html",
-          "url": "https://www.mct.gov.cn/preview/whhlyqyzcxxfw/ss/202411/t20241106_956082.html"
-        },
-        {
-          "title": "https://co.ccpit.org/front/aboutCO",
-          "url": "https://co.ccpit.org/front/aboutCO"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629002002/000629002002.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629002002/000629002002.html"
-        },
-        {
-          "title": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html",
-          "url": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629009001/000629009001.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629009001/000629009001.html"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000729005002/000729005002.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000729005002/000729005002.html"
-        },
-        {
-          "title": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202305/t20230510_478546.html",
-          "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202305/t20230510_478546.html"
-        },
-        {
-          "title": "https://wss.customs.gov.cn/eportal/attachDir/customs/2026/01/2026010510511452451.pdf",
-          "url": "https://wss.customs.gov.cn/eportal/attachDir/customs/2026/01/2026010510511452451.pdf"
-        },
-        {
-          "title": "https://www.customs.gov.cn/eportal/fileDir/customs/resource/cms/article/5366415/5621976/2024011023452095803.pdf",
-          "url": "https://www.customs.gov.cn/eportal/fileDir/customs/resource/cms/article/5366415/5621976/2024011023452095803.pdf"
-        },
-        {
-          "title": "https://fta.mofcom.gov.cn/english/mywj/mywj_101.pdf",
-          "url": "https://fta.mofcom.gov.cn/english/mywj/mywj_101.pdf"
-        },
-        {
-          "title": "https://fdi.mofcom.gov.cn/resource/pdf/wx2024/2025EN.pdf",
-          "url": "https://fdi.mofcom.gov.cn/resource/pdf/wx2024/2025EN.pdf"
-        },
-        {
-          "title": "https://big5.www.gov.cn/gate/big5/www.gov.cn/gongbao/2025/issue_12026/202505/content_7022577.html?utm_source=openai",
-          "url": "https://big5.www.gov.cn/gate/big5/www.gov.cn/gongbao/2025/issue_12026/202505/content_7022577.html?utm_source=openai"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000729005002/000729005002.html?utm_source=openai",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000729005002/000729005002.html?utm_source=openai"
-        },
-        {
-          "title": "https://co.ccpit.org/front/aboutCO?utm_source=openai",
-          "url": "https://co.ccpit.org/front/aboutCO?utm_source=openai"
-        }
-      ]
-    },
     "qc_score": 8,
     "soft_pass": false,
     "rewrites": 0,

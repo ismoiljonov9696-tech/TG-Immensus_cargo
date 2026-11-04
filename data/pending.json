@@ -158,86 +158,9 @@
     "id": "20261104-150032",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Invoysga texnik tavsifni to‘liq yozdiring",
-    "text": "📄 Invoysda faqat tovar nomi emas, texnik tavsif ham bo‘lsin.\n\n“Shu model yuboring” degan gap yetmaydi. Invoice va packing list’da ma’lumot qanchalik aniq bo‘lsa, keyingi tekshiruv shunchalik oson bo‘ladi.\n\nSotuvchidan albatta shularni yozdiring:\n• model\n• material\n• o‘lcham\n• rang\n• komplekt\n\nBitta oddiy qoida bor: invoice’dagi tavsif va haqiqiy tovar bir-biriga mos bo‘lsin. Juda umumiy yozuv keyin rasmiylashtirishni cho‘zishi mumkin.\n\nMasalan, “bag” emas, aynan modeli, materiali, rangi va komplekti bilan yozilgan tavsif bo‘lsa, hujjatlar tekshiruvida savol kamroq chiqadi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "photo",
     "file_id": "AgACAgIAAxkDAAICqWrrSLwVZn4D9J8KrpY2j3NtTgXhAAIPImsbOttZS4b_jcnij5mXAQADAgADeQADPQQ",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261104-150032/image.png",
-    "topic": {
-      "title": "Invoysga texnik tavsifni to‘liq yozdiring",
-      "angle": "Sotuvchidan invoice va packing list’da model, material, o‘lcham, rang hamda komplektni aniq kiritishni talab qiling. Bu bojxona tekshiruvi va hujjatlar mosligini oldindan mustahkamlaydi.",
-      "why_now": "Noto‘g‘ri yoki umumiy tavsif rasmiylashtirishni cho‘zishi va savdo hujjatlarida muammo keltirishi mumkin.",
-      "research": "1. **Sarlavha:** Yetkazib beruvchini tanlashda “1 ta zavod + 2 ta zaxira” ro‘yxati tuzing  \n   **Burchak:** Bitta mahsulot uchun asosiy ishlab chiqaruvchi bilan birga kamida ikki ta muqobil yetkazib beruvchi ham tayyorlab qo‘yish: narx, MOQ, yetkazish muddati va javob tezligini bir jadvalda solishtirish.  \n   **Nega hozir dolzarb:** Xarid zanjirida kechikish, mavsumiy bandlik va narx o‘zgarishi tez-tez uchraydi; O‘zbekiston bojxona va savdo amaliyotida hujjat va jarayonlar aniq bo‘lishi kerakligi rasmiy manbalarda ta’kidlangan. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   **Foydalilik:** 9/10\n\n2. **Sarlavha:** Namuna buyurtma qilishdan oldin “3 savol”ni yozib yuboring  \n   **Burchak:** Namuna so‘rashdan oldin sotuvchiga uchta aniq savol bering: aynan qaysi material, qaysi rang/versiya va ommaviy partiyada o‘zgarish bo‘ladimi.  \n   **Nega hozir dolzarb:** Xitoydan kelgan tovarlarda keyinroq “namuna boshqacha chiqdi” degan muammo ko‘p bo‘ladi; hujjatlar va tovar tavsiflari bojxona jarayonida ham muhim. ([gov.uz](https://gov.uz/oz/advice/603/document/2372?utm_source=openai))  \n   **Foydalilik:** 8/10\n\n3. **Sarlavha:** Futian bozorida narx so‘rashdan oldin telefoningizga chek-list yozing  \n   **Burchak:** Futian kabi ulgurji bozorlarida bir xil tovarni ko‘rganda narxni “bitta narx” deb emas, qadoq, rang, komplekt va yetkazish sharti bo‘yicha alohida so‘rash odatini ishlatish.  \n   **Nega hozir dolzarb:** Bozor xaridlarida kichik tafovutlar keyinchalik tannarx va marjaga katta ta’sir qiladi; tovar hujjatlarida tavsiflar aniq bo‘lishi kerakligi rasmiy manbalarda ko‘rsatilgan. ([gov.uz](https://gov.uz/oz/advice/603/document/2372?utm_source=openai))  \n   **Foydalilik:** 8/10\n\n4. **Sarlavha:** Invoysga faqat tovar nomi emas, texnik tavsif ham yozdiring  \n   **Burchak:** Sotuvchidan invoys va packing list’da model, material, o‘lcham, rang va komplektni aniq yozishni so‘rash.  \n   **Nega hozir dolzarb:** Bojxona rasmiylashtiruvida tijorat hujjatlari asosiy o‘rinda turadi; noto‘g‘ri yoki juda umumiy tavsif keyinchalik tekshiruvni cho‘zishi mumkin. ([gov.uz](https://gov.uz/oz/advice/603/document/2372?utm_source=openai))  \n   **Foydalilik:** 10/10\n\n5. **Sarlavha:** Jo‘natishdan oldin bitta “fototasdiq paketi” oling  \n   **Burchak:** Yetkazib beruvchidan tayyor partiyaning 5 ta fotosini alohida so‘rash: oldi, orqasi, yorlig‘i, ichki qadoq, tashqi qutisi.  \n   **Nega hozir dolzarb:** Agar keyin kelgan yuk bilan ziddiyat chiqsa, tasdiqlovchi vizual dalil bo‘ladi; bojxona jarayonida ham hujjat va ma’lumotlar muhim. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   **Foydalilik:** 9/10\n\n6. **Sarlavha:** Kargo turini tovarning mo‘rtligiga qarab tanlang  \n   **Burchak:** Mo‘rt yoki namlikdan qo‘rqadigan mahsulotlar uchun faqat “arzon” emas, himoya darajasi yuqori kargo yechimini tanlash.  \n   **Nega hozir dolzarb:** Tashishdagi yo‘qotish va shikast xarajatni oshiradi; rasmiy bojxona amaliyotida ham yukning aniq tavsifi va hujjatlar ahamiyatli. ([gov.uz](https://gov.uz/oz/advice/603/document/2372?utm_source=openai))  \n   **Foydalilik:** 8/10\n\n7. **Sarlavha:** To‘lovdan oldin bankka “beneficiary name”ni ikki marta tekshirtiring  \n   **Burchak:** Xitoyga to‘lov qilganda oluvchi nomi, bank rekviziti va invoice’dagi nom bir xil bo‘lishini oldindan tekshirish.  \n   **Nega hozir dolzarb:** Noto‘g‘ri rekvizit tufayli pul ushlanib qolishi yoki qaytishi mumkin; rasmiy savdo hujjatlaridagi moslik shu yerda juda muhim. ([gov.uz](https://gov.uz/oz/advice/603/document/2372?utm_source=openai))  \n   **Foydalilik:** 9/10\n\n8. **Sarlavha:** Bojxona uchun mahsulot tavsifini oldindan “o‘zbekcha fayl”ga yig‘ing  \n   **Burchak:** Har bir SKU uchun alohida fayl tayyorlab, unda nomi, material, vazifasi, o‘lchami, qadoq turi va ishlab chiqaruvchi ma’lumotini saqlash.  \n   **Nega hozir dolzarb:** O‘zbekiston bojxona jarayonlarida deklaratsiya va hujjatlar asosiy rol o‘ynaydi; tovar haqidagi ma’lumotlar oldindan ta",
-      "sources": [
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2377",
-          "url": "https://gov.uz/oz/advice/603/document/2377"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12768",
-          "url": "https://gov.uz/oz/miit/sections/view/12768"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2823",
-          "url": "https://gov.uz/oz/advice/603/document/2823"
-        },
-        {
-          "title": "https://my.gov.uz/en/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107",
-          "url": "https://my.gov.uz/en/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2374",
-          "url": "https://gov.uz/oz/advice/603/document/2374"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2380",
-          "url": "https://gov.uz/oz/advice/603/document/2380"
-        },
-        {
-          "title": "https://online.customs.gov.cn/alllistitems/",
-          "url": "https://online.customs.gov.cn/alllistitems/"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000429001000/000429001000.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000429001000/000429001000.html"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/61/document/1991",
-          "url": "https://gov.uz/oz/advice/61/document/1991"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2372",
-          "url": "https://gov.uz/oz/advice/603/document/2372"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2375",
-          "url": "https://gov.uz/oz/advice/603/document/2375"
-        },
-        {
-          "title": "https://www.customs.gov.cn/eportal/fileDir/customs/resource/cms/article/5366415/5621976/2024011023452095803.pdf",
-          "url": "https://www.customs.gov.cn/eportal/fileDir/customs/resource/cms/article/5366415/5621976/2024011023452095803.pdf"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/136/2026/02/11/9fd21294-e760-7916-d4ae-64a2018fc3e7_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/136/2026/02/11/9fd21294-e760-7916-d4ae-64a2018fc3e7_media_.pdf"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai",
-          "url": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2372?utm_source=openai",
-          "url": "https://gov.uz/oz/advice/603/document/2372?utm_source=openai"
-        }
-      ]
-    },
     "qc_score": 8,
     "soft_pass": false,
     "rewrites": 0,

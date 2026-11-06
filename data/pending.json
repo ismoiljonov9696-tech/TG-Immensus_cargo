@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261103-150028",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Bojxona deklaratsiyasini jo‘natishdan oldin oling",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAICo2rp9zctsaWtBAkMJNYmod9k6tGNAAIgJGsbOttRS1biPhiOWITzAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261103-150028/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-03T20:16:10.661259+05:00",
-    "created_at": "2026-11-03T15:01:10+00:00",
-    "est_cost_usd": 0.0823,
-    "status": "published",
-    "updated_at": "2026-11-03T18:02:29+00:00",
-    "published_at": "2026-11-03T18:02:29+00:00"
-  },
-  {
     "id": "20261103-204740",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Yetkazib beruvchiga tayyor hujjat shablonini bering",
@@ -182,6 +165,118 @@
     "publish_at": "2026-11-07T07:00:00+05:00",
     "created_at": "2026-11-05T21:21:40+00:00",
     "est_cost_usd": 0.0815,
+    "status": "ready"
+  },
+  {
+    "id": "20261106-150036",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Davriy deklaratsiyada to‘lovni partiya bo‘yicha qiling",
+    "text": "💸 Yuk kelgan sari to‘lab borish mumkinligini ishlatyapsizmi?\n\nDavriy deklaratsiyada to‘lovni partiya bo‘yicha qilish kichik importyor uchun kesh-flouni yengillashtiradi. Muhimi — tartibni oldindan to‘g‘ri qo‘yish.\n\nQanday qilish kerak:\n• Yukni bir yo‘la emas, partiya-partiya qabul qiling\n• Har bir kelgan partiya bo‘yicha alohida to‘lov imkoniyatini oldindan tekshiring\n• Hujjatlarni bir partiya uchun emas, oqim bo‘yicha tartiblang\n• Ichki hisob-kitobda qaysi partiya qachon kelganini alohida ko‘rsating\n\nNatija oddiy: pulni oldin hammasiga emas, yuk kelgan sari taqsimlaysiz. Bu aylanma mablag‘ni bosim ostiga qo‘ymaydi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAICtWrt68P16vqfdID1T8WIuISEFRwZAAJ5IGsbCvpxS0X2jQN4R0jqAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261106-150036/image.png",
+    "topic": {
+      "title": "Davriy deklaratsiyada to‘lovni partiya bo‘yicha qiling",
+      "angle": "Davriy deklaratsiya qo‘llanganda yuk kelgan sari har bir partiya uchun alohida to‘lov qilish imkoniyatini oddiy amaliy qo‘llanma sifatida tushuntirish. Bu kichik importyorlar kesh-flouini yengillashtirishga qaratiladi.",
+      "why_now": "2026-yilda davriy deklaratsiya va alohida to‘lov amaliyoti kengaygan.",
+      "research": "1. **Sarlavha:** “2026-yilda Xitoydan kelgan yukni qabul qilishdan oldin transport turiga qarab qaysi hujjatlar kerakligini tekshiring”\n   - **Burchak:** Bojxona rasmiylashtiruvida yuk avtomobil, temiryo‘l, havo yoki boshqa transportda kelishiga qarab talablar farqlanishini oddiy chek-listga aylantirish.\n   - **Nega dolzarb:** Bojxona rasmiylashtiruvi tartibi transport turi va tovar kategoriyasiga qarab qo‘llanadi; rasmiy bojxona va gov.uz sahifalarida bu yondashuv amalda ko‘rsatilgan, shuningdek 2026-yilda bojxona ma’murchiligiga doir yangi tartiblar kuchga kirgan. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))\n   - **Foydalilik:** 9/10\n\n2. **Sarlavha:** “Davriy deklaratsiyada to‘lovni partiya-partiya qilish: kelingan yuk bo‘yicha naqd oqimini yengillashtiring”\n   - **Burchak:** Davriy deklaratsiya ishlatilsa, tovar kirib kelganda har bir partiya uchun alohida to‘lov qilish imkoniyati borligini tushuntirish.\n   - **Nega dolzarb:** 2025-yil 17-dekabrdagi PF-250 va unga bog‘liq 2026-yilgi tartiblar davriy deklaratsiya va alohida to‘lov amaliyotini kengaytirgan. Bu kichik va o‘rta importyorlar uchun kesh-flou nuqtai nazaridan muhim. ([lex.uz](https://www.lex.uz/acts/-7934915?ONDATE=01.09.2026+00&utm_source=openai))\n   - **Foydalilik:** 10/10\n\n3. **Sarlavha:** “TIF TN kodini aniqlashda faqat ichki hujjatga emas, tovarning texnik parametriga tayaning”\n   - **Burchak:** Zavoddan texnik spesifikatsiyani oldindan olib, HS/TIF TN kodni shu ma’lumot bilan moslashtirish.\n   - **Nega dolzarb:** 2026-yilgi bojxona islohotlarida TIF TN kodlari va amaliy stavkalar bo‘yicha tartiblar kuchaygan, bojxona qiymati va tasnifda hujjat aniqligi muhimligi yana bir bor ta’kidlangan. ([lex.uz](https://lex.uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai))\n   - **Foydalilik:** 9/10\n\n4. **Sarlavha:** “Bojxona qiymati deklaratsiyasini oldindan to‘ldiring: narxni emas, hisob-kitobni himoya qiling”\n   - **Burchak:** Bojxona qiymati deklaratsiyasi uchun kerakli ma’lumotlarni oldindan yig‘ish va rasmiy yo‘riqnomaga tayangan holda tayyorlash.\n   - **Nega dolzarb:** 2026-yilda bojxona qiymati deklaratsiyasini to‘ldirish tartibi bo‘yicha yangi yo‘riqnoma kuchga kirgan; bu import qiymatini asoslashda amaliy ahamiyatga ega. ([lex.uz](https://lex.uz/Pages/GetPdf.aspx?file=LexUz_8068901.pdf&utm_source=openai))\n   - **Foydalilik:** 8/10\n\n5. **Sarlavha:** “Tarif kvotalari bor tovarlarda oldindan kvota holatini tekshirib oling”\n   - **Burchak:** Tovar tarif kvotasiga tushadimi-yo‘qmi — jo‘natishdan oldin tekshirishni odat qilish.\n   - **Nega dolzarb:** 2026-yil 29-iyuldagi nizom tarif kvotalarini joriy etish va ma’muriy boshqarish tartibini belgilagan; kvota mavjud bo‘lsa, import rejasini o‘zgartirishi mumkin. ([lex.uz](https://www.lex.uz/uz/acts/-8363347?ONDATE=30.07.2026+00&utm_source=openai))\n   - **Foydalilik:** 8/10\n\n6. **Sarlavha:** “Kelib chiqish sertifikatida mayda tafovut bo‘lsa, tovar xususiyatlari bilan mosligini oldindan tekshiring”\n   - **Burchak:** Sertifikatdagi nom, tavsif yoki formatdagi kichik farqlarni hujjatlar bilan moslashtirish va tushuntirishni tayyorlash.\n   - **Nega dolzarb:** 2026-yilgi bojxona yondashuvida kelib chiqish sertifikati bilan boshqa hujjatlar o‘rtasida kichik tafovutlar bo‘lsa, tovar xususiyatlariga mos kelsa, sertifikatni qabul qilish tartibi ishlab chiqilayotgani ko‘rsatilgan. ([lex.uz](https://lex.uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai))\n   - **Foydalilik:** 8/10\n\n7. **Sarlavha:** “Import bo‘yicha QQSni keyin emas, rasmiy hisobga olish imkoniyatini oldindan ko‘rib chiqing”\n   - **Burchak:** QQS guvohnomasi faol va xavf darajasi past bo‘lgan subyektlar uchun mavjud hisobga olish mexanizmini o‘rganish.\n   - **Nega dolzarb:** 2026-yil 1-oktabrdan boshlab ayrim importyorlar uchun to‘lanadigan QQS summalarini o‘zaro hisobga olish imkoniyati yaratilgan; bu aylanma mablag‘ni boshqarishda muhim. ([lex.uz](https://www.lex.uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai))\n   - *",
+      "sources": [
+        {
+          "title": "https://www.lex.uz/acts/-7934915?ONDATE=01.09.2026+00",
+          "url": "https://www.lex.uz/acts/-7934915?ONDATE=01.09.2026+00"
+        },
+        {
+          "title": "https://customs.uz/",
+          "url": "https://customs.uz/"
+        },
+        {
+          "title": "https://lex.uz/Pages/GetPdf.aspx?file=LexUz_8068901.pdf",
+          "url": "https://lex.uz/Pages/GetPdf.aspx?file=LexUz_8068901.pdf"
+        },
+        {
+          "title": "https://www.lex.uz/Pages/GetPdf.aspx?file=LexUz_7543190.pdf",
+          "url": "https://www.lex.uz/Pages/GetPdf.aspx?file=LexUz_7543190.pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2823",
+          "url": "https://gov.uz/oz/advice/603/document/2823"
+        },
+        {
+          "title": "https://www.lex.uz/uz/acts/-8363347?ONDATE=30.07.2026+00",
+          "url": "https://www.lex.uz/uz/acts/-8363347?ONDATE=30.07.2026+00"
+        },
+        {
+          "title": "https://lex.uz/acts/-4585742?ONDATE=01.09.2026+00",
+          "url": "https://lex.uz/acts/-4585742?ONDATE=01.09.2026+00"
+        },
+        {
+          "title": "https://lex.uz/uz/docs/-2876354?ONDATE=01.03.2026+01",
+          "url": "https://lex.uz/uz/docs/-2876354?ONDATE=01.03.2026+01"
+        },
+        {
+          "title": "https://www.lex.uz/pdffile/8031771",
+          "url": "https://www.lex.uz/pdffile/8031771"
+        },
+        {
+          "title": "https://customs.uz/oz/page/bozhhona-rezhimlari",
+          "url": "https://customs.uz/oz/page/bozhhona-rezhimlari"
+        },
+        {
+          "title": "https://lex.uz/ru/acts/-2442156?ONDATE=02.03.2026+00",
+          "url": "https://lex.uz/ru/acts/-2442156?ONDATE=02.03.2026+00"
+        },
+        {
+          "title": "https://lex.uz/docs/-8444993?ONDATE=01.09.2026+00",
+          "url": "https://lex.uz/docs/-8444993?ONDATE=01.09.2026+00"
+        },
+        {
+          "title": "https://www.lex.uz/docs/-8444993?ONDATE=01.09.2026+00",
+          "url": "https://www.lex.uz/docs/-8444993?ONDATE=01.09.2026+00"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2377",
+          "url": "https://gov.uz/oz/advice/603/document/2377"
+        },
+        {
+          "title": "https://lex.uz/en/acts/8232678?ONDATE=26.05.2026+00",
+          "url": "https://lex.uz/en/acts/8232678?ONDATE=26.05.2026+00"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai",
+          "url": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai"
+        },
+        {
+          "title": "https://www.lex.uz/acts/-7934915?ONDATE=01.09.2026+00&utm_source=openai",
+          "url": "https://www.lex.uz/acts/-7934915?ONDATE=01.09.2026+00&utm_source=openai"
+        },
+        {
+          "title": "https://lex.uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai",
+          "url": "https://lex.uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai"
+        },
+        {
+          "title": "https://lex.uz/Pages/GetPdf.aspx?file=LexUz_8068901.pdf&utm_source=openai",
+          "url": "https://lex.uz/Pages/GetPdf.aspx?file=LexUz_8068901.pdf&utm_source=openai"
+        },
+        {
+          "title": "https://www.lex.uz/uz/acts/-8363347?ONDATE=30.07.2026+00&utm_source=openai",
+          "url": "https://www.lex.uz/uz/acts/-8363347?ONDATE=30.07.2026+00&utm_source=openai"
+        },
+        {
+          "title": "https://www.lex.uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai",
+          "url": "https://www.lex.uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2823?utm_source=openai",
+          "url": "https://gov.uz/oz/advice/603/document/2823?utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-06T20:16:22.407724+05:00",
+    "created_at": "2026-11-06T15:01:22+00:00",
+    "est_cost_usd": 0.0836,
     "status": "ready"
   }
 ]

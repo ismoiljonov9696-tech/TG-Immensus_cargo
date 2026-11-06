@@ -183,5 +183,101 @@
     "status": "published",
     "updated_at": "2026-11-06T15:32:41+00:00",
     "published_at": "2026-11-06T15:32:41+00:00"
+  },
+  {
+    "id": "20261106-204239",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Bojxona qiymatini 3 hujjatda moslang",
+    "text": "📄 Invoys, packing list va to‘lov dalili bir-biriga mosmi? Bojxona muammosining yarmi shu yerda hal bo‘ladi.\n\nJo‘natishdan oldin hujjatlarni tekshirtirib oling. Bitta kichik tafovut ham tekshiruvni cho‘zadi.\n\n✅ Nimalarni bir xil qiling:\n• mahsulot nomi\n• miqdor\n• birlik narxi\n• umumiy summa\n• valyuta\n• sotuvchi va xaridor ma’lumoti\n\n✅ Tekshiruv tartibi:\n• invoysdagi ma’lumotni packing list bilan solishtiring\n• to‘lov dalilidagi summa invoysga mosligini ko‘ring\n• mahsulot tavsifini barcha hujjatda bir xil yozing\n\n❗️Eng ko‘p xato: bir hujjatda tovar nomi qisqa, boshqasida esa boshqacha yoziladi. Natijada bojxona bir xil yukni turlicha ko‘radi.\n\n📌 Amaliy natija: hujjatlar bir xil bo‘lsa, rasmiylashtirishda savol kamayadi va yukni isbotlash osonlashadi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAICuGruO-i9_5xvLNZkYKKsV6Z4mbHlAAKqImsbCvpxS-0C4Cp5tu6zAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261106-204239/image.png",
+    "topic": {
+      "title": "Bojxona qiymatini 3 hujjatda moslang",
+      "angle": "Invoys, packing list va to‘lov dalilidagi asosiy ma’lumotlarni jo‘natishdan oldin bir-biriga tekshirtirish. Bu bojxona qiymatini sun’iy pasaytirish emas, isbotlashga yordam beradi.",
+      "why_now": "Bojxona rasmiylashtiruvida hujjatlar mosligi amalda doimiy tekshiriladi.",
+      "research": "1. **Bojxona qiymatini “arzon ko‘rsatish” emas, isbotlash uchun 3 ta mos hujjat tayyorlang**\n   - **Burchak:** invoys, packing list va to‘lov dalilidagi asosiy ma’lumotlarni jo‘natishdan oldin bir-biriga moslash.\n   - **Nega dolzarb:** O‘zbekistonda bojxona tartibi va nazorat talablari amalda doimiy qo‘llanadi; rasmiy manbalarda bojxona rasmiylashtiruvi va to‘lovlarni aniqlash hujjatlar mosligiga bog‘liqligi ko‘rsatilgan. ([lex.uz](https://lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00&utm_source=openai))\n   - **Foydalilik:** 10/10\n\n2. **HS/TIF TN kodni sotuvchiga emas, texnik parametrga qarab tekshiring**\n   - **Burchak:** mahsulot nomi emas, material, vazifa, quvvat, o‘lcham va tarkib asosida kodni aniqlash.\n   - **Nega dolzarb:** bojxona stavkasi va rasmiy rasmiylashtirish tovarning to‘g‘ri tasnifiga bog‘liq; noto‘g‘ri kod eng ko‘p xatolardan biri. Rasmiy bojxona manbalari tovarni toifalash zarurligini alohida ta’kidlaydi. ([api-portal.gov.uz](https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai))\n   - **Foydalilik:** 10/10\n\n3. **Batareyali tovarlarda jo‘natishdan oldin UN38.3 va MSDS paketini tekshiring**\n   - **Burchak:** smartfon aksessuari, powerbank, LED, toy, elektr gadjetlar uchun xavfli yuk hujjatlarini oldindan so‘rash.\n   - **Nega dolzarb:** batareyali mahsulotlar logistika va rasmiylashtirishda alohida xavf toifasiga kiradi; hujjat yetishmasa yuk ushlanib qolishi yoki qaytarilishi mumkin. Sizning ro‘yxatingizdagi mavzu allaqachon borligi uchun bu yerda “qanday hujjatni qachon so‘rash” yoritiladi. ([lex.uz](https://lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00&utm_source=openai))\n   - **Foydalilik:** 9/10\n\n4. **Qadoqda Pantone emas, avval “ishga yaroqli test qadoq”ni tasdiqlang**\n   - **Burchak:** rang emas, amalda ezilish, namlik, ochilish, skotch yopishishi, brend stikeri ushlashi kabi testlarga e’tibor berish.\n   - **Nega dolzarb:** qadoqdagi mayda dizayn xatosidan ko‘ra transportdagi yo‘qotish qimmatroq tushadi; eksport-logistika bo‘yicha rasmiy materiallar qadoqlash va tashish talablari bojxona jarayoniga bevosita ta’sirini ko‘rsatadi. ([api-portal.gov.uz](https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai))\n   - **Foydalilik:** 8/10\n\n5. **Yetkazib beruvchidan “sample”ni emas, “production standard sample”ni tasdiqlang**\n   - **Burchak:** oddiy namuna emas, aynan ommaviy partiya uchun o‘lcham, rang, mato, yozuv, bosma va komplektatsiyani birga tasdiqlash.\n   - **Nega dolzarb:** kichik tadbirkorlar ko‘pincha namuna va mass-partiya farqiga tushib qoladi; amaliy xato aynan shu yerda chiqadi.\n   - **Foydalilik:** 9/10\n\n6. **Minimal partiya haqida narxni emas, “MOQ + tayyorlash muddati + qayta buyurtma sharti”ni bir paketda so‘rang**\n   - **Burchak:** bitta narx emas, qayta ishlab berish, o‘zgarish kiritish, vaqt va partiya shartini oldindan yozish.\n   - **Nega dolzarb:** hozirgi bozorda kichik partiyalar bilan kirayotgan tadbirkor uchun eng katta risk — keyingi partiyada shartning o‘zgarishi.\n   - **Foydalilik:** 8/10\n\n7. **Kargo tanlashda faqat tarif emas, “o‘lchov og‘irligi qayerda ko‘tariladi”ni so‘rang**\n   - **Burchak:** terminal, ombor yoki yo‘lda volumetrik vazn qachon hisoblanishini aniqlash.\n   - **Nega dolzarb:** ko‘p tadbirkorlar narxni kg bo‘yicha hisoblaydi, ammo amalda hajmiy vazn transport xarajatini keskin oshiradi; logistika bo‘yicha rasmiy materiallarda tovarni tashish jarayonida to‘lovlar va toifalash muhimligi ta’kidlanadi. ([api-portal.gov.uz](https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai))\n   - **Foydalilik:** 9/10\n\n8. **Bojxona uchun hujjat tayyorlaganda “mahsulot tavsifi”ni bir xil tilda va bir xil ma’noda yozing**\n   - **Burchak:** invoys, packing list, shartnoma va texnik tavsifda bir xil terminlardan foydalanish.\n   - **Nega dolzarb:** hujjatlar o‘rtasidagi nom farqi tekshiruvni cho‘zadi; bojxona kodek",
+      "sources": [
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2823",
+          "url": "https://gov.uz/oz/advice/603/document/2823"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12768",
+          "url": "https://gov.uz/oz/miit/sections/view/12768"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf"
+        },
+        {
+          "title": "https://lex.uz/en/acts/-5205248?ONDATE=08.02.2026+00",
+          "url": "https://lex.uz/en/acts/-5205248?ONDATE=08.02.2026+00"
+        },
+        {
+          "title": "https://lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00",
+          "url": "https://lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00"
+        },
+        {
+          "title": "https://customs.uz/",
+          "url": "https://customs.uz/"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12775",
+          "url": "https://gov.uz/oz/miit/sections/view/12775"
+        },
+        {
+          "title": "https://invest.gov.uz/uz/guide/legal-framework",
+          "url": "https://invest.gov.uz/uz/guide/legal-framework"
+        },
+        {
+          "title": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00",
+          "url": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00"
+        },
+        {
+          "title": "https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107",
+          "url": "https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12811",
+          "url": "https://gov.uz/oz/miit/sections/view/12811"
+        },
+        {
+          "title": "https://lex.uz/docs/-2876354?ONDATE=01.03.2026+01",
+          "url": "https://lex.uz/docs/-2876354?ONDATE=01.03.2026+01"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2375",
+          "url": "https://gov.uz/oz/advice/603/document/2375"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/a6a6d5cd-fcc1-2f8d-0d78-526873559e8c_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/a6a6d5cd-fcc1-2f8d-0d78-526873559e8c_media_.pdf"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
+        },
+        {
+          "title": "https://lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00&utm_source=openai",
+          "url": "https://lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00&utm_source=openai"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-08T07:00:00+05:00",
+    "created_at": "2026-11-06T20:43:19+00:00",
+    "est_cost_usd": 0.0817,
+    "status": "ready"
   }
 ]

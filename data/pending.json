@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261104-150032",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Invoysga texnik tavsifni to‘liq yozdiring",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAICqWrrSLwVZn4D9J8KrpY2j3NtTgXhAAIPImsbOttZS4b_jcnij5mXAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261104-150032/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-04T20:16:15.668544+05:00",
-    "created_at": "2026-11-04T15:01:15+00:00",
-    "est_cost_usd": 0.0824,
-    "status": "published",
-    "updated_at": "2026-11-04T23:50:43+00:00",
-    "published_at": "2026-11-04T23:50:43+00:00"
-  },
-  {
     "id": "20261104-210757",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Bojxona hujjatlarini jo‘natishdan oldin chek-list qiling",
@@ -184,102 +167,9 @@
     "id": "20261107-150036",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "TIF TN kodni texnik tavsif bilan aniqlang",
-    "text": "🧾 TIF TN kodni tovar kelmasidan oldin tekshiring — keyin qayta rasmiylashtirishga yugurmaysiz.\n\nEng ko‘p xato shunda bo‘ladi: sotuvchi “bu falon mahsulot” deydi, lekin bojxona uchun model, material va ishlash prinsipi boshqacha ahamiyatga ega.\n\nTekshirish uchun sotuvchidan shu 4 narsani oling:\n• aniq texnik tavsif\n• material tarkibi\n• ishlash prinsipi\n• model yoki SKU\n\nShundan keyin TIF TN kodni shu ma’lumotlarga tayab solishtiring. “Sertifikat bor” degan gapning o‘zi yetmaydi — qaysi hujjat, kim bergan va qaysi partiyaga tegishli ekanini ham yozdiring.\n\nMisol: bitta mahsulot nomi bir xil, lekin modeli yoki materiali boshqacha bo‘lsa, kod ham o‘zgarishi mumkin. Noto‘g‘ri kod esa kechikish va qayta rasmiylashtirishga olib keladi.\n\nSavolingiz bo‘lsa — izohda yozing 👇\n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "photo",
     "file_id": "AgACAgIAAxkDAAICu2rvPTjdGqS4OUWFOVxhkvDEQ-oSAAKwH2sbCvp5SyAZBLND2642AQADAgADeQADPQQ",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261107-150036/image.png",
-    "topic": {
-      "title": "TIF TN kodni texnik tavsif bilan aniqlang",
-      "angle": "Sotuvchidan mahsulotning texnik parametrlarini, material tarkibini, ishlash prinsipi va modelini oldindan olib, TIF TN kodni shu ma’lumotlarga tayab tekshirish. Noto‘g‘ri kod kechikish va qayta rasmiylashtirishga olib kelmasligi uchun amaliy yondashuv.",
-      "why_now": "Kodlashdagi xato bojxona rasmiylashtiruvida eng ko‘p kechikish keltiradigan omillardan biri.",
-      "research": "1. **Import oldidan “3 ish kuni” emas, hujjat to‘plami tayyorligini tekshiring**\n   - **Burchak:** Yuk jo‘natishdan oldin invoys, packing list va boshqa zarur hujjatlar to‘liq ekanini tekshirish; bojxona rasmiylashtiruvi hujjatlar to‘liq topshirilgandan keyin 3 ish kuni ichida ko‘rib chiqilishi haqidagi tushunchani amaliy jarayonga aylantirish.\n   - **Nega dolzarb:** O‘zbekiston rasmiy manbalarida bojxona rasmiylashtiruvi hujjatlar va ma’lumotlar to‘liq taqdim etilgandan keyin 3 ish kuni ichida ko‘rib chiqilishi ko‘rsatilgan; demak kechikish ko‘pincha bojxonadan emas, hujjat yetishmasligidan keladi. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))\n   - **Foydalilik:** 9/10\n\n2. **Tovar kelib chiqishini sertifikat bilan emas, oldindan tekshirish bilan boshqaring**\n   - **Burchak:** Yetkazib beruvchidan kelib chiqish sertifikati qachon berilishini, qaysi hujjatlar bilan birga topshirilishini oldindan so‘rash.\n   - **Nega dolzarb:** Rasmiy manbalarda tovarning kelib chiqishi to‘g‘risidagi sertifikat bojxona deklaratsiyasi va boshqa hujjatlar bilan bir vaqtda taqdim etilishi qayd etilgan; bu importni rejalashda juda muhim. ([gov.uz](https://gov.uz/oz/advice/603/document/2380?utm_source=openai))\n   - **Foydalilik:** 8/10\n\n3. **Elektron tasdiq ishlaydigan tovarlarda “qog‘oz yuritish”ni emas, vakolatli organ yo‘lini so‘rang**\n   - **Burchak:** Tovar bo‘yicha sertifikat yoki ruxsatnoma kerak bo‘lsa, uni qaysi vakolatli organning elektron tasdig‘i bilan olish mumkinligini tekshirish.\n   - **Nega dolzarb:** 2026-yilda vakolatli davlat organlarining elektron tasdig‘ini olish amaliyotini joriy etish bo‘yicha qaror qabul qilingan; bu import jarayonini tezlashtirishga yordam beradi. ([gov.uz](https://gov.uz/oz/sanepid/news/view/186378?utm_source=openai))\n   - **Foydalilik:** 8/10\n\n4. **Bojxona “qayerda tiqiladi” degan savolga oldindan javob bering: TIF TN kodni texnik parametr bilan bog‘lang**\n   - **Burchak:** Sotuvchidan mahsulotning aniq texnik tavsifi, material tarkibi, ishlash prinsipi va modelini olib, TIF TN kodni shunga tayab aniqlash.\n   - **Nega dolzarb:** O‘zbekiston bojxona tizimi va ekspertizaga oid rasmiy sahifalar import hujjatlari va kodlash masalasini asosiy amaliy ehtiyoj sifatida ko‘rsatadi; noto‘g‘ri kod kechikish va qayta rasmiylashtirishga olib keladi. ([invest.gov.uz](https://invest.gov.uz/uz/guide/legal-framework?utm_source=openai))\n   - **Foydalilik:** 9/10\n\n5. **“Bitta hujjat yetadi” deb o‘ylamang — yukni jo‘natishdan oldin bojxona uchun hujjatlar ro‘yxatini tekshiring**\n   - **Burchak:** Har partiya uchun alohida checklist: shartnoma, invoys, packing list, sertifikatlar, ruxsatnomalar, tashish hujjatlari.\n   - **Nega dolzarb:** Bojxona organlari tovar va transport vositalari uchun hujjatlar va ma’lumotlarni talab qiladi; ayrim tovarlarda qo‘shimcha ruxsatnoma ham kerak bo‘lishi mumkin. ([gov.uz](https://gov.uz/oz/advice/603/document/2374?utm_source=openai))\n   - **Foydalilik:** 9/10\n\n6. **Bojxona rejimini mahsulot emas, oldingi harakatga qarab rejalashtiring**\n   - **Burchak:** Agar tovarni qayta olib kirish, vaqtincha olib kirish yoki reimport kabi rejimlar ehtimoli bo‘lsa, bitim tuzishdan oldin huquqiy rejimni aniqlash.\n   - **Nega dolzarb:** Rasmiy manbalarda reimport va boshqa bojxona rejimlari alohida ta’riflangan; noto‘g‘ri rejim tanlansa, rasmiylashtirish jarayoni qiyinlashadi. ([gov.uz](https://gov.uz/oz/miit/sections/view/12768?utm_source=openai))\n   - **Foydalilik:** 7/10\n\n7. **Xitoy sotuvchisidan “sertifikat bor” demasdan, aynan qaysi hujjat kerakligini yozdiring**\n   - **Burchak:** Yetkazib beruvchiga “certificate available?” emas, “which certificate, issued by whom, for which SKU, in which shipment?” degan aniq savollar berish.\n   - **Nega dolzarb:** O‘zbekistondagi rasmiy jarayonlar hujjat va ma’lumotlarning aniq bo‘lishini talab qiladi; nomi bor, mazmuni noaniq hujjat amalda yordam bermaydi. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))\n   - **Foydal",
-      "sources": [
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2823",
-          "url": "https://gov.uz/oz/advice/603/document/2823"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
-        },
-        {
-          "title": "https://digital.gov.uz/oz/ellikqala/sections/view/118393",
-          "url": "https://digital.gov.uz/oz/ellikqala/sections/view/118393"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2372",
-          "url": "https://gov.uz/oz/advice/603/document/2372"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12768",
-          "url": "https://gov.uz/oz/miit/sections/view/12768"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2377",
-          "url": "https://gov.uz/oz/advice/603/document/2377"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2375",
-          "url": "https://gov.uz/oz/advice/603/document/2375"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/153/2026/05/01/8f87eb9a-f22f-6c4a-a7fb-4185b988aa2e_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/153/2026/05/01/8f87eb9a-f22f-6c4a-a7fb-4185b988aa2e_media_.pdf"
-        },
-        {
-          "title": "https://gov.uz/oz/gurlan/pages/elektron-davlat-xizmatlari",
-          "url": "https://gov.uz/oz/gurlan/pages/elektron-davlat-xizmatlari"
-        },
-        {
-          "title": "https://gov.uz/oz/sanepid/news/view/186378",
-          "url": "https://gov.uz/oz/sanepid/news/view/186378"
-        },
-        {
-          "title": "https://www.digital.gov.uz/oz/advice/NaN/document/2823",
-          "url": "https://www.digital.gov.uz/oz/advice/NaN/document/2823"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2374",
-          "url": "https://gov.uz/oz/advice/603/document/2374"
-        },
-        {
-          "title": "https://invest.gov.uz/uz/guide/legal-framework",
-          "url": "https://invest.gov.uz/uz/guide/legal-framework"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2380",
-          "url": "https://gov.uz/oz/advice/603/document/2380"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai",
-          "url": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2380?utm_source=openai",
-          "url": "https://gov.uz/oz/advice/603/document/2380?utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/sanepid/news/view/186378?utm_source=openai",
-          "url": "https://gov.uz/oz/sanepid/news/view/186378?utm_source=openai"
-        },
-        {
-          "title": "https://invest.gov.uz/uz/guide/legal-framework?utm_source=openai",
-          "url": "https://invest.gov.uz/uz/guide/legal-framework?utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2374?utm_source=openai",
-          "url": "https://gov.uz/oz/advice/603/document/2374?utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12768?utm_source=openai",
-          "url": "https://gov.uz/oz/miit/sections/view/12768?utm_source=openai"
-        }
-      ]
-    },
     "qc_score": 8,
     "soft_pass": false,
     "rewrites": 0,

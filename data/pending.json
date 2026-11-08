@@ -179,5 +179,125 @@
     "created_at": "2026-11-07T19:16:41+00:00",
     "est_cost_usd": 0.0863,
     "status": "ready"
+  },
+  {
+    "id": "20261108-150026",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Bojxona hujjatlarida 3 ma’lumotni moslang",
+    "text": "📄 Bojxona hujjatlarida bitta xato butun partiyani ushlab qolishi mumkin.\n\nKo‘p muammo “kichik farq”dan boshlanadi: yuk egasi bir joyda boshqacha yozilgan, tovar nomi qisqartirilgan, soni yoki paketlar soni mos kelmagan.\n\nJo‘natishdan oldin shu 1 satrli chek-listni tekshiring:\n• Yuk egasi\n• Tovar nomi\n• Soni\n• Paketlar soni\n• Vazni\n• Qiymati\n\nHammasi invoys, packing list va deklaratsiyada bir xil bo‘lsin. Noaniq yozuvni keyin emas, jo‘natishdan oldin to‘g‘rilang.\n\nMisol: invoysda “LED lamp” yozilgan, packing list’da esa “lamps” deb ketgan bo‘lsa, tekshiruvda qo‘shimcha savol chiqishi mumkin. Bir xil yozuv esa hujjatni tezroq o‘tkazishga yordam beradi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAICwWrwjrXwsCY7XNDcX4KdjqSlGylLAAJ-KGsbBJSAS-0UuMOfWmesAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261108-150026/image.png",
+    "topic": {
+      "title": "Bojxona hujjatlarida 3 ma’lumotni moslang",
+      "angle": "Yuk egasi, tovar nomi, soni, paketlar soni, vazni va qiymatini jo‘natishdan oldin bir satrli chek-list bilan solishtirish. Maqsad — deklaratsiya va hujjatlarda nomuvofiqlikni erta ushlash.",
+      "why_now": "Rasmiy bojxona talablari aniq va mos hujjat topshirishni talab qiladi, nomuvofiqlik qo‘shimcha tekshiruvga olib keladi.",
+      "research": "1. **1688 sotuvchisini tanlashda “yana bir xil mahsulot” emas, “bir xil zavod izlari”ni solishtiring**\n   - **Burchak:** 1688’da bir necha listingni ochib, yetkazib beruvchi nomi, joylashuvi, mahsulot fotosurat uslubi, MOQ va javob tezligi bo‘yicha “kim ishlab chiqaruvchi, kim reseller”ni ajratish.\n   - **Nega hozir dolzarb:** Xitoy ichki bozorida ko‘p sotuvchilar bir xil mahsulotni turli nom bilan qo‘yadi; noto‘g‘ri sotuvchini tanlash narx, sifat va yetkazib berish barqarorligiga bevosita ta’sir qiladi. Rasmiy manbalarda ham import/export jarayonida aniq deklaratsiya va to‘g‘ri hujjat muhimligi ta’kidlanadi. ([enghunan.gov.cn](https://enghunan.gov.cn/hneng/Government/LawsRegulations/StateLaws/202507/t20250716_33741752.html?utm_source=openai))\n   - **Foydalilik bahosi:** 9/10\n\n2. **Namuna olganda “bitta dona” emas, 3 ta maqsadli testni oldindan belgilang**\n   - **Burchak:** Namuna kelgach uni faqat ko‘rib chiqish emas, uchta sinovga ajrating: funksionallik, qadoq chidamliligi va real foydalanishdagi nuqson.\n   - **Nega hozir dolzarb:** Noto‘g‘ri namuna xaridni noto‘g‘ri qarorga olib keladi; rasmiy bojxona amaliyotida ham tekshiruv va qo‘shimcha aniqlashtirishlar mavjud bo‘lishi mumkin, shuning uchun oldindan sifatni “ishlab chiqarishdan oldin” emas, “kelgach sinash” foydali. ([online.customs.gov.cn](https://online.customs.gov.cn/static/pages/guides/000629011000/000629011000.html?utm_source=openai))\n   - **Foydalilik bahosi:** 8/10\n\n3. **Kargo tanlashda faqat narxni emas, “qaysi yukga qaysi yo‘l”ni solishtiring**\n   - **Burchak:** Havo, temiryo‘l, avtomobil yoki dengiz yo‘lidan qaysi biri sizning tovaringizga mosligini vazn, hajm, shoshilinchlik va zarar xavfi bo‘yicha tanlash.\n   - **Nega hozir dolzarb:** Xalqaro savdoda deklaratsiya, jo‘natma turi va hujjatlar amaliyoti yuk yo‘liga qarab farq qiladi; noto‘g‘ri yo‘l tanlash xarajatni oshiradi va kechikish keltirishi mumkin. ([english.www.gov.cn](https://english.www.gov.cn/AssetsZi/Foreign_Investment_Guide_of_the_People%27s_Republic_of_China_2024.pdf?utm_source=openai))\n   - **Foydalilik bahosi:** 9/10\n\n4. **Invoysga texnik tavsifni “savdo tili”da emas, “tekshiruv tili”da yozdiring**\n   - **Burchak:** Material, model, o‘lcham, quvvat, komplektatsiya, ishlatish maqsadi kabi detallarni invoys va packing list’da bir xil yozdirish.\n   - **Nega hozir dolzarb:** Bojxona organlari tovarni tasniflash va tekshirishda aniq tavsifga tayanadi; noaniq yozuv qo‘shimcha so‘rov yoki ushlab qolishga olib kelishi mumkin. ([online.customs.gov.cn](https://online.customs.gov.cn/static/pages/guides/000629002002/000629002002.html?utm_source=openai))\n   - **Foydalilik bahosi:** 10/10\n\n5. **Bitta partiyada eng katta xato — “mayda nuqsonlarni yig‘ib yuborish”; qabul mezonini oldindan yozing**\n   - **Burchak:** “Qaysi nuqsonlar qabul qilinadi, qaysilari rad qilinadi” degan ro‘yxatni ishlab chiqib, uni sotuvchiga oldindan yuborish.\n   - **Nega hozir dolzarb:** Sifat bo‘yicha noaniq kelishuv keyin bahsga aylanadi; inspeksiya va tekshiruv amaliyotlari mavjud bo‘lgani uchun qabul mezoni oldindan aniq bo‘lishi foydali. ([online.customs.gov.cn](https://online.customs.gov.cn/static/pages/guides/000629011000/000629011000.html?utm_source=openai))\n   - **Foydalilik bahosi:** 8/10\n\n6. **Savdolashuvda “narxni tushiring” emas, “shartni yaxshilang” deb so‘rang**\n   - **Burchak:** Narx o‘rniga qadoqlash sifati, zaxira detal, qo‘shimcha namuna, qayta jo‘natish sharti yoki tezroq ishlab chiqarish muddatini so‘rash.\n   - **Nega hozir dolzarb:** Xitoydan xarid qilayotgan tadbirkor uchun real foyda ko‘pincha nominal narxdan emas, partiya barqarorligi va xatolarni kamaytirishdan keladi; bu yondashuv savdo bitimini kuchaytiradi. ([fta.mofcom.gov.cn](https://fta.mofcom.gov.cn/en_doc.shtml?utm_source=openai))\n   - **Foydalilik bahosi:** 7/10\n\n7. **Bojxona uchun hujjatlarni yuborishdan oldin “kim, nima, nechta”ni bir satrda tekshiring**\n   - **Burchak:** Yuk egasi, tovar nomi, soni, paketlar soni, vazni va qiymati bir-biriga mos",
+      "sources": [
+        {
+          "title": "https://english.www.gov.cn/AssetsZi/Foreign_Investment_Guide_of_the_People%27s_Republic_of_China_2024.pdf",
+          "url": "https://english.www.gov.cn/AssetsZi/Foreign_Investment_Guide_of_the_People%27s_Republic_of_China_2024.pdf"
+        },
+        {
+          "title": "https://fta.mofcom.gov.cn/en_doc.shtml",
+          "url": "https://fta.mofcom.gov.cn/en_doc.shtml"
+        },
+        {
+          "title": "https://online.customs.gov.cn/notice/",
+          "url": "https://online.customs.gov.cn/notice/"
+        },
+        {
+          "title": "https://en.moj.gov.cn/2023-12/15/c_948360.htm",
+          "url": "https://en.moj.gov.cn/2023-12/15/c_948360.htm"
+        },
+        {
+          "title": "https://online.customs.gov.cn/ocgb/hgzsjj.html",
+          "url": "https://online.customs.gov.cn/ocgb/hgzsjj.html"
+        },
+        {
+          "title": "https://bgt.mofcom.gov.cn/cms_files/filemanager/1077459795/attach/20269/be3ee02d63394893a5455efdd3fbba88.pdf?fileName=%E6%96%87%E5%91%8A56%E6%B0%B4%E5%8D%B0%E7%89%88.pdf",
+          "url": "https://bgt.mofcom.gov.cn/cms_files/filemanager/1077459795/attach/20269/be3ee02d63394893a5455efdd3fbba88.pdf?fileName=%E6%96%87%E5%91%8A56%E6%B0%B4%E5%8D%B0%E7%89%88.pdf"
+        },
+        {
+          "title": "https://ipr.mofcom.gov.cn/zhuanti/jkblh/iplaws/trade/dwmyf.pdf",
+          "url": "https://ipr.mofcom.gov.cn/zhuanti/jkblh/iplaws/trade/dwmyf.pdf"
+        },
+        {
+          "title": "https://www.enghunan.gov.cn/hneng/Services/EntryExit/IAQ/202607/t20260707_34021436.html",
+          "url": "https://www.enghunan.gov.cn/hneng/Services/EntryExit/IAQ/202607/t20260707_34021436.html"
+        },
+        {
+          "title": "https://www.caea.gov.cn/english/n6759372/c6793482/content.html",
+          "url": "https://www.caea.gov.cn/english/n6759372/c6793482/content.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/ociswebserver/pages/jcjybcx/question.html",
+          "url": "https://online.customs.gov.cn/ociswebserver/pages/jcjybcx/question.html"
+        },
+        {
+          "title": "https://enghunan.gov.cn/hneng/Government/LawsRegulations/StateLaws/202507/t20250716_33741752.html",
+          "url": "https://enghunan.gov.cn/hneng/Government/LawsRegulations/StateLaws/202507/t20250716_33741752.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629011000/000629011000.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629011000/000629011000.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629002002/000629002002.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629002002/000629002002.html"
+        },
+        {
+          "title": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html",
+          "url": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/ocgb/index.html",
+          "url": "https://online.customs.gov.cn/ocgb/index.html"
+        },
+        {
+          "title": "https://sg.china-embassy.gov.cn/eng/jmxx/202604/P020260416649361816985.pdf",
+          "url": "https://sg.china-embassy.gov.cn/eng/jmxx/202604/P020260416649361816985.pdf"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629002001/%E2%80%9C%E8%B4%A7%E7%89%A9%E7%94%B3%E6%8A%A5%E2%80%9D%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%BA%8B%E9%A1%B9%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97.pdf",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629002001/%E2%80%9C%E8%B4%A7%E7%89%A9%E7%94%B3%E6%8A%A5%E2%80%9D%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%BA%8B%E9%A1%B9%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97.pdf"
+        },
+        {
+          "title": "https://ipr.mofcom.gov.cn/zhuanti/jkblh/iplaws/trade/hgf.pdf",
+          "url": "https://ipr.mofcom.gov.cn/zhuanti/jkblh/iplaws/trade/hgf.pdf"
+        },
+        {
+          "title": "https://enghunan.gov.cn/hneng/Government/LawsRegulations/StateLaws/202507/t20250716_33741752.html?utm_source=openai",
+          "url": "https://enghunan.gov.cn/hneng/Government/LawsRegulations/StateLaws/202507/t20250716_33741752.html?utm_source=openai"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629011000/000629011000.html?utm_source=openai",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629011000/000629011000.html?utm_source=openai"
+        },
+        {
+          "title": "https://english.www.gov.cn/AssetsZi/Foreign_Investment_Guide_of_the_People%27s_Republic_of_China_2024.pdf?utm_source=openai",
+          "url": "https://english.www.gov.cn/AssetsZi/Foreign_Investment_Guide_of_the_People%27s_Republic_of_China_2024.pdf?utm_source=openai"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629002002/000629002002.html?utm_source=openai",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629002002/000629002002.html?utm_source=openai"
+        },
+        {
+          "title": "https://fta.mofcom.gov.cn/en_doc.shtml?utm_source=openai",
+          "url": "https://fta.mofcom.gov.cn/en_doc.shtml?utm_source=openai"
+        },
+        {
+          "title": "https://en.moj.gov.cn/2023-12/15/c_948360.htm?utm_source=openai",
+          "url": "https://en.moj.gov.cn/2023-12/15/c_948360.htm?utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-08T20:16:08.469034+05:00",
+    "created_at": "2026-11-08T15:01:08+00:00",
+    "est_cost_usd": 0.0838,
+    "status": "ready"
   }
 ]

@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261106-150036",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Davriy deklaratsiyada to‘lovni partiya bo‘yicha qiling",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAICtWrt68P16vqfdID1T8WIuISEFRwZAAJ5IGsbCvpxS0X2jQN4R0jqAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261106-150036/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-06T20:16:22.407724+05:00",
-    "created_at": "2026-11-06T15:01:22+00:00",
-    "est_cost_usd": 0.0836,
-    "status": "published",
-    "updated_at": "2026-11-06T15:32:41+00:00",
-    "published_at": "2026-11-06T15:32:41+00:00"
-  },
-  {
     "id": "20261106-204239",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Bojxona qiymatini 3 hujjatda moslang",
@@ -184,102 +167,9 @@
     "id": "20261109-150027",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Real kirish xarajatini hisoblang",
-    "text": "📦 Real kirish xarajatini bugun noto‘g‘ri yozsangiz, marjangiz qog‘ozda foydali ko‘rinadi, amalda esa yo‘q.\n\nKo‘p tadbirkor zavod narxini oladi va “tannarx shu” deb hisoblaydi. Keyin yetkazish, sug‘urta, ombor va bojxona to‘lovlari qo‘shilganda foyda kamayib ketadi.\n\nTo‘g‘ri yo‘l — har bir xarajatni alohida satr qilish:\n• tovar narxi\n• yetkazish\n• sug‘urta\n• ombor xarajati\n• rasmiy to‘lovlar\n\nShunda siz “sotib olish narxi”ni emas, real kirish xarajatini ko‘rasiz. Aynan shu raqamga qarab sotuv narxini qo‘yish kerak.\n\nMasalan, bir partiya arzon ko‘ringan bo‘lishi mumkin, lekin transport va rasmiy xarajatlar qo‘shilgach, u siz kutgandan qimmat tushadi. Natijada chegirma berishga majbur bo‘lasiz.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "photo",
     "file_id": "AgACAgIAAxkDAAICx2rx4DQmulmGrILA0SnV8Yq4WlzPAAIRIWsbc3eQS5AmWHWR8qHQAQADAgADeQADPQQ",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261109-150027/image.png",
-    "topic": {
-      "title": "Real kirish xarajatini hisoblang",
-      "angle": "Tannarxni faqat zavod narxiga emas, yetkazish, sug‘urta, ombor, boj va yig‘imlarni qo‘shgan holda hisoblash. Bu marjani aniqroq ko‘rsatadi va noto‘g‘ri narxlashdan saqlaydi.",
-      "why_now": "Bojxona to‘lovlari va yig‘imlari alohida hisoblanayotgani uchun landed costni to‘g‘ri yuritish hozir ayniqsa muhim.",
-      "research": "1. **Bitta shipment uchun “kargo turi”ni to‘g‘ri tanlang: avia, avto, temiryo‘l yoki dengiz — qaysi biri sizga mos?**  \n   - **Burchak:** Yukning shoshilinchligi, hajmi, xavfi va partiya qiymatiga qarab transport turini tanlash.  \n   - **Nega dolzarb:** O‘zbekistonda bojxona va logistika jarayonlari rasmiy platformalar orqali raqamlashtirilmoqda, transport tanlovi esa vaqt va xarajatga bevosita ta’sir qiladi; bojxona tizimlarida “tovarlar uchun dastlabki hisob-kitoblar asosida sarflanadigan xarajat va vaqt” kabi xizmatlar bor. ([customs.uz](https://www.customs.uz/?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n2. **Bojxona uchun hujjat tayyorlashda “oldindan deklaratsiya” usulidan foydalaning.**  \n   - **Burchak:** Yuk kelishidan oldin deklaratsiya va ma’lumotlarni oldindan kiritib, chegara jarayonini tezlashtirish.  \n   - **Nega dolzarb:** my.gov.uz’da “Yo‘lovchi bojxona deklaratsiyasini oldindan to‘ldirish” xizmati ishga tushirilgani e’lon qilingan; bu yondashuv amalda hujjatlarni oldindan tayyorlash madaniyatini kuchaytiradi. Garchi u yo‘lovchilar uchun bo‘lsa ham, tamoyil tadbirkorlarga ham juda o‘xshash: oldindan tayyorlangan ma’lumot chek-up vaqtini qisqartiradi. ([my.gov.uz](https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107?utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n3. **Tovarni bojxona qiymati emas, “real kirish xarajati” bilan hisoblang: yetkazish, sug‘urta, ombor va rasmiy to‘lovlarni alohida satr qiling.**  \n   - **Burchak:** Tannarxni faqat zavod narxiga emas, jami landed costga qurish.  \n   - **Nega dolzarb:** Bojxona amaliyotida tovarning kategoriyasi, bojxona to‘lovlari, yig‘imlar, aksiz va boshqa to‘lovlar alohida hisoblanadi; shuning uchun marjani faqat “sotib olish narxi”ga qarab hisoblash xato bo‘ladi. ([api-portal.gov.uz](https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai))  \n   - **Foydalilik:** 10/10\n\n4. **Kichik partiyada birinchi navbatda “tez sotiladigan SKU”ni sinovdan o‘tkazing, katta assortimentni keyin kengaytiring.**  \n   - **Burchak:** Birinchi partiyani test partiya sifatida qurish: 1–2 ta eng aylanadigan modelga urg‘u berish.  \n   - **Nega dolzarb:** Xitoydan savdo qilayotgan yangi tadbirkorlar uchun eng katta xato — bir yo‘la ko‘p SKU olish. Rasmiy bojxona va logistika jarayonlari ham partiya bo‘yicha xarajat va vaqtni oldindan baholashni talab qiladi; kichik test partiya riskni kamaytiradi. ([customs.uz](https://www.customs.uz/?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n5. **Xitoy yetkazib beruvchisidan faqat “ishlab chiqarilgan sana + partiya raqami” ko‘rinadigan foto/shotni so‘rang.**  \n   - **Burchak:** Sifat nazoratida oddiy, lekin kuchli filtr — partiya identifikatsiyasi.  \n   - **Nega dolzarb:** Bojxona va keyingi savdo jarayonlarida izchillik muhim; partiya belgisi bo‘lmagan tovarni keyinchalik da’vo, qaytarish yoki tekshiruvda bog‘lash qiyinlashadi. Bu amaliy yondashuv hozir ayniqsa muhim, chunki import jarayonlari ko‘proq raqamli iz qoldirishga o‘tmoqda. ([gov.uz](https://gov.uz/oz/miit/sections/view/12768?utm_source=openai))  \n   - **Foydalilik:** 7/10\n\n6. **Brendli tovar olayotganda “rasmiy distribyutor reyestri”ni tekshiring, shunda noqonuniy kanal riskini kamaytirasiz.**  \n   - **Burchak:** Yetkazib beruvchining huquqiy statusini tekshirish, ayniqsa kiyim, poyabzal, parfumeriya va aksessuarlar bo‘yicha.  \n   - **Nega dolzarb:** Investitsiyalar, sanoat va savdo vazirligi rasmiy distribyutorlar orqali import qiluvchilar reyestrini yuritayotgani va ayrim tovar guruhlarida pasaytirilgan boj stavkalaridan foydalanish imkoniyati borligi e’lon qilingan. Bu mavzu endi juda amaliy, chunki to‘g‘ri kanalni tanlash bevosita xarajatga ta’sir qiladi. ([gov.uz](https://gov.uz/oz/miit/news/view/110129?utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n7. **Yuk jo‘natishdan oldin “qaysi hujjat qaysi tomon tomonidan beriladi?” degan javobni bitta jadvalga yig‘ing.**  \n   - **Burchak:** Invoys, packing list, kon",
-      "sources": [
-        {
-          "title": "https://gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari",
-          "url": "https://gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2823",
-          "url": "https://gov.uz/oz/advice/603/document/2823"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12768",
-          "url": "https://gov.uz/oz/miit/sections/view/12768"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf"
-        },
-        {
-          "title": "https://invest.gov.uz/uz/guide/legal-framework",
-          "url": "https://invest.gov.uz/uz/guide/legal-framework"
-        },
-        {
-          "title": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari",
-          "url": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari"
-        },
-        {
-          "title": "https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107",
-          "url": "https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12811",
-          "url": "https://gov.uz/oz/miit/sections/view/12811"
-        },
-        {
-          "title": "https://www.customs.uz/",
-          "url": "https://www.customs.uz/"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
-        },
-        {
-          "title": "https://customs.uz/",
-          "url": "https://customs.uz/"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12775",
-          "url": "https://gov.uz/oz/miit/sections/view/12775"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/news/view/110129",
-          "url": "https://gov.uz/oz/miit/news/view/110129"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf"
-        },
-        {
-          "title": "https://sw2.customs.uz/?lang=en_EN",
-          "url": "https://sw2.customs.uz/?lang=en_EN"
-        },
-        {
-          "title": "https://www.customs.uz/?utm_source=openai",
-          "url": "https://www.customs.uz/?utm_source=openai"
-        },
-        {
-          "title": "https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107?utm_source=openai",
-          "url": "https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107?utm_source=openai"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12768?utm_source=openai",
-          "url": "https://gov.uz/oz/miit/sections/view/12768?utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/news/view/110129?utm_source=openai",
-          "url": "https://gov.uz/oz/miit/news/view/110129?utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12811?utm_source=openai",
-          "url": "https://gov.uz/oz/miit/sections/view/12811?utm_source=openai"
-        }
-      ]
-    },
     "qc_score": 8,
     "soft_pass": false,
     "rewrites": 0,

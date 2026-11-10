@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261107-191600",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Bojxona hujjatlarini jo‘natishdan oldin moslang",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAICvmrveRrQ3B56wfYYTFEX3zr-CNUTAAL1IWsbCvp5S37gzyleENz-AQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261107-191600/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-09T07:00:00+05:00",
-    "created_at": "2026-11-07T19:16:41+00:00",
-    "est_cost_usd": 0.0863,
-    "status": "published",
-    "updated_at": "2026-11-09T02:00:14+00:00",
-    "published_at": "2026-11-09T02:00:14+00:00"
-  },
-  {
     "id": "20261108-150026",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Bojxona hujjatlarida 3 ma’lumotni moslang",
@@ -163,5 +146,89 @@
     "status": "published",
     "updated_at": "2026-11-10T18:16:23+00:00",
     "published_at": "2026-11-10T18:16:23+00:00"
+  },
+  {
+    "id": "20261110-211326",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Yuborishdan oldin 3 hujjatni moslashtiring",
+    "text": "📄 Invoys, packing list va kontrakt mos kelmasa, yuk bojxonada to‘xtashi mumkin.\n\nKo‘p muammo hujjatdagi mayda farqdan chiqadi. Bir joyda nom boshqacha yoziladi, boshqa joyda miqdor yoki tavsif o‘zgarib ketadi.\n\nJo‘natishdan oldin 3 ta hujjatni birma-bir solishtiring:\n• Tovar nomi — uchalasida bir xil yozilganmi\n• Asosiy ma’lumotlar — miqdor, model, rang, material bir xilmi\n• Qadoq va komplektatsiya — bir hujjatda bor, boshqasida tushib qolmaganmi\n\nEng yaxshi usul: invoysni oching, yoniga packing listni qo‘ying, keyin kontrakt/bitimni tekshiring. Farq ko‘rsangiz, jo‘natishdan oldin tuzattiring.\n\nMasalan, bir hujjatda “phone case”, boshqasida “mobile cover” yozilsa, bu keyin izoh talab qiladi. Bir xil atama ishlatish esa qayta rasmiylashtirish xavfini kamaytiradi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIC0GrziSOSnU-Nrlr2tLgX9HAqtb90AAJBH2sbc3egSxbSkrsqp9TrAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261110-211326/image.png",
+    "topic": {
+      "title": "Yuborishdan oldin 3 hujjatni moslashtiring",
+      "angle": "Invoys, packing list va kontrakt/bitimdagi tovar nomi hamda asosiy ma’lumotlarni jo‘natishdan oldin solishtirib chiqing. Bu bojxonadagi xato va qayta rasmiylashtirish xavfini kamaytiradi.",
+      "why_now": "Hujjatlar bo‘yicha talablar yangilanib turadi, lekin moslik va intizom hanuz muhim.",
+      "research": "1. **Sarlavha:** Xitoy yetkazib beruvchidan **namuna (sample) so‘rashda 3 ta aniq savol**\n   - **Burchak:** Sample so‘raganda faqat “narx qancha?” demasdan, partiya sifati, materiali va ishlab chiqarish variatsiyasi haqida oldindan so‘raladigan 3 savol.\n   - **Nega dolzarb:** Yangi partiya olayotgan tadbirkorlar ko‘pincha namuna yaxshi chiqib, ommaviy buyurtmada sifat farqiga duch keladi; bu mavzu bevosita birinchi buyurtma xatolarini kamaytiradi.\n   - **Foydalilik:** 9/10\n\n2. **Sarlavha:** **1688’da supplierni tanlashda “qayta buyurtma tarixi”ga qarash**\n   - **Burchak:** Faqat narxga emas, sotuvchining takroriy xaridorlari va doimiy savdo faolligiga qarab filtr qilish.\n   - **Nega dolzarb:** 1688’da ko‘plab yangi listinglar bor; ayni paytda ishonchli yetkazib beruvchini tez ajratish kichik biznes uchun juda muhim.\n   - **Foydalilik:** 8/10\n\n3. **Sarlavha:** **Yetkazib beruvchiga texnik tavsifni bitta faylda emas, chek-listda yuborish**\n   - **Burchak:** Rang, material, o‘lcham, qadoq turi, markirovka, komplektatsiya kabi talablarni alohida bandlar bilan yuborish.\n   - **Nega dolzarb:** O‘zbekistondagi importyorlar ko‘pincha umumiy yozishib qo‘yadi, keyin “men boshqacha tushungandim” degan muammo chiqadi.\n   - **Foydalilik:** 9/10\n\n4. **Sarlavha:** **MOQ past bo‘lsa ham narxni savdolashishda “yangi partiya” emas, “kelgusi partiya”ni urg‘ulash**\n   - **Burchak:** Birinchi buyurtmada emas, keyingi takroriy buyurtma ehtimoli bilan chegirma yoki yaxshiroq shart so‘rash.\n   - **Nega dolzarb:** Kichik tadbirkorlar uchun bir martalik emas, doimiy yetkazib beruvchi topish muhim; bu yondashuv muzokarada kuch beradi.\n   - **Foydalilik:** 8/10\n\n5. **Sarlavha:** **Kargoga yuborishdan oldin “qadoq og‘irligi”ni alohida tasdiqlash**\n   - **Burchak:** Tovar og‘irligi bilan qadoq og‘irligini aralashtirmaslik, hisob-kitobni ikki qatorda olish.\n   - **Nega dolzarb:** Kargo xarajati ko‘p hollarda aynan noto‘g‘ri og‘irlik hisobidan oshib ketadi; bu amaliy masala doim aktual.\n   - **Foydalilik:** 9/10\n\n6. **Sarlavha:** **Bojxonaga ketadigan hujjatlarni oldin emas, jo‘natishdan avval “nomlar mosligi” bo‘yicha tekshirish**\n   - **Burchak:** Invoys, packing list va kontrakt/bitimdagi tovar nomi bir xil yozilishiga e’tibor berish.\n   - **Nega dolzarb:** PF-174 bilan 2026-yil 1-sentabrdan ayrim talablar bekor qilingan bo‘lsa-da, hujjat intizomi va tovar ma’lumotlarining mosligi hanuz muhim; rasmiy tartiblar yangilanib boradi. ([lex.uz](https://lex.uz/docs/-8444993?ONDATE=01.09.2026&utm_source=openai))\n   - **Foydalilik:** 10/10\n\n7. **Sarlavha:** **Ochiq matnli to‘lov emas, har bir transferga alohida izoh emas — balki to‘lov manbaini ichki reyestrda saqlash**\n   - **Burchak:** Bank to‘lovi, platforma to‘lovi yoki broker to‘lovi bo‘lsa, ichki reyestrda sanasi, summa va maqsadini alohida yuritish.\n   - **Nega dolzarb:** Importda to‘lov izini keyin isbotlash kerak bo‘ladi; ayniqsa yangi tartiblar chiqqan davrda hujjat izchilligi foyda beradi. PF-174 ayrim oldindan to‘lov cheklovlarini bekor qilganini inobatga olsak, to‘lov hujjatlari yanada muhim bo‘lib qoladi. ([lex.uz](https://lex.uz/docs/-8444993?ONDATE=01.09.2026&utm_source=openai))\n   - **Foydalilik:** 8/10\n\n8. **Sarlavha:** **Yukni bo‘lishdan oldin “kimda nima bor” degan rol taqsimoti bilan ishlash**\n   - **Burchak:** Zavod, ekspeditor, kargo ombori, broker va qabul qiluvchi o‘rtasida vazifalarni oldindan yozib chiqish.\n   - **Nega dolzarb:** Xitoydan yuk keltirishda xatolar ko‘pincha bitta odamning sustligidan emas, rol belgilanmagani sabab yuz beradi; bu mavzu ayniqsa yangi boshlovchilar uchun juda amaliy.\n   - **Foydalilik:** 8/10",
+      "sources": [
+        {
+          "title": "https://lex.uz/en/doc-passport/-8444993",
+          "url": "https://lex.uz/en/doc-passport/-8444993"
+        },
+        {
+          "title": "https://lex.uz/docs/-8444993?ONDATE=01.09.2026",
+          "url": "https://lex.uz/docs/-8444993?ONDATE=01.09.2026"
+        },
+        {
+          "title": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00",
+          "url": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2823",
+          "url": "https://gov.uz/oz/advice/603/document/2823"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2377",
+          "url": "https://gov.uz/oz/advice/603/document/2377"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
+        },
+        {
+          "title": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari",
+          "url": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12768",
+          "url": "https://gov.uz/oz/miit/sections/view/12768"
+        },
+        {
+          "title": "https://invest.gov.uz/uz/guide/legal-framework",
+          "url": "https://invest.gov.uz/uz/guide/legal-framework"
+        },
+        {
+          "title": "https://lex.uz/docs/-8201170?query=TIF+TN",
+          "url": "https://lex.uz/docs/-8201170?query=TIF+TN"
+        },
+        {
+          "title": "https://lex.uz/uz/acts/-4966537?ONDATE=05.02.2026+00",
+          "url": "https://lex.uz/uz/acts/-4966537?ONDATE=05.02.2026+00"
+        },
+        {
+          "title": "https://www.lex.uz/acts/-7934915?ONDATE=01.09.2026+00",
+          "url": "https://www.lex.uz/acts/-7934915?ONDATE=01.09.2026+00"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/a6a6d5cd-fcc1-2f8d-0d78-526873559e8c_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/a6a6d5cd-fcc1-2f8d-0d78-526873559e8c_media_.pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2375",
+          "url": "https://gov.uz/oz/advice/603/document/2375"
+        },
+        {
+          "title": "https://lex.uz/docs/-8444993?ONDATE=01.09.2026&utm_source=openai",
+          "url": "https://lex.uz/docs/-8444993?ONDATE=01.09.2026&utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-12T07:00:00+05:00",
+    "created_at": "2026-11-10T21:14:10+00:00",
+    "est_cost_usd": 0.0878,
+    "status": "ready"
   }
 ]

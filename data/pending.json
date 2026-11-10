@@ -54,90 +54,9 @@
     "id": "20261108-192132",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Texnik tavsifni invoysga to‘liq yozdiring",
-    "text": "📄 Invoysda faqat mahsulot nomi yozilsa, rasmiylashtirish cho'ziladi.\n\nBojxona tavsifi qanchalik aniq bo'lsa, tekshiruv shunchalik oson bo'ladi. Shuning uchun yetkazib beruvchidan nom bilan birga texnik satrlarni ham invoysga kiritishni so'rang.\n\nNimani yozdirish kerak:\n• Material\n• O'lcham\n• Quvvat\n• Model\n• Komplektatsiya\n\nBu ayniqsa texnik hujjat va tovar tavsifi muhim bo'lgan partiyalarda kerak. To'g'ri tavsif keyingi ushlanib qolish xavfini kamaytiradi.\n\nMisol: \"LED chiroq\" emas, balki \"LED chiroq, model X, material plastik, 220V, komplektatsiya: 1 dona adapter\" tarzida yozdiring.\n\nSavolingiz bo'lsa — izohda yozing 👇  \n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "photo",
     "file_id": "AgACAgIAAxkDAAICxGrwy99HL4W52_irgHzcRCxISXYtAAJVKmsbBJSASxEbyWMRdHN7AQADAgADeQADPQQ",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261108-192132/image.png",
-    "topic": {
-      "title": "Texnik tavsifni invoysga to‘liq yozdiring",
-      "angle": "Yetkazib beruvchidan mahsulot nomi bilan birga material, o‘lcham, quvvat, model va komplektatsiyani ham invoysga kiritishni talab qiling. Bu bojxona tavsifi, TIF TN aniqligi va keyingi ushlanib qolish xavfini kamaytirishga xizmat qiladi.",
-      "why_now": "Texnik hujjatlar va tovar tavsifi bo‘yicha talablar kuchaygan, noto‘g‘ri tavsif rasmiylashtirishni sekinlashtiradi.",
-      "research": "1. **“Yangi yil oldidan emas, 2–3 oy oldin buyurtma bering”: Xitoydan mavsumiy tovarlarni vaqtida keltirish**  \n   - **Burchak:** Qaysi mahsulotni qaysi oyda so'rash, yetkazib berish siklini oldindan rejalash va stock-out’ni kamaytirish.  \n   - **Nega dolzarb:** Mavsumiy tovarlarda kechikish eng katta zarar keltiradi; hozir kuz-qishdan keyingi savdo mavsumi uchun partiya rejasini tuzish vaqti. Bojxona va import jarayonlari oldindan reja talab qiladi. ([customs.uz](https://customs.uz/oz/page/bozhhona-rezhimlari?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n2. **“Invoysga texnik tavsifni shunchaki nom emas, parametr bilan yozdiring”**  \n   - **Burchak:** Yetkazib beruvchiga mahsulot nomi bilan birga material, o‘lcham, quvvat, model, komplektatsiya kabi texnik satrlarni oldindan kiritish.  \n   - **Nega dolzarb:** Bojxona rasmiylashtiruvida texnik hujjatlar va tovar tavsifi muhim; 2026-yilgi amaliyotlarda ayrim tovarlar uchun ruxsatnoma yoki ro‘yxatdan o‘tganlik hujjati talab qilinishi kuchaygan. To‘g‘ri tavsif keyingi ushlanib qolish xavfini kamaytiradi. ([lex.uz](https://lex.uz/uz/docs/-8444993?query=147&utm_source=openai))  \n   - **Foydalilik:** 10/10\n\n3. **“Dastlabki, davriy va to‘liq bo‘lmagan deklaratsiya — qaysi holatda qaysi biri kerakligini biling”**  \n   - **Burchak:** Har bir partiyani birdan to‘liq emas, ba’zan bosqichma-bosqich rasmiylashtirish mumkinligini tushuntirish.  \n   - **Nega dolzarb:** Lex.uz’dagi amaldagi tartibda dastlabki, davriy va to‘liq bo‘lmagan bojxona yuk deklaratsiyalarini rasmiylashtirish tartibi mavjud; bu importchi uchun logistika va pul oqimini rejalashda foydali. ([lex.uz](https://lex.uz/uz/docs/-2876354?ONDATE=01.03.2026+01&utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n4. **“Yagona oyna orqali oldindan ma’lumot topshirish: yuk yo‘lda bo‘lsa ham tayyorgarlikni boshlang”**  \n   - **Burchak:** Hujjatlarni jo‘natishdan oldin elektron tizimga ma’lumot kiritib, kutish vaqtini qisqartirish.  \n   - **Nega dolzarb:** Bojxona qo‘mitasining Yagona oyna xizmati tashqi savdo shartnomalari va temir yo‘l orqali import ma’lumotlarini olish kabi xizmatlarni beradi; bu import jarayonini tezlashtirishga xizmat qiladi. ([sw2.customs.uz](https://sw2.customs.uz/?lang=uz_UZ&utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n5. **“Qaysi tovarlar uchun alohida ruxsat kerakligini oldindan tekshiring”**  \n   - **Burchak:** Kimyo, oziq-ovqat qo‘shimchalari, polimer, kosmetika, dori va tibbiy jihozlar kabi tovarlarda qo‘shimcha hujjat kerak bo‘lishi mumkinligini oldindan aniqlash.  \n   - **Nega dolzarb:** 2026-yilgi farmon va amaldagi qoidalarda ayrim kategoriyalar uchun ruxsatnoma yoki davlat ro‘yxatidan o‘tganlik guvohnomasi talab etilishi ko‘rsatilgan. Bu “yuk keldi, lekin rasmiylashtirib bo‘lmayapti” degan holatlarning oldini oladi. ([lex.uz](https://lex.uz/uz/docs/-8444993?query=147&utm_source=openai))  \n   - **Foydalilik:** 10/10\n\n6. **“Bojxona rejimini mahsulot emas, biznes modeli bo‘yicha tanlang”**  \n   - **Burchak:** Omborda saqlash, tranzit, import yoki qayta eksport kabi rejimlardan qaysi biri sizga mosligini savdo sxemangizga qarab aniqlash.  \n   - **Nega dolzarb:** Bojxona qo‘mitasining rasmiy sahifasida bojxona rejimlari aniq ajratilgan; noto‘g‘ri rejim tanlash vaqt va xarajatni oshiradi. Hozirgi tartiblar tez-tez yangilanayotgan sharoitda bu amaliy mavzu juda kerak. ([customs.uz](https://customs.uz/oz/page/bozhhona-rezhimlari?utm_source=openai))  \n   - **Foydalilik:** 7/10\n\n7. **“Partiyani jo‘natishdan oldin bojxona posti va marshrutni moslang”**  \n   - **Burchak:** Tovar qayerdan kirishi, qaysi chegara posti va qaysi transport turi ishlatilishini oldindan rejalash.  \n   - **Nega dolzarb:** Bojxona qo‘mitasi chegara bojxona postlari va monitoring xizmatlarini ochiq ko‘rsatadi; noto‘g‘ri marshrut yukning kechikishiga olib kelishi mumkin. Xuddi shu sababli oldindan tanlash amalda foydali. ([customs.uz](https://customs.uz/?utm_source=openai))  \n   - **Foydalilik:** 7/10\n\n8. **“Sertifikat emas, tovar toif",
-      "sources": [
-        {
-          "title": "https://lex.uz/docs/-8201170?query=bojxona+boji",
-          "url": "https://lex.uz/docs/-8201170?query=bojxona+boji"
-        },
-        {
-          "title": "https://lex.uz/uz/docs/-8444993?query=147",
-          "url": "https://lex.uz/uz/docs/-8444993?query=147"
-        },
-        {
-          "title": "https://gov.uz/oz/soliq/news/view/40789",
-          "url": "https://gov.uz/oz/soliq/news/view/40789"
-        },
-        {
-          "title": "https://customs.uz/oz/page/bozhhona-rezhimlari",
-          "url": "https://customs.uz/oz/page/bozhhona-rezhimlari"
-        },
-        {
-          "title": "https://www.lex.uz/uz/acts/-184746?ONDATE=20.01.2001+00",
-          "url": "https://www.lex.uz/uz/acts/-184746?ONDATE=20.01.2001+00"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2823",
-          "url": "https://gov.uz/oz/advice/603/document/2823"
-        },
-        {
-          "title": "https://lex.uz/Pages/GetPdf.aspx?file=LexUz_8255440.pdf",
-          "url": "https://lex.uz/Pages/GetPdf.aspx?file=LexUz_8255440.pdf"
-        },
-        {
-          "title": "https://customs.uz/",
-          "url": "https://customs.uz/"
-        },
-        {
-          "title": "https://my.gov.uz/kaa/for-investors",
-          "url": "https://my.gov.uz/kaa/for-investors"
-        },
-        {
-          "title": "https://lex.uz/uz/acts/-2876354?ONDATE=28.12.2023+00",
-          "url": "https://lex.uz/uz/acts/-2876354?ONDATE=28.12.2023+00"
-        },
-        {
-          "title": "https://www.lex.uz/docs/-7816457?ONDATE=08.02.2026+00",
-          "url": "https://www.lex.uz/docs/-7816457?ONDATE=08.02.2026+00"
-        },
-        {
-          "title": "https://lex.uz/uz/docs/-2876354?ONDATE=01.03.2026+01",
-          "url": "https://lex.uz/uz/docs/-2876354?ONDATE=01.03.2026+01"
-        },
-        {
-          "title": "https://sw2.customs.uz/?lang=uz_UZ",
-          "url": "https://sw2.customs.uz/?lang=uz_UZ"
-        },
-        {
-          "title": "https://customs.uz/oz/page/bozhhona-rezhimlari?utm_source=openai",
-          "url": "https://customs.uz/oz/page/bozhhona-rezhimlari?utm_source=openai"
-        },
-        {
-          "title": "https://lex.uz/uz/docs/-8444993?query=147&utm_source=openai",
-          "url": "https://lex.uz/uz/docs/-8444993?query=147&utm_source=openai"
-        },
-        {
-          "title": "https://lex.uz/uz/docs/-2876354?ONDATE=01.03.2026+01&utm_source=openai",
-          "url": "https://lex.uz/uz/docs/-2876354?ONDATE=01.03.2026+01&utm_source=openai"
-        },
-        {
-          "title": "https://sw2.customs.uz/?lang=uz_UZ&utm_source=openai",
-          "url": "https://sw2.customs.uz/?lang=uz_UZ&utm_source=openai"
-        },
-        {
-          "title": "https://customs.uz/?utm_source=openai",
-          "url": "https://customs.uz/?utm_source=openai"
-        }
-      ]
-    },
     "qc_score": 8,
     "soft_pass": false,
     "rewrites": 0,

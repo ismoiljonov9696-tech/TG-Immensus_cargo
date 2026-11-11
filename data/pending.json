@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261108-192132",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Texnik tavsifni invoysga to‘liq yozdiring",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAICxGrwy99HL4W52_irgHzcRCxISXYtAAJVKmsbBJSASxEbyWMRdHN7AQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261108-192132/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-10T07:00:00+05:00",
-    "created_at": "2026-11-08T19:22:06+00:00",
-    "est_cost_usd": 0.0816,
-    "status": "published",
-    "updated_at": "2026-11-10T02:00:41+00:00",
-    "published_at": "2026-11-10T02:00:41+00:00"
-  },
-  {
     "id": "20261109-150027",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Real kirish xarajatini hisoblang",
@@ -149,6 +132,126 @@
     "publish_at": "2026-11-12T07:00:00+05:00",
     "created_at": "2026-11-10T21:14:10+00:00",
     "est_cost_usd": 0.0878,
+    "status": "ready"
+  },
+  {
+    "id": "20261111-214536",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Oldindan deklaratsiyalashni 2026-yilga tayyorlash",
+    "text": "📄 2026-yil 1-martgacha hujjat oqimini hozirdan sozlamasangiz, chegara oldida vaqt yo‘qotasiz.\n\nOldindan deklaratsiyalashda muammo ko‘pincha yukda emas, hujjat va ma’lumot almashuvida bo‘ladi. Haydovchi, ekspeditor va broker bir xil fayl bilan ishlashi kerak.\n\n✅ Chek-list:\n• invoice, packing list va kontraktdagi nom bir xilmi?\n• model, miqdor va valyuta mosmi?\n• jo‘natma ma’lumoti brokerga chegara oldidan yuborildimi?\n• E-IMZO va rekvizitlar tayyormi?\n\nEng ko‘p xato — hujjatlardagi bitta tafovut sabab rasmiylashtirishni qayta boshlash. Buni yo‘lda emas, chiqishdan oldin tekshiring.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIC02r04jb9-ndcoHqhpsS6iqHRKFHBAAIyHWsbySqpS_7gPyPkvZ7_AQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261111-214536/image.png",
+    "topic": {
+      "title": "Oldindan deklaratsiyalashni 2026-yilga tayyorlash",
+      "angle": "Yuk chegaraga yetib kelishidan oldin elektron ma’lumot, hujjat oqimi va broker-haydovchi almashinuvini oldindan yo‘lga qo‘yish haqida amaliy yo‘l-yo‘riq beriladi.",
+      "why_now": "2026-yil 1-martdan boshlab oldindan deklaratsiyalash bo‘yicha yangilanishlar kuchga kiradi.",
+      "research": "1. **“2026-yil 1-martdan oldindan deklaratsiyalashni qanday ishga tushirasiz?”**  \n   - **Burchak:** Yuk chegaraga yetib kelishidan oldin elektron ma’lumot tayyorlash, haydovchi/ekspeditor va broker o‘rtasida hujjat oqimini oldindan yo‘lga qo‘yish.  \n   - **Nega dolzarb:** O‘zbekiston bojxona tartibotlarida 2026-yil 1-martdan boshlab oldindan deklaratsiyalashga oid yangilanishlar bor; bu amaliyot rasmiy hujjat aylanishiga ta’sir qiladi. ([gov.uz](https://gov.uz/oz/kitobt/news/view/137999?utm_source=openai))  \n   - **Foydalilik bahosi:** 9/10\n\n2. **“Kargo chiqishidan oldin bitta chek-list: invoice, packing list va kontrakt bir xil yozilganmi?”**  \n   - **Burchak:** Uch hujjatni “nom, model, miqdor, valyuta” bo‘yicha qo‘lda tekshirish uchun sodda chek-list.  \n   - **Nega dolzarb:** Bojxona rasmiylashtiruvida hujjatlarning to‘liq to‘plami va oldindan tayyorgarlik muhim; hujjatlarda nomuvofiqlik keyin vaqt va xarajatga aylanadi. ([lex.uz](https://www.lex.uz/acts/-3916465?utm_source=openai))  \n   - **Foydalilik bahosi:** 8/10\n\n3. **“Xalqaro kuryer orqali keladigan tovarlar uchun oldindan elektron xabar berishdan qanday foydalanish kerak?”**  \n   - **Burchak:** Kichik partiya olib kelayotgan tadbirkorlar uchun kuryer jo‘natmasi oldidan oldindan ma’lumot yuborish jarayoni.  \n   - **Nega dolzarb:** Customs.uz xalqaro pochta va kuryerlik jo‘natmalarida oldindan elektron ma’lumot berish tartibini alohida tilga oladi; bu kichik importchilar uchun juda amaliy. ([customs.uz](https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi?utm_source=openai))  \n   - **Foydalilik bahosi:** 8/10\n\n4. **“Tovar bojxona qiymatini chiqishda 6-usulga tushib qolmaslik uchun nimalarni tayyorlab qo‘yish kerak?”**  \n   - **Burchak:** Eksport yoki importdagi qiymatni isbotlovchi hujjatlar paketini oldindan yig‘ish, narxga oid tushuntirishlar tayyorlash.  \n   - **Nega dolzarb:** 2025-yil 3-sentabr qarori bilan bojxona qiymatini aniqlash tartibi yangilangan; bu amaliyotda narxni asoslashga e’tibor kuchaydi. ([gov.uz](https://gov.uz/oz/advice/784/document/4297?utm_source=openai))  \n   - **Foydalilik bahosi:** 9/10\n\n5. **“Yagona oyna portalida yuk deklaratsiyasini topshirishdan oldin nimalar tayyor bo‘lishi kerak?”**  \n   - **Burchak:** Elektron deklaratsiya topshirishdan oldingi texnik tayyorgarlik: E-IMZO, rekvizitlar, yuk ma’lumotlari, jo‘natma rejalari.  \n   - **Nega dolzarb:** Customs’ning “Yagona oyna” xizmatida bojxona yuk deklaratsiyasini rasmiylashtirish va oldindan ma’lumot berish xizmatlari mavjud; bu elektron jarayon hozir faol ishlatilmoqda. ([sw2.customs.uz](https://sw2.customs.uz/?lang=uz_UZ&utm_source=openai))  \n   - **Foydalilik bahosi:** 8/10\n\n6. **“Bojxona rejimi tanlashni xato qilmaslik: import, reimport yoki vaqtincha olib kirish qaysi holatda kerak?”**  \n   - **Burchak:** Bir xil tovar uchun turli bojxona rejimlaridan qaysi biri mos kelishini oddiy misollar bilan ajratish.  \n   - **Nega dolzarb:** Customs.uz bojxona rejimlarini alohida tartibda tushuntiradi; noto‘g‘ri rejim tanlansa rasmiylashtirish cho‘ziladi. ([customs.uz](https://customs.uz/oz/page/bozhhona-rezhimlari?utm_source=openai))  \n   - **Foydalilik bahosi:** 7/10\n\n7. **“O‘zbekiston tomonida bojxona hujjatlari ro‘yxati qayerdan tekshiriladi?”**  \n   - **Burchak:** Tashqi iqtisodiy faoliyat uchun rasmiy hujjatlar ro‘yxatini qayerdan olish va doimiy tekshirib borish.  \n   - **Nega dolzarb:** Rasmiy manbalarda import-eksport operatsiyalariga doir hujjatlar va tartiblar yangilanib turadi; tadbirkor eski shablonga ishonib qolmasligi kerak. ([digital.gov.uz](https://www.digital.gov.uz/oz/advice/NaN/document/2823?utm_source=openai))  \n   - **Foydalilik bahosi:** 7/10\n\n8. **“Chegaradan o‘tayotgan meva-sabzavot va oziq-ovqat uchun oldindan alohida nazorat borligini qanday hisobga olish kerak?”**  \n   - **Burchak:** Oziq-ovqat toifasidagi yuklarda bojxona bilan birga fitosanitar/veterinar nazoratni logistika rejasiga qo‘shish.  \n",
+      "sources": [
+        {
+          "title": "https://customs.uz/oz/page/bozhhona-rezhimlari",
+          "url": "https://customs.uz/oz/page/bozhhona-rezhimlari"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2823",
+          "url": "https://gov.uz/oz/advice/603/document/2823"
+        },
+        {
+          "title": "https://gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari",
+          "url": "https://gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari"
+        },
+        {
+          "title": "https://www.lex.uz/acts/-3916465",
+          "url": "https://www.lex.uz/acts/-3916465"
+        },
+        {
+          "title": "https://gov.uz/oz/kitobt/news/view/137999",
+          "url": "https://gov.uz/oz/kitobt/news/view/137999"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/784/document/4297",
+          "url": "https://gov.uz/oz/advice/784/document/4297"
+        },
+        {
+          "title": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi",
+          "url": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi"
+        },
+        {
+          "title": "https://sw2.customs.uz/?lang=uz_UZ",
+          "url": "https://sw2.customs.uz/?lang=uz_UZ"
+        },
+        {
+          "title": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari",
+          "url": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari"
+        },
+        {
+          "title": "https://invest.gov.uz/uz/guide/legal-framework",
+          "url": "https://invest.gov.uz/uz/guide/legal-framework"
+        },
+        {
+          "title": "https://lex.uz/ru/acts/-7138545",
+          "url": "https://lex.uz/ru/acts/-7138545"
+        },
+        {
+          "title": "https://www.digital.gov.uz/oz/advice/NaN/document/2823",
+          "url": "https://www.digital.gov.uz/oz/advice/NaN/document/2823"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/a6a6d5cd-fcc1-2f8d-0d78-526873559e8c_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/a6a6d5cd-fcc1-2f8d-0d78-526873559e8c_media_.pdf"
+        },
+        {
+          "title": "https://customs.uz/public/docfiles/1741158306.pdf",
+          "url": "https://customs.uz/public/docfiles/1741158306.pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/kitobt/news/view/137999?utm_source=openai",
+          "url": "https://gov.uz/oz/kitobt/news/view/137999?utm_source=openai"
+        },
+        {
+          "title": "https://www.lex.uz/acts/-3916465?utm_source=openai",
+          "url": "https://www.lex.uz/acts/-3916465?utm_source=openai"
+        },
+        {
+          "title": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi?utm_source=openai",
+          "url": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi?utm_source=openai"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/784/document/4297?utm_source=openai",
+          "url": "https://gov.uz/oz/advice/784/document/4297?utm_source=openai"
+        },
+        {
+          "title": "https://sw2.customs.uz/?lang=uz_UZ&utm_source=openai",
+          "url": "https://sw2.customs.uz/?lang=uz_UZ&utm_source=openai"
+        },
+        {
+          "title": "https://customs.uz/oz/page/bozhhona-rezhimlari?utm_source=openai",
+          "url": "https://customs.uz/oz/page/bozhhona-rezhimlari?utm_source=openai"
+        },
+        {
+          "title": "https://www.digital.gov.uz/oz/advice/NaN/document/2823?utm_source=openai",
+          "url": "https://www.digital.gov.uz/oz/advice/NaN/document/2823?utm_source=openai"
+        },
+        {
+          "title": "https://lex.uz/ru/acts/-7138545?utm_source=openai",
+          "url": "https://lex.uz/ru/acts/-7138545?utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-13T07:00:00+05:00",
+    "created_at": "2026-11-11T21:46:29+00:00",
+    "est_cost_usd": 0.0968,
     "status": "ready"
   }
 ]

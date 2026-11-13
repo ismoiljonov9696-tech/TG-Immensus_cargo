@@ -132,5 +132,85 @@
     "created_at": "2026-11-12T21:46:08+00:00",
     "est_cost_usd": 0.0894,
     "status": "ready"
+  },
+  {
+    "id": "20261113-211309",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Omborgacha bo‘lgan real tannarxni hisoblang",
+    "text": "📦 Tovar narxi arzon, lekin omborgacha tushganda foyda yo‘qolib qolayotganini bilasizmi?\n\nKo‘p tadbirkor faqat zavod narxiga qaraydi. Asl tannarx esa yo‘lda yig‘iladi.\n\nBugun hisobga shu ketma-ketlikni kiriting:\n• Tovar narxi\n• Ichki Xitoy logistika\n• Kargo\n• Qadoqlash\n• Komissiya\n• Yo‘qotish xavfi\n\nShunda siz “arzon” degan partiya aslida qimmatga tushganini oldindan ko‘rasiz. Masalan, zavod narxi past bo‘lsa ham, ichki logistika va kargo qo‘shilgach marja siz o‘ylagandan ancha kichik chiqishi mumkin.\n\n✅ Bugun o‘z mahsulotingiz bo‘yicha to‘liq landed cost hisoblab ko‘ring: har bir xarajatni alohida yozing, keyin yakuniy kirish narxini chiqaring.\n\nSavolingiz bo‘lsa — izohda yozing 👇\n☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIC2Wr3fZYI8lQOuXwLYgsgsA-4IuIMAAITJ2sb84y5S7Bna9qf2agdAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261113-211309/image.png",
+    "topic": {
+      "title": "Omborgacha bo‘lgan real tannarxni hisoblang",
+      "angle": "Tovar narxini emas, buyurtma, ichki logistika, kargo, qadoqlash, komissiya va yo‘qotish xavfini qo‘shib yakuniy kirish narxini hisoblash. Bu marjani to‘g‘ri ko‘rishga yordam beradi.",
+      "why_now": "Ko‘p tadbirkor faqat zavod narxiga qaraydi va yashirin xarajatlar hisobiga foydani yo‘qotadi.",
+      "research": "1. **Sarlavha:** 1688’da “supplier rating”ni emas, **savdo tarixi va tranzaksiya miqdorini** tekshiring  \n   **Burchak:** Yetkazib beruvchini tanlashda profilning chiroyiga emas, real faoliyat belgilariga qarash: necha yildan beri ishlaydi, qaysi turdagi mahsulotlarda faol, savdo hajmi va qaytarish siyosati qanday.  \n   **Nega hozir dolzarb:** Ko‘p yangi importyorlar 1688’da “chiroyli profil”ga ishonib qoladi; firibgarlik va vositachilar ko‘paygan sharoitda bu eng tez foyda beradigan tekshiruv.  \n   **Foydalilik bahosi:** 9/10\n\n2. **Sarlavha:** **Bitta buyurtmada 2 xil namuna oling: “ishlab chiqarish oldi” va “jo‘natish oldi”**  \n   **Burchak:** Namuna olishni bitta bosqichga bog‘lab qo‘ymaslik; avval material/ishlovni, keyin tayyor partiyani solishtirish.  \n   **Nega hozir dolzarb:** Partiya oshgani sari kichik og‘ishlar katta yo‘qotishga aylanadi; ayniqsa tez aylanuvchi consumer goods’da bu juda amaliy.  \n   **Foydalilik bahosi:** 8/10\n\n3. **Sarlavha:** **Kargo tanlashda “eng arzon narx” emas, jo‘natma turi bo‘yicha xavf xaritasini tuzing**  \n   **Burchak:** Aviakargo, avtomobil, temir yo‘l va dengiz yo‘lining qaysi biri sizning tovaringizga mosligini risk, vaqt va zarar ehtimoli bo‘yicha solishtirish.  \n   **Nega hozir dolzarb:** 2026-yilda yuk tashishdagi tartiblar va hujjat intizomi kuchaygan; noto‘g‘ri yo‘l tanlash kechikish va qo‘shimcha xarajat keltiradi.  \n   **Foydalilik bahosi:** 8/10\n\n4. **Sarlavha:** **Futian bozorida xarid qilishdan oldin 1 sahifalik “product spec” yozing**  \n   **Burchak:** Bozorga “ko‘ramiz” deb emas, aniq texnik talab bilan kirish: material, o‘lcham, rang, komplektatsiya, qadoq, minimal partiya.  \n   **Nega hozir dolzarb:** Fizik bozorlarda impulsiv xarid ko‘p bo‘ladi; yozma spec bo‘lmasa, bir xil ko‘ringan tovarlar orasida sifat farqi katta chiqadi.  \n   **Foydalilik bahosi:** 8/10\n\n5. **Sarlavha:** **To‘lovni bo‘lib qiling: avans, ishlab chiqarish bosqichi, jo‘natishdan keyin**  \n   **Burchak:** Pulni bitta to‘lovda yopib yubormaslik, bosqichma-bosqich nazoratni kuchaytirish.  \n   **Nega hozir dolzarb:** Xorijiy savdoda “pul ketdi, tovar yo‘q” riskini kamaytiradigan eng sodda amaliy usul shu; yangi yetkazib beruvchilar bilan ayniqsa muhim.  \n   **Foydalilik bahosi:** 9/10\n\n6. **Sarlavha:** **Qadoqni emas, ichki himoyani tekshiring: bitta tortma/namuna bilan “drop test” qiling**  \n   **Burchak:** Tashqi karton yaxshi ko‘rinsa ham, ichki bo‘shliq va himoya yetishmasligi sabab zarar chiqishini oldindan tekshirish.  \n   **Nega hozir dolzarb:** Kargoda ezilish va qaytarishlar ko‘p uchraydi; oddiy sinov partiya ketishidan oldin muammo ko‘rsatadi.  \n   **Foydalilik bahosi:** 8/10\n\n7. **Sarlavha:** **Tannarxni hisoblashda “tovar narxi” emas, “omborga tushguncha” narxni hisoblang**  \n   **Burchak:** Buyurtma qiymati, ichki Xitoy logistika, kargo, qadoqlash, komissiya va yo‘qotish xavfini bitta formulaga yig‘ish.  \n   **Nega hozir dolzarb:** Ko‘p tadbirkor faqat zavod narxini ko‘radi; asl marja esa aynan yashirin xarajatlarda yo‘qoladi.  \n   **Foydalilik bahosi:** 10/10\n\n8. **Sarlavha:** **Bojxona uchun tavsifni “savdo nomi” bilan emas, funksiyasi bilan yozdiring**  \n   **Burchak:** Invoys va packing list’da mahsulotni marketing nomi emas, nima ekanini aniq tushuntiradigan funksional tavsif bilan berish.  \n   **Nega hozir dolzarb:** Hujjatlar bir-biriga mos bo‘lmasa tekshiruv cho‘ziladi; to‘g‘ri tavsif rasmiylashtirishni soddalashtiradi.  \n   **Foydalilik bahosi:** 9/10",
+      "sources": [
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2823",
+          "url": "https://gov.uz/oz/advice/603/document/2823"
+        },
+        {
+          "title": "https://gov.uz/oz/mintrans/news/view/155000",
+          "url": "https://gov.uz/oz/mintrans/news/view/155000"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12768",
+          "url": "https://gov.uz/oz/miit/sections/view/12768"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2377",
+          "url": "https://gov.uz/oz/advice/603/document/2377"
+        },
+        {
+          "title": "https://invest.gov.uz/uz/guide/legal-framework",
+          "url": "https://invest.gov.uz/uz/guide/legal-framework"
+        },
+        {
+          "title": "https://uza.uz/uz/posts/kod-notogri-tasniflangan-oqibatda_782662",
+          "url": "https://uza.uz/uz/posts/kod-notogri-tasniflangan-oqibatda_782662"
+        },
+        {
+          "title": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari",
+          "url": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12811",
+          "url": "https://gov.uz/oz/miit/sections/view/12811"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/153/2026/05/01/8f87eb9a-f22f-6c4a-a7fb-4185b988aa2e_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/153/2026/05/01/8f87eb9a-f22f-6c4a-a7fb-4185b988aa2e_media_.pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12775",
+          "url": "https://gov.uz/oz/miit/sections/view/12775"
+        },
+        {
+          "title": "https://gov.uz/oz/standart/pages/yevropa-ittifoqi-mamlakatlarida-go-sht-va-sut-mahsulotlari-uchun-majburiy-talablar",
+          "url": "https://gov.uz/oz/standart/pages/yevropa-ittifoqi-mamlakatlarida-go-sht-va-sut-mahsulotlari-uchun-majburiy-talablar"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-15T07:00:00+05:00",
+    "created_at": "2026-11-13T21:13:57+00:00",
+    "est_cost_usd": 0.0883,
+    "status": "ready"
   }
 ]

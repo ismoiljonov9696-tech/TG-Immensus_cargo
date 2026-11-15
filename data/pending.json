@@ -145,5 +145,97 @@
     "created_at": "2026-11-14T19:45:51+00:00",
     "est_cost_usd": 0.0824,
     "status": "ready"
+  },
+  {
+    "id": "20261115-150102",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "To‘lovdan oldin bank rekvizitini yozma tasdiqlang",
+    "text": "✍️ To‘lovdan oldin rekvizitni chatdan emas, alohida yozma hujjatdan tekshiring.\n\nSupplier nomini ko‘rish yetarli emas. Bank rekviziti oxirgi daqiqada almashtirilsa, pul boshqa hisobga ketadi va buni qaytarish qiyin bo‘ladi.\n\n✅ To‘lovdan oldin shuni qiling:\n• Rekvizitni alohida hujjatda so‘rang\n• Hujjatda kompaniya nomi, bank nomi va hisob raqamini bir joyda tekshiring\n• Chatdagi yozuv bilan hujjatdagi ma’lumotni solishtiring\n• Mos kelmasa — to‘lovni to‘xtating\n\nBu odat keyin yuzaga keladigan xato to‘lov va firibgarlik xavfini kamaytiradi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIC4mr5yVWmkLYbTXB5Fs6DrhfM4pCzAAJjHWsbJNzRSwIGFC8eegGwAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261115-150102/image.png",
+    "topic": {
+      "title": "To‘lovdan oldin bank rekvizitini yozma tasdiqlang",
+      "angle": "Supplierning bank rekvizitini chatdagi yozuvga emas, alohida yozma hujjatga tayantirib tekshirish kerak. Bu to‘lov xatosi va hisob almashtirish firibgarligidan saqlaydi.",
+      "why_now": "Firibgarlik va hujjat izchilligi masalasi kichik biznes uchun ayniqsa dolzarb bo‘lib qoldi.",
+      "research": "1. **Sarlavha:** `1688`da supplierni tanlashda 3 ta alohida narx so‘rang: ulgurji, namuna va ichki qadoqlash  \n   - **Burchak:** Bir xil mahsulot uchun 3 xil narxni ajratib olsangiz, keyin “arzon” taklif aslida qimmatga tushishini tez bilasiz.  \n   - **Nega dolzarb:** Endi boshlayotganlar ko‘pincha birgina listing narxiga ishonib qoladi; bu esa marjani noto‘g‘ri hisoblashga olib keladi. Rasmiy manbalarda ham bojxona rasmiylashtiruvi va tovar hujjatlari aniq bo‘lishi kerakligi ta’kidlanadi, shuning uchun xarid narxini boshida aniq ajratish amalda muhim. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n2. **Sarlavha:** Supplierga “sample”ni tasdiqlashdan oldin 1 betlik texnik karta yuboring  \n   - **Burchak:** Rang, o‘lcham, material, og‘irlik, markirovka kabi talablarni bitta sahifaga jamlab yuborish.  \n   - **Nega dolzarb:** Hozir ko‘p tadbirkorlar turli kanallarda yozishib, talabni parcha-parcha yuboradi; natijada noto‘g‘ri namuna keladi. Hujjatlar va tavsifning aniq bo‘lishi bojxona va rasmiy rasmiylashtirishda ham foydali. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n3. **Sarlavha:** `Futian`dan tovar olayotganda birinchi savolni “tayyor stock bormi?” deb bering  \n   - **Burchak:** Bozor ichida ishlab chiqaruvchi emas, sotishga tayyor zaxirasi bor sotuvchini tez ajratish.  \n   - **Nega dolzarb:** Hozir tez aylanuvchi assortiment kerak bo‘lgan kichik do‘konlar uchun stockli variant vaqtni tejaydi. Bojxona va logistika jarayonlari ham tezkor yetkazib berishga moslashgan bo‘lishi kerak; hukumat xabarlari xalqaro jo‘natmalarni nazorat va rasmiylashtirishni raqamlashtirish tomonga ketayotganini ko‘rsatadi. ([gov.uz](https://gov.uz/oz/digital/news/view/170452?utm_source=openai))  \n   - **Foydalilik:** 7/10\n\n4. **Sarlavha:** Kargo tanlashda “og‘irlik” emas, “hajmiy og‘irlik” qoidasi bilan 2 ta narx so‘rang  \n   - **Burchak:** Yukning real vazni va joy egallashi bo‘yicha alohida hisob so‘rash.  \n   - **Nega dolzarb:** Ko‘p importchilar aynan shu joyda xato qiladi: yengil, lekin hajmli tovar qimmatlashib ketadi. Kargo va rasmiylashtirish amaliyotida yukning to‘g‘ri tavsifi va hisob-kitobi muhim. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n5. **Sarlavha:** Yetkazib beruvchiga “qadoqlash fotosurati”ni jo‘natishdan oldin majburiy so‘rang  \n   - **Burchak:** Tovar chiqishidan oldin quti, ichki himoya va markirovka suratini olishni standart qiling.  \n   - **Nega dolzarb:** Brak va noto‘g‘ri qadoqni omborga kelgach aniqlash kech bo‘ladi. Rasmiy tartiblar va hujjatlar to‘g‘ri bo‘lishi kerakligi haqidagi davlat ko‘rsatmalari bunday oldindan tekshiruvni amaliy qiladi. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n6. **Sarlavha:** To‘lovdan oldin supplierdan bank rekvizitini alohida hujjatda tasdiqlatish  \n   - **Burchak:** Rekvizitni chatdagi yozuvdan emas, alohida yozma tasdiqdan tekshirish.  \n   - **Nega dolzarb:** Firibgarlik sxemalarida eng ko‘p uchraydigan narsa — bank ma’lumotini oxirgi daqiqada almashtirish. To‘lov va hujjat izchilligi bojxona amaliyotida ham muhim bo‘lgani uchun yozma tasdiq foydali xavfsizlik qatlamidir. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 10/10\n\n7. **Sarlavha:** Bojxona uchun tovar nomini emas, funksiyasini yozdiring  \n   - **Burchak:** Invoice’da “nima ishlaydi?” degan savolga javob beradigan tavsif yozdirish.  \n   - **Nega dolzarb:** O‘zbekiston bojxona amaliyotida tovar tavsifi va hujjatlar muvofiqligi asosiy rol o‘ynaydi; noto‘g‘ri umumiy nom keyin aniqlashtirishga olib keladi. Shuning uchun mahsulot funksiyasini yozdirish keyingi savollarni kamaytiradi. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n8. **Sarlavha:** Importdan oldin “qaytish/return” holati uchun kim javob berish",
+      "sources": [
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2823",
+          "url": "https://gov.uz/oz/advice/603/document/2823"
+        },
+        {
+          "title": "https://gov.uz/oz/kitobt/news/view/137999",
+          "url": "https://gov.uz/oz/kitobt/news/view/137999"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2377",
+          "url": "https://gov.uz/oz/advice/603/document/2377"
+        },
+        {
+          "title": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari",
+          "url": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf"
+        },
+        {
+          "title": "https://www.president.uz/oz/lists/view/9582",
+          "url": "https://www.president.uz/oz/lists/view/9582"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/a6a6d5cd-fcc1-2f8d-0d78-526873559e8c_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/a6a6d5cd-fcc1-2f8d-0d78-526873559e8c_media_.pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/standart/pages/yevropa-ittifoqi-mamlakatlarida-go-sht-va-sut-mahsulotlari-uchun-majburiy-talablar",
+          "url": "https://gov.uz/oz/standart/pages/yevropa-ittifoqi-mamlakatlarida-go-sht-va-sut-mahsulotlari-uchun-majburiy-talablar"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12811",
+          "url": "https://gov.uz/oz/miit/sections/view/12811"
+        },
+        {
+          "title": "https://gov.uz/oz/digital/news/view/170452",
+          "url": "https://gov.uz/oz/digital/news/view/170452"
+        },
+        {
+          "title": "https://gov.uz/oz/mintrans/news/view/198227",
+          "url": "https://gov.uz/oz/mintrans/news/view/198227"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12775",
+          "url": "https://gov.uz/oz/miit/sections/view/12775"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12769",
+          "url": "https://gov.uz/oz/miit/sections/view/12769"
+        },
+        {
+          "title": "https://gov.uz/oz/digital/sections/view/1645",
+          "url": "https://gov.uz/oz/digital/sections/view/1645"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai",
+          "url": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai"
+        },
+        {
+          "title": "https://gov.uz/oz/digital/news/view/170452?utm_source=openai",
+          "url": "https://gov.uz/oz/digital/news/view/170452?utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-15T20:16:40.691400+05:00",
+    "created_at": "2026-11-15T15:01:40+00:00",
+    "est_cost_usd": 0.082,
+    "status": "ready"
   }
 ]

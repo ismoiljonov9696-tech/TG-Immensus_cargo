@@ -236,6 +236,7 @@
     "publish_at": "2026-11-15T20:16:40.691400+05:00",
     "created_at": "2026-11-15T15:01:40+00:00",
     "est_cost_usd": 0.082,
-    "status": "ready"
+    "status": "publishing",
+    "updated_at": "2026-11-15T19:54:19+00:00"
   }
 ]

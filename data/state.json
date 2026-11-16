@@ -1,12 +1,12 @@
 {
-  "last_publish_at": "2026-11-15T19:54:21+00:00",
-  "last_publish_id": "20261115-150102",
-  "last_publish_title": "To‘lovdan oldin bank rekvizitini yozma tasdiqlang",
+  "last_publish_at": "2026-11-16T02:00:22+00:00",
+  "last_publish_id": "20261114-194515",
+  "last_publish_title": "Ishlab chiqarish quvvatini tekshirib supplier tanlang",
   "last_error": null,
   "alerted_at": null,
   "paused": false,
-  "balance_usd": 3.9963,
-  "last_publish_cost": 0.082,
-  "total_cost_usd": 5.6937,
-  "total_posts": 64
+  "balance_usd": 3.9139,
+  "last_publish_cost": 0.0824,
+  "total_cost_usd": 5.7761,
+  "total_posts": 65
 }

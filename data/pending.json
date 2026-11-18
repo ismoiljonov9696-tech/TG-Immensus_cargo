@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261115-150102",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "To‘lovdan oldin bank rekvizitini yozma tasdiqlang",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIC4mr5yVWmkLYbTXB5Fs6DrhfM4pCzAAJjHWsbJNzRSwIGFC8eegGwAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261115-150102/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-15T20:16:40.691400+05:00",
-    "created_at": "2026-11-15T15:01:40+00:00",
-    "est_cost_usd": 0.082,
-    "status": "published",
-    "updated_at": "2026-11-15T19:54:20+00:00",
-    "published_at": "2026-11-15T19:54:20+00:00"
-  },
-  {
     "id": "20261115-201040",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Omborgacha real tannarxni hisoblang",
@@ -188,94 +171,9 @@
     "id": "20261118-150029",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Supplierdan texnik parametrni yozma oling",
-    "text": "📄 Supplierdan yozma texnik tavsif oling — keyin bahs yarmiga kamayadi.\n\nMahsulot nomi bir xil bo‘lib, ichki material yoki sifat boshqacha chiqadigan holatlar ko‘p uchraydi. Faqat nomga tayanmang.\n\nBuyurtmadan oldin yozma tasdiq so‘rang:\n• material\n• qalinlik\n• tolerans\n• finish\n\nHujjatda mahsulot nomi ham aniq bo‘lsin:\n• model\n• variant\n• o‘lcham\n• foydalanish maqsadi\n\nJo‘natishdan oldin foto-isbot ham yig‘ing:\n• tashqi quti\n• ichki joylashuv\n• markirovka\n• qty\n\nMisol: nomi bir xil, lekin finishi boshqacha kelgan tovarni keyin isbotlash qiyin bo‘ladi. Yozma tavsif bo‘lsa, kelgan mahsulotni kelishilgan variant bilan tez solishtirasiz.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "photo",
     "file_id": "AgACAgIAAxkDAAIC9Gr9vbZt8HUWH0TIKLC_V7xjqVkkAAJpHWsbkIroS89u69p9h4suAQADAgADeQADPQQ",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261118-150029/image.png",
-    "topic": {
-      "title": "Supplierdan texnik parametrni yozma oling",
-      "angle": "Yetkazib beruvchidan material, qalinlik, tolerans va finish kabi ishlab chiqarish xususiyatlarini oldindan yozma tasdiqlatish. Faqat nomga tayanmaslik keyingi bahslarni kamaytiradi.",
-      "why_now": "Mahsulot nomi bir xil, sifati esa boshqacha chiqadigan holatlar ko‘p uchraydi.",
-      "research": "1. **Supplierdan “ingichka detal” so‘rang: material, qalinlik, tolerans va finishni yozma tasdiqlang**  \n   - **Burchak:** Yetkazib beruvchiga “faqat nomi” emas, ishlab chiqarish xususiyatlarini yozdirish.  \n   - **Nega dolzarb:** O‘zbek importchilarida ko‘p muammo mahsulot nomi bir xil, lekin ichki material yoki sifat boshqacha chiqishidan keladi; yozma texnik tavsif keyin bahsni kamaytiradi. Hozir bojxona va deklaratsiya amaliyotida hujjatlarning to‘g‘riligi muhim, shuning uchun tovar tavsifi aniq bo‘lishi kerak. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n2. **Yuborishdan oldin bitta “photo proof pack” tuzing: tashqi quti, ichki joylashuv, markirovka va qty fotosi**  \n   - **Burchak:** Zavoddan jo‘natishdan oldin isbot paketini yig‘ish.  \n   - **Nega dolzarb:** Masofadan sotib olayotganda kelgan tovar bilan kelishilgan variantni solishtirish uchun foto-isbot kerak bo‘ladi; bu keyin ombor, kargo yoki qabulda kelishmovchilikni kamaytiradi. Xitoy bojxona va e-commerce jarayonlarida hujjatlar va tasdiqlovchi ma’lumotlar tobora tartibli so‘ralmoqda. ([online.customs.gov.cn](https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html?utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n3. **Bitta partiya uchun 2 ta namuna oling: “mass-sale sample” va “QC sample”**  \n   - **Burchak:** Namuna olishni faqat “ko‘rib olish” emas, qabul nazorati vositasi qilish.  \n   - **Nega dolzarb:** Katta partiyada sifatning barqarorligini tekshirish uchun bir namuna yetmaydi; biri vizual baholashga, ikkinchisi qabuldan oldingi solishtirishga xizmat qiladi. Bu ayniqsa yangi supplier bilan ishlaganda foydali. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n4. **Invoysda “yig‘ma nom” emas, mahsulotning aniq turini yozing: model, variant, o‘lcham, foydalanish maqsadi**  \n   - **Burchak:** Hujjatdagi tavsifni sodda, lekin aniqlashtirilgan qilish.  \n   - **Nega dolzarb:** Bojxona deklaratsiyasida ma’lumotlar aniq va bir xil bo‘lishi kerak; noaniq nom keyin kodlash, tekshiruv va kechikishga olib kelishi mumkin. O‘zbekiston bojxona amaliyotida deklaratsiya va hujjatlar to‘g‘riligi asosiy talablardan. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n5. **Xitoylik sotuvchidan bank rekvizitini chatda emas, alohida yozma xabarda tasdiqlang**  \n   - **Burchak:** To‘lov firibgarligidan himoyalanish.  \n   - **Nega dolzarb:** To‘lovdan oldin rekvizitni ikki kanalda tekshirish skam riskini kamaytiradi; ayniqsa birinchi buyurtma yoki yangi kontaktlarda foydali. Rasmiy to‘lov va hujjat intizomi import jarayonida muhim. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 10/10\n\n6. **Kargo tanlashda “faqat narx” emas, etkazib berish sikli va ombor qabul qoidasi bilan solishtiring**  \n   - **Burchak:** Eng arzon emas, ishga eng mos kargo turini tanlash.  \n   - **Nega dolzarb:** Importda kechikish, qayta qadoqlash yoki qo‘shimcha hujjat so‘ralishi umumiy tannarxni oshiradi; shuning uchun kargo shartlari oldindan tushunib olinishi kerak. O‘zbekistonda bojxona rasmiylashtiruvi va hujjatlar tartibi qat’iy, bu logistika tanloviga bevosita ta’sir qiladi. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n7. **Bojxonaga ketadigan hujjatlar uchun “bitta master-fayl” saqlang: invoys, packing list, shartnoma va yozishmalar**  \n   - **Burchak:** Hamma hujjatni bitta joyga yig‘ib, tekshiruvga tayyor turish.  \n   - **Nega dolzarb:** Deklaratsiya va tekshiruvda hujjatlarni tez topish muhim; tarqoq fayllar xatoga olib keladi. O‘zbekiston bojxona amaliyotida hujjatlar va ma’lumotlar to‘liq taqdim etilishi rasmiy jarayonning ajralmas qismi. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n8. **Partiya marjasini hisoblashda “tovar narxi”ga emas, omborgacha bo‘lga",
-      "sources": [
-        {
-          "title": "https://invest.gov.uz/uz/guide/legal-framework",
-          "url": "https://invest.gov.uz/uz/guide/legal-framework"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2377",
-          "url": "https://gov.uz/oz/advice/603/document/2377"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629002001/%E2%80%9C%E8%B4%A7%E7%89%A9%E7%94%B3%E6%8A%A5%E2%80%9D%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%BA%8B%E9%A1%B9%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97.pdf",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629002001/%E2%80%9C%E8%B4%A7%E7%89%A9%E7%94%B3%E6%8A%A5%E2%80%9D%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%BA%8B%E9%A1%B9%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97.pdf"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629013000/000629013000.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629013000/000629013000.html"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
-        },
-        {
-          "title": "https://www.customs.gov.cn/eportal/attachDir/customs/2026/01/2026010510090697923.pdf",
-          "url": "https://www.customs.gov.cn/eportal/attachDir/customs/2026/01/2026010510090697923.pdf"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629014002/000629014002.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629014002/000629014002.html"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629014003/000629014003.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629014003/000629014003.html"
-        },
-        {
-          "title": "https://online.customs.gov.cn/ocportal/static/pages/home.html",
-          "url": "https://online.customs.gov.cn/ocportal/static/pages/home.html"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000729002001/000729002001.html",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000729002001/000729002001.html"
-        },
-        {
-          "title": "https://online.customs.gov.cn/ocportal/publicService/",
-          "url": "https://online.customs.gov.cn/ocportal/publicService/"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12768",
-          "url": "https://gov.uz/oz/miit/sections/view/12768"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2823",
-          "url": "https://gov.uz/oz/advice/603/document/2823"
-        },
-        {
-          "title": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari",
-          "url": "https://www.digital.gov.uz/oz/iiv/pages/o-zbekiston-respublikasi-vazirlar-mahkamasining-qarorlari"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629014002/5.%E8%BF%9B%E5%87%BA%E5%A2%83%E8%A1%8C%E6%9D%8E%E7%89%A9%E5%93%81%E7%9B%91%E7%AE%A1%EF%BC%88%E7%89%B9%E6%AE%8A%E9%A1%B9%E7%9B%AE%E9%99%A4%E5%A4%96%EF%BC%89%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%BA%8B%E9%A1%B9%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97%EF%BC%88%E4%BF%AE%E6%94%B9%E7%A8%BF%EF%BC%89.pdf",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629014002/5.%E8%BF%9B%E5%87%BA%E5%A2%83%E8%A1%8C%E6%9D%8E%E7%89%A9%E5%93%81%E7%9B%91%E7%AE%A1%EF%BC%88%E7%89%B9%E6%AE%8A%E9%A1%B9%E7%9B%AE%E9%99%A4%E5%A4%96%EF%BC%89%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%BA%8B%E9%A1%B9%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97%EF%BC%88%E4%BF%AE%E6%94%B9%E7%A8%BF%EF%BC%89.pdf"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai",
-          "url": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai"
-        },
-        {
-          "title": "https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html?utm_source=openai",
-          "url": "https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html?utm_source=openai"
-        }
-      ]
-    },
     "qc_score": 8,
     "soft_pass": false,
     "rewrites": 0,

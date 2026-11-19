@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261116-150036",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Ruxsatnomani oldindan elektron tekshirish",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIC6Gr7GsnIo4QT2Jno4SwBIl5_8e7dAAKGHGsbJNzhSyYBcYydkOBEAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261116-150036/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-16T20:16:28.372132+05:00",
-    "created_at": "2026-11-16T15:01:28+00:00",
-    "est_cost_usd": 0.0906,
-    "status": "published",
-    "updated_at": "2026-11-16T21:00:45+00:00",
-    "published_at": "2026-11-16T21:00:45+00:00"
-  },
-  {
     "id": "20261116-233926",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Supplierni 3 signal bilan tekshirish",
@@ -192,94 +175,9 @@
     "id": "20261119-150034",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Dastlabki deklaratsiya bilan ruxsatni oldin olish",
-    "text": "📄 Deklaratsiyani jo‘natishdan oldin tayyorlasangiz, ruxsat va sertifikatni keyin kutib qolmaysiz.\n\nKo‘p importchi tovar yo‘lga chiqqandan keyin hujjatni yig‘adi. Shunda chekkan vaqt bojxonada yo‘qoladi.\n\nTo‘g‘ri yo‘l:\n• Tovar nomi, kodi va tavsifini oldindan tekshiring\n• Invoys, shartnoma va sertifikatga bir xil ma’lumot kiriting\n• Dastlabki bojxona yuk deklaratsiyasini tayyorlab qo‘ying\n• Ayrim ruxsat va sertifikatlar oldindan berilishi mumkinligini yuk jo‘natishdan oldin aniqlang\n\nAmaliy natija oddiy: hujjatdagi mayda nomuvofiqliklar jo‘natishdan oldin chiqadi, tovar kelganda esa vaqt ketmaydi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "photo",
     "file_id": "AgACAgIAAxkDAAIC-mr_D0LOEipUgsPWme4MH6LZJJAEAALMG2sbcXn5S1lNhFH6kjg-AQADAgADeQADPQQ",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261119-150034/image.png",
-    "topic": {
-      "title": "Dastlabki deklaratsiya bilan ruxsatni oldin olish",
-      "angle": "Jo‘natishdan oldin deklaratsiyani tayyorlab, ayrim sertifikat va ruxsatnomalarni oldindan olish jarayonini amaliy tushuntirish. Bu importchiga tezroq chiqarish va kechikishlarni kamaytirish bo‘yicha aniq qadamlar beradi.",
-      "why_now": "2026-yildan xavfi past tovarlar uchun sertifikat va ruxsatlar dastlabki bojxona yuk deklaratsiyasi asosida oldindan berilishi belgilangan.",
-      "research": "1. **Sarlavha:** *Dastlabki bojxona yuk deklaratsiyasi bilan ruxsat hujjatlarini oldindan oldirish*  \n   **Burchak:** Jo‘natishdan oldin deklaratsiyani to‘g‘ri tayyorlab, ayrim ruxsat va sertifikatlarni oldindan olish jarayonini tushuntirish.  \n   **Nega hozir dolzarb:** 2026-yil 1-oktabrdan boshlab xavfi past tovarlar uchun vakolatli idoralar dastlabki bojxona yuk deklaratsiyasi asosida sertifikat va ruxsat hujjatlarini oldindan berishi nazarda tutilgan; bu importchilarga real operatsion ustunlik beradi. ([lex.uz](https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai))  \n   **Foydalilik bahosi:** 10/10\n\n2. **Sarlavha:** *2026-yilda import hujjatlarini elektron yuborish: AISDET va YEDS oqimi*  \n   **Burchak:** Elektron bojxona yuk deklaratsiyasini qaysi bosqichlarda tayyorlash, imzolash va yuborishni amaliy ketma-ketlikda berish.  \n   **Nega hozir dolzarb:** my.gov.uz va bojxona bo‘yicha rasmiy manbalar elektron deklaratsiya tayyorlash, hujjatlarni ilova qilish, YEDS bilan imzolash va AISDET orqali yuborish amaliyoti mavjudligini ko‘rsatadi; bu jarayonni to‘g‘ri bilish xatolarni kamaytiradi. ([my.gov.uz](https://my.gov.uz/uz/service/125?utm_source=openai))  \n   **Foydalilik bahosi:** 9/10\n\n3. **Sarlavha:** *Jo‘natishdan oldin bojxona hujjatlaridagi mayda tafovutlarni tekshirish*  \n   **Burchak:** Invoys, sertifikat va boshqa hujjatlardagi kichik nomuvofiqliklar qaysi holatda xavf tug‘dirishi, qaysi holatda esa muammo bo‘lmasligini tushuntirish.  \n   **Nega hozir dolzarb:** 2026-yilgi prezident farmonida kelib chiqish sertifikati va boshqa hujjatlar o‘rtasidagi tovar xususiyatiga ta’sir qilmaydigan kichik tafovutlar sertifikatni rad etishga asos bo‘lmasligi belgilangan; bu importchilar uchun muhim amaliy signal. ([lex.uz](https://lex.uz/en/doc-passport/-8444993?utm_source=openai))  \n   **Foydalilik bahosi:** 8/10\n\n4. **Sarlavha:** *Bojxona rasmiylashtiruvi nega kechikadi: hujjat to‘liq bo‘lishining roli*  \n   **Burchak:** Tovar kelgandan keyin rasmiylashtirish nega cho‘zilishi mumkinligi va jo‘natishdan oldin qaysi hujjatlar tayyor bo‘lishi kerakligini yoritish.  \n   **Nega hozir dolzarb:** Rasmiy manbada bojxona rasmiylashtiruvi hujjatlar to‘liq taqdim etilgandan keyin 3 ish kuni ichida amalga oshirilishi qayd etilgan; demak, kechikishning asosiy sababi ko‘pincha oldindan tayyorlikdir. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   **Foydalilik bahosi:** 9/10\n\n5. **Sarlavha:** *Importda oldindan to‘lovni xavfsiz qilish: kelishuvni yozma tasdiqlash odati*  \n   **Burchak:** To‘lovni yuborishdan oldin kontragent rekvizitlari, to‘lov maqsadi va invoice mosligini yozma ravishda mustahkamlash.  \n   **Nega hozir dolzarb:** 2026-yilgi farmonda tashqi savdo shartnomasisiz invoys asosida importda oldindan to‘lov bo‘yicha cheklov masalasi tilga olingan; bu to‘lov intizomi va yozma tasdiqlarning ahamiyatini oshiradi. ([lex.uz](https://lex.uz/en/doc-passport/-8444993?utm_source=openai))  \n   **Foydalilik bahosi:** 8/10\n\n6. **Sarlavha:** *Tovar chiqish huquqi bor-yo‘qligini jo‘natishdan oldin tekshirish*  \n   **Burchak:** Ayrim tovarlar uchun ruxsat etish xususiyatiga ega hujjatlar kerak bo‘ladimi, shuni oldindan aniqlash.  \n   **Nega hozir dolzarb:** O‘zbekiston bojxona kodeksi va 2026-yilgi yangiliklarda ayrim tovarlar uchun hujjat mavjudligini bojxona tizimi o‘zi tekshirishi, past xavfli tovarlarga hujjatlar oldindan berilishi mumkinligi ko‘rsatilgan; bu import rejasini o‘zgartiradi. ([lex.uz](https://lex.uz/docs/-2876354?ONDATE=01.03.2026+01&utm_source=openai))  \n   **Foydalilik bahosi:** 9/10\n\n7. **Sarlavha:** *Bojxona deklaratsiyasini mobil yoki onlayn tayyorlashni odat qilish*  \n   **Burchak:** Chegara yoki ombor kutishidan oldin elektron deklaratsiyani oldindan tayyorlab qo‘yish bo‘yicha amaliy qadamlar.  \n   **Nega hozir dolzarb:** my.gov.uz’da deklaratsiyani oldindan to‘ldirish xizmati yo‘lga qo‘yilgani va telefoningizda saqlab chegarada taqdim etish mumkinligi rasmiy ravishda aytilg",
-      "sources": [
-        {
-          "title": "https://lex.uz/en/doc-passport/-8444993",
-          "url": "https://lex.uz/en/doc-passport/-8444993"
-        },
-        {
-          "title": "https://lex.uz/docs/-2876354?ONDATE=01.03.2026+01",
-          "url": "https://lex.uz/docs/-2876354?ONDATE=01.03.2026+01"
-        },
-        {
-          "title": "https://my.gov.uz/uz/service/125",
-          "url": "https://my.gov.uz/uz/service/125"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2377",
-          "url": "https://gov.uz/oz/advice/603/document/2377"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf"
-        },
-        {
-          "title": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00",
-          "url": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00"
-        },
-        {
-          "title": "https://lex.uz/uz/acts/8232678?ONDATE=26.05.2026+00",
-          "url": "https://lex.uz/uz/acts/8232678?ONDATE=26.05.2026+00"
-        },
-        {
-          "title": "https://gov.uz/oz/uzbektourism/news/view/160438",
-          "url": "https://gov.uz/oz/uzbektourism/news/view/160438"
-        },
-        {
-          "title": "https://www.lex.uz/mact/-3765550?ONDATE=01.09.2026+00",
-          "url": "https://www.lex.uz/mact/-3765550?ONDATE=01.09.2026+00"
-        },
-        {
-          "title": "https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107",
-          "url": "https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107"
-        },
-        {
-          "title": "https://lex.uz/pdffile/8232678",
-          "url": "https://lex.uz/pdffile/8232678"
-        },
-        {
-          "title": "https://lex.uz/ru/docs/-8444993?otherlang=1",
-          "url": "https://lex.uz/ru/docs/-8444993?otherlang=1"
-        },
-        {
-          "title": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai",
-          "url": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai"
-        },
-        {
-          "title": "https://my.gov.uz/uz/service/125?utm_source=openai",
-          "url": "https://my.gov.uz/uz/service/125?utm_source=openai"
-        },
-        {
-          "title": "https://lex.uz/en/doc-passport/-8444993?utm_source=openai",
-          "url": "https://lex.uz/en/doc-passport/-8444993?utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai",
-          "url": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai"
-        },
-        {
-          "title": "https://lex.uz/docs/-2876354?ONDATE=01.03.2026+01&utm_source=openai",
-          "url": "https://lex.uz/docs/-2876354?ONDATE=01.03.2026+01&utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/uzbektourism/news/view/160438?utm_source=openai",
-          "url": "https://gov.uz/oz/uzbektourism/news/view/160438?utm_source=openai"
-        }
-      ]
-    },
     "qc_score": 8,
     "soft_pass": false,
     "rewrites": 0,

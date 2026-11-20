@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261117-150034",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "To‘lovdan oldin rekvizitni yozma tasdiqlang",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIC7mr8bEZvmjignE4CUg9kfeIaBIoAA5YfaxuQiuBL8w-ATkS2v4MBAAMCAAN5AAM9BA",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261117-150034/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-17T20:16:25.387412+05:00",
-    "created_at": "2026-11-17T15:01:25+00:00",
-    "est_cost_usd": 0.0815,
-    "status": "published",
-    "updated_at": "2026-11-17T21:12:35+00:00",
-    "published_at": "2026-11-17T21:12:35+00:00"
-  },
-  {
     "id": "20261117-224720",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Qadoq turi bo‘yicha kargo narxini oldindan solishtiring",
@@ -184,94 +167,9 @@
     "id": "20261120-150029",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Ruxsat va ro‘yxat talabini oldindan tekshiring",
-    "text": "📄 Tovar nomi, ruxsat va ro‘yxatni jo‘natishdan oldin tekshirmasangiz, yuk yo‘lda to‘xtab qolishi mumkin.\n\nKo‘p muammo aynan shu bosqichda chiqadi: invoysdagi nom boshqa, qadoqdagi nom boshqa, hujjatda esa yana boshqa yozilgan bo‘ladi. Yana bir holat: ayrim tovarlarda ruxsatnoma, guvohnoma yoki davlat ro‘yxati talabi oldindan tekshirilmaydi.\n\nYuborishdan oldin shu 3 qadamni qiling:\n• Mahsulot nomi, model va materialni bitta formatda yozing\n• Shu nomni invoys, packing list va shartnomada bir xil qoldiring\n• Tovar turiga qarab ruxsat, guvohnoma yoki ro‘yxat talabini oldindan so‘rang\n\nAyniqsa kosmetika, oziq-ovqatga yaqin, dori va texnik tovarlarda bu tekshiruvni xarid qilishdan oldin qiling. Shunda hujjatni keyin tuzatish uchun vaqt yo‘qotmaysiz.\n\nMasalan, bir mahsulotni supplier “accessory”, hujjatda “part”, qadoqda esa boshqa nom bilan yozsa, tekshiruvda moslik muammosi chiqadi. Oldindan bir xil format qilsangiz, hujjat zanjiri tartibli bo‘ladi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "photo",
     "file_id": "AgACAgIAAxkDAAIDAAFrAAFgvr8YMnpa_zgcW0X-xjIYciYAAm8daxsi6QFIbANg7ODe_-UBAAMCAAN5AAM9BA",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261120-150029/image.png",
-    "topic": {
-      "title": "Ruxsat va ro‘yxat talabini oldindan tekshiring",
-      "angle": "Mahsulot turiga qarab importdan oldin ruxsat, guvohnoma yoki davlat ro‘yxati talabini tekshirish. Ayniqsa tartibi tez o‘zgaradigan tovarlarda xaridga o‘tishdan oldin compliance tekshiruvi qilish.",
-      "why_now": "Talablar o‘zgarib turibdi va ayrim tovarlar bo‘yicha yangi tartiblar kuchga kirishi arafasida oldindan tekshirish zarur.",
-      "research": "1. **“Invoysdan oldin tovar nomini standartlashtiring: bir mahsulotni 3 xil nomda yozmang”**  \n   - **Burchak:** Yetkazib beruvchiga mahsulot nomi, model va materialni bitta formatda yozdirish; shu formatni invoys, packing list va shartnomada bir xil ishlatish.  \n   - **Nega hozir dolzarb:** Bojxona rasmiylashtiruvida hujjatlarning mosligi muhim; rasmiy manbalarda bojxona rasmiylashtiruvi va hujjatlar tartibi doim yangilanib turadi. ([gov.uz](https://gov.uz/oz/miit/sections/view/12768?utm_source=openai))  \n   - **Foydalilik bahosi:** 9/10\n\n2. **“Bojxona to‘lovini partiya kelganda emas, reja bilan to‘lang: pul oqimini oldindan hisoblang”**  \n   - **Burchak:** Davriy deklaratsiya ishlatilsa, to‘lovni partiya bo‘yicha qanday rejalashni ko‘rib chiqish; kassa oqimini logistika jadvaliga bog‘lash.  \n   - **Nega hozir dolzarb:** 2026-yil 1-maydan davriy deklaratsiya orqali rasmiylashtirishda bojxona to‘lovlarini partiya kirib kelganda alohida to‘lash imkoniyati joriy etilgani qayd etilgan. ([lex.uz](https://www.lex.uz/ru/docs/-7934915?type=pdf&utm_source=openai))  \n   - **Foydalilik bahosi:** 8/10\n\n3. **“Bojxona rejimini avval tanlang, keyin kargo turini tanlang”**  \n   - **Burchak:** Tovarni qaysi rejimda olib kirishni oldindan aniqlash; shunga qarab ekspeditor, kargo turi va hujjat paketini moslash.  \n   - **Nega hozir dolzarb:** Rasmiy manbalarda bojxona rasmiylashtiruvi tovarning maqsadiga qarab bojxona rejimlariga muvofiq amalga oshirilishi ta’kidlangan. ([gov.uz](https://gov.uz/oz/advice/603/document/2375?utm_source=openai))  \n   - **Foydalilik bahosi:** 8/10\n\n4. **“Yuk jo‘natishdan oldin qadoqdagi markirovkani tekshirtiring”**  \n   - **Burchak:** Zavodga davlat tili talabi, mahsulot nomi, model, partiya va ishlab chiqaruvchi ma’lumotini qadoqqa bosib qo‘yishni oldindan buyurtma qilish.  \n   - **Nega hozir dolzarb:** O‘zbekiston bozoriga kiruvchi ayrim iste’mol tovarlarida ishlab chiqaruvchi tomonidan davlat tilidagi markirovka talabiga oid qoidalar mavjudligi rasmiy saytda eslatilgan. ([sw2.customs.uz](https://sw2.customs.uz/?lang=uz_UZ&utm_source=openai))  \n   - **Foydalilik bahosi:** 9/10\n\n5. **“Ruxsatnoma kerakmi — tovar kelguncha emas, sotib olishdan oldin tekshiring”**  \n   - **Burchak:** Mahsulot turiga qarab oldindan ruxsat, guvohnoma yoki ro‘yxatdan o‘tish talabini tekshirish; ayniqsa kosmetika, oziq-ovqatga yaqin, dori va texnik tovarlarda.  \n   - **Nega hozir dolzarb:** 2026-yil sentabridan ayrim tovarlar bo‘yicha ruxsatnoma va davlat ro‘yxati talablari bekor qilinishi belgilangan, demak talablar o‘zgarib turadi va oldindan tekshirish zarur. ([test.lex.uz](https://test.lex.uz/uz/doc-passport/-8444993?utm_source=openai))  \n   - **Foydalilik bahosi:** 10/10\n\n6. **“Bitta supplierdan emas, 2 ta kanaldan narx oling: zavod va bozor narxini solishtiring”**  \n   - **Burchak:** 1688 yoki boshqa platformadagi narxni to‘g‘ridan-to‘g‘ri zavod narxi bilan solishtirish; MOQ, lead time va qayta buyurtma shartini alohida ko‘rish.  \n   - **Nega hozir dolzarb:** Xitoydan importda xarid qarori faqat narxga emas, hujjat, bojxona va logistik risklarga ham bog‘liq; rasmiy bojxona tizimida oldindan hisob-kitob va tayyorgarlik vositalari mavjud. ([new.customs.uz](https://new.customs.uz/?utm_source=openai))  \n   - **Foydalilik bahosi:** 8/10\n\n7. **“Pochta/kuryer jo‘natmalarida ‘kichik yuk’ deb o‘ylamang — tartibi alohida”**  \n   - **Burchak:** Kuryer yoki pochta orqali keladigan tovarlar uchun alohida nazorat va tartib borligini hisobga olib, hujjat va deklaratsiyani shu kanalga mos tayyorlash.  \n   - **Nega hozir dolzarb:** Rasmiy bojxona sahifalarida xalqaro pochta va kuryer jo‘natmalarini bojxona nazorati va rasmiylashtiruvidan o‘tkazish tartibi alohida hujjatlar bilan tartibga solinishi ko‘rsatilgan. ([customs.uz](https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi?utm_source=openai))  \n   - **Foydalilik bahosi:** 7/10\n\n8. **“Sotuvchidan texnik tavsifni yozma oling — ke",
-      "sources": [
-        {
-          "title": "https://test.lex.uz/uz/doc-passport/-8444993",
-          "url": "https://test.lex.uz/uz/doc-passport/-8444993"
-        },
-        {
-          "title": "https://www.lex.uz/Pages/GetPdf.aspx?file=LexUz_8512383.pdf",
-          "url": "https://www.lex.uz/Pages/GetPdf.aspx?file=LexUz_8512383.pdf"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12768",
-          "url": "https://gov.uz/oz/miit/sections/view/12768"
-        },
-        {
-          "title": "https://sw2.customs.uz/?lang=uz_UZ",
-          "url": "https://sw2.customs.uz/?lang=uz_UZ"
-        },
-        {
-          "title": "https://new.customs.uz/",
-          "url": "https://new.customs.uz/"
-        },
-        {
-          "title": "https://www.lex.uz/ru/docs/-7934915?type=pdf",
-          "url": "https://www.lex.uz/ru/docs/-7934915?type=pdf"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2375",
-          "url": "https://gov.uz/oz/advice/603/document/2375"
-        },
-        {
-          "title": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi",
-          "url": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2823",
-          "url": "https://gov.uz/oz/advice/603/document/2823"
-        },
-        {
-          "title": "https://customs.uz/public/docfiles/1741158306.pdf",
-          "url": "https://customs.uz/public/docfiles/1741158306.pdf"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/sections/view/12768?utm_source=openai",
-          "url": "https://gov.uz/oz/miit/sections/view/12768?utm_source=openai"
-        },
-        {
-          "title": "https://www.lex.uz/ru/docs/-7934915?type=pdf&utm_source=openai",
-          "url": "https://www.lex.uz/ru/docs/-7934915?type=pdf&utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/advice/603/document/2375?utm_source=openai",
-          "url": "https://gov.uz/oz/advice/603/document/2375?utm_source=openai"
-        },
-        {
-          "title": "https://sw2.customs.uz/?lang=uz_UZ&utm_source=openai",
-          "url": "https://sw2.customs.uz/?lang=uz_UZ&utm_source=openai"
-        },
-        {
-          "title": "https://test.lex.uz/uz/doc-passport/-8444993?utm_source=openai",
-          "url": "https://test.lex.uz/uz/doc-passport/-8444993?utm_source=openai"
-        },
-        {
-          "title": "https://new.customs.uz/?utm_source=openai",
-          "url": "https://new.customs.uz/?utm_source=openai"
-        },
-        {
-          "title": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi?utm_source=openai",
-          "url": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi?utm_source=openai"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai"
-        }
-      ]
-    },
     "qc_score": 8,
     "soft_pass": false,
     "rewrites": 0,

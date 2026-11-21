@@ -1,22 +1,5 @@
 [
   {
-    "id": "20261117-224720",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Qadoq turi bo‘yicha kargo narxini oldindan solishtiring",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIC8Wr82aI4pLacvIlbI6C_f9btg-dvAALzF2sbkIroSziDFu3UPwtHAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261117-224720/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-19T07:00:00+05:00",
-    "created_at": "2026-11-17T22:48:01+00:00",
-    "est_cost_usd": 0.0828,
-    "status": "published",
-    "updated_at": "2026-11-19T02:00:51+00:00",
-    "published_at": "2026-11-19T02:00:51+00:00"
-  },
-  {
     "id": "20261118-150029",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Supplierdan texnik parametrni yozma oling",

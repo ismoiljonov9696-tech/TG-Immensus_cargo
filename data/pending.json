@@ -199,5 +199,93 @@
     "status": "published",
     "updated_at": "2026-11-22T18:55:44+00:00",
     "published_at": "2026-11-22T18:55:44+00:00"
+  },
+  {
+    "id": "20261122-205625",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Bank rekvizitini yozma tasdiqlang",
+    "text": "💳 Pul yuborishdan oldin supplier rekvizitini yozma tasdiqlang.\n\nChatdagi nom yetmaydi. Rekvizit o‘zgarsa, eski tasdiqqa suyanib to‘lov qilish xavfli bo‘ladi.\n\n✅ Qanday tekshirish kerak:\n• Rekvizitni alohida kanalda qayta so‘rang\n• Yozma tasdiqni saqlang\n• Rekvizit o‘zgarsa, qayta tasdiqlang\n• To‘lovni faqat tasdiqlangan rekvizitga yuboring\n\n❗️Eng ko‘p xato: supplier “hisob raqam o‘sha” degan og‘zaki javobga ishonavering. Keyin pul noto‘g‘ri hisobga ketadi, siz esa kimga yuborganingizni isbotlashga urinib qolasiz.\n\nBir marta tekshiruv — keyin katta yo‘qotishning oldini oladi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIDD2sDVyGxNZ-FGNFVJBi8cyxu92QUAAKjI2sbOIQYSGXUAZvGk1fYAQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261122-205625/image.png",
+    "topic": {
+      "title": "Bank rekvizitini yozma tasdiqlang",
+      "angle": "To‘lovni yuborishdan oldin supplier bank rekvizitini alohida kanal va yozma tasdiq bilan tekshirish. Rekvizit o‘zgarsa, qayta tasdiqlashni odat qiling.",
+      "why_now": "Rekvizit almashtirish orqali pul yo‘naltirish xavfi hanuz dolzarb, shu bois oldindan tekshiruv eng arzon himoya chorasi.",
+      "research": "1. **Sarlavha:** Futian bozorida “bir xil mahsulot”ni 3 ta turli sotuvchidan so‘rab ko‘ring  \n   **Burchak:** Bir mahsulot bo‘yicha narx, MOQ va qadoq tafovutini yonma-yon solishtirish orqali “eng arzon” emas, “eng qulay” supplierni tanlash.  \n   **Nega hozir dolzarb:** Futian kabi ulgurji bozorlarda tanlov ko‘p, lekin yangi tadbirkorlar odatda birinchi uchragan sotuvchiga yopishib qoladi; bozor usulida solishtirish bugun ham eng tez tejamkor odat.  \n   **Foydalilik:** 9/10\n\n2. **Sarlavha:** 1688’da buyurtma berishdan oldin “savdo tarixini emas, qaytish siyosatini” tekshiring  \n   **Burchak:** Supplier kartasida refund, exchange va dispute bo‘yicha yozilgan shartlarni oldindan o‘qish.  \n   **Nega hozir dolzarb:** Onlayn ulgurji savdoda firib va sifat nomuvofiqligi ko‘p uchraydi; qaytarish sharti oldindan bilinmasa, keyin pulni ushlab qolish oson bo‘ladi.  \n   **Foydalilik:** 8/10\n\n3. **Sarlavha:** Namuna olganda 1 dona emas, 2 xil partiyadan so‘rang  \n   **Burchak:** Bir supplierning ikki alohida ishlab chiqarish yoki tayyorlash siklidan kichik sample olib, rang va sifat barqarorligini tekshirish.  \n   **Nega hozir dolzarb:** Ko‘p tadbirkor “sample zo‘r edi” degan xatoga tushadi; partiyalar orasidagi farq aynan kichik hajmli testda ko‘rinadi.  \n   **Foydalilik:** 8/10\n\n4. **Sarlavha:** Qadoqni mahsulot emas, kargo turiga qarab tanlang  \n   **Burchak:** Katta hajm, bosiladigan, sinuvchan yoki deformatsiyalanadigan mahsulot uchun qadoqni transport usuliga moslashtirish.  \n   **Nega hozir dolzarb:** Havo, avtomobil va dengiz kargosida qadoqqa qo‘yiladigan amaliy talablar farq qiladi; noto‘g‘ri qadoq qayta ishlash va zarar xarajatini oshiradi.  \n   **Foydalilik:** 9/10\n\n5. **Sarlavha:** To‘lovdan oldin supplierning bank rekvizitini alohida kanalda tasdiqlang  \n   **Burchak:** Rekvizitni chatda emas, mustaqil yozma tasdiq bilan tekshirish va o‘zgarish bo‘lsa qayta tasdiqlash.  \n   **Nega hozir dolzarb:** Rekvizit almashtirish orqali pulni o‘z hisobiga o‘tkazdirish sxemalari hanuz dolzarb; bu eng arzon himoya chorasi.  \n   **Foydalilik:** 10/10\n\n6. **Sarlavha:** Kargo narxini faqat vazn emas, “bir qutiga sig‘ishi” bo‘yicha ham so‘rang  \n   **Burchak:** Bir xil mahsulotni turli o‘ramda joylashtirib, quti soni va yuklash samaradorligini solishtirish.  \n   **Nega hozir dolzarb:** Logistika xarajati ko‘pincha “kg narxi” bilan emas, joylashuv samarasi bilan oshadi; qadoq optimizatsiyasi bugun ham tejam beradi.  \n   **Foydalilik:** 8/10\n\n7. **Sarlavha:** Bojxona hujjati emas, avval mahsulotning “klassifikatsiya tavsifi”ni tayyorlang  \n   **Burchak:** Supplierdan mahsulot materiali, vazifasi, modeli va tarkibini bitta izchil tavsifda yozdirib olish.  \n   **Nega hozir dolzarb:** O‘zbekiston bojxona amaliyotida tovarni to‘g‘ri tavsiflash rasmiylashtirishni yengillashtiradi; noto‘g‘ri yoki noaniq tavsif keyin kechikish keltiradi. O‘rnatilgan bojxona rasmiylashtiruvi tartiblari rasmiy manbalarda mavjud. ([gov.uz](https://gov.uz/oz/advice/603/document/2377?utm_source=openai))  \n   **Foydalilik:** 9/10\n\n8. **Sarlavha:** 2026-yilda importda “ruxsat kerakmi?” savolini mahsulot kirishidan oldin tekshiring  \n   **Burchak:** Yangi kimyoviy moddalar, oziq-ovqat qo‘shimchalari, parfyumeriya-kosmetika, dori va tibbiy jihozlar kabi toifalarda oldindan ruxsat/ro‘yxat talabini aniqlash.  \n   **Nega hozir dolzarb:** 2026-yil 1-oktabrdan boshlab ayrim import toifalarida rasmiy tartiblar yangilangan; shuning uchun mahsulotni yo‘lda ushlab qolmaslik uchun tekshiruvni oldindan qilish kerak. ([lex.uz](https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai))  \n   **Foydalilik:** 10/10",
+      "sources": [
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2823",
+          "url": "https://gov.uz/oz/advice/603/document/2823"
+        },
+        {
+          "title": "https://lex.uz/uz/docs/-3802363",
+          "url": "https://lex.uz/uz/docs/-3802363"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2377",
+          "url": "https://gov.uz/oz/advice/603/document/2377"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/136/2026/03/03/8fc7e4f3-c1e5-300a-69a1-56230e091a3a_media_.pdf"
+        },
+        {
+          "title": "https://invest.gov.uz/uz/guide/legal-framework",
+          "url": "https://invest.gov.uz/uz/guide/legal-framework"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf"
+        },
+        {
+          "title": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf",
+          "url": "https://api-portal.gov.uz/uploads/16/2025/11/15/9ee4f877-7f84-46e1-6274-6bfebabfe1b2_media_.pdf"
+        },
+        {
+          "title": "https://uza.uz/uz/posts/2025-yil-1-maydan-etiboran-jismoniy-shaxslarni-xorijdan-tovar-olib-kirishiga-cheklovlar-belgilanadi_711741",
+          "url": "https://uza.uz/uz/posts/2025-yil-1-maydan-etiboran-jismoniy-shaxslarni-xorijdan-tovar-olib-kirishiga-cheklovlar-belgilanadi_711741"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/sections/view/12811",
+          "url": "https://gov.uz/oz/miit/sections/view/12811"
+        },
+        {
+          "title": "https://www.lex.uz/ru/docs/-7934915?type=pdf",
+          "url": "https://www.lex.uz/ru/docs/-7934915?type=pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/miit/news/view/110129",
+          "url": "https://gov.uz/oz/miit/news/view/110129"
+        },
+        {
+          "title": "https://gov.uz/oz/digital/sections/view/1645",
+          "url": "https://gov.uz/oz/digital/sections/view/1645"
+        },
+        {
+          "title": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00",
+          "url": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00"
+        },
+        {
+          "title": "https://lex.uz/docs/-8444993?type=pdf",
+          "url": "https://lex.uz/docs/-8444993?type=pdf"
+        },
+        {
+          "title": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai",
+          "url": "https://gov.uz/oz/advice/603/document/2377?utm_source=openai"
+        },
+        {
+          "title": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai",
+          "url": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-24T07:00:00+05:00",
+    "created_at": "2026-11-22T20:57:02+00:00",
+    "est_cost_usd": 0.0806,
+    "status": "ready"
   }
 ]

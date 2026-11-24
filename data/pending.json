@@ -1,39 +1,5 @@
 [
   {
-    "id": "20261121-150058",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Davriy deklaratsiyada bojni partiya bo‘yicha to‘lash",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIDBmsBslA6vjkHuYswXQbl3ZlY5welAAKFIGsbIukRSJZ3sc8Icj8QAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261121-150058/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-21T20:16:35.861405+05:00",
-    "created_at": "2026-11-21T15:01:35+00:00",
-    "est_cost_usd": 0.0822,
-    "status": "published",
-    "updated_at": "2026-11-21T18:34:03+00:00",
-    "published_at": "2026-11-21T18:34:03+00:00"
-  },
-  {
-    "id": "20261121-204709",
-    "rubric": "Xitoy savdosi maslahatlari",
-    "title": "Incoterms bo‘yicha haqiqiy tannarxni yozma ajrating",
-    "kind": "photo",
-    "file_id": "AgACAgIAAxkDAAIDCWsCA3LU7Cli_6EWZL2wIeVaiKzHAALBH2sbOIQQSLwTPURJllMhAQADAgADeQADPQQ",
-    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261121-204709/image.png",
-    "qc_score": 8,
-    "soft_pass": false,
-    "rewrites": 0,
-    "publish_at": "2026-11-23T07:00:00+05:00",
-    "created_at": "2026-11-21T20:47:45+00:00",
-    "est_cost_usd": 0.0845,
-    "status": "published",
-    "updated_at": "2026-11-23T02:00:44+00:00",
-    "published_at": "2026-11-23T02:00:44+00:00"
-  },
-  {
     "id": "20261122-150023",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Yakuniy tannarxni 5 bandda hisoblang",
@@ -196,82 +162,9 @@
     "id": "20261124-150034",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Ruxsatnoma kerakmi — avval tekshiring",
-    "text": "🛃 “Ruxsat kerakmi?” savolini birinchi bo‘lib tekshirsangiz, bojxonada to‘xtab qolish xavfi kamayadi.\n\nMahsulotni olib kirishdan oldin unga alohida ruxsat, guvohnoma yoki nazorat talabi bor-yo‘qligini aniqlash shart. 2026-yildagi yangilanishlarda ayrim tovarlar uchun muvofiqlik va sanitariya nazorati kuchaygan.\n\nAvval shu 3 qadamni qiling:\n• Supplierdan mahsulotning aniq nomi va tarkibini oling\n• Tovar uchun ruxsat, guvohnoma yoki boshqa talab bor-yo‘qligini tekshiring\n• Invoysga nomni “umumiy” emas, aniq yozdiring\n\nMasalan, hujjatda “parts” yoki “gift” deb yozish keyin qo‘shimcha savol va kechikish keltirishi mumkin. Aniq nom oldindan yozilsa, tekshiruv ham tezroq o‘tadi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "photo",
     "file_id": "AgACAgIAAxkDAAIDGGsFpsB86J0-nc4OlwUFaee4AnCXAAI1JmsbOPwxSLEMZuskhoQtAQADAgADeQADPQQ",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261124-150034/image.png",
-    "topic": {
-      "title": "Ruxsatnoma kerakmi — avval tekshiring",
-      "angle": "Mahsulotni olib kirishdan oldin unga alohida ruxsat, guvohnoma yoki nazorat talabi bor-yo‘qligini aniqlash kerak. Bu bojxonada to‘xtab qolishning oldini oladi.",
-      "why_now": "2026-yildagi yangilanishlarda ayrim tovarlar uchun ruxsat va muvofiqlik nazorati kuchaymoqda.",
-      "research": "1. **“Mahsulotni tanlashdan oldin 3 ta bozor signalini tekshiring: talab, raqobat, qayta buyurtma ehtimoli”**  \n   - **Burchak:** 1688/Futian’dan tovar tanlashda “yoqdi” degan hissiyot emas, aynan sotilishiga qarab tanlash.  \n   - **Nega hozir dolzarb:** 2026-yilda import va bojxona jarayonlari soddalashtirilayotgan bo‘lsa-da, noto‘g‘ri SKU tanlash eng katta yo‘qotish bo‘lib qolmoqda; yangi tartiblar ham tovarni oldindan to‘g‘ri rejalashni talab qiladi. ([lex.uz](https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n2. **“Supplierga birinchi yozishda 5 savol bering: MOQ, lead time, sample, packing, payment term”**  \n   - **Burchak:** Yetkazib beruvchini tez saralash uchun bitta standart savolnoma ishlatish.  \n   - **Nega hozir dolzarb:** Bojxona va tashqi savdo jarayonlarida hujjatlarni elektron kiritish va oldindan tayyorlash ahamiyati oshmoqda; noto‘g‘ri supplier bilan vaqt yo‘qotish qimmatlashmoqda. ([customs.uz](https://www.customs.uz/news/bozhhona-qomitasi-ommaviy-ahborot-vositasida-elon-qilingan-habarga-munosabat-bildiradi?utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n3. **“Namuna kelganda bitta ‘qabul qilish protokoli’ bilan tekshiring: o‘lcham, rang, material, ishlash, qadoq”**  \n   - **Burchak:** Sampleni “yaxshi/omonat” deb emas, chek-list bilan baholash.  \n   - **Nega hozir dolzarb:** Qaytarish, qayta jo‘natish va shartli chiqarish kabi holatlar rasmiy hujjatlarga bog‘langan; namuna bosqichida xatoni tutib qolish eng arzon yechim. ([lex.uz](https://www.lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00&utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n4. **“Qadoqni kargo narxiga emas, vazn hisobiga ta’siri bilan tanlang”**  \n   - **Burchak:** Karton, vakuum, polybag, ichki himoya — bularning har biri hajmli vaznga ta’sirini oldindan ko‘rish.  \n   - **Nega hozir dolzarb:** Yuk tashishda xatolar ko‘pincha aynan vazn va hajm hisobida chiqadi; noto‘g‘ri qadoq ombordagi va yo‘ldagi xarajatni oshiradi.  \n   - **Foydalilik:** 8/10\n\n5. **“Invoysga mahsulot nomini ‘umumiy’ emas, aniqlashtirilgan tarzda yozdiring”**  \n   - **Burchak:** “Accessory”, “parts”, “gift” kabi noaniq so‘zlar o‘rniga mahsulotni aniq nomlash odati.  \n   - **Nega hozir dolzarb:** Bojxona organlari deklaratsiya va hujjatlar mosligini tekshiradi; noto‘g‘ri yoki noaniq nomlar qo‘shimcha savol va kechikish keltirishi mumkin. ([customs.uz](https://www.customs.uz/news/bozhhona-qomitasi-ommaviy-ahborot-vositasida-elon-qilingan-habarga-munosabat-bildiradi?utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n6. **“Bitta partiyani jo‘natishdan oldin transport turini yukning xususiyatiga qarab tanlang: avia, temir yo‘l yoki avto”**  \n   - **Burchak:** Tezlik, xavfsizlik, narx va hajmni birgalikda solishtirib qaror qilish.  \n   - **Nega hozir dolzarb:** Xitoy yo‘nalishida transport ruxsatnomalari va yuk tashish hujjatlarida elektron jarayonlar faollashmoqda; noto‘g‘ri transport tanlovi hujjat va muddatni murakkablashtiradi. ([gov.uz](https://gov.uz/oz/mintrans/news/view/155000?utm_source=openai))  \n   - **Foydalilik:** 7/10\n\n7. **“Bojxona uchun birinchi navbatda ‘ruxsat kerakmi?’ degan savolni tekshiring”**  \n   - **Burchak:** Mahsulotni olib kirishdan oldin alohida ruxsat, guvohnoma yoki nazorat talab qilinadimi — shuni aniqlash.  \n   - **Nega hozir dolzarb:** 2026-yilgi yangilanishlarda ayrim tovarlar uchun ruxsatnoma va guvohnomalar muvofiqlik hamda sanitariya bosqichida nazorat qilinishi kuchaytirilgan. ([lex.uz](https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai))  \n   - **Foydalilik:** 10/10\n\n8. **“To‘lovdan oldin bank rekvizitini alohida kanal orqali tasdiqlang”**  \n   - **Burchak:** Supplier yuborgan hisob raqamini faqat bitta chatga ishonib qabul qilmaslik.  \n   - **Nega hozir dolzarb:** Tashqi savdo kontraktlari va hujjatlarni elektron tizimda yuritish kuchaygan sari, rekvizit xatolari va firibgarlik xavfi ham kamaymaydi; yozma tekshiruv amaliy himoya bo‘lib qoladi. ([customs.uz](https://www.cust",
-      "sources": [
-        {
-          "title": "https://www.lex.uz/acts/-3916465",
-          "url": "https://www.lex.uz/acts/-3916465"
-        },
-        {
-          "title": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00",
-          "url": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00"
-        },
-        {
-          "title": "https://www.lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00",
-          "url": "https://www.lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00"
-        },
-        {
-          "title": "https://customs.uz/public/docfiles/1741158061.pdf",
-          "url": "https://customs.uz/public/docfiles/1741158061.pdf"
-        },
-        {
-          "title": "https://gov.uz/oz/mintrans/news/view/155000",
-          "url": "https://gov.uz/oz/mintrans/news/view/155000"
-        },
-        {
-          "title": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi",
-          "url": "https://customs.uz/page/zhismoniy-shahslar-tomonidan-pochta-va-kurerlik-zhonatmalari-orqali-tovarlarni-zhonatish-tartibi"
-        },
-        {
-          "title": "https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107",
-          "url": "https://my.gov.uz/uz/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107"
-        },
-        {
-          "title": "https://www.customs.uz/news/bozhhona-qomitasi-ommaviy-ahborot-vositasida-elon-qilingan-habarga-munosabat-bildiradi",
-          "url": "https://www.customs.uz/news/bozhhona-qomitasi-ommaviy-ahborot-vositasida-elon-qilingan-habarga-munosabat-bildiradi"
-        },
-        {
-          "title": "https://lex.uz/docs/-8444993?type=pdf",
-          "url": "https://lex.uz/docs/-8444993?type=pdf"
-        },
-        {
-          "title": "https://my.gov.uz/en/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107",
-          "url": "https://my.gov.uz/en/news/5cdd1fdf-5078-4c05-8ea9-ae6d6c0c8107"
-        },
-        {
-          "title": "https://test.lex.uz/uz/docs/8232678?ONDATE=26.05.2026+00",
-          "url": "https://test.lex.uz/uz/docs/8232678?ONDATE=26.05.2026+00"
-        },
-        {
-          "title": "https://www.lex.uz/Pages/GetPdf.aspx?file=LexUz_7543192.pdf",
-          "url": "https://www.lex.uz/Pages/GetPdf.aspx?file=LexUz_7543192.pdf"
-        },
-        {
-          "title": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai",
-          "url": "https://lex.uz/uz/docs/-8444993?ONDATE=01.09.2026+00&utm_source=openai"
-        },
-        {
-          "title": "https://www.customs.uz/news/bozhhona-qomitasi-ommaviy-ahborot-vositasida-elon-qilingan-habarga-munosabat-bildiradi?utm_source=openai",
-          "url": "https://www.customs.uz/news/bozhhona-qomitasi-ommaviy-ahborot-vositasida-elon-qilingan-habarga-munosabat-bildiradi?utm_source=openai"
-        },
-        {
-          "title": "https://www.lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00&utm_source=openai",
-          "url": "https://www.lex.uz/uz/acts/-2876354?ONDATE=25.07.2026+00&utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/mintrans/news/view/155000?utm_source=openai",
-          "url": "https://gov.uz/oz/mintrans/news/view/155000?utm_source=openai"
-        }
-      ]
-    },
     "qc_score": 8,
     "soft_pass": false,
     "rewrites": 0,

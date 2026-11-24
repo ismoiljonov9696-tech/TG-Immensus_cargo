@@ -83,5 +83,113 @@
     "status": "published",
     "updated_at": "2026-11-23T17:59:48+00:00",
     "published_at": "2026-11-23T17:59:48+00:00"
+  },
+  {
+    "id": "20261124-020015",
+    "rubric": "Xitoy savdosi maslahatlari",
+    "title": "Bank rekvizitini invoice bilan tekshirish",
+    "text": "💳 To‘lov qilishdan oldin invoice’ni 3 joyda tekshiring — xato pul o‘tishini shu yo‘l bilan kamaytirasiz.\n\nSupplier yuborgan invoice’dagi bank rekviziti, chatdagi ma’lumot va hujjatdagi nom bir-biriga mos bo‘lishi kerak. Bittasi ham farq qilsa, keyin hujjat zanjiri buziladi.\n\nTekshiruvni shunday qiling:\n• invoice ustidagi bank nomi va hisob ma’lumotini chatdagi yozuv bilan solishtiring\n• supplier nomi invoice’da qanday yozilgan bo‘lsa, o‘sha yozuvni saqlang\n• shubhali bo‘lsa, bir xil ma’lumotni qayta yozdirib tasdiqlang\n\nBu oddiy qadam noto‘g‘ri hisobga pul o‘tkazish xavfini kamaytiradi va keyingi bojxona hujjatlarida chalkashlik chiqmasligiga yordam beradi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
+    "kind": "photo",
+    "file_id": "AgACAgIAAxkDAAIDF2sE79lfcgcJe2q-EifYc3aIqM9mAAKRImsbOPwpSHpyQIesU336AQADAgADeQADPQQ",
+    "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261124-020015/image.png",
+    "topic": {
+      "title": "Bank rekvizitini invoice bilan tekshirish",
+      "angle": "To‘lov qilishdan oldin supplier yuborgan invoice, bank rekviziti va chatdagi ma’lumotni bir-biriga moslashtirish kerak. Bu noto‘g‘ri hisobga pul o‘tkazish va hujjat zanjiri buzilishini kamaytiradi.",
+      "why_now": "Xitoy importida to‘lov va hujjatlar mosligi bojxona jarayonlari uchun dolzarb bo‘lib qolmoqda.",
+      "research": "1. **“1688’da supplier’dan mahsulotning texnik parametrlari emas, aynan o‘lchov birligi va qadoq miqdorini yozma tasdiqlang”**\n   - **Burchagi:** Buyurtma berishdan oldin listingdagi “1 box / 1 set / 1 piece” kabi birliklarni xatolarsiz aniqlash, chunki narx va kargo hisobiga bevosita ta’sir qiladi.\n   - **Nega dolzarb:** Xitoydan importda bojxona uchun tovar qiymati, transport va sug‘urta kabi xarajatlar deklaratsiyada ahamiyatli; noto‘g‘ri birlik keyin qo‘shimcha xarajat va nizoga olib keladi. ([caea.gov.cn](https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai))\n   - **Foydalilik:** 9/10\n\n2. **“To‘lovdan oldin bank rekvizitini faqat chatda emas, invoice ustida ham moslashtiring”**\n   - **Burchagi:** Supplier yuborgan hisob-faktura, bank rekviziti va chatdagi ma’lumotni bir marta tekshirib, noto‘g‘ri hisobga pul o‘tkazish xavfini kamaytirish.\n   - **Nega dolzarb:** Xitoy bojxona qoidalarida aniq deklaratsiya va tegishli hujjatlar taqdim etilishi talab qilinadi; noto‘g‘ri to‘lov keyinchalik hujjat zanjirini buzadi. ([caea.gov.cn](https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai))\n   - **Foydalilik:** 10/10\n\n3. **“Yangi tovarni birinchi partiyada minimal qadoq bilan emas, transportda sinovdan o‘tkaziladigan himoya qadoq bilan yuboring”**\n   - **Burchagi:** Fragil yoki eziluvchan mahsulotlar uchun ichki himoya, tashqi korobka va belgilashni oldindan sozlash.\n   - **Nega dolzarb:** Xitoy bojxona hujjatlarida va amaliyotida transport, qadoqlash va yukning xavfsizligi deklaratsiya va yetkazib berish sifatiga ta’sir qiladi; noto‘g‘ri qadoq zarar va qaytarish xavfini oshiradi. ([caea.gov.cn](https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai))\n   - **Foydalilik:** 8/10\n\n4. **“Kargo turini tanlashdan oldin yukning haqiqiy hajmiy vaznini o‘zingiz hisoblab ko‘ring”**\n   - **Burchagi:** Og‘irlik emas, hajmiy vazn narxni belgilashi mumkin bo‘lgan yuklar uchun oddiy oldindan kalkulyatsiya.\n   - **Nega dolzarb:** Transport xarajatlari bojxona qiymatiga kirishi mumkin; yukni noto‘g‘ri baholash yakuniy tannarxni buzadi. Xitoy bojxona qonunchiligi transport va sug‘urtani import qiymati hisobiga kiritadi. ([caea.gov.cn](https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai))\n   - **Foydalilik:** 9/10\n\n5. **“1688 yoki Futian’dan tovar tanlashda avval birgina emas, ikki xil yetkazib berish variantini solishtiring”**\n   - **Burchagi:** Bir xil tovar uchun ekspress, avia, temir yo‘l yoki dengiz variantlarini tannarx va muddat bo‘yicha taqqoslash.\n   - **Nega dolzarb:** Import jarayonida deklaratsiya va transport hujjatlari elektron tarzda yuritiladi; logistikani oldindan tanlash kechikish va qo‘shimcha xarajatni kamaytiradi. ([english.www.gov.cn](https://english.www.gov.cn/AssetsZi/Foreign_Investment_Guide_of_the_People%27s_Republic_of_China_2024.pdf?utm_source=openai))\n   - **Foydalilik:** 8/10\n\n6. **“Supplierdan sifat nazorati uchun bitta buyurtmada emas, jo‘natishdan oldingi foto/video dalilni emas — aniq tekshiruv ro‘yxatini so‘rang”**\n   - **Burchagi:** Rang, o‘lcham, markirovka, paket soni, nuqson turi kabi tekshiruv punktlarini yozib berish.\n   - **Nega dolzarb:** Xitoyda import/export deklaratsiyasi va mahsulot hujjatlari aniq bo‘lishi kerak; oldindan kelishilgan tekshiruv ro‘yxati keyinchalik da’vo qilishni osonlashtiradi. ([caea.gov.cn](https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai))\n   - **Foydalilik:** 8/10\n\n7. **“Bojxona uchun kerak bo‘ladigan hujjatlarni jo‘natishdan oldin emas, buyurtma joylashayotgan paytda yig‘ishni boshlang”**\n   - **Burchagi:** Invoice, packing list, kontrakt va mahsulot tavsifini boshidan tartibga solish.\n   - **Nega dolzarb:** Xitoy bojxona qoidalari to‘g‘ri deklaratsiya va tegishli hujjatlarni talab qiladi; 2025-yildan kuchga kirgan yangi tartiblar ham deklaratsiya boshqaruvi amaliyotini yangilagan. ([caea.gov.cn](https://www.caea.gov.cn/english/n6759372/c67934",
+      "sources": [
+        {
+          "title": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html",
+          "url": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html"
+        },
+        {
+          "title": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=103077",
+          "url": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=103077"
+        },
+        {
+          "title": "https://english.www.gov.cn/AssetsZi/Foreign_Investment_Guide_of_the_People%27s_Republic_of_China_2024.pdf",
+          "url": "https://english.www.gov.cn/AssetsZi/Foreign_Investment_Guide_of_the_People%27s_Republic_of_China_2024.pdf"
+        },
+        {
+          "title": "https://www.samr.gov.cn/fgs/zcfg/art/2023/art_26420d117d644a728750a014bff07d78.html",
+          "url": "https://www.samr.gov.cn/fgs/zcfg/art/2023/art_26420d117d644a728750a014bff07d78.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629017002/000629017002.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629002001/%E2%80%9C%E8%B4%A7%E7%89%A9%E7%94%B3%E6%8A%A5%E2%80%9D%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%BA%8B%E9%A1%B9%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97.pdf",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629002001/%E2%80%9C%E8%B4%A7%E7%89%A9%E7%94%B3%E6%8A%A5%E2%80%9D%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%BA%8B%E9%A1%B9%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97.pdf"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629013000/000629013000.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629013000/000629013000.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629014002/000629014002.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629014002/000629014002.html"
+        },
+        {
+          "title": "https://big5.www.gov.cn/gate/big5/www.gov.cn/gongbao/2025/issue_12026/202505/content_7022577.html",
+          "url": "https://big5.www.gov.cn/gate/big5/www.gov.cn/gongbao/2025/issue_12026/202505/content_7022577.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/ocportal/",
+          "url": "https://online.customs.gov.cn/ocportal/"
+        },
+        {
+          "title": "https://online.customs.gov.cn/ocportal/publicService/",
+          "url": "https://online.customs.gov.cn/ocportal/publicService/"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629014002/5.%E8%BF%9B%E5%87%BA%E5%A2%83%E8%A1%8C%E6%9D%8E%E7%89%A9%E5%93%81%E7%9B%91%E7%AE%A1%EF%BC%88%E7%89%B9%E6%AE%8A%E9%A1%B9%E7%9B%AE%E9%99%A4%E5%A4%96%EF%BC%89%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%BA%8B%E9%A1%B9%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97%EF%BC%88%E4%BF%AE%E6%94%B9%E7%A8%BF%EF%BC%89.pdf",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629014002/5.%E8%BF%9B%E5%87%BA%E5%A2%83%E8%A1%8C%E6%9D%8E%E7%89%A9%E5%93%81%E7%9B%91%E7%AE%A1%EF%BC%88%E7%89%B9%E6%AE%8A%E9%A1%B9%E7%9B%AE%E9%99%A4%E5%A4%96%EF%BC%89%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E4%BA%8B%E9%A1%B9%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97%EF%BC%88%E4%BF%AE%E6%94%B9%E7%A8%BF%EF%BC%89.pdf"
+        },
+        {
+          "title": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2025/art_57f0ef6500994576bc94d8c389527c3a.html",
+          "url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2025/art_57f0ef6500994576bc94d8c389527c3a.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000629002001/000629002001.html"
+        },
+        {
+          "title": "https://online.customs.gov.cn/static/pages/guides/000729002001/000729002001.html",
+          "url": "https://online.customs.gov.cn/static/pages/guides/000729002001/000729002001.html"
+        },
+        {
+          "title": "https://www.gov.cn/gongbao/2024/issue_11726/material/gwygb202433.pdf",
+          "url": "https://www.gov.cn/gongbao/2024/issue_11726/material/gwygb202433.pdf"
+        },
+        {
+          "title": "https://jjhzwsj.dazhou.gov.cn/uploadfile/1/Attachment/f902e3d050.pdf",
+          "url": "https://jjhzwsj.dazhou.gov.cn/uploadfile/1/Attachment/f902e3d050.pdf"
+        },
+        {
+          "title": "https://sjs.customs.gov.cn/eportal/attachDir/customs/2026/03/2026031809044266714.pdf",
+          "url": "https://sjs.customs.gov.cn/eportal/attachDir/customs/2026/03/2026031809044266714.pdf"
+        },
+        {
+          "title": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai",
+          "url": "https://www.caea.gov.cn/english/n6759372/c6793478/content.html?utm_source=openai"
+        },
+        {
+          "title": "https://english.www.gov.cn/AssetsZi/Foreign_Investment_Guide_of_the_People%27s_Republic_of_China_2024.pdf?utm_source=openai",
+          "url": "https://english.www.gov.cn/AssetsZi/Foreign_Investment_Guide_of_the_People%27s_Republic_of_China_2024.pdf?utm_source=openai"
+        },
+        {
+          "title": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2025/art_57f0ef6500994576bc94d8c389527c3a.html?utm_source=openai",
+          "url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2025/art_57f0ef6500994576bc94d8c389527c3a.html?utm_source=openai"
+        }
+      ]
+    },
+    "qc_score": 8,
+    "soft_pass": false,
+    "rewrites": 0,
+    "publish_at": "2026-11-25T07:00:00+05:00",
+    "created_at": "2026-11-24T02:00:56+00:00",
+    "est_cost_usd": 0.0814,
+    "status": "ready"
   }
 ]

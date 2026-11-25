@@ -1,12 +1,12 @@
 {
-  "last_publish_at": "2026-11-24T23:36:17+00:00",
-  "last_publish_id": "20261124-150034",
-  "last_publish_title": "Ruxsatnoma kerakmi — avval tekshiring",
+  "last_publish_at": "2026-11-25T02:00:24+00:00",
+  "last_publish_id": "20261124-020015",
+  "last_publish_title": "Bank rekvizitini invoice bilan tekshirish",
   "last_error": null,
   "alerted_at": null,
   "paused": false,
-  "balance_usd": 2.4622,
-  "last_publish_cost": 0.0811,
-  "total_cost_usd": 7.2278,
-  "total_posts": 82
+  "balance_usd": 2.3808,
+  "last_publish_cost": 0.0814,
+  "total_cost_usd": 7.3092,
+  "total_posts": 83
 }

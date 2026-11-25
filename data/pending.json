@@ -255,98 +255,9 @@
     "id": "20261125-150108",
     "rubric": "Xitoy savdosi maslahatlari",
     "title": "Boj stavkasini rasmiy manbadan tekshiring",
-    "text": "📌 Boj stavkasini taxmin qilmang — import qarorini rasmiy manbadan boshlang.\n\nBitta noto‘g‘ri faraz sizga narxni, marjani va yetkazib berish rejasini buzadi. Ayniqsa yangi tovar olganda.\n\nShu odatni qiling:\n• avval customs yoki lex kabi rasmiy manbada tovaringiz kodini tekshiring\n• ruxsat, cheklov va bojga oid amaldagi tartibni ko‘ring\n• keyin supplierga buyurtma bering\n• xarajatni boj + logistika + boshqa to‘lovlar bilan birga hisoblang\n\nMasalan, bir tovarni oldin tekshirmasdan olib kelsangiz, keyin boj yoki ruxsat masalasi chiqib, partiya omborda turib qoladi. Rasmiy manbani oldindan tekshirish esa qarorni tinch qabul qilishga yordam beradi.\n\nSavolingiz bo‘lsa — izohda yozing 👇  ☎️ +998 88 027 66 66\n#xitoy_savdo #kargo",
     "kind": "photo",
     "file_id": "AgACAgIAAxkDAAIDHmsG-GPFT6Iq6aQtA6UbCdXEvB5PAAIwHWsbq0k5SBOo-LSDc_F2AQADAgADeQADPQQ",
     "media_path": "/home/runner/work/TG-Immensus_cargo/TG-Immensus_cargo/.work/20261125-150108/image.png",
-    "topic": {
-      "title": "Boj stavkasini rasmiy manbadan tekshiring",
-      "angle": "Har bir yangi tovar uchun boj stavkasini customs va lex kabi rasmiy manbalardan tekshirish odatini shakllantirish. Bu import qaroridan oldin xarajatni aniq hisoblashga yordam beradi.",
-      "why_now": "Bojxona stavkalari va tartiblar tez-tez yangilanadi, shuning uchun noto‘g‘ri taxmin qimmatga tushishi mumkin.",
-      "research": "1. **“2026-yilda importdagi oldindan to‘lov cheklovi o‘zgardi — invoys asosida pul o‘tkazish tartibini tekshiring”**  \n   - **Burchak:** 2026-yil 1-sentabrdan tashqi savdo shartnomasiz invoys asosida importda oldindan to‘lov cheklovi bekor qilinganini amalda qanday ishlatish.  \n   - **Nega dolzarb:** Bu 2026-yilgi yangilik bo‘lib, pul aylanishi va supplier bilan hisob-kitobni soddalashtirishi mumkin; ayniqsa kichik importchilar uchun muhim. ([lex.uz](https://lex.uz/en/doc-passport/-8444993?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n2. **“Bitta partiyada kelgan har bir tovar turkumi bo‘yicha boj va soliqlar alohida to‘lanishi mumkin — qanday reja qilish kerak?”**  \n   - **Burchak:** Davriy deklaratsiyada turkumlar bo‘yicha alohida to‘lov qilish imkoniyati va partiya logistikasini shunga mos rejalash.  \n   - **Nega dolzarb:** 2026-yil maydagi o‘zgartirishlar partiyalab keltirishda deklaratsiya va cash-flow boshqaruvini bevosita ta’sir qiladi. ([lex.uz](https://lex.uz/uz/acts/8232678?ONDATE=26.05.2026+00&utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n3. **“Qaysi tovarlarga oldindan ruxsat kerak emas? Importdan oldin ‘single window’da tekshirish odati”**  \n   - **Burchak:** Mahsulotni jo‘natishdan oldin ruxsat/guvohnoma talabini elektron tekshirib, keyin buyurtma berish.  \n   - **Nega dolzarb:** Yagona darcha va elektron xizmatlar ro‘yxati muntazam yangilanadi; ayrim tovarlar uchun ruxsatnomalar o‘zgargan bo‘lishi mumkin. ([oldmy.gov.uz](https://oldmy.gov.uz/oz/state-department/info?utm_source=openai))  \n   - **Foydalilik:** 9/10\n\n4. **“Xalqaro brend tovarini olib kirishda reyestrga kirish sizga bojni pasaytirishi mumkin — lekin faqat to‘g‘ri yo‘ldan”**  \n   - **Burchak:** Brend mahsulotlarini rasmiy distribyutor/diler orqali import qilishda reyestr va YAEAT orqali ariza berish tartibi.  \n   - **Nega dolzarb:** Rasmiy brend importi bo‘yicha reyestr amaliyoti mavjud va ayrim tovarlarda boj stavkalari pasaytirilgan; bu ayniqsa kiyim, poyabzal, parfumeriya va aksessuarlar bilan ishlaydiganlarga tegishli. ([gov.uz](https://gov.uz/oz/miit/news/view/110129?utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n5. **“Reeksportda oldin to‘langan bojni qaytarish mumkin — qaysi shartlar muhim?”**  \n   - **Burchak:** Qayta eksport qilinadigan tovar bo‘yicha to‘langan boj va soliqlarni qaytarish mexanizmini oldindan rejalash.  \n   - **Nega dolzarb:** 2026-yilgi farmonda reeksportda boj va soliqlarni qaytarish imkoniyati mustahkamlangan; bu ombor aylanishi yuqori bo‘lgan bizneslar uchun amaliy mavzu. ([lex.uz](https://lex.uz/docs/-8444993?type=pdf&utm_source=openai))  \n   - **Foydalilik:** 8/10\n\n6. **“Ko‘rsatib qo‘yilgan kod emas, asl hujjat muhim: import hujjatlarida elektron tasdiqlashni oldin tayyorlang”**  \n   - **Burchak:** Elektron deklaratsiya, ERI va hujjatlarni onlayn topshirish jarayonini soddalashtirish bo‘yicha amaliy chek-list.  \n   - **Nega dolzarb:** O‘zbekistonda bojxona deklaratsiyasi allaqachon elektron yuritiladi va bu jarayonni to‘g‘ri tayyorlash kechikishlarni kamaytiradi. ([api-portal.gov.uz](https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai))  \n   - **Foydalilik:** 7/10\n\n7. **“Vakolatli iqtisodiy operator bo‘lishga arziydimi? Kichik biznes uchun foyda-kriteryani tushuntirish”**  \n   - **Burchak:** Katta hajmda ishlayotgan importchi uchun VEO maqomiga o‘tish shartlari va qachon ma’qul ekanini tushuntirish.  \n   - **Nega dolzarb:** 2026-yil holatiga ko‘ra VEO talablari, jumladan deklaratsiyalar soni va aylanma mezonlari aniq belgilangan; o‘sayotgan importchilar uchun strategik mavzu. ([lex.uz](https://lex.uz/uz/acts/-4966537?ONDATE=05.02.2026+00&utm_source=openai))  \n   - **Foydalilik:** 7/10\n\n8. **“Bojxona boji stavkalarini ‘taxmin’ emas, rasmiy manbadan tekshirish odati”**  \n   - **Burchak:** Har bir yangi tovar uchun boj stavkasini rasmiy customs/lex manbalaridan tekshirish odatini shakllantirish.  \n   - **Nega dolzarb:** Bojxona stavkalari va tartiblar o",
-      "sources": [
-        {
-          "title": "https://lex.uz/en/doc-passport/-8444993",
-          "url": "https://lex.uz/en/doc-passport/-8444993"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/news/view/110129",
-          "url": "https://gov.uz/oz/miit/news/view/110129"
-        },
-        {
-          "title": "https://oldmy.gov.uz/oz/state-department/info",
-          "url": "https://oldmy.gov.uz/oz/state-department/info"
-        },
-        {
-          "title": "https://lex.uz/uz/acts/8232678?ONDATE=26.05.2026+00",
-          "url": "https://lex.uz/uz/acts/8232678?ONDATE=26.05.2026+00"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf"
-        },
-        {
-          "title": "https://lex.uz/docs/-8444993?type=pdf",
-          "url": "https://lex.uz/docs/-8444993?type=pdf"
-        },
-        {
-          "title": "https://sw2.customs.uz/Malumots/Rejim.jsp",
-          "url": "https://sw2.customs.uz/Malumots/Rejim.jsp"
-        },
-        {
-          "title": "https://lex.uz/Pages/GetPdf.aspx?file=LexUz_7787556.pdf",
-          "url": "https://lex.uz/Pages/GetPdf.aspx?file=LexUz_7787556.pdf"
-        },
-        {
-          "title": "https://customs.uz/en/page/bozhhona-tolovlari",
-          "url": "https://customs.uz/en/page/bozhhona-tolovlari"
-        },
-        {
-          "title": "https://gov.uz/oz/qushkupir/pages/elektron-davlat-xizmatlari",
-          "url": "https://gov.uz/oz/qushkupir/pages/elektron-davlat-xizmatlari"
-        },
-        {
-          "title": "https://lex.uz/uz/acts/-4966537?ONDATE=05.02.2026+00",
-          "url": "https://lex.uz/uz/acts/-4966537?ONDATE=05.02.2026+00"
-        },
-        {
-          "title": "https://sw2.customs.uz/?lang=en_EN",
-          "url": "https://sw2.customs.uz/?lang=en_EN"
-        },
-        {
-          "title": "https://lex.uz/en/doc-passport/-8444993?utm_source=openai",
-          "url": "https://lex.uz/en/doc-passport/-8444993?utm_source=openai"
-        },
-        {
-          "title": "https://lex.uz/uz/acts/8232678?ONDATE=26.05.2026+00&utm_source=openai",
-          "url": "https://lex.uz/uz/acts/8232678?ONDATE=26.05.2026+00&utm_source=openai"
-        },
-        {
-          "title": "https://oldmy.gov.uz/oz/state-department/info?utm_source=openai",
-          "url": "https://oldmy.gov.uz/oz/state-department/info?utm_source=openai"
-        },
-        {
-          "title": "https://gov.uz/oz/miit/news/view/110129?utm_source=openai",
-          "url": "https://gov.uz/oz/miit/news/view/110129?utm_source=openai"
-        },
-        {
-          "title": "https://lex.uz/docs/-8444993?type=pdf&utm_source=openai",
-          "url": "https://lex.uz/docs/-8444993?type=pdf&utm_source=openai"
-        },
-        {
-          "title": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai",
-          "url": "https://api-portal.gov.uz/uploads/16/2025/10/16/886915a5-5025-511f-f4b5-d0c1a1001499_media_.pdf?utm_source=openai"
-        },
-        {
-          "title": "https://lex.uz/uz/acts/-4966537?ONDATE=05.02.2026+00&utm_source=openai",
-          "url": "https://lex.uz/uz/acts/-4966537?ONDATE=05.02.2026+00&utm_source=openai"
-        },
-        {
-          "title": "https://customs.uz/en/page/bozhhona-tolovlari?utm_source=openai",
-          "url": "https://customs.uz/en/page/bozhhona-tolovlari?utm_source=openai"
-        }
-      ]
-    },
     "qc_score": 8,
     "soft_pass": false,
     "rewrites": 0,

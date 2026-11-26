@@ -1,16 +1,12 @@
 {
-  "last_publish_at": "2026-11-25T16:04:26+00:00",
-  "last_publish_id": "20261125-150108",
-  "last_publish_title": "Boj stavkasini rasmiy manbadan tekshiring",
-  "last_error": {
-    "stage": "tugmalarni o'qish",
-    "message": "TelegramError: getUpdates: tarmoq xatosi (javob kelmadi, qayta yuborilmadi — takror chiqishning oldini olish uchun): ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-    "at": "2026-11-26T01:01:10+00:00"
-  },
+  "last_publish_at": "2026-11-26T02:00:32+00:00",
+  "last_publish_id": "20261124-234626",
+  "last_publish_title": "Import litsenziya ro‘yxatini jo‘natishdan oldin tekshiring",
+  "last_error": null,
   "alerted_at": null,
   "paused": false,
-  "balance_usd": 2.2997,
-  "last_publish_cost": 0.0811,
-  "total_cost_usd": 7.3903,
-  "total_posts": 84
+  "balance_usd": 2.2144,
+  "last_publish_cost": 0.0853,
+  "total_cost_usd": 7.4756,
+  "total_posts": 85
 }

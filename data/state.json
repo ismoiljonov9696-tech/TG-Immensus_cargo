@@ -2,7 +2,11 @@
   "last_publish_at": "2026-11-26T02:00:32+00:00",
   "last_publish_id": "20261124-234626",
   "last_publish_title": "Import litsenziya ro‘yxatini jo‘natishdan oldin tekshiring",
-  "last_error": null,
+  "last_error": {
+    "stage": "mavzu izlash (1-agent)",
+    "message": "OpenAI /responses → HTTP 429: {\n  \"error\": {\n    \"code\": \"credit_balance_exhausted\",\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"param\": null,\n    \"type\": \"insufficient_quota\"\n  }\n}",
+    "at": "2026-11-26T15:01:40+00:00"
+  },
   "alerted_at": null,
   "paused": false,
   "balance_usd": 2.2144,

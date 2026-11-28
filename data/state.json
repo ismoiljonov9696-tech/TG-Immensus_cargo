@@ -7,7 +7,7 @@
     "message": "OpenAI /responses → HTTP 429: {\n  \"error\": {\n    \"code\": \"credit_balance_exhausted\",\n    \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.\",\n    \"param\": null,\n    \"type\": \"insufficient_quota\"\n  }\n}",
     "at": "2026-11-27T23:15:24+00:00"
   },
-  "alerted_at": null,
+  "alerted_at": "2026-11-28T06:25:41+00:00",
   "paused": false,
   "balance_usd": 2.1241,
   "last_publish_cost": 0.0903,
